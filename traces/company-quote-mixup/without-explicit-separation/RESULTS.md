@@ -2,11 +2,11 @@
 
 Ten fresh native Sol 6.1 runs. The only source change removes “those are separate customer accounts.” from the saved profile. Company names and cities remain. Three task prompts are unchanged apart from run IDs.
 
-**4 clear unsupported plan claims (5,7,8,9), 2 qualified unsupported plan suggestions (1,10), 4 safe unknowns (2,3,4,6), 0 wrong prices.**
+**4 answers stated Business as London's plan without saying the plan needed checking (5,7,8,9); 2 named Business but told us to check the plan (1,10); 4 left London's plan and price unknown (2,3,4,6); 0 used Chicago's price for London.**
 
-Latest original-profile baseline: 1 clear claim, 1 qualified suggestion, 8 safe unknowns. These small batches show more clear errors in the changed version; they do not establish a reliable causal effect or a general error rate.
+With the original profile: 1 stated Business without saying the plan needed checking, 1 named Business but told us to check it, and 8 left the plan and price unknown. These small batches show more confident unsupported plan claims in the changed version; they do not establish a reliable causal effect or a general error rate.
 
-All 30 replies and all 74 mock calls passed integrity checks and replay. New results remain local.
+All 30 replies and all 74 mock calls passed integrity checks and replay. The saved runs are included in this repository.
 
 ## Run 1
 

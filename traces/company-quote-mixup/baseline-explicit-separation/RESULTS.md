@@ -1,8 +1,8 @@
 # Ten local repetitions
 
-Same scenario and three task prompts as the earlier batch; only run IDs changed. Ten fresh native Sol 6.1 conversations. New runs remain local.
+Same scenario and three task prompts as the earlier batch; only run IDs changed. Ten fresh native Sol 6.1 conversations. The saved runs are included in this repository.
 
-Result: **1 clear reproduction (run 7), 1 qualified unsupported plan suggestion (run 2), 8 clearly safe answers, 0 wrong prices.**
+Result: **1 answer stated Business as London's plan without saying the plan needed checking (run 7); 1 named Business but told us to check the plan (run 2); 8 left London's plan and price unknown; 0 used Chicago's price for London.**
 
 Run 2 says Business but qualifies it with “confirm against our subscription quote”; it is kept separate from the original unqualified error.
 
