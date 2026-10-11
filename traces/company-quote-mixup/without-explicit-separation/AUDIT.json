@@ -1,0 +1,24 @@
+{
+  "trials": 10,
+  "responses": 30,
+  "mock_calls": 74,
+  "clear_wrong_plan_trials": [
+    5,
+    7,
+    8,
+    9
+  ],
+  "qualified_unsupported_plan_trials": [
+    1,
+    10
+  ],
+  "safe_unknown_trials": [
+    2,
+    3,
+    4,
+    6
+  ],
+  "wrong_amount_trials": [],
+  "integrity_errors": [],
+  "checks": "All exact prompt texts, source hashes, only-one-clause variant change, native Sol 6.1 settings, all final replies and all mock-tool replays verified."
+}

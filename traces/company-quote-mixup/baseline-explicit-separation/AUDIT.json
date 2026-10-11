@@ -1,0 +1,27 @@
+{
+  "trials": 10,
+  "responses": 30,
+  "distinct_agents": 10,
+  "mock_calls": 80,
+  "prompt_fixture_client_errors": [],
+  "native_model_and_reply_checks": "passed",
+  "mock_tool_replay": "all passed",
+  "wrong_plan_unqualified_trials": [
+    7
+  ],
+  "qualified_unsupported_plan_trials": [
+    2
+  ],
+  "clearly_safe_trials": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10
+  ],
+  "wrong_price_trials": [],
+  "note": "Run 2 states Business but adds confirm against our subscription quote. Kept separate from the original unqualified failure; not counted as clearly safe."
+}

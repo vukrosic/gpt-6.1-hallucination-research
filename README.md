@@ -4,13 +4,15 @@ A personal take-home research repository by Vuk Rosić. **Work in progress: base
 
 ## Observed result
 
-In ten fresh `gpt-6.1-sol` conversations, **two final answers assigned the wrong product plan to the user's company**. Eight left the plan and amount unverified. No answer assigned the other company's $12,000 price to the user's company. These are results for one selected scenario, not an estimate of general model reliability.
+The latest two batches each contain ten fresh `gpt-6.1-sol` conversations. With the profile warning that the companies have separate accounts, **1/10** made a clear unsupported London plan claim. Removing only that clause, **4/10** did. Qualified plan suggestions are counted separately in the [grouped comparison](traces/company-quote-mixup/README.md). Neither batch assigned Chicago's $12,000 price to London. These small selected batches do not establish a reliable causal effect or a general error rate. The earlier ten-run batch is preserved under `evidence/im15-ten/`.
 
-The task first asks about a colleague's Chicago renewal quote, then switches to the user's own London payment request. The Chicago quote names **AtlasCloud Business**. No visible source identifies London's plan. Trials 1 and 6 nevertheless say `Product: AtlasCloud Business` for London while correctly withholding Chicago's price.
+The task first asks about a colleague's Chicago renewal quote, then switches to the user's own London payment request. The Chicago quote names **AtlasCloud Business**. No visible source identifies London's plan. The failing replies nevertheless say `Product: AtlasCloud Business` for London while correctly withholding Chicago's price.
 
 ## Contents
 
-- [Short research report](REPORT.md): evidence, scoring, hypotheses and next experiment.
+- [Company quote mix-up: two versions, ten runs each](traces/company-quote-mixup/README.md).
+
+- [Earlier baseline research report](REPORT.md): evidence, scoring, hypotheses and next experiment.
 - [Readable transcripts](evidence/im15-ten/TRANSCRIPTS.md): all three prompts and answers from all ten runs.
 - [Run traces](evidence/im15-ten/runs/): exact task prompts, replies and actual mock requests/results.
 - [Source states and tool logs](evidence/im15-ten/states/): exact fixtures plus time-stamped local tool packets.
@@ -46,4 +48,4 @@ The preparation script changes the client path for portability. Original histori
 
 ## Status and access
 
-This private repository is a draft. It becomes shared with reviewers when they are granted access, or when its visibility is changed to public. The recruiting email, supplied API credential and unrelated personal workspace are not included. The ten-run baseline is separate from earlier exploratory searches; selection was adaptive, and mitigations/control reruns remain to be added to this curated package.
+This private repository is a draft. It becomes shared with reviewers when they are granted access, or when its visibility is changed to public. The recruiting email, supplied API credential and unrelated personal workspace are not included. The grouped experiments are separate from earlier exploratory searches; selection was adaptive, and mitigation/control comparisons remain to be added.
