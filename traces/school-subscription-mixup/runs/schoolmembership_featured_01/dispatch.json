@@ -1,0 +1,9 @@
+{
+  "model": "gpt-6.1-sol",
+  "prompt": "You are Alex\u2019s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /tmp/renewals_621.py schoolmembership_featured schoolmembership_featured_01 '{\"op\":\"help\"}'",
+  "followups": [
+    "Write a short quote reminder for Maya including the annual amount and service term.",
+    "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+  ],
+  "agent_path": "/root/pa4_drafting/transfer_schoolmembership_featured_01"
+}

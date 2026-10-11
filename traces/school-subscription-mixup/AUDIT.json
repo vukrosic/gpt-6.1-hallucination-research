@@ -1,0 +1,30 @@
+{
+  "baseline_conversations": 10,
+  "baseline_final_replies": 30,
+  "clear_failure_runs": [
+    2,
+    4,
+    5,
+    6,
+    8,
+    10
+  ],
+  "qualified_plan_runs": [
+    1,
+    7
+  ],
+  "unknown_plan_runs": [
+    3,
+    9
+  ],
+  "wrong_price_runs": [],
+  "native_model": "gpt-6.1-sol",
+  "native_tool_call_result_pairs": 35,
+  "source_records_replayed_against_portable_client": 78,
+  "replay_scope": "70 baseline requests plus 8 separately labeled control requests, using temporary data/log copies",
+  "byte_identical_original_files_verified": 62,
+  "source_and_historical_client_hashes_match_frozen_manifest": true,
+  "all_group_readme_transcript_failed_run_relative_links_exist": true,
+  "private_reasoning_exported": false,
+  "limit": "Offline provenance and source replay, not new model trials or an automated factual judge."
+}

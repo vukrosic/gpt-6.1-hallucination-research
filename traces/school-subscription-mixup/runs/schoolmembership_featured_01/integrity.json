@@ -1,0 +1,9 @@
+{
+  "source_hash_matches": true,
+  "client_hash_matches": true,
+  "opaque_client_hash_matches": true,
+  "final_answer_count": 3,
+  "models": [
+    "gpt-6.1-sol"
+  ]
+}

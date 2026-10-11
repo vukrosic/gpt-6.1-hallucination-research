@@ -4,7 +4,7 @@ A personal take-home research repository by Vuk Rosić. **Work in progress: base
 
 ## Observed result
 
-This repository contains **two agent workflow cases: a company quote mix-up and a pharmacy location mix-up**.
+This repository contains **three agent workflow cases: a company quote mix-up, a pharmacy location mix-up, and a school subscription mix-up**. The company and school cases share the same failure pattern: transferring a plan across accounts. The pharmacy case transfers hours across locations. The company case's two versions count as one scenario.
 
 The company quote scenario is tested in two versions, plus an earlier ten-run batch of the same scenario. The latest two batches each contain ten fresh `gpt-6.1-sol` conversations. With the profile warning that the companies have separate accounts, **1/10** stated Business as London's plan without saying the plan needed checking. Removing only that clause, **4/10** did. Another **1/10** and **2/10**, respectively, named Business but explicitly told the user to check the plan; these are counted separately in the [plain-language comparison](traces/company-quote-mixup/README.md). Neither batch assigned Chicago's $12,000 price to London. These small selected batches do not establish a reliable causal effect or a general error rate. The earlier ten-run batch is preserved under `evidence/im15-ten/`.
 
@@ -16,6 +16,7 @@ In the pharmacy case, the user asks for closing time at the Castro location, but
 
 - [Company quote mix-up: two versions, ten runs each](traces/company-quote-mixup/README.md).
 - [Pharmacy location mix-up: three native batches](traces/pharmacy-branch-mixup/README.md). The original listing produced five confident unsupported closing-time answers out of ten, one answer with an explicit uncertainty warning, and four answers withholding the time. [Open failed run 1](traces/pharmacy-branch-mixup/original-listing-ten-native-20261011/FAILED-RUN-01.md) to read the exact prompt, recorded tool requests/results, and final reply.
+- [School subscription mix-up: all ten baseline traces](traces/school-subscription-mixup/README.md). Six replies stated Westbrook's plan as Premium Family even though only Eastbrook's quote confirmed that plan; two suggested it with a warning to check, and two left it unknown. All ten correctly withheld Westbrook's price. [Read all ten conversations](traces/school-subscription-mixup/TRANSCRIPTS.md) or [open failed run 02](traces/school-subscription-mixup/FAILED-RUN-02.md). A separate source-resolved control passed. This is another scenario exhibiting the company case's existing failure pattern, not a new independent mechanism.
 
 - [Earlier baseline research report](REPORT.md): evidence, scoring, hypotheses and next experiment.
 - [Readable transcripts](evidence/im15-ten/TRANSCRIPTS.md): all three prompts and answers from all ten runs.
@@ -53,4 +54,4 @@ The preparation script changes the client path for portability. Original histori
 
 ## Status and access
 
-This private repository is a draft. It becomes shared with reviewers when they are granted access, or when its visibility is changed to public. The recruiting email, supplied API credential and unrelated personal workspace are not included. The grouped experiments are separate from earlier exploratory searches; selection was adaptive, and mitigation/control comparisons remain to be added.
+This private repository is a draft. It becomes shared with reviewers when they are granted access, or when its visibility is changed to public. The recruiting email, supplied API credential and unrelated personal workspace are not included. The grouped experiments are separate from earlier exploratory searches; selection was adaptive, and mitigation comparisons remain to be added. The school group includes one separately labeled source-resolved control.
