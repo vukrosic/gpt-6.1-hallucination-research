@@ -11,6 +11,7 @@ The task first asks about a colleague's Chicago renewal quote, then switches to 
 ## Contents
 
 - [Short research report](REPORT.md): evidence, scoring, hypotheses and next experiment.
+- [Chronological traces](traces/README.md): all ten runs, with recorded dispatch times, assistant messages, tool calls/results and reasoning availability markers.
 - [Readable transcripts](evidence/im15-ten/TRANSCRIPTS.md): all three prompts and answers from all ten runs.
 - [Run traces](evidence/im15-ten/runs/): exact task prompts, replies and actual mock requests/results.
 - [Source states and tool logs](evidence/im15-ten/states/): exact fixtures plus time-stamped local tool packets.
