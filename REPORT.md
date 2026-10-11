@@ -35,7 +35,7 @@ Next: freeze this intervention, run comparable fresh baseline and mitigated conv
 
 ## Evidence and limitations
 
-All ten runs and all passing replies are included. The prompts and fixtures match the pre-dispatch manifest. A separate native agent reviewed the evidence, but independence of model family is not claimed. Native coordinator dispatch and recipient timestamps have now been recovered in [chronological traces](traces/README.md), supporting follow-up sequencing. Prompt payloads are encrypted in those native logs; their text comes from the originally saved task transcripts. No readable reasoning summaries were recorded. Access restrictions were instructional, not a physical filesystem sandbox.
+All ten runs and all passing replies are included. The prompts and fixtures match the pre-dispatch manifest. A separate native agent reviewed the evidence, but independence of model family is not claimed. Tool calls have timestamps; dispatch order relies on coordinator attestations, with no separately captured dispatch timestamps. Access restrictions were instructional, not a physical filesystem sandbox.
 
 This case was selected through adaptive exploration before the repeated batch. Two of ten is a descriptive result for this selected case. It is not a population hallucination rate, and small differences in a later batch would need cautious interpretation. The raw artifacts here are exported task-level conversations and local tool packets, not complete native harness/system-context dumps.
 
