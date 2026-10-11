@@ -20,7 +20,7 @@ with state_path.open("x") as handle:
     json.dump({"fixture": fixture, "log": []}, handle, ensure_ascii=False, indent=2)
     handle.write("\n")
 client = ROOT / "src/visible/retrieval_client.py"
-prompt = case["target_prompt"].format(run_id=args.run_id).replace("/tmp/alex-assistant-workspace/client.py", str(client))
+prompt = case["target_prompt"].replace("{run_id}", args.run_id).replace("/tmp/alex-assistant-workspace/client.py", str(client))
 print("Send the following messages one at a time, after each final reply.\n")
 for index, message in enumerate([prompt, *case["followups"]], start=1):
     print(f"MESSAGE {index}\n{message}\n")
