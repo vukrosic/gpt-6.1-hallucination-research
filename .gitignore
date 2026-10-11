@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+src/mock_data/
+.DS_Store

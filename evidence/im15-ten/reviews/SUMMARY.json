@@ -1,0 +1,17 @@
+{
+  "trials": 10,
+  "answers": 30,
+  "wrong_plan_trials": 2,
+  "wrong_amount_trials": 0,
+  "any_factual_failure_trials": 2,
+  "safe_uncertainty_trials": 8,
+  "wrong_plan_trials_ids": [
+    1,
+    6
+  ],
+  "other_substantive_errors": 0,
+  "fully_completed_payment_notes": 0,
+  "first_two_turns_grounded_answers": 20,
+  "mock_calls": 82,
+  "audit_errors": []
+}
