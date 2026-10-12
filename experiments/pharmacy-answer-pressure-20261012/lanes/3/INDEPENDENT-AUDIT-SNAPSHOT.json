@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-12T09:22:58.757912+00:00",
+  "completed_count": 100,
+  "pending_ids": [],
+  "artifacts_pending": [],
+  "attempt_dispatches": 103,
+  "retried_ids": [
+    "r019",
+    "r026",
+    "r039"
+  ],
+  "no_final_attempt_ids": [
+    "r019",
+    "r026",
+    "r039"
+  ],
+  "logged_calls": 399,
+  "issues": [],
+  "arm_counts": {
+    "strict": 50,
+    "neutral": 50
+  }
+}

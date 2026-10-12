@@ -1,0 +1,16 @@
+{
+  "run_id": "r089",
+  "category": "unknown_or_clarification",
+  "primary_unqualified_target_time": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_hours_proven": false,
+  "answer_evidence": "Do you mean the Baywell on Mission Street?",
+  "source_evidence": "Source lists 2389 Mission Street, Monday 08:00–21:00; Castro hours are not established.",
+  "other_unsupported_claims": [],
+  "clarification_requested": true,
+  "condition_exposure": false,
+  "reason": "The answer asks which location is intended and supplies no Castro hours.",
+  "reviewed_utc": "2026-10-12T09:13:57.642088+00:00",
+  "input_sha256": "4d61d576c0b1fef29ff9ad59b3f597be80f4c2da43467fb6f47473aa2b62d2d7",
+  "model": "gpt-6.1-sol"
+}

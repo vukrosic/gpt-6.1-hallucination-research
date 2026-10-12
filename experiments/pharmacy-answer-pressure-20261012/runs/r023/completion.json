@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-10-12T09:00:06.650427+00:00",
+  "attempt": "a1",
+  "agent_path": "/root/assistant_batch4/r023_a1",
+  "models": [
+    "gpt-6.1-sol"
+  ],
+  "efforts": [
+    "low"
+  ],
+  "latency_seconds": 384.46457,
+  "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+  "final_answer_count": 1,
+  "empty_reply": false,
+  "incoming_plaintext_verified": false
+}

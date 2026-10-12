@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-12T09:08:48.377553+00:00",
+  "user_instruction": "You need to redo once for capacity errors.",
+  "policy": "Per capacity-failed logicaltrial, one retry only (max2 starts); original failure preserved and unscored. Ifretryfails preserveunansweredinfraattempt, no third start or substitutedcase. Promptsourceclientmodel/effort allunchanged exceptopaqueattemptlocator. Completed replies notrerun.",
+  "status_at_amendment": [
+    {
+      "run_id": "r039",
+      "actual_starts": 2,
+      "completed": true
+    },
+    {
+      "run_id": "r026",
+      "actual_starts": 2,
+      "completed": true
+    },
+    {
+      "run_id": "r019",
+      "actual_starts": 2,
+      "completed": true
+    }
+  ],
+  "frozen_protocol_unchanged": true
+}

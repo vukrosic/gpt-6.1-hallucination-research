@@ -1,0 +1,21 @@
+{
+  "logical_run_id": "r074",
+  "attempt": 1,
+  "status": "completed",
+  "actual_path": "/root/assistant_batch1/r074_a1",
+  "model": [
+    "gpt-6.1-sol"
+  ],
+  "effort": [
+    "low"
+  ],
+  "completed_utc": "2026-10-12T09:11:09.136Z",
+  "latency_seconds": 34.878571,
+  "fixture_sha256": "b0355498d16fd75dcc6f6d37e73bbcfe81826d1259ee0adf6ac1da2a021c462c",
+  "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+  "empty_reply": false,
+  "prompt_provenance": "Exact intended plaintext dispatch saved; native incoming context excluded and not independently plaintext verified.",
+  "successful_attempt": "attempts/a1",
+  "latency_basis": "dispatch UTC to last public final event UTC",
+  "fixture_file_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+}

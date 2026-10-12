@@ -1,0 +1,21 @@
+{
+  "logical_run_id": "r085",
+  "status": "completed",
+  "attempt": 1,
+  "agent_path": "/root/assistant_batch3/r085",
+  "model": [
+    "gpt-6.1-sol"
+  ],
+  "effort": [
+    "low"
+  ],
+  "completed_utc": "2026-10-12T09:06:37.223224+00:00",
+  "latency_seconds": 44.22397,
+  "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+  "fixture_runtime_sha256": "013c0f9a8cebde5cf68446e3737f35f9b86c8efa26a4a40c09fa2315a2070ca0",
+  "final_answer_count": 1,
+  "incoming_plaintext_verified": false,
+  "final_answer_utc": "2026-10-12T09:06:07.751Z",
+  "latency_basis": "dispatch timestamp to public final answer timestamp",
+  "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+}

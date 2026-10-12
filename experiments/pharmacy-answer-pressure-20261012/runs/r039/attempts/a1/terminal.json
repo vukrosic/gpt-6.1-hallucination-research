@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "error": "Selected model is at capacity. Please try a different model.",
+  "terminal_utc": "2026-10-12T09:01:43.340981+00:00",
+  "agent_path": "/root/assistant_batch4/r039_a1"
+}

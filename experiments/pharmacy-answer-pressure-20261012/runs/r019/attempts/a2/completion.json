@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-10-12T08:57:00.476236+00:00",
+  "actual_path": "/root/assistant_batch2/q7619",
+  "actual_models": [
+    "gpt-6.1-sol"
+  ],
+  "actual_efforts": [
+    "low"
+  ],
+  "latency_seconds": 54.536175,
+  "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+  "attempt": "a2",
+  "empty_reply": false
+}

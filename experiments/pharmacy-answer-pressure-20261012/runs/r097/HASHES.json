@@ -1,0 +1,11 @@
+{
+  "client_calls.jsonl": "949fdf29b683dd883b4a4b06f1329a9e7d9328a7c05ece4375ee24aa1c1be47d",
+  "dispatch.json": "993b79f99707c1d30e167b76137e137b34cc326964f8a82b7b962ea4eff6edc0",
+  "TRANSCRIPT.md": "86f369c762e253c9445cd40ca14520ecaf56af47195aa4222b68c2fc24012341",
+  "observable.json": "2dbc747301c155249c0416e05e6ad2546c274ece30f981302531240204c683b0",
+  "completion.json": "91cea6e30923cd305ba8deda92aa7c5856773012bf8f5da3565307a1a56e30fc",
+  "attempts/a1/client_calls.jsonl": "949fdf29b683dd883b4a4b06f1329a9e7d9328a7c05ece4375ee24aa1c1be47d",
+  "attempts/a1/dispatch-actual.json": "a55914b3911689caacfc243af1ab2793d8249637f397006b5836b91e443b6bd0",
+  "attempts/a1/observable.json": "2dbc747301c155249c0416e05e6ad2546c274ece30f981302531240204c683b0",
+  "attempts/a1/completion.json": "9d83525805656d92e62ffa68bb0bfe829bd0d2dc1f7c88b02dc5c4a11c3500e1"
+}

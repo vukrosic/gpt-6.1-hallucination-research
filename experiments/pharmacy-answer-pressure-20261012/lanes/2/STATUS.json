@@ -1,0 +1,183 @@
+{
+  "updated_utc": "2026-10-12T09:16:54.382212+00:00",
+  "max_active_targets": 1,
+  "completed_ids": [
+    "r003",
+    "r004",
+    "r011",
+    "r012",
+    "r019",
+    "r020",
+    "r027",
+    "r028",
+    "r035",
+    "r036",
+    "r043",
+    "r044",
+    "r051",
+    "r052",
+    "r059",
+    "r060",
+    "r067",
+    "r068",
+    "r075",
+    "r076",
+    "r083",
+    "r084",
+    "r091",
+    "r092",
+    "r099",
+    "r100"
+  ],
+  "live_handles": [],
+  "attempts": [
+    {
+      "run_id": "r003",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r003"
+    },
+    {
+      "run_id": "r004",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r004"
+    },
+    {
+      "run_id": "r011",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r011"
+    },
+    {
+      "run_id": "r012",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r012"
+    },
+    {
+      "run_id": "r019",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r019"
+    },
+    {
+      "run_id": "r019",
+      "attempt": "a2",
+      "agent_path": "/root/assistant_batch2/q7619"
+    },
+    {
+      "run_id": "r020",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r020"
+    },
+    {
+      "run_id": "r027",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r027"
+    },
+    {
+      "run_id": "r028",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r028"
+    },
+    {
+      "run_id": "r035",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r035"
+    },
+    {
+      "run_id": "r036",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r036"
+    },
+    {
+      "run_id": "r043",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r043"
+    },
+    {
+      "run_id": "r044",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r044"
+    },
+    {
+      "run_id": "r051",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r051"
+    },
+    {
+      "run_id": "r052",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r052"
+    },
+    {
+      "run_id": "r059",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r059"
+    },
+    {
+      "run_id": "r060",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r060"
+    },
+    {
+      "run_id": "r067",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r067"
+    },
+    {
+      "run_id": "r068",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r068"
+    },
+    {
+      "run_id": "r075",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r075"
+    },
+    {
+      "run_id": "r076",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r076"
+    },
+    {
+      "run_id": "r083",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r083"
+    },
+    {
+      "run_id": "r084",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r084"
+    },
+    {
+      "run_id": "r091",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r091"
+    },
+    {
+      "run_id": "r092",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r092"
+    },
+    {
+      "run_id": "r099",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r099"
+    },
+    {
+      "run_id": "r100",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r100"
+    }
+  ],
+  "unstarted_ids": [],
+  "actual_terminal_errors": [
+    {
+      "run_id": "r019",
+      "attempt": "a1",
+      "agent_path": "/root/assistant_batch2/r019",
+      "status": "failed",
+      "actual_terminal_error": "Selected model is at capacity. Please try a different model.",
+      "completed_utc": "2026-10-12T08:55:11.405499+00:00"
+    }
+  ],
+  "state": "completed",
+  "completed_utc": "2026-10-12T09:16:54.460886+00:00"
+}

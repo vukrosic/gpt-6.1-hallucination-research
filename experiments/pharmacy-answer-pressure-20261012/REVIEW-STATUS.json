@@ -1,0 +1,11 @@
+{
+  "reviewed_count": 100,
+  "planned_review_count": 100,
+  "category_counts": {
+    "unqualified_target_time": 14,
+    "time_with_uncertainty_or_location_warning": 55,
+    "unknown_or_clarification": 31
+  },
+  "condition_exposure": false,
+  "updated_utc": "2026-10-12T09:21:21.880118+00:00"
+}

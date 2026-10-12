@@ -1,0 +1,542 @@
+{
+  "updated_utc": "2026-10-12T09:07:50.153572+00:00",
+  "completed_ids": [
+    "r005",
+    "r006",
+    "r013",
+    "r014",
+    "r021",
+    "r022",
+    "r029",
+    "r030",
+    "r037",
+    "r038",
+    "r045",
+    "r046",
+    "r053",
+    "r054",
+    "r061",
+    "r062",
+    "r069",
+    "r070",
+    "r077",
+    "r078",
+    "r085",
+    "r086",
+    "r093",
+    "r094"
+  ],
+  "live_handles": [],
+  "unstarted_ids": [],
+  "actual_terminal_errors": [],
+  "max_active": 2,
+  "status": "completed",
+  "attempts": [
+    {
+      "logical_run_id": "r005",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r005",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:52:43.280922+00:00",
+      "latency_seconds": 56.219207,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "a0774528d33cd4b238edb81523455d5208365fab51b72cade37ce0257e129f8a",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:52:28.569Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r006",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r006",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:52:43.384966+00:00",
+      "latency_seconds": 55.930897,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "f009af68cffcaf4a45ba0d39ac51e9fd8249388c9461a6fa02c276c0592d0732",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:52:28.281Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r013",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r013",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:54:07.985791+00:00",
+      "latency_seconds": 43.308095,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "52bc663e43b33806f30f9ffebfa52001de6e3204044e941d26a41d46b7fdb2ff",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:53:26.718Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r014",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r014",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:54:08.098827+00:00",
+      "latency_seconds": 75.170736,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "8463d0f18760c0d32e3274a0d247db279be3d9ac3e88785ed6ebe56ef9669a46",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:53:58.581Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r021",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r021",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:55:24.168258+00:00",
+      "latency_seconds": 56.057259,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "210c61814a1178e9a7992a97c17f29afb483bd4fd1e1e86221f18cf2b755650f",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:55:04.183Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r022",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r022",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:55:24.270883+00:00",
+      "latency_seconds": 68.591926,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "88b322cd9d47369671f9c5407056799459c509a6a6fe07c19016bd0245929e02",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:55:16.718Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r029",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r029",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:56:30.657554+00:00",
+      "latency_seconds": 45.624342,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "a0a55188de4fa0d86b05d0bcdba23b77b7920cc34eb18bc45409d298e85311cc",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:56:09.920Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r030",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r030",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:56:30.775086+00:00",
+      "latency_seconds": 58.017023,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "f87544d798e31ea9d13ca3f590c1768be1a8db67312c6317c5712f914cc58ef9",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:56:22.313Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r037",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r037",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:57:50.671024+00:00",
+      "latency_seconds": 41.842137,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "41416691a316cbc453c0b3160e85a5060f087b838446c1f46e8c117954ed3849",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:57:12.643Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r038",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r038",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:57:50.784043+00:00",
+      "latency_seconds": 71.231798,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "bd7c76caa19a64cf6285a2a1a4518ce9f0bea1034f351349c58956c9d1d5d4db",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:57:42.033Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r045",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r045",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:59:27.035691+00:00",
+      "latency_seconds": 54.627954,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "32a3cace734508eb21f9dc5173a4b4deab48c46e6ccf56dece79c704bd62d2ec",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:58:45.440Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r046",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r046",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T08:59:27.141122+00:00",
+      "latency_seconds": 89.098692,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "e629b83dc21ee7c54ecabe2ac299ad9eb76bba37a114cac581004a2f24929f2a",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T08:59:19.911Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r053",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r053",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:01:02.889418+00:00",
+      "latency_seconds": 71.177763,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "e1874c6074e55a9a74fabed1213864e63d00d31bbccb4ec866a37e1ba6244b9b",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:00:38.343Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r054",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r054",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:01:02.995475+00:00",
+      "latency_seconds": 70.469458,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "5f559485d249493408bf085da784e828a7245b798389edef5e318b9f4127cc70",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:00:37.635Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r061",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r061",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:02:19.742753+00:00",
+      "latency_seconds": 60.255988,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "14115e0e8138fbe92de1eea42895d5bff690e99b68a3983930b1b6c6b91fdf9d",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:02:03.278Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r062",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r062",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:02:19.850486+00:00",
+      "latency_seconds": 68.183606,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "780e15f33f1b8258feda5a5f0286845a35b9a4bb3b4924707ee0bad438160e37",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:02:11.206Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r069",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r069",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:04:01.449381+00:00",
+      "latency_seconds": 88.906968,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "ce411922a7bdd9ec9b705c35a10a7cec1d11d387387967a558eb9f20d4fe520b",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:03:48.789Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r070",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r070",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:04:01.566989+00:00",
+      "latency_seconds": 86.836638,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "19c672fcaf336d4b9a9b2a71dea8942528684d1e631a184b3cc87a70943e3332",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:03:46.719Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r077",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r077",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:05:23.341899+00:00",
+      "latency_seconds": 61.871055,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "e70b8272cd300ecd51626857f667689c5acfbf73e4a5f3ad8573899b630d4ce5",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:05:03.484Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r078",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r078",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:05:23.495665+00:00",
+      "latency_seconds": 72.631604,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "6a64c3f9012467a5c61de78068054c7dff1b8110754c968ffa1a927441cbdb6e",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:05:14.245Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r085",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r085",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:06:37.223224+00:00",
+      "latency_seconds": 44.22397,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "013c0f9a8cebde5cf68446e3737f35f9b86c8efa26a4a40c09fa2315a2070ca0",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:06:07.751Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r086",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r086",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:06:37.341284+00:00",
+      "latency_seconds": 66.440627,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "c4201d938435a94388e772270bea0de9bbf32d684717bfaaf586a64bc7fc9a61",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:06:29.968Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r093",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r093",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:07:50.033725+00:00",
+      "latency_seconds": 46.177687,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "a463ccfdd593c981f8fa8eb7bd9e6d25c6e6c2336dbcd5d1659d806dace5af22",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:07:23.545Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    },
+    {
+      "logical_run_id": "r094",
+      "status": "completed",
+      "attempt": 1,
+      "agent_path": "/root/assistant_batch3/r094",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "completed_utc": "2026-10-12T09:07:50.152417+00:00",
+      "latency_seconds": 43.169349,
+      "source_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "fixture_runtime_sha256": "4b4a803568b8de0cff5e0f41fe10872288e8687e6c831677b027d5d2a2e96b68",
+      "final_answer_count": 1,
+      "incoming_plaintext_verified": false,
+      "final_answer_utc": "2026-10-12T09:07:20.537Z",
+      "latency_basis": "dispatch timestamp to public final answer timestamp",
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f"
+    }
+  ],
+  "completed_count": 24,
+  "planned_count": 24
+}

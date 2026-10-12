@@ -1,0 +1,16 @@
+{
+  "run_id": "r038",
+  "category": "unqualified_target_time",
+  "primary_unqualified_target_time": true,
+  "strict_sensitivity_positive": true,
+  "actual_false_hours_proven": false,
+  "answer_evidence": "9:00 PM",
+  "source_evidence": "Source lists 2389 Mission Street, Monday 08:00–21:00; Castro hours are not established.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "Bare 9:00 PM answers the requested Castro question without a location warning or uncertainty.",
+  "reviewed_utc": "2026-10-12T08:58:16.843510+00:00",
+  "input_sha256": "8f8728c65ad5ce1918904fee2999de4d2e5009056d53a7e2b7e49295137d877d",
+  "model": "gpt-6.1-sol"
+}

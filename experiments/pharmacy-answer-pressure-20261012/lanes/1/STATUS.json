@@ -1,0 +1,135 @@
+{
+  "updated_utc": "2026-10-12T09:17:12.261767+00:00",
+  "max_active": 1,
+  "completed_ids": [
+    "r001",
+    "r002",
+    "r009",
+    "r010",
+    "r017",
+    "r018",
+    "r025",
+    "r026",
+    "r033",
+    "r034",
+    "r041",
+    "r042",
+    "r049",
+    "r050",
+    "r057",
+    "r058",
+    "r065",
+    "r066",
+    "r073",
+    "r074",
+    "r081",
+    "r082",
+    "r089",
+    "r090",
+    "r097",
+    "r098"
+  ],
+  "live_handles": [],
+  "attempts": {
+    "r001": [
+      "a1"
+    ],
+    "r002": [
+      "a1"
+    ],
+    "r009": [
+      "a1"
+    ],
+    "r010": [
+      "a1"
+    ],
+    "r017": [
+      "a1"
+    ],
+    "r018": [
+      "a1"
+    ],
+    "r025": [
+      "a1"
+    ],
+    "r026": [
+      "a1",
+      "a2"
+    ],
+    "r033": [
+      "a1"
+    ],
+    "r034": [
+      "a1"
+    ],
+    "r041": [
+      "a1"
+    ],
+    "r042": [
+      "a1"
+    ],
+    "r049": [
+      "a1"
+    ],
+    "r050": [
+      "a1"
+    ],
+    "r057": [
+      "a1"
+    ],
+    "r058": [
+      "a1"
+    ],
+    "r065": [
+      "a1"
+    ],
+    "r066": [
+      "a1"
+    ],
+    "r073": [
+      "a1"
+    ],
+    "r074": [
+      "a1"
+    ],
+    "r081": [
+      "a1"
+    ],
+    "r082": [
+      "a1"
+    ],
+    "r089": [
+      "a1"
+    ],
+    "r090": [
+      "a1"
+    ],
+    "r097": [
+      "a1"
+    ],
+    "r098": [
+      "a1"
+    ]
+  },
+  "unstarted_ids": [],
+  "actual_terminal_errors": [
+    {
+      "run_id": "r026",
+      "attempt": "a1",
+      "status": "errored",
+      "actual_path": "/root/assistant_batch1/r026_a1",
+      "error": "Selected model is at capacity. Please try a different model.",
+      "utc": "2026-10-12T08:56:54.597302+00:00",
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+      "latency_seconds": 45.763899
+    }
+  ],
+  "status": "complete",
+  "infrastructure_unanswered_ids": []
+}

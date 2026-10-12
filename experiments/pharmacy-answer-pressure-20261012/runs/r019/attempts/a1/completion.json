@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "actual_terminal_error": "Selected model is at capacity. Please try a different model.",
+  "completed_utc": "2026-10-12T08:55:11.405499+00:00"
+}

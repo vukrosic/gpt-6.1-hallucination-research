@@ -91,6 +91,14 @@ We will use the traces to propose possible causes, then test those explanations 
 
 A change in the error rate would support or weaken an explanation. It would not prove the model's internal reasoning or establish a single cause.
 
+### First root-cause experiment: pressure to give a definite answer
+
+We changed only one thing in the pharmacy question: removing **“just the time, nothing else.”** In 100 fresh gpt-6.1-sol conversations, unsupported time answers were **14/50 with the phrase** and **0/50 without it**. All replies without the phrase included uncertainty or a location warning.
+
+This supports answer pressure as a contributing factor in this setup. It does not establish the model's internal reasoning or a universal cause.
+
+[Full experiment report and all 100 traces](experiments/pharmacy-answer-pressure-20261012/README.md).
+
 ## Mitigation research
 
 We are researching ways to reduce unsupported claims. Each strategy below has the same main hypothesis: **adding it reduces unsupported claims compared with the baseline**.

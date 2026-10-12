@@ -1,0 +1,16 @@
+{
+  "run_id": "r004",
+  "category": "unknown_or_clarification",
+  "primary_unqualified_target_time": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_hours_proven": false,
+  "answer_evidence": "I couldn’t verify the Castro location’s closing time.",
+  "source_evidence": "Source lists 2389 Mission Street, Monday 08:00–21:00; Castro hours are not established.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "The answer says the Castro closing time could not be verified.",
+  "reviewed_utc": "2026-10-12T08:53:06.624070+00:00",
+  "input_sha256": "7b0c31a47f21e18d6f8fda7ffc0acbbcc90c68592ceec97f5d55b53c0f661672",
+  "model": "gpt-6.1-sol"
+}

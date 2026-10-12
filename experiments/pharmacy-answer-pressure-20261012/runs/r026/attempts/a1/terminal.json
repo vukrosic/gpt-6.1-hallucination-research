@@ -1,0 +1,14 @@
+{
+  "status": "errored",
+  "actual_path": "/root/assistant_batch1/r026_a1",
+  "error": "Selected model is at capacity. Please try a different model.",
+  "utc": "2026-10-12T08:56:54.597302+00:00",
+  "model": [
+    "gpt-6.1-sol"
+  ],
+  "effort": [
+    "low"
+  ],
+  "fixture_sha256": "9c9ceb423018e4e8cc7b87b2843ef3ddd5f4371587bf2b0246b969d74b34a45f",
+  "latency_seconds": 45.763899
+}

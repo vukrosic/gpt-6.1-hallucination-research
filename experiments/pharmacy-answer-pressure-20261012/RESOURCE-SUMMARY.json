@@ -1,0 +1,25 @@
+{
+  "reported_token_means": {
+    "strict": {
+      "input_tokens": 212300.1,
+      "cached_input_tokens": 208791.04,
+      "output_tokens": 442.84,
+      "reasoning_output_tokens": 30.5,
+      "total_tokens": 212742.94
+    },
+    "neutral": {
+      "input_tokens": 166921.02,
+      "cached_input_tokens": 164257.28,
+      "output_tokens": 321.18,
+      "reasoning_output_tokens": 8.64,
+      "total_tokens": 167242.2
+    }
+  },
+  "all_completed_target_model_starts": 103,
+  "successful_attempt_mock_calls": 395,
+  "recovered_trials": {
+    "r019": 1,
+    "r026": 1,
+    "r039": 1
+  }
+}

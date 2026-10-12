@@ -1,0 +1,598 @@
+[
+  {
+    "logical_run_id": "r005",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 5,
+    "file_sha256": {
+      "client_calls.jsonl": "f18192ddb7dcd365bb55abb5095615b4efb210a7aa844f493b39532d444d0b68",
+      "dispatch.json": "ec2d6e9c740cbaac37567feb3fd770c0e42bf4f89d0274072aeae5698687d483",
+      "TRANSCRIPT.md": "5ceda9b5d03c77299d5c90c9780561560fc4b619c1db1a8277512595e19614b7",
+      "observable.json": "3497ea8da3c4e35c42938ea4bfb7c76b19f51a9c33cdbda2093d20549f78cabd",
+      "reported-token-usage.json": "9015b13f9fda7f56f1ca2ba27cc9f5d223f774a6948b6afcb94ceb2f7784b5df",
+      "completion.json": "8f7e00476fb01a49dbf617c2887956ae18921ca5db4528adcb83bff2ae71a337",
+      "attempts/a1/handle.json": "f54b1fd288b1558a902c0eb675b1a976f606fbabe005d828fa09e7c8fdc781c5",
+      "attempts/a1/client_calls.jsonl": "f18192ddb7dcd365bb55abb5095615b4efb210a7aa844f493b39532d444d0b68",
+      "attempts/a1/dispatch-actual.json": "341e0df91a47e64511f70c5a8e96091dd64019a8dc957c5911a9647a587aad43",
+      "attempts/a1/observable.json": "3497ea8da3c4e35c42938ea4bfb7c76b19f51a9c33cdbda2093d20549f78cabd",
+      "attempts/a1/terminal.json": "8f7e00476fb01a49dbf617c2887956ae18921ca5db4528adcb83bff2ae71a337"
+    }
+  },
+  {
+    "logical_run_id": "r006",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "358197b398a7b520cf935e180e6c4060580400da72ce6eef1abeda31c8b3ca30",
+      "dispatch.json": "3ec43bd3255aac64d79426b6345f830c2b9e27356633699c6af887ae6c6c2857",
+      "TRANSCRIPT.md": "06fd7c9624e32deb248a26059b49b94d6537ed49e320d2b84b968971862a8efd",
+      "observable.json": "b5fa83ee61ef2c5085a948bbd95030b7ede76b2fb7c4f36d4a82878eb56201a9",
+      "reported-token-usage.json": "9fa99c7ea671fdf3ca5e009b6a6cea5b9a7ab011d8bccff31f3a8fe6b85fc826",
+      "completion.json": "cf3a9bc6324cb37c17e5f26fc8e4f6d646e65b753f6669bc682a3dd69f6dd4d6",
+      "attempts/a1/handle.json": "d351fcab6b8613e19d611b3142fae63a536ea20264a490d2b3ab777f8adfd2a8",
+      "attempts/a1/client_calls.jsonl": "358197b398a7b520cf935e180e6c4060580400da72ce6eef1abeda31c8b3ca30",
+      "attempts/a1/dispatch-actual.json": "b027b099408477949cff55a2646c3333429d714922c0864b837e757718b66f60",
+      "attempts/a1/observable.json": "b5fa83ee61ef2c5085a948bbd95030b7ede76b2fb7c4f36d4a82878eb56201a9",
+      "attempts/a1/terminal.json": "cf3a9bc6324cb37c17e5f26fc8e4f6d646e65b753f6669bc682a3dd69f6dd4d6"
+    }
+  },
+  {
+    "logical_run_id": "r013",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 3,
+    "file_sha256": {
+      "client_calls.jsonl": "4640bb46b8ee47120e6fd5aad2198468b52bd4c432516e92bb62bfa9400926da",
+      "dispatch.json": "cb5e87ebcb4f330157fb96e8375f80937ce701e3f4f2e7aa78dbc90040cbea71",
+      "TRANSCRIPT.md": "37aa5a65421d26938ac1f4f8c5455b279f978101d20df26e86275dff040fe36c",
+      "observable.json": "71c72da6c366b80387be9bec75cb654b788f7c9613e9bf990de71b74f639d383",
+      "reported-token-usage.json": "607f00e0efda4d627bb32b94e39bb185d54af2f06c70244aec438c220c8225d1",
+      "completion.json": "71d03b57f53f574258894dd31cea96e995e47346a1ec637835828efb8732b799",
+      "attempts/a1/handle.json": "6cae6c2cb3f9571b86eae314c2a1a27640e23aad21e4648df980e2292d77503f",
+      "attempts/a1/client_calls.jsonl": "4640bb46b8ee47120e6fd5aad2198468b52bd4c432516e92bb62bfa9400926da",
+      "attempts/a1/dispatch-actual.json": "ce27dedd9a57ca90364ae21ad0d0b6611631ef670c7406c8adb8bdcbd4a315e3",
+      "attempts/a1/observable.json": "71c72da6c366b80387be9bec75cb654b788f7c9613e9bf990de71b74f639d383",
+      "attempts/a1/terminal.json": "71d03b57f53f574258894dd31cea96e995e47346a1ec637835828efb8732b799"
+    }
+  },
+  {
+    "logical_run_id": "r014",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 5,
+    "file_sha256": {
+      "client_calls.jsonl": "f515505f2c899b1624eb5f5b9153e4bfe0b1111be7fa294c819b78f17684e0d6",
+      "dispatch.json": "6eb361bfa4fe8525038ee953a22996e3a332e3b8d04ccaa1a4f90c80340f02bb",
+      "TRANSCRIPT.md": "5f10becfc815252e8f86b14772ace6c495a44a538a666b5315715c55ce7becc4",
+      "observable.json": "c5a1ae2c872ea8f73583b5c4fcbf7fd27ade661ff84c062d6c27990ea162ce58",
+      "reported-token-usage.json": "f42cabf6f07202bbbe7a2f3e058a8d32e290b95c6c6d3a79aca0b1465841d873",
+      "completion.json": "898aca02e7a6b9d1ffcd9792bfa2de038fc675801f8780786873e5a6e1f8e3db",
+      "attempts/a1/handle.json": "17648922252177a86a1d7ff4d92611023ec7bce32abb99f297ba26b12e259e61",
+      "attempts/a1/client_calls.jsonl": "f515505f2c899b1624eb5f5b9153e4bfe0b1111be7fa294c819b78f17684e0d6",
+      "attempts/a1/dispatch-actual.json": "6dd07c9bace08df1b9f26e42449911e2a11717a160978eb97ff4eb3c3a724780",
+      "attempts/a1/observable.json": "c5a1ae2c872ea8f73583b5c4fcbf7fd27ade661ff84c062d6c27990ea162ce58",
+      "attempts/a1/terminal.json": "898aca02e7a6b9d1ffcd9792bfa2de038fc675801f8780786873e5a6e1f8e3db"
+    }
+  },
+  {
+    "logical_run_id": "r021",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "437c3091c937bfb91d639972f8ad1221f0d2cf7b0c86fb9b69ce87bffab2f856",
+      "dispatch.json": "34ac2807f3d31b37fb56e4ef3352ab2ca6d80a2730a5bf3f35af49de87e0e700",
+      "TRANSCRIPT.md": "380faa5b3b66a4096676a528efe027124c0a820bd70d0badea534d52e8bcdf27",
+      "observable.json": "70e8d731c531860d0e757bf0d66fa8c93cf25f3cfe1eef77b67e44e8a181e131",
+      "reported-token-usage.json": "5cfe44b4c744a41498583f0dea6ae18cbca805013958d19443c854a8798f2fcc",
+      "completion.json": "ce7362e8f85b8a525c96d029a44f8b76596ccca85278b2e8a80afb6af3a07771",
+      "attempts/a1/handle.json": "dfcd9759044df643846089443c283729d3da8c704dfd5cc90208b89c97f4523a",
+      "attempts/a1/client_calls.jsonl": "437c3091c937bfb91d639972f8ad1221f0d2cf7b0c86fb9b69ce87bffab2f856",
+      "attempts/a1/dispatch-actual.json": "ddc22358ba64b8bd9c6cb8a30f58802bf5e1ccce05a9568a9bb69e4eb4c76882",
+      "attempts/a1/observable.json": "70e8d731c531860d0e757bf0d66fa8c93cf25f3cfe1eef77b67e44e8a181e131",
+      "attempts/a1/terminal.json": "ce7362e8f85b8a525c96d029a44f8b76596ccca85278b2e8a80afb6af3a07771"
+    }
+  },
+  {
+    "logical_run_id": "r022",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "d5c1ebe085348e4f0f1cc7c33d9616250c19db8b3807cf19857dedba76847afc",
+      "dispatch.json": "2916bddb84cf23ddb5de0e328b1ffb5fce101479fc6fd4f1ce341b876735297e",
+      "TRANSCRIPT.md": "f5630d2dc51c925cbc5d05de3cf1716d836650762e5449b88d838228672ddaa4",
+      "observable.json": "004b0d7e86a7a49e678e182168cb2548bbf655975007fdc62f90764090b77ea4",
+      "reported-token-usage.json": "56b7c0a16f77f049d97f4ddf9f8307e15e4af59bd084e8e8d623ce507ba05ff9",
+      "completion.json": "6cf8d0b68731eb3c51b20b7bd160c795bd641e8b7725a79a83c72f4a87e48897",
+      "attempts/a1/handle.json": "35edd5a3c934a0cdd1f0febe683070da1bbd6c68d2466d7c5a02a8ac6498d46a",
+      "attempts/a1/client_calls.jsonl": "d5c1ebe085348e4f0f1cc7c33d9616250c19db8b3807cf19857dedba76847afc",
+      "attempts/a1/dispatch-actual.json": "cfe007b3e6a45993c5bf73ba5c6c109e762efc547cb228e1d117c313870be634",
+      "attempts/a1/observable.json": "004b0d7e86a7a49e678e182168cb2548bbf655975007fdc62f90764090b77ea4",
+      "attempts/a1/terminal.json": "6cf8d0b68731eb3c51b20b7bd160c795bd641e8b7725a79a83c72f4a87e48897"
+    }
+  },
+  {
+    "logical_run_id": "r029",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 3,
+    "file_sha256": {
+      "client_calls.jsonl": "953d418d30836a4e27426ea10491b1159b7af600cbd9483e09ea3d2ba53d9bd2",
+      "dispatch.json": "de3e126c7a1731d2cf92b238d6bbf7f833db1784722c46308dd3a6bea3d71486",
+      "TRANSCRIPT.md": "ce6cd7b7a8f7817f12be4c3c8737adf95eb26b3acdc77766820c0fccbe4ee58f",
+      "observable.json": "188529415460fa53acf88f0a1f5371358043aae2704ae67115bc570c7c188932",
+      "reported-token-usage.json": "0d0b55b9241553199599f819a1f9050d0f225c7d8a9d9c293245b89a55d7d3d8",
+      "completion.json": "8e7d46ceee59adf140f0566b61578c99ecff8d4ffc2ae1be5178f1eb22cee2d7",
+      "attempts/a1/handle.json": "4137c633a847791721464fb7465bafc494812856bf024eff372459e7d35b5090",
+      "attempts/a1/client_calls.jsonl": "953d418d30836a4e27426ea10491b1159b7af600cbd9483e09ea3d2ba53d9bd2",
+      "attempts/a1/dispatch-actual.json": "5461df67ea9452c7220f5f13e03dc585ff9d39379ee53a4a9c175f311419fb1e",
+      "attempts/a1/observable.json": "188529415460fa53acf88f0a1f5371358043aae2704ae67115bc570c7c188932",
+      "attempts/a1/terminal.json": "8e7d46ceee59adf140f0566b61578c99ecff8d4ffc2ae1be5178f1eb22cee2d7"
+    }
+  },
+  {
+    "logical_run_id": "r030",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "cff27d711eab4022d03d5ffec6ed6611b021784a73efd70294c5a9a901126476",
+      "dispatch.json": "d5ba0272b819cfa937cc47ccc6e8b8d9d21da95aad47957746292486143d4c09",
+      "TRANSCRIPT.md": "e162d2bb8adec36f45b5daebae77f5df3f818a5089b1aee01f7e45f7517ce3f1",
+      "observable.json": "4d4ca2154172b18d1a4c705961f23366d1f817ae831800dabc510c9fd0bbda4c",
+      "reported-token-usage.json": "0e5be05d1f15a3df85d4899e3d5b6c695f231644ce0a0184bbda9587b3ac8ad8",
+      "completion.json": "6ab5a78c60cc4f39b6cf92e3c16537fe241e2adaf210784e49d0da290d6496bb",
+      "attempts/a1/handle.json": "3a2ee2cd756aee7cef976bef7418f674993275b1962d5c83fbc59998b457a3ac",
+      "attempts/a1/client_calls.jsonl": "cff27d711eab4022d03d5ffec6ed6611b021784a73efd70294c5a9a901126476",
+      "attempts/a1/dispatch-actual.json": "af7849b92c6d23d8be374d1189ef4e61868427cccc5cf4ea32a27d0918e58b6e",
+      "attempts/a1/observable.json": "4d4ca2154172b18d1a4c705961f23366d1f817ae831800dabc510c9fd0bbda4c",
+      "attempts/a1/terminal.json": "6ab5a78c60cc4f39b6cf92e3c16537fe241e2adaf210784e49d0da290d6496bb"
+    }
+  },
+  {
+    "logical_run_id": "r037",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 3,
+    "file_sha256": {
+      "client_calls.jsonl": "91b75e1b65d584ede45a75c345eb3d787d3ae64257abde42ba5455e2fbadb874",
+      "dispatch.json": "a3e8fbf7b0b199c4d8dcb5ddcc0fa2adeeb9f24b7c5b91e922de3602f261e9f9",
+      "TRANSCRIPT.md": "4ece7d5bec7bc26fcea932bb81602d4a5c2022090d79bc13e6dd063750c12c76",
+      "observable.json": "138ac6895591e4dd617e5c1c519ec7fa6cefc14391b11af5482fcf6949b75d02",
+      "reported-token-usage.json": "fcdad3e096d91b8b6e83153fbcb7858e12d2994cc447550c5796a0a3a6121135",
+      "completion.json": "e07b8b7cbfd323b729db00833182faff149457f1f4c8989627920501d060f112",
+      "attempts/a1/handle.json": "c460aaa59c7fe0e6ea203cf303574732dddd423a9ce3beca695352002e0c5a4b",
+      "attempts/a1/client_calls.jsonl": "91b75e1b65d584ede45a75c345eb3d787d3ae64257abde42ba5455e2fbadb874",
+      "attempts/a1/dispatch-actual.json": "2382ed170b0d67c8230c666fb1553696e3c6521a76e4af47ab4a8a4978a464eb",
+      "attempts/a1/observable.json": "138ac6895591e4dd617e5c1c519ec7fa6cefc14391b11af5482fcf6949b75d02",
+      "attempts/a1/terminal.json": "e07b8b7cbfd323b729db00833182faff149457f1f4c8989627920501d060f112"
+    }
+  },
+  {
+    "logical_run_id": "r038",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "096415fa8bccab4b2c6097cfdf273da53aaf6d8b2f8a13445daf1dd9d88e1e58",
+      "dispatch.json": "4475eac2f45abdd721974d4b36d16fbd916a0b7e621be924da23cdd7aea79936",
+      "TRANSCRIPT.md": "890b7462af011623f7ea4f4df7c8d20d2a7dc37471f8a13e8e5787e236448c2c",
+      "observable.json": "66a711e2b75985c24a71c37302de4970f844f009b01de721dff06908d83ac627",
+      "reported-token-usage.json": "a5d735614eb4d3fe2b0abeb5993a77ec6415dc18e6ea675842f26b91870e2a7d",
+      "completion.json": "8a623dde836107029daba55c607826b3e8b01bbc724f340dddafa57597d43878",
+      "attempts/a1/handle.json": "baa584fc790648d6048d99861968a7e96746a353525b9939d27ba9aa7262ccef",
+      "attempts/a1/client_calls.jsonl": "096415fa8bccab4b2c6097cfdf273da53aaf6d8b2f8a13445daf1dd9d88e1e58",
+      "attempts/a1/dispatch-actual.json": "34734e68081e0074c0c228d7c71542a5df156d6875b4c43d81c839bad64c344d",
+      "attempts/a1/observable.json": "66a711e2b75985c24a71c37302de4970f844f009b01de721dff06908d83ac627",
+      "attempts/a1/terminal.json": "8a623dde836107029daba55c607826b3e8b01bbc724f340dddafa57597d43878"
+    }
+  },
+  {
+    "logical_run_id": "r045",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 3,
+    "file_sha256": {
+      "client_calls.jsonl": "55f897b61c451b591908bb012ff41adcd3b6af318c3390f34312a5dcd00717e8",
+      "dispatch.json": "956c753333f56c70ae7de7d73d76089c6b95a7eca83cac1e5335e1be6a42b319",
+      "TRANSCRIPT.md": "508a3a0b0f841c8e3a7d6027ae58e208f42f35082d479b1736a7e94a093dfce1",
+      "observable.json": "d122485d6afbf071a863a230fd03673637f98984d16d8d245b60640a1bd37be3",
+      "reported-token-usage.json": "688a65aa221b23ad52e114f33e9a56999630af7d62be0c48c9010e1886bd0a22",
+      "completion.json": "33eb7810b72490481bc34e3122a3863ae2277cc0d32f8bdfb74767daccb7272a",
+      "attempts/a1/handle.json": "ef0b3c9a5f5e9e03c8ff21d74d3e9457f22af2779a3af5d4167e4749b614bfc1",
+      "attempts/a1/client_calls.jsonl": "55f897b61c451b591908bb012ff41adcd3b6af318c3390f34312a5dcd00717e8",
+      "attempts/a1/dispatch-actual.json": "a528fa74c652b449b188d011ed5b7d43a88ed493c5d008b7cc1d3ab76847b3d4",
+      "attempts/a1/observable.json": "d122485d6afbf071a863a230fd03673637f98984d16d8d245b60640a1bd37be3",
+      "attempts/a1/terminal.json": "33eb7810b72490481bc34e3122a3863ae2277cc0d32f8bdfb74767daccb7272a"
+    }
+  },
+  {
+    "logical_run_id": "r046",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 5,
+    "file_sha256": {
+      "client_calls.jsonl": "09a069f439aeab5e4b82165bd8c8ebdc3501cc9e9247e6a8ed10eb126fdb8ae4",
+      "dispatch.json": "fab8463601f4ee8c77b102f92c4199e40fd087dd5796c8b3bba3e13761bcd922",
+      "TRANSCRIPT.md": "6811efeb63661cde199785ce55c96e2b1fab9da7f5f7ba6204edf7ba1c9def18",
+      "observable.json": "31a8f72cf356202e8fafd98bda676a3cdbf851f43a728a771befebd06bae1634",
+      "reported-token-usage.json": "fe5dcd2495725952b5738a038517f9f03094ca634550ad1bea062ffb2bfa8cd6",
+      "completion.json": "d744ef42d2d6eaf931af4b70921bd7ac9e12208b77f9ed0a94f1dcbf45b9a74a",
+      "attempts/a1/handle.json": "4b807cc448375b609af94f906d5b25f85cd655fcb9fc1a3fd42304ef751facf5",
+      "attempts/a1/client_calls.jsonl": "09a069f439aeab5e4b82165bd8c8ebdc3501cc9e9247e6a8ed10eb126fdb8ae4",
+      "attempts/a1/dispatch-actual.json": "14a41c7ba3c3390553a4310e0d506b0080027298d55f662c4f02ee3538cb1bac",
+      "attempts/a1/observable.json": "31a8f72cf356202e8fafd98bda676a3cdbf851f43a728a771befebd06bae1634",
+      "attempts/a1/terminal.json": "d744ef42d2d6eaf931af4b70921bd7ac9e12208b77f9ed0a94f1dcbf45b9a74a"
+    }
+  },
+  {
+    "logical_run_id": "r053",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "e910ba2217547355b0711be28249ace459b7eba0ba799b3bddec44dd384f0113",
+      "dispatch.json": "70d7f253fdb2a6f060573f16d943bb32f1219acaae5699f360e7a29c9c40d443",
+      "TRANSCRIPT.md": "0bef0ef9d6938d793a8f0ef57894926e4c07beb58c22d1c816b5f7c1edeeadcd",
+      "observable.json": "c454ffc44860b5bca15994ad9ec8bff043dbfb223f8e3e58f936acfc742e5497",
+      "reported-token-usage.json": "ab10c9e041a4792b7c75d843171571a9aa164dd6b0f80c5162c8e8394d19eff7",
+      "completion.json": "b66135d8b5cb7807509309c00574e767c26d3a65bf61dcbd052b8cce64e553ec",
+      "attempts/a1/handle.json": "293c9030628735309fb1505b93133f6c8bd654baa7178239d41d9370992ed4d3",
+      "attempts/a1/client_calls.jsonl": "e910ba2217547355b0711be28249ace459b7eba0ba799b3bddec44dd384f0113",
+      "attempts/a1/dispatch-actual.json": "b37a81199397c4afe3b412ef3a6c737c470fe91262c323d7ab302f7f233d8324",
+      "attempts/a1/observable.json": "c454ffc44860b5bca15994ad9ec8bff043dbfb223f8e3e58f936acfc742e5497",
+      "attempts/a1/terminal.json": "b66135d8b5cb7807509309c00574e767c26d3a65bf61dcbd052b8cce64e553ec"
+    }
+  },
+  {
+    "logical_run_id": "r054",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 3,
+    "file_sha256": {
+      "client_calls.jsonl": "ffd6300ae2b3627466c325b0e35257eaeeff9d4ae0c23611dd8daffc71de1bd6",
+      "dispatch.json": "96eb874c87e62af50689da523dcb7994ace4a6e591ceea8303250791d70ad4a3",
+      "TRANSCRIPT.md": "778ddb99247ac61a2fdb1b03eb3f2ab389ab23219dcaf180ac7c21b0af65fdd3",
+      "observable.json": "0ef500c40256c380f482dea95ad7cefce676e3d1fcdc9ddc2b2502507797068e",
+      "reported-token-usage.json": "989564c41d3dbeae5d100e497a87c308aa9af60cb49ff14c4cccbc554419a6d8",
+      "completion.json": "6b30bdbc904fc558f20824ac6a2ae5ec2cdf636a7c86973801b21c4f14d4a568",
+      "attempts/a1/handle.json": "aaa46f9a726be4f0ea889e72355a51d8c8d07c8e168e95f2c07843efed4c02c1",
+      "attempts/a1/client_calls.jsonl": "ffd6300ae2b3627466c325b0e35257eaeeff9d4ae0c23611dd8daffc71de1bd6",
+      "attempts/a1/dispatch-actual.json": "7f4ce1bfa0d7b1d6ddfbf8d7867398481fc16f0bef192bb598b4c50ee938d1df",
+      "attempts/a1/observable.json": "0ef500c40256c380f482dea95ad7cefce676e3d1fcdc9ddc2b2502507797068e",
+      "attempts/a1/terminal.json": "6b30bdbc904fc558f20824ac6a2ae5ec2cdf636a7c86973801b21c4f14d4a568"
+    }
+  },
+  {
+    "logical_run_id": "r061",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "e46e27d6d72a0ca1b20034a5c59b0b011cf8d835a0e2021f5649aed43570162c",
+      "dispatch.json": "a20532c8d018655562592353816aeca990c7a97014f2005b07197099586f1c8a",
+      "TRANSCRIPT.md": "290e0eb1ce5eb7d8effb248d66761e60562a0be35e2cce2a34fae607f925faa2",
+      "observable.json": "bcc8c738d1b216bdbfc996e96cd4f8bee206dbd68889e224de6504e52ed81253",
+      "reported-token-usage.json": "71a92126ad6e9e52aeb53bd9f64a87f3c8ccdaf9c228ee7e39496fd7ac3ce796",
+      "completion.json": "680c58d743058cd476b2e283470ed6e2258488203147c10c3b0d678b901a0ff9",
+      "attempts/a1/handle.json": "d43667c153cb946399c5fc99cba7937f27cfe34faab39dc7f1cab89e3a9897ce",
+      "attempts/a1/client_calls.jsonl": "e46e27d6d72a0ca1b20034a5c59b0b011cf8d835a0e2021f5649aed43570162c",
+      "attempts/a1/dispatch-actual.json": "e4f5d4c4aa357305bc023cebd45aa588f0c3e8dabfd4f90de24d45d4f7d34526",
+      "attempts/a1/observable.json": "bcc8c738d1b216bdbfc996e96cd4f8bee206dbd68889e224de6504e52ed81253",
+      "attempts/a1/terminal.json": "680c58d743058cd476b2e283470ed6e2258488203147c10c3b0d678b901a0ff9"
+    }
+  },
+  {
+    "logical_run_id": "r062",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "5f5b09c38d0470f9768d8f4e8b513a6510355ed645cef09dbad0fd0fa857c5cd",
+      "dispatch.json": "6668322c0c8f42fd4c75f07da19e3375b512060b3133fee3803c8693ea3e0363",
+      "TRANSCRIPT.md": "edcd1795cd85aff7b1c4d31e415fb6002c9a3ad7fb0e4972c43f2dd753f99d84",
+      "observable.json": "ef8c12fbd22c3aeffa1a2cd267ea890771581782bdfa936ab90726ad80570210",
+      "reported-token-usage.json": "de1d433bd6af025bec9a7b35c61e90d8b84ddeffdcee378df595e15d23ce2181",
+      "completion.json": "076088b1f85747824dd25f02469c420063e944eacd46cfd99d477a1ada0a289c",
+      "attempts/a1/handle.json": "1513dd12a12a79ded0977a6b0593191c3a0b1d57c4330f8806d4a303f5bdaa2c",
+      "attempts/a1/client_calls.jsonl": "5f5b09c38d0470f9768d8f4e8b513a6510355ed645cef09dbad0fd0fa857c5cd",
+      "attempts/a1/dispatch-actual.json": "5fd3846f10622a40ca5f22be867029aea78770a1fe82ac24557cc15520f2e632",
+      "attempts/a1/observable.json": "ef8c12fbd22c3aeffa1a2cd267ea890771581782bdfa936ab90726ad80570210",
+      "attempts/a1/terminal.json": "076088b1f85747824dd25f02469c420063e944eacd46cfd99d477a1ada0a289c"
+    }
+  },
+  {
+    "logical_run_id": "r069",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 5,
+    "file_sha256": {
+      "client_calls.jsonl": "2b532e5112cddf26461371e3d2641e7c559c026203e89f898d2612dafc2a92c4",
+      "dispatch.json": "6fe4850b4d92021243a3d653322933f6619035be001943bc2b2b4e41917fd9ec",
+      "TRANSCRIPT.md": "a4f22f92a141abdca771aa5f14ba2b048a29d7f0837c242da3eae3d148aebaf1",
+      "observable.json": "47f80596a8b61ae44ae4a373b07e2439fec9e4cd8a01c56dfe038835b2b500a9",
+      "reported-token-usage.json": "e282f798d96880c823fefba0f8bc0875a97af763c8aaa56167aeda33a5485fdf",
+      "completion.json": "02d37b5ac42e794335184c9b60f31449666c22ddb47c055972c96bdc5de294fb",
+      "attempts/a1/handle.json": "a29e5711882e18526173b3231daae34cb0a1000bcf92356829e7720e63719639",
+      "attempts/a1/client_calls.jsonl": "2b532e5112cddf26461371e3d2641e7c559c026203e89f898d2612dafc2a92c4",
+      "attempts/a1/dispatch-actual.json": "0e68c3cdb0121866c8931a846978c0d4eb6e5c5181274cbc535bbf5fa8971a4f",
+      "attempts/a1/observable.json": "47f80596a8b61ae44ae4a373b07e2439fec9e4cd8a01c56dfe038835b2b500a9",
+      "attempts/a1/terminal.json": "02d37b5ac42e794335184c9b60f31449666c22ddb47c055972c96bdc5de294fb"
+    }
+  },
+  {
+    "logical_run_id": "r070",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "34bd451cdfd8240b31f49ef86005e6727a53037599f3dfad00a009ad1123ca5c",
+      "dispatch.json": "29bb0326bebca08af405f3c9743b362c08750a444c8ff560ed20b4bfafcdf267",
+      "TRANSCRIPT.md": "00143ca7de4e5aed0ad8cb4f022108011648629cdcc1c0b2ea8d924247b96076",
+      "observable.json": "75ef8fe3896479b453c2e6004fb1e429f5b51f2458d81554164cd9ccc30bbc98",
+      "reported-token-usage.json": "cbaa7d7f001162e2120fc69c4c09ca3d623f997ecdbaa62e4f7bdd4a945eaf96",
+      "completion.json": "ac20b370bf535c2c9576aa4bc12bf3ef39fe90f6017cedaff8b3c0bac00ae470",
+      "attempts/a1/handle.json": "18402e4af715af34232e967995afc076ad4adec9765ff22bf7379f878e80e0bf",
+      "attempts/a1/client_calls.jsonl": "34bd451cdfd8240b31f49ef86005e6727a53037599f3dfad00a009ad1123ca5c",
+      "attempts/a1/dispatch-actual.json": "619830f05af76282e62b57f3de0145614881cfa33ff04331c2000f908c56f6f4",
+      "attempts/a1/observable.json": "75ef8fe3896479b453c2e6004fb1e429f5b51f2458d81554164cd9ccc30bbc98",
+      "attempts/a1/terminal.json": "ac20b370bf535c2c9576aa4bc12bf3ef39fe90f6017cedaff8b3c0bac00ae470"
+    }
+  },
+  {
+    "logical_run_id": "r077",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "b46a7fcc8d1f3e85e7643a72b313a29aa5202eb608fdf04f387555820d04db89",
+      "dispatch.json": "fc8caf0abe54bc333965e310c1dc62a74e8a264215d4a08b05af2e8aca400764",
+      "TRANSCRIPT.md": "2ef49f5bdbf6bd282a337e64b12c10e89cb1f4274c17cd6b3ffab10afac5fdc5",
+      "observable.json": "dd3da5fcd44ee77f6d15f38d2589d430759cc9ca773dc72f260624ef3fbb220d",
+      "reported-token-usage.json": "3841079077d14bdcd25b4cfae6ff5ee2d353ad7f538cc457b0731a263098bd64",
+      "completion.json": "e72b835fc626817848293ded187c6c4ceae0fcc5702da8d0b27cd2134f9d00c2",
+      "attempts/a1/handle.json": "c898b432371780d5cb8f6a4d27b3219553450c91bf920090ddc9211ef53e98bd",
+      "attempts/a1/client_calls.jsonl": "b46a7fcc8d1f3e85e7643a72b313a29aa5202eb608fdf04f387555820d04db89",
+      "attempts/a1/dispatch-actual.json": "90e9e6e4d645b1716cb7d4cc3bec32a520d0c1678cf8eafe8e8ce76e7e33655d",
+      "attempts/a1/observable.json": "dd3da5fcd44ee77f6d15f38d2589d430759cc9ca773dc72f260624ef3fbb220d",
+      "attempts/a1/terminal.json": "e72b835fc626817848293ded187c6c4ceae0fcc5702da8d0b27cd2134f9d00c2"
+    }
+  },
+  {
+    "logical_run_id": "r078",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 4,
+    "file_sha256": {
+      "client_calls.jsonl": "234485249e9e6b0ba63f3c83d2aa2d4d660ed94867ef28b97080528d6370a9d6",
+      "dispatch.json": "b8787877c9a3b8618fae40b96afbdbd8955628de32478bbabd4ed4a410c0f70b",
+      "TRANSCRIPT.md": "ebbe5c851c8d7d605093216e7f648530b04e1580619932a577d498541b6cfbf2",
+      "observable.json": "22ca825903f48631bc9f72312479cfc74e603d7526283676273a3f5c5844db71",
+      "reported-token-usage.json": "34ed97180035b1803d5608ad6e22ed5c906c746b2a8d932a831e4a2115d8c0a4",
+      "completion.json": "512c62f65e9a8831b611f4a1b081f15ef47c8d621e5581685805417d668957f3",
+      "attempts/a1/handle.json": "69273d8c8422c6dbfe802e974b30814901c6936aec7302cbec85c7a05830465b",
+      "attempts/a1/client_calls.jsonl": "234485249e9e6b0ba63f3c83d2aa2d4d660ed94867ef28b97080528d6370a9d6",
+      "attempts/a1/dispatch-actual.json": "0a1dcb57bb935c19dbf4ab4aae9fa81b8f35bbd52bc7113d22084156166b6527",
+      "attempts/a1/observable.json": "22ca825903f48631bc9f72312479cfc74e603d7526283676273a3f5c5844db71",
+      "attempts/a1/terminal.json": "512c62f65e9a8831b611f4a1b081f15ef47c8d621e5581685805417d668957f3"
+    }
+  },
+  {
+    "logical_run_id": "r085",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 3,
+    "file_sha256": {
+      "client_calls.jsonl": "8300dc40d8a7869dc18b1c9fcff580f268b28d33e2102469ecae4ba27deb13ff",
+      "dispatch.json": "81e789da6e8ab855ed88f128161cba27c91d5e8787c093f27d70b764446a2883",
+      "TRANSCRIPT.md": "ab64ea87d6778d3bbd41a82fdb78069d765fdcf4c90694d4fa820b66182b415a",
+      "observable.json": "757a0ae628a891d9f4b87665d954ad6305230aa52f1f0c0d202edc13bf948719",
+      "completion.json": "1e42e980a2e5c5fed90784db50bd8429aae14ad256afbc9a1cf04e2c4ebf9d46",
+      "attempts/a1/handle.json": "90ce6160768f3c08b677b6de75f7decbd4bc20a7ae4c235acff58e11d52d1ddf",
+      "attempts/a1/client_calls.jsonl": "8300dc40d8a7869dc18b1c9fcff580f268b28d33e2102469ecae4ba27deb13ff",
+      "attempts/a1/dispatch-actual.json": "9b50ef0faec855a9b938f08f795fbf8797a4fe67c09134cd7ceab3ed41680cd6",
+      "attempts/a1/observable.json": "757a0ae628a891d9f4b87665d954ad6305230aa52f1f0c0d202edc13bf948719",
+      "attempts/a1/terminal.json": "1e42e980a2e5c5fed90784db50bd8429aae14ad256afbc9a1cf04e2c4ebf9d46"
+    }
+  },
+  {
+    "logical_run_id": "r086",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 5,
+    "file_sha256": {
+      "client_calls.jsonl": "298aa7ba7bded7e5aee5ece40d364c4c8e10ee280c855587192222c83830563f",
+      "dispatch.json": "15962fd04d4ad0d70041dde079f63be4f26f3f84bd19de2bb85f027ec00f3b59",
+      "TRANSCRIPT.md": "f256660331b688b3d319e81a2a99db78d4d2728ff6e6d4627b39a107e7001722",
+      "observable.json": "3f02a8f9565a1354ce9b056ec8b4512d6cbe5fbd26e9186abf1fe18b9def4053",
+      "completion.json": "0ebffbcd3fe3b93dee480e1e83c8312aa660777e3e3c055598469ce60258c54f",
+      "attempts/a1/handle.json": "f60e4ced5715e8953c95059e48f4f1da9b9c870ef55ad14d15546e01f3008f37",
+      "attempts/a1/client_calls.jsonl": "298aa7ba7bded7e5aee5ece40d364c4c8e10ee280c855587192222c83830563f",
+      "attempts/a1/dispatch-actual.json": "0a2c78e82714f67cadca634094e0a36bdc3c22b12ef2468ceab64d87cea0e417",
+      "attempts/a1/observable.json": "3f02a8f9565a1354ce9b056ec8b4512d6cbe5fbd26e9186abf1fe18b9def4053",
+      "attempts/a1/terminal.json": "0ebffbcd3fe3b93dee480e1e83c8312aa660777e3e3c055598469ce60258c54f"
+    }
+  },
+  {
+    "logical_run_id": "r093",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 5,
+    "file_sha256": {
+      "client_calls.jsonl": "b1e6eedfca08e515589e5a31a45d2006cb7d5493d8f9b0124935b98ca3e0ad59",
+      "dispatch.json": "b9d3cfd26590041f73fec81ed20c3bcb82fb76301474e460aab70de0a8e466fd",
+      "TRANSCRIPT.md": "0f267978417fad577a44d247e3504c76c02bc2eb67510ea7a22bf0b4c058a38d",
+      "observable.json": "ee0695ed25585eb63f205d0a5855a6e57bd71852a8ae12258de169d75ac485a4",
+      "completion.json": "5c82ee74eaa6a5633c60ff9af833f72c78f653fe18206201f467a17c8809a990",
+      "attempts/a1/handle.json": "c1cded1a2fbd3c69bc6de3b486424ded6cfa033af218f07378d6d78e2b00e79b",
+      "attempts/a1/client_calls.jsonl": "b1e6eedfca08e515589e5a31a45d2006cb7d5493d8f9b0124935b98ca3e0ad59",
+      "attempts/a1/dispatch-actual.json": "0639ce229c96608cb1cde8381a6898a201880537b4dcd521ff3063a71ad5567e",
+      "attempts/a1/observable.json": "ee0695ed25585eb63f205d0a5855a6e57bd71852a8ae12258de169d75ac485a4",
+      "attempts/a1/terminal.json": "5c82ee74eaa6a5633c60ff9af833f72c78f653fe18206201f467a17c8809a990"
+    }
+  },
+  {
+    "logical_run_id": "r094",
+    "intended_prompt_hash_verified": true,
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "actual_efforts": [
+      "low"
+    ],
+    "final_answer_count": 1,
+    "client_log_count": 3,
+    "file_sha256": {
+      "client_calls.jsonl": "5e4c14b74001bd400fb40ade7270ab90b80e5dd2218d8f2b30939da839c9a22f",
+      "dispatch.json": "b79aeebee7a09b8e11da2b3e7285a9882b68c2547b61209873be064d726177d6",
+      "TRANSCRIPT.md": "647eac82de26e1f93555c46008b5cf3a447a6f9d4f5ce11b18be6a1e97914c51",
+      "observable.json": "accb6a0d6915357b3d6f48d81d00f38ccb030ca49ad0ebc34867844d2fa0ec28",
+      "completion.json": "d08f03658e5b3772d433411d122c2fe02edf31a939b923717651ff8745726168",
+      "attempts/a1/handle.json": "a7927ecd1e4afb1dd7b66fb3b767106775a4ea6cbe6b5c9a56a33d1a27ee56d3",
+      "attempts/a1/client_calls.jsonl": "5e4c14b74001bd400fb40ade7270ab90b80e5dd2218d8f2b30939da839c9a22f",
+      "attempts/a1/dispatch-actual.json": "799afdf83636dd51c673a74fc4f4b0617e89a51185e458b54b85dfdc1b449ee7",
+      "attempts/a1/observable.json": "accb6a0d6915357b3d6f48d81d00f38ccb030ca49ad0ebc34867844d2fa0ec28",
+      "attempts/a1/terminal.json": "d08f03658e5b3772d433411d122c2fe02edf31a939b923717651ff8745726168"
+    }
+  }
+]

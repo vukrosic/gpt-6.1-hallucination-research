@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-12T09:14:06.454771+00:00",
+  "logical_run_id": "r019",
+  "actual_retry_locator": "q7619",
+  "original_packet_logical_id": "r019",
+  "issue": "Coordinator saved BLINDED packet under retrylocator filename instead of scheduledlogicalID. Originalpacket preserved in attempts/a2/BLINDED-original-locator.json.",
+  "repair": "Canonical packetfilename corrected; logical_run_id normalized onlyifneeded; same actualanswer/source/model/effort. No new targetrun or gradeoverwrite.",
+  "original_packet_sha256": "d77d1ec494a1019208f912dc4bb18e634e34e1ad8b15114da410f1a85a293881",
+  "corrected_packet_sha256": "0f8b8c10d8ce595bcb06bf16b27dd11f07b67e9575a85c16636b62057e1f7027"
+}

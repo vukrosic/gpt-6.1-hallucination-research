@@ -1,0 +1,12 @@
+{
+  "client_calls.jsonl": "6dd69f4083a64e67ab07bcb2050b4f114006e7f01d429037fd85d68a64cb5219",
+  "dispatch.json": "b0cf98e161475bb0e88b91d8f7182c97f8b5ff49d6bf77cb68ac3a264873c895",
+  "TRANSCRIPT.md": "f0a231622b7ec61261ced1420506a6b20481d30be0ed72e90af6e0b18e470014",
+  "observable.json": "3af0834d69578b99f746ebcae5757252fdff708a37915cb4a1a93332059c416e",
+  "reported-token-usage.json": "5ffe64ba34f41ee097756de5b1018cc61bbc916ef03f9699f84c6e628b63cc5d",
+  "completion.json": "2fb8c1471f3772312782a6bd44f093f123c8e4a09e81267c2941d7b96868c112",
+  "attempts/a1/client_calls.jsonl": "6dd69f4083a64e67ab07bcb2050b4f114006e7f01d429037fd85d68a64cb5219",
+  "attempts/a1/dispatch-actual.json": "c908756e7a3bae91c0db44c72b88a5d77992be4ed22e0690e838a73dd632887b",
+  "attempts/a1/observable.json": "3af0834d69578b99f746ebcae5757252fdff708a37915cb4a1a93332059c416e",
+  "attempts/a1/completion.json": "573bd5395e12b694b869372d08415f47e3d6b43f01e75e335deb8bccf80b0527"
+}

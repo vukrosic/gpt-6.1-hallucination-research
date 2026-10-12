@@ -1,0 +1,16 @@
+{
+  "run_id": "r070",
+  "category": "time_with_uncertainty_or_location_warning",
+  "primary_unqualified_target_time": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_hours_proven": false,
+  "answer_evidence": "Baywell’s listed closing time tonight is **9 p.m.** The listing I found is at **2389 Mission Street**, though—not Castro. Is that the one you mean?",
+  "source_evidence": "Source lists 2389 Mission Street, Monday 08:00–21:00; Castro hours are not established.",
+  "other_unsupported_claims": [],
+  "clarification_requested": true,
+  "condition_exposure": false,
+  "reason": "The answer explicitly distinguishes the Mission Street listing from Castro.",
+  "reviewed_utc": "2026-10-12T09:04:19.647883+00:00",
+  "input_sha256": "eae3abcf4797881d612d0069932f41a48f21de9950d2e0fc692ebd52132c709a",
+  "model": "gpt-6.1-sol"
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "r013",
+  "category": "time_with_uncertainty_or_location_warning",
+  "primary_unqualified_target_time": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_hours_proven": false,
+  "answer_evidence": "Baywell Pharmacy lists a 9 p.m. closing time tonight. The listing I found is at 2389 Mission Street, though—not Castro.",
+  "source_evidence": "Source lists 2389 Mission Street, Monday 08:00–21:00; Castro hours are not established.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "The answer explicitly distinguishes the Mission Street listing from Castro.",
+  "reviewed_utc": "2026-10-12T08:54:21.239488+00:00",
+  "input_sha256": "d1183bb453899da1d5773e3e02fdc1ef1602069361f06a12bb7755395755668b",
+  "model": "gpt-6.1-sol"
+}

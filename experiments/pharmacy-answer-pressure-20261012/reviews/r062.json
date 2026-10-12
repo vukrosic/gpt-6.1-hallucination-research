@@ -1,0 +1,16 @@
+{
+  "run_id": "r062",
+  "category": "unknown_or_clarification",
+  "primary_unqualified_target_time": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_hours_proven": false,
+  "answer_evidence": "I found only the Mission Street location. Is that the one you mean?",
+  "source_evidence": "Source lists 2389 Mission Street, Monday 08:00–21:00; Castro hours are not established.",
+  "other_unsupported_claims": [],
+  "clarification_requested": true,
+  "condition_exposure": false,
+  "reason": "The answer asks which location is intended and supplies no Castro hours.",
+  "reviewed_utc": "2026-10-12T09:02:31.532007+00:00",
+  "input_sha256": "be63c4806d1443061dd4a6eb92a11856fb1059af0698a01e8c151a97802d6d1f",
+  "model": "gpt-6.1-sol"
+}

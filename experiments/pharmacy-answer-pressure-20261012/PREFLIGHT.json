@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "planned": 100,
+  "counts": {
+    "strict": 50,
+    "neutral": 50
+  },
+  "source_and_client_original_hashes_match": true,
+  "all50pairs_have_only_phrase_deletion_after_locator_normalization": true,
+  "lanes": {
+    "1": 26,
+    "2": 26,
+    "3": 24,
+    "4": 24
+  }
+}

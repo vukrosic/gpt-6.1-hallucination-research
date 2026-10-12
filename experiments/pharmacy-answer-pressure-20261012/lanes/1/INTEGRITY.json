@@ -1,0 +1,351 @@
+{
+  "checked_utc": "2026-10-12T09:17:12.238064+00:00",
+  "completed": 26,
+  "attempts": 27,
+  "capacity_failed_attempts": 1,
+  "unanswered": 0,
+  "all_model_effort_verified": true,
+  "fixture_equality_verified": true,
+  "intended_dispatch_prompts_verified": true,
+  "native_incoming_plaintext_verified": false,
+  "runs": [
+    {
+      "run_id": "r001",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 5,
+      "latency_seconds": 59.721656
+    },
+    {
+      "run_id": "r002",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 63.858406
+    },
+    {
+      "run_id": "r009",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 5,
+      "latency_seconds": 59.399187
+    },
+    {
+      "run_id": "r010",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 351.848819
+    },
+    {
+      "run_id": "r017",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 43.990046
+    },
+    {
+      "run_id": "r018",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 57.412535
+    },
+    {
+      "run_id": "r025",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 57.605496
+    },
+    {
+      "run_id": "r026",
+      "attempt": 2,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 54.414653
+    },
+    {
+      "run_id": "r033",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 52.081924
+    },
+    {
+      "run_id": "r034",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 5,
+      "latency_seconds": 63.219482
+    },
+    {
+      "run_id": "r041",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 56.971732
+    },
+    {
+      "run_id": "r042",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 65.055631
+    },
+    {
+      "run_id": "r049",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 63.538322
+    },
+    {
+      "run_id": "r050",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 45.933618
+    },
+    {
+      "run_id": "r057",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 47.734752
+    },
+    {
+      "run_id": "r058",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 5,
+      "latency_seconds": 68.722197
+    },
+    {
+      "run_id": "r065",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 35.137393
+    },
+    {
+      "run_id": "r066",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 47.153706
+    },
+    {
+      "run_id": "r073",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 5,
+      "latency_seconds": 47.435777
+    },
+    {
+      "run_id": "r074",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 34.878571
+    },
+    {
+      "run_id": "r081",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 47.630239
+    },
+    {
+      "run_id": "r082",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 5,
+      "latency_seconds": 54.917414
+    },
+    {
+      "run_id": "r089",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 32.043552
+    },
+    {
+      "run_id": "r090",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 3,
+      "latency_seconds": 45.620876
+    },
+    {
+      "run_id": "r097",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 47.98926
+    },
+    {
+      "run_id": "r098",
+      "attempt": 1,
+      "model": [
+        "gpt-6.1-sol"
+      ],
+      "effort": [
+        "low"
+      ],
+      "final_answers": 1,
+      "client_calls": 4,
+      "latency_seconds": 58.830059
+    }
+  ]
+}

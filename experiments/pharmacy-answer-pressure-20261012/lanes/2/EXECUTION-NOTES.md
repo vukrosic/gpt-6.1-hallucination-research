@@ -1,0 +1,1 @@
+Actual r019/a1 provider capacity error preserved and unscored. Coordinator capacity interruption reported by root. Lane reduced to MAXONE after r020 drained. Retry uses opaque locator q7619 and identical runtime fixture.
