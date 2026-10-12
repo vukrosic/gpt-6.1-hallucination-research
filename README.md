@@ -9,21 +9,39 @@ works and what does not.
 ## Abstract
 
 An agent is an AI model that can call tools, for example a search, before it replies. I tested the agent Codex CLI
-with the model gpt-6.1-sol on made-up records, in 1,338 saved conversations. I found one mistake that I can make
-happen on purpose. The user asks about one thing. The search returns a fact only for a similar thing, for example a
+with the model gpt-6.1-sol on made-up records, in 1,338 saved conversations.
+
+**The mistake.** The user asks about one thing. The search returns a fact only for a similar thing, for example a
 dentist with the same name on another street. The agent gives that fact as the answer and does not say that it
-belongs to the other thing. This reply is a wrong answer, and it happened in 49 of 60 conversations across six
-examples. The agent does see the difference. When the user does not ask for a short answer, it still gives the
-number, and it adds that the number is for the other street. It did that in 40 of 40 conversations. Such a reply
-states nothing false. Short general instructions such as "State facts correctly." and "Do not make things up." did
-not stop the mistake: 41 and 47 wrong answers in 60 conversations, against 49 in 60 without them. One instruction
-that tells the agent to check each detail against the exact thing the user asked about stopped it: 0 wrong answers
-in 60 conversations. Which examples fail depends on how close the two things look. When the detail the user gives
-and the detail in the search result are close (a cardiologist and a heart surgeon, Sweden and Norway), the agent
-gave a wrong answer in 59 of 60 conversations. In the same examples with a far detail (a cardiologist and a skin
-doctor, Sweden and Japan) it gave a wrong answer in 14 of 60. When the user's detail picks one of several things
-that normally exist side by side (a backpack size, a ticket type, a report year), it gave a wrong answer in 0 of
-110.
+belongs to the other thing. This reply is a wrong answer.
+
+**The general rule.** The agent gives this wrong answer when two things are true together:
+
+1. **The similar thing looks like the one the user meant, with one detail slightly different.** The user says "the
+   cardiologist" and the result says Cardiac Surgery. The user says Swedish and the result says Norway. The user
+   names one street and the result is on another street in the same city. Ten examples of this kind gave a wrong
+   answer in 91 of 100 conversations.
+2. **The user asked for a short answer**, for example "just the number, nothing else". Without those words the
+   agent still gives the fact, and it adds whose fact it is. It did that in 40 of 40 conversations. Such a reply
+   states nothing false.
+
+The agent does not give the wrong answer when the similar thing looks like a different thing:
+
+- **The detail is far off.** The user says "the cardiologist" and the result says Dermatology. Six examples: a
+  wrong answer in 14 of 60 conversations. The agent asks instead: "Is that who you mean?"
+- **The detail picks one of a set.** A 40 litre backpack and a 30 litre one, a child ticket and an adult ticket, a
+  2025 report and a 2024 report. Eleven examples: a wrong answer in 0 of 110 conversations.
+- **The result says that several exist.** "One of 3 Northside Dental offices in San Francisco." Two examples: a
+  wrong answer in 0 of 20 conversations.
+
+**How well the rule fits.** 23 of these 290 conversations (8%) go against the rule. I wrote the rule after seeing
+most of these examples, so the fairer test is the six versions I predicted before running them: 4 predictions were
+right and 2 were not. "Slightly different" and "far off" are my own ratings.
+
+**What stops the mistake.** Tested on six failing examples, which gave 49 wrong answers in 60 conversations with
+no added instruction. Short general instructions such as "State facts correctly." and "Do not make things up." did
+not stop it: 41 and 47 wrong answers in 60 conversations. One instruction that tells the agent to check each detail
+against the exact thing the user asked about stopped it: 0 wrong answers in 60 conversations.
 
 ## The main rule
 
