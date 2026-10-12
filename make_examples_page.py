@@ -48,8 +48,8 @@ def main():
            "This page is made by `make_examples_page.py` from the saved conversations. Each example shows the user's "
            "one message, the one result the search tool returned, and the agent's reply in each of the 10 "
            "conversations. Agent: Codex CLI with gpt-6.1-sol, no sentence added to the instructions.", "",
-           "Every search result on this page is a test record that I wrote. No business, person or product here is "
-           "real, and the agent has no other source: web search is switched off. The **similar thing** is the one "
+           "The environment is simulated: the search tool and the records it returns are written for these tests, "
+           "and web search is switched off. The **similar thing** is the one "
            "entry the search returns: it has the same name as the thing the user asked about and one different "
            "detail (another street, another department, another year).", "",
            "- **WRONG ANSWER** = the reply gives the similar thing's fact and does not say whose it is.",

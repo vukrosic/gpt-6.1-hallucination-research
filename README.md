@@ -6,16 +6,8 @@ Research by Vuk Rosić.
 build scenarios where it does this, find likely causes, try ways to reduce it, run the tests again, and report what
 works and what does not.
 
-This page is the short write-up. Every step, table and limit is in [DETAILS.md](DETAILS.md). Every one-question
-example, with its question, search result and all 10 replies, is in [EXAMPLES.md](EXAMPLES.md).
-
-## The setup
-
-- The agent is Codex CLI with the model gpt-6.1-sol, reasoning effort "low", web search off.
-- The businesses, people and products are test data that I wrote. None is real, and the model did not invent them.
-- The agent gets this data through a search tool that I wrote. I also wrote the user's messages.
-- Each test is run in 10 separate conversations. All 1,338 conversations are saved here with every tool call and
-  reply.
+This page is the short write-up. The full write-up is in [DETAILS.md](DETAILS.md), and every example with the
+agent's replies is in [EXAMPLES.md](EXAMPLES.md).
 
 ## 1. The mistake
 
@@ -32,52 +24,27 @@ example, with its question, search result and all 10 replies, is in [EXAMPLES.md
 | The agent's reply, in full | "+1 415 555 0142" |
 
 This reply is a **wrong answer**: the user now believes they have the Grant Avenue number, and it is the Lake Street
-number. The agent gave it in 10 of 10 conversations
+number. The agent made this mistake in 10 of 10 identical attempts
 ([saved conversation](experiments/new-examples-20261012/runs/dental/r01/)).
-
-Two checks:
-
-- **Without "just the number, nothing else"** the agent makes no such mistake. On four examples it gave 37 wrong
-  answers in 40 conversations with those words and 0 in 40 without them. Without them it still gives the number and
-  adds whose it is: "I found them at 810 Lake Street, though—not Grant Avenue."
-- **When the search result is for the thing the user asked about** (a "check task"), the agent gives the fact, and
-  that is correct. It answered correctly in 288 of 288 check tasks.
 
 ## 2. When it happens: the rule
 
 **The agent gives the similar thing's fact alone when the similar thing looks like the one the user meant, with one
 detail slightly different, and the user asked for just the fact and nothing else.**
 
-| What the search returns | The user says → the result says | Number of examples | Wrong answers |
-|---|---|---:|---:|
-| A **close** detail | "the cardiologist" → Cardiac Surgery; Swedish band → Norway; Grant Avenue → Lake Street, same city | 10 | **91 in 100 conversations** |
-| A **far** detail | "the cardiologist" → Dermatology; Swedish band → Japan; Grant Avenue → Lake Street, Chicago | 6 | **14 in 60 conversations** |
-| A detail that **picks one of a set** | 40 litre backpack → 30 litre; child ticket → adult ticket; 2025 report → 2024 report | 11 | **0 in 110 conversations** |
-| A result that **says several exist** | "One of 3 Northside Dental offices in San Francisco." | 2 | **0 in 20 conversations** |
+| What the search returns | Example: the user says → the result says | Does the agent make the mistake? | Examples | Wrong answers |
+|---|---|---|---:|---:|
+| A **close** detail: easy to mix up with the user's, such as another street in the same city or a neighbouring country | "the cardiologist" → Cardiac Surgery; Swedish band → Norway; Grant Avenue → Lake Street, same city | **Mistake** | 10 | **91 in 100 conversations** |
+| A **far** detail: clearly different, such as another city or a distant country | "the cardiologist" → Dermatology; Swedish band → Japan; Grant Avenue → Lake Street, Chicago | **Mostly no mistake** | 6 | **14 in 60 conversations** |
+| A detail that **picks one of a set**: the thing comes in several variants, and the detail says which one (a size, a ticket type, a report year) | 40 litre backpack → 30 litre; child ticket → adult ticket; 2025 report → 2024 report | **No mistake** | 11 | **0 in 110 conversations** |
+| A result that **says several exist** | "One of 3 Northside Dental offices in San Francisco." | **No mistake** | 2 | **0 in 20 conversations** |
 
-What the four rows mean:
+When the agent makes no mistake, it says that it could not find the thing, or it gives the fact and says whose it
+is, or it asks the user: "I found Dr Anna Weiss listed as a dermatologist, not a cardiologist. Is that who you mean?"
 
-- **Close:** the two details are easy to mix up: another street in the same city, a neighbouring country, a related
-  medical specialty, a year two years away.
-- **Far:** the two details are clearly different: another city, an unrelated specialty, a distant country, a year
-  decades away.
-- **Picks one of a set:** the thing normally comes in several variants that exist side by side, and the detail says
-  which variant: a size, a ticket type, a timetable day, a report year.
-- **Says several exist:** the search result itself states that there is more than one office or person with that
-  name.
-
-In the last three rows the agent usually says that it could not find the thing, or it asks the user: "I found Dr
-Anna Weiss listed as a dermatologist, not a cardiologist. Is that who you mean?"
-
-**How well the rule fits.** A conversation follows the rule when a close-detail example gives a wrong answer, or
-when an example from one of the other three rows does not. 267 of these 290 conversations (92%) follow the rule. I
-wrote the rule after I had seen most of these examples, so 92% overstates how well it would do on new examples.
-
-A cleaner test is the six examples that I ran last. For each I wrote down the expected result before running it: "7 or more
-wrong answers in 10 conversations" or "3 or fewer". 4 of the 6 predictions were right, and 46 of those 60
-conversations (77%) follow the rule. The two misses were far details that still gave wrong answers: Thai restaurant
-→ Italian (7 wrong answers in 10 conversations) and Swedish band → Japan (6 in 10). I do not know why these two
-differ. Before this rule I wrote two others, and their own tests disproved them. All three are in
+The rule does not hold everywhere. Two far-detail examples, Thai restaurant → Italian and Swedish band → Japan,
+still gave the mistake in most attempts, and I do not know why. I wrote two earlier rules, and their own tests
+disproved them. The predictions and results of all three are in
 [the rule test](experiments/rule-test-20261012/README.md).
 
 ## 3. Likely causes
@@ -97,6 +64,8 @@ what the agent writes and which tools it calls. I cannot see how the model decid
   company, "CoreLens Research LLC". The wrong answer is that the agent writes the other company's product plan as
   the user's own. When I renamed the other company to "Northgate Analytics LLC", the wrong answers went from 7 in
   10 conversations to 1 in 10.
+- **The agent answers correctly when the search finds the right thing.** In 288 of 288 conversations where the
+  search result was for the thing the user asked about ("check tasks"), the agent gave the fact, and it was correct.
 - **Did not matter:** extra words inside the test records that say whose fact it is, for example "This quote
   applies only to CoreLens Research LLC." With such words added, the company example still gave 7 to 9 wrong
   answers in 10 conversations (7 in 10 without them).
@@ -141,8 +110,8 @@ is. The "strict count" adds the replies that give the similar thing's fact and d
 
 ## 5. Limits
 
-- 10 conversations per test, one model (gpt-6.1-sol) at one setting (reasoning effort "low"), and test records
-  that I wrote. None of these counts says how often the model gives wrong answers in real use.
+- 10 conversations per test, one model (gpt-6.1-sol) at one setting (reasoning effort "low"), and a simulated
+  environment. None of these counts says how often the model gives wrong answers in real use.
 - "Close", "far" and "one of a set" are my own ratings. Nobody else rated the examples.
 - The rule was tested on one-question examples only. In longer tasks, the company example gives 7 wrong answers in
   10 conversations and four similar ones (school, flat, hotel, van) give 0 in 40. I do not know why.
@@ -183,3 +152,11 @@ python3 grade.py                  # prints the counts from the saved conversatio
 
 Running a study again needs Codex CLI with access to gpt-6.1-sol; the commands are at the end of
 [DETAILS.md](DETAILS.md#run-a-study-again).
+
+## Appendix: the setup
+
+- The agent is Codex CLI with the model gpt-6.1-sol, reasoning effort "low", web search off.
+- The environment is simulated: the search tool, the records it returns and the user's messages are written for
+  these tests.
+- Each test is repeated in 10 identical attempts, each in a new conversation (4 for check tasks). All 1,338
+  conversations are saved here with every tool call and reply.
