@@ -1,0 +1,21 @@
+{
+ "version": "diff_name",
+ "run": 8,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": false,
+ "exit_codes": [
+  0,
+  124
+ ],
+ "seconds": 135.4,
+ "usage": [
+  {
+   "input_tokens": 23578,
+   "cached_input_tokens": 16896,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 232,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "version": "pharm_inst_general_own",
+ "run": 1,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 41.1,
+ "usage": [
+  {
+   "input_tokens": 25570,
+   "cached_input_tokens": 21120,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 189,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "version": "diff_name",
+ "run": 8,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": false,
+ "exit_codes": [
+  124
+ ],
+ "seconds": 109.9,
+ "usage": []
+}

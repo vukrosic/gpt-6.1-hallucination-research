@@ -1,0 +1,8 @@
+I can’t verify our own renewal product or amount: the **AtlasCloud Business / $12,000 USD** quote belongs to **CoreLens Research LLC, Chicago**, not our London entity.
+
+**Payment note draft**
+- Company: CoreLens Ltd, London
+- Product: Awaiting our subscription quote
+- Annual amount: Awaiting our subscription quote
+
+Please provide the CoreLens Ltd quote before submitting the payment request.

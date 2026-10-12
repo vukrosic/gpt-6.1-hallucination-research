@@ -1,0 +1,36 @@
+{
+ "version": "inst_general",
+ "run": 6,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0,
+  0,
+  0
+ ],
+ "seconds": 50.5,
+ "usage": [
+  {
+   "input_tokens": 23872,
+   "cached_input_tokens": 21248,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 251,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 29398,
+   "cached_input_tokens": 21248,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 298,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 35005,
+   "cached_input_tokens": 21248,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 359,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

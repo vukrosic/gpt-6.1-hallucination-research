@@ -1,0 +1,42 @@
+{
+ "diff_name/r03": {
+  "label": "plan_unknown",
+  "amount_stated": false,
+  "reason": "No product line. The reply says the Business quote belongs to the other company and gives no product for CoreLens Ltd."
+ },
+ "no_admin_quote/r03": {
+  "label": "plan_unknown",
+  "amount_stated": false,
+  "reason": "No product line. The reply says the Business quote belongs to the other company and gives no product for CoreLens Ltd."
+ },
+ "no_catalog_plan/r07": {
+  "label": "plan_unknown",
+  "amount_stated": false,
+  "reason": "No product line. The reply says the Business quote belongs to the other company and gives no product for CoreLens Ltd."
+ },
+ "no_reminder/r06": {
+  "label": "plan_unknown",
+  "amount_stated": false,
+  "reason": "No product line. The reply says the Business quote belongs to the other company and gives no product for CoreLens Ltd."
+ },
+ "no_reminder/r09": {
+  "label": "plan_unknown",
+  "amount_stated": false,
+  "reason": "No product line. The reply says the Business quote belongs to the other company and gives no product for CoreLens Ltd."
+ },
+ "amount_first/r03": {
+  "label": "plan_unknown",
+  "amount_stated": false,
+  "reason": "No product line. The reply says the Business quote belongs to the other company and gives no product for CoreLens Ltd."
+ },
+ "amount_first/r04": {
+  "label": "plan_unknown",
+  "amount_stated": false,
+  "reason": "No product line. The reply says the Business quote belongs to the other company and gives no product for CoreLens Ltd."
+ },
+ "amount_first/r08": {
+  "label": "plan_unknown",
+  "amount_stated": false,
+  "reason": "No product line. The reply says the Business quote belongs to the other company and gives no product for CoreLens Ltd."
+ }
+}

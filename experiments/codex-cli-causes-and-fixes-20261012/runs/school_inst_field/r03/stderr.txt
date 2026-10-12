@@ -1,0 +1,6 @@
+--- turn 2
+2026-10-12T15:31:16.770179Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+
+--- turn 3
+2026-10-12T15:31:41.262075Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+

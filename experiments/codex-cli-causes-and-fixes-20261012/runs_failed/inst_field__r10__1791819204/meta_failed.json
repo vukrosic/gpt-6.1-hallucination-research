@@ -1,0 +1,21 @@
+{
+ "version": "inst_field",
+ "run": 10,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": false,
+ "exit_codes": [
+  0,
+  124
+ ],
+ "seconds": 135.1,
+ "usage": [
+  {
+   "input_tokens": 23932,
+   "cached_input_tokens": 19200,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 223,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

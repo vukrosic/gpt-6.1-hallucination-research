@@ -1,0 +1,21 @@
+{
+ "version": "school_base_own",
+ "run": 4,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": false,
+ "exit_codes": [
+  0,
+  124
+ ],
+ "seconds": 147.4,
+ "usage": [
+  {
+   "input_tokens": 23652,
+   "cached_input_tokens": 20096,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 226,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

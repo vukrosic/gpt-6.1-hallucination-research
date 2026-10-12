@@ -1,0 +1,36 @@
+{
+ "version": "two_plans",
+ "run": 4,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0,
+  0,
+  0
+ ],
+ "seconds": 94.8,
+ "usage": [
+  {
+   "input_tokens": 23605,
+   "cached_input_tokens": 17024,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 231,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 28955,
+   "cached_input_tokens": 21504,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 278,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 40013,
+   "cached_input_tokens": 30208,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 388,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

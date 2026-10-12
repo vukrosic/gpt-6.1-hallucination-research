@@ -1,0 +1,21 @@
+{
+ "version": "no_catalog_plan",
+ "run": 2,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": false,
+ "exit_codes": [
+  0,
+  124
+ ],
+ "seconds": 261.1,
+ "usage": [
+  {
+   "input_tokens": 23605,
+   "cached_input_tokens": 14080,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 229,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

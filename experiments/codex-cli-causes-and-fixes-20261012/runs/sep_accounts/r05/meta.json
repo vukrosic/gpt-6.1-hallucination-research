@@ -1,0 +1,36 @@
+{
+ "version": "sep_accounts",
+ "run": 5,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0,
+  0,
+  0
+ ],
+ "seconds": 98.5,
+ "usage": [
+  {
+   "input_tokens": 23625,
+   "cached_input_tokens": 19200,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 231,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 28987,
+   "cached_input_tokens": 24320,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 275,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 40059,
+   "cached_input_tokens": 32896,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 370,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

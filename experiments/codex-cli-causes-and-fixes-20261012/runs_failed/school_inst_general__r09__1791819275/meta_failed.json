@@ -1,0 +1,12 @@
+{
+ "version": "school_inst_general",
+ "run": 9,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": false,
+ "exit_codes": [
+  124
+ ],
+ "seconds": 110.0,
+ "usage": []
+}

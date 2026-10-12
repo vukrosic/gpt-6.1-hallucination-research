@@ -5,3 +5,4 @@ __pycache__/
 .env.*
 src/mock_data/
 .DS_Store
+.work/

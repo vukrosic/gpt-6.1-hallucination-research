@@ -1,0 +1,36 @@
+{
+ "version": "school_base",
+ "run": 1,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0,
+  0,
+  0
+ ],
+ "seconds": 36.1,
+ "usage": [
+  {
+   "input_tokens": 23704,
+   "cached_input_tokens": 19712,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 230,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 29130,
+   "cached_input_tokens": 24192,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 273,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 34633,
+   "cached_input_tokens": 27648,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 325,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}
