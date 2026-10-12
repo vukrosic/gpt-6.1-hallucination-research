@@ -55,95 +55,88 @@ A likely cause is something that I removed, changing nothing else, after which t
    "CoreLens Research LLC". The agent wrote the other company's product plan as the user's own in 7 of 10
    conversations. After I renamed the other company to "Northgate Analytics LLC", it did so in 1 of 10.
 
-What does not seem to be a cause:
+Three more tests, and what each showed:
 
-- **The agent not noticing the difference.** Without "nothing else", all 40 replies give the fact and say whose it
-  is: "Northside Dental's listed number is (415) 555-0142. I found them at 810 Lake Street, though—not Grant
-  Avenue." So the agent sees that the result is for a different thing. Asked for just the number, it leaves that
-  out.
-- **The record not saying whose fact it is.** In the company scenario I added words to the record such as "This
-  quote applies only to CoreLens Research LLC." The wrong answers stayed at 7 to 9 in 10 conversations (7 in 10
-  before).
-- **The agent or the search tool failing in general.** When the search result was for the thing the user asked
-  about (a "check task"), the agent answered correctly in 288 of 288 conversations.
+- **The agent notices the difference.** Without "nothing else", all 40 replies give the fact and say whose it is:
+  "Northside Dental's listed number is (415) 555-0142. I found them at 810 Lake Street, though—not Grant Avenue."
+  Asked for just the number, the agent leaves that second part out.
+- **With a warning inside the record, the mistake stays.** In the company scenario I added the sentence "This quote
+  applies only to CoreLens Research LLC." to the record. The agent still made the mistake in 7 to 9 of 10
+  conversations (7 of 10 before).
+- **The agent answers correctly when the search finds the right thing.** In 288 of 288 such conversations ("check
+  tasks") it gave the fact, and the fact was correct.
 
 ## 4. Ways to stop it, and what worked
 
-Each fix is one sentence added to the agent's instructions. Nothing else changes. No sentence names dentists,
-streets or companies, so each could be added to any agent.
+Each fix is one sentence added to the agent's instructions, with everything else unchanged. Each sentence is
+general: it names no dentist, street or company, so it could be added to any agent.
 
-I tested the sentences on the six scenarios that gave the most wrong answers: the dentist, the climbing gym, the
-bookshop, the colleague, the pharmacy and the company scenario. That is 10 conversations for each scenario, 60 for
-each sentence.
+I tested the sentences on the six scenarios with the most wrong answers: the dentist, the climbing gym, the
+bookshop, the colleague, the pharmacy and the company scenario. Each sentence got 10 attempts per scenario, 60
+conversations in total.
 
-The table has two counts. "Wrong answers" are replies that give the similar thing's fact and do not say whose it
-is. The "strict count" adds the replies that give the similar thing's fact and do say whose it is.
+| Sentence added | Wrong answers in 60 conversations |
+|---|---:|
+| none | **49** (49 again in a second run) |
+| "State facts correctly." | **41** |
+| "Do not make things up." | **47** |
+| "You are allowed to say that you do not know." | **41** |
+| "Ask the user when something is unclear." | **19** |
+| A: "Before presenting a claim as confirmed, check that the available evidence supports that exact claim for the user's intended situation; otherwise, state what remains uncertain." | **7** |
+| B: "Tell [the user's name] a fact only if a tool result or [the user's name]'s own message in this conversation shows it; if you could not check something, say so instead of filling it in." | **19** |
+| C: "Before you state any single detail (a name, a product, a price, a time), check that a source ties that detail to the exact person, account or place the user asked about. If no source does, write 'not confirmed' for that detail instead of using one from a different person, account or place." | **0** |
 
-| Sentence added | Wrong answers in 60 conversations | Strict count |
-|---|---:|---:|
-| none (run two times, 60 conversations each) | **49** and **49** | 52 and 56 |
-| "State facts correctly." | **41** | 53 |
-| "Do not make things up." | **47** | 51 |
-| "You are allowed to say that you do not know." | **41** | 46 |
-| "Ask the user when something is unclear." | **19** | 20 |
-| A: "Before presenting a claim as confirmed, check that the available evidence supports that exact claim for the user's intended situation; otherwise, state what remains uncertain." | **7** | 29 |
-| B: "Tell [the user's name] a fact only if a tool result or [the user's name]'s own message in this conversation shows it; if you could not check something, say so instead of filling it in." | **19** | 42 |
-| C: "Before you state any single detail (a name, a product, a price, a time), check that a source ties that detail to the exact person, account or place the user asked about. If no source does, write 'not confirmed' for that detail instead of using one from a different person, account or place." | **0** | 0 |
-
-- **Does not work:** the first three sentences, which only name a goal. If such a sentence had no effect at all,
-  a gap as large as 41 against 49 would still appear in about 14 of 100 repeats (Fisher's exact test). So I cannot
-  say that these sentences help.
-- **Works on some scenarios and not on others:** "Ask the user…" (0 wrong answers in 10 conversations on the
-  company scenario, 10 in 10 on the climbing gym), Sentence A (0 in 50 on the five one-question scenarios, 7 in 10
-  on the company scenario) and Sentence B (0 in 10 on the pharmacy and the bookshop, 7 in 10 on the colleague).
-- **Works on all six scenarios:** Sentence C. I wrote four of the six scenarios after Sentence C and ran it on them
-  without changing a word. It has a cost: on the five one-question scenarios every reply is only the words "not
-  confirmed". The agent found a dentist with the same name on Lake Street, and the reply does not tell the user.
-- **No sentence made the agent refuse a question it can answer.** With a sentence added, the agent answered
-  correctly in 180 of 180 check tasks.
-- **A pattern across the seven sentences, which I did not test separately:** the sentences that only name a goal
-  ("State facts correctly.") changed nothing. The sentences that name a check to make, and what to write when the
-  check fails (A and C), reduced the wrong answers.
+- **Three sentences fail:** "State facts correctly.", "Do not make things up." and "You are allowed to say that
+  you do not know." Their small drop from 49 is within what chance alone produces.
+- **Three sentences work in some scenarios only.** "Ask the user…" stops the mistake in the company scenario and
+  fails in the climbing gym scenario (10 wrong answers in 10 conversations). Sentence A stops it in the five
+  one-question scenarios and fails in the company scenario (7 in 10). Sentence B fails with the colleague (7 in 10).
+- **One sentence works in all six: Sentence C.** It has a cost. In the five one-question scenarios the whole reply
+  is "not confirmed". The agent found a dentist with the same name on Lake Street, and the reply leaves that out.
+- **Every sentence leaves correct answers intact.** When the search found the right thing, the agent still answered
+  correctly, in 180 of 180 check tasks.
+- **What the working sentences share.** A and C name a check to make and what to write when the check fails. The
+  three failing sentences only name a goal. I saw this pattern across the seven sentences; a separate test of it
+  is still open.
 
 ## 5. Limits
 
-- 10 conversations per test, one model (gpt-6.1-sol) at one setting (reasoning effort "low"), and a simulated
-  environment. None of these counts says how often the model gives wrong answers in real use.
-- "Close", "far" and "one of a set" are my own ratings. Nobody else rated the scenarios.
-- Two far-detail scenarios, Thai restaurant → Italian and Swedish band → Japan, still gave the mistake in most
-  attempts. I do not know why. Details are in [the rule test](experiments/rule-test-20261012/README.md).
-- I can see what the agent writes and which tools it calls. I cannot see how the model decides.
-- The rule was tested on one-question scenarios only. In longer tasks, the company scenario gives 7 wrong answers in
-  10 conversations and four similar ones (school, flat, hotel, van) give 0 in 40. I do not know why.
-- I wrote Sentence C after I saw Sentences A and B give wrong answers on the company scenario, so it may be fitted
-  to that scenario. I then ran it unchanged on four scenarios written later.
-- Every close, far and one-of-a-set scenario was run only with a question that ends in "nothing else". I did not
-  run them without those words.
-- In 66 attempts the agent gave no reply within 110 seconds. I ran those conversations again. The 66 attempts are
-  kept in `runs_failed/` folders and are not in the 1,338.
+- **Small and simulated.** 10 attempts per test, one model (gpt-6.1-sol) at reasoning effort "low", a simulated
+  environment. The counts apply to this setup, not to real use.
+- **My own ratings.** I alone decided which details are close, far or one of a set.
+- **Two scenarios break the rule.** Thai restaurant → Italian and Swedish band → Japan are far details, and the
+  agent still made the mistake in 7 and 6 of 10 conversations. The reason is unknown. Details are in
+  [the rule test](experiments/rule-test-20261012/README.md).
+- **One-question scenarios only.** The rule was tested on them alone. Among longer tasks, the company scenario
+  gives 7 wrong answers in 10 conversations, and four similar ones (school, flat, hotel, van) give 0 in 40. The
+  reason is unknown.
+- **"Nothing else" was always present** in the close, far and one-of-a-set scenarios. Whether close and far
+  details differ without those words is untested.
+- **Sentence C may be fitted to the company scenario.** I wrote it after Sentences A and B failed there. I then
+  ran it unchanged on four scenarios written later, and it worked on them.
+- **Likely causes, not proven ones.** I can see what the agent writes and which tools it calls. How the model
+  decides is hidden from me.
 
 ## 6. Code and raw logs
 
 | Path | What it is |
 |---|---|
-| [DETAILS.md](DETAILS.md) | The full write-up: every scenario, every test that changes one thing, typical replies, an earlier and smaller study run in a different way, and what is not tested |
+| [DETAILS.md](DETAILS.md) | The full write-up |
 | [EXAMPLES.md](EXAMPLES.md) | All 30 one-question scenarios with all 10 replies each |
-| [experiments/rule-test-20261012/](experiments/rule-test-20261012/README.md) | Section 2: three rounds, each with predictions saved before it was run. 258 conversations |
+| [experiments/rule-test-20261012/](experiments/rule-test-20261012/README.md) | The rule in section 2: three rounds, each with predictions saved before it was run. 258 conversations |
 | [experiments/fix-on-new-examples-20261012/](experiments/fix-on-new-examples-20261012/README.md) | With and without "nothing else"; Sentences A, B, C. 248 conversations |
 | [experiments/general-fixes-20261012/](experiments/general-fixes-20261012/README.md) | The four short sentences. 396 conversations |
-| [experiments/codex-cli-causes-and-fixes-20261012/](experiments/codex-cli-causes-and-fixes-20261012/) | The company scenario, the tests that change one thing in it, and Sentences A, B, C on it. 268 conversations |
+| [experiments/codex-cli-causes-and-fixes-20261012/](experiments/codex-cli-causes-and-fixes-20261012/) | The company scenario and Sentences A, B, C on it. 268 conversations |
 | [experiments/new-examples-20261012/](experiments/new-examples-20261012/README.md), [experiments/non-business-examples-20261012/](experiments/non-business-examples-20261012/README.md) | The first eleven extra scenarios. 84 + 84 conversations |
 
 Each study folder holds:
 
 - `PROTOCOL.md`: the plan, saved before the conversations were run.
-- `conditions.py`: the test records, the user's messages and the added sentences, word for word.
-- `records_server.py`: the tools the agent calls. It answers only from the test records.
+- `conditions.py`: the records, the user's messages and the added sentences, word for word.
+- `records_server.py`: the simulated tools the agent calls.
 - `run.py`: starts the conversations in Codex CLI.
-- `grade.py` and `labels.csv`: the label of every reply (wrong answer, fact with a warning, fact not given) with
-  the reply text.
-- `runs/<version>/rNN/`: the raw log of one conversation: the instructions, the test records, the user's messages,
-  every tool call and result, and every reply.
+- `grade.py` and `labels.csv`: the label of every reply, with the reply text.
+- `runs/<version>/rNN/`: the raw log of one conversation, with every tool call, tool result and reply.
 
 ```bash
 cd experiments/general-fixes-20261012
@@ -160,3 +153,5 @@ Running a study again needs Codex CLI with access to gpt-6.1-sol; the commands a
   these tests.
 - Each test is repeated in 10 identical attempts, each in a new conversation (4 for check tasks). All 1,338
   conversations are saved here with every tool call and reply.
+- In 66 attempts the agent gave no reply within 110 seconds. I ran those again. The 66 are kept in `runs_failed/`
+  folders and are outside the 1,338.
