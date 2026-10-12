@@ -91,11 +91,11 @@ We will use the traces to propose possible causes, then test those explanations 
 
 A change in the error rate would support or weaken an explanation. It would not prove the model's internal reasoning or establish a single cause.
 
-### First root-cause experiment: pressure to give a definite answer
+### Does asking for “just the time” make the agent use the wrong pharmacy’s hours?
 
-We changed only one thing in the pharmacy question: removing **“just the time, nothing else.”** In 100 fresh gpt-6.1-sol conversations, unsupported time answers were **14/50 with the phrase** and **0/50 without it**. All replies without the phrase included uncertainty or a location warning.
+The user asks about the pharmacy on Castro, but the agent only receives Mission Street’s hours. We removed **“just the time, nothing else”** from the question and kept everything else the same. The agent gave a time without warning that Castro’s hours were uncertain in **14/50 runs with the phrase** and **0/50 without it**. All 50 answers without the phrase explained the uncertainty or location difference.
 
-This supports answer pressure as a contributing factor in this setup. It does not establish the model's internal reasoning or a universal cause.
+This suggests that asking for only a time can make the agent leave out a necessary warning. We have only tested this change on this one example.
 
 [Full experiment report and all 100 traces](experiments/pharmacy-answer-pressure-20261012/README.md).
 
