@@ -106,6 +106,8 @@ Each version was tested in **50 fresh gpt-6.1-sol conversations**. Within each c
 2. **Does short-answer pressure also affect the original school payment note?** Keep the original request unchanged and compare it with the same request plus **“Just the note, nothing else.”** This checks the pharmacy explanation in another task.
 3. **Possible new cause: recently repeated information becomes a default answer.** Compare the original school conversation with one that skips only the quote-reminder exchange. Keep the records and final payment-note request unchanged. Both versions of our completed naming test included the reminder, so they provide no test of repetition itself.
 
+4. **Possible new cause: a later warning does not correct an earlier claim.** In the original school request, swap only the requested order from **“account name, product and pound amount”** to **“account name, pound amount and product.”** This tests whether dealing with the missing price before writing the plan reduces the plan mistake.
+
 Before each comparison, check that the unchanged control still produces the original mistake. Then change one factor at a time.
 
 <details>
