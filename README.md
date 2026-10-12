@@ -23,7 +23,8 @@ works and what does not.
    and "Do not make things up." did **not** stop the mistake (41 and 47 wrong answers in 60 conversations, against
    49 in 60 with no sentence).
 6. One longer sentence that tells the agent to check each detail against the exact thing the user asked about
-   stopped it: **0 wrong answers in 60 conversations**. Its cost: the replies become a bare "not confirmed".
+   stopped it: **0 wrong answers in 60 conversations**. Those replies are correct. They are also very short: the
+   agent writes "not confirmed" and does not add that it found a dentist with the same name on Lake Street.
 
 Everything below explains these six sentences step by step. Every conversation is saved in this repository:
 instructions, user messages, tool calls, tool results and replies.
@@ -405,9 +406,11 @@ for the four short sentences). None added doubt, and none asked a question back.
 
 - **Sentence C** (check each single detail against the exact person, account or place): 0 of 60, against 49 of 60.
   Four of the six examples were written after Sentence C, and it was run on them without changing a word.
-- **Its cost:** on the five one-question examples every reply is the two words "not confirmed". The reply does not
-  say that the same name was found on another street. Sentence C tells the agent to write 'not confirmed', the user
-  says "nothing else", and the agent does exactly both.
+- **These replies are correct, and they leave out something useful.** On the five one-question examples every reply
+  is the two words "not confirmed". That is true, and it is what the user asked for ("nothing else"). But the agent
+  did find a dentist with the same name on Lake Street, and the reply does not say so. The user does not learn that
+  they may have the street wrong. This is not a wrong answer. It is a less helpful one than "I found Northside
+  Dental on Lake Street, not Grant Avenue."
 
 **Also works, but the developer does not control it:**
 
