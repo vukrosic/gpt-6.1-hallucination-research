@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "analysis_sha256": "53c6c92f1f2ba0040523a5122865a8d85843127e760a2e529d6a953c48ec8840",
+  "verified_complete_trials": 20,
+  "verified_reviewed_trials": 20,
+  "verified_native_sessions": 20,
+  "verified_turns": 60,
+  "verified_attempts": 20,
+  "failed_attempts": 0,
+  "verified_public_source_calls": 147,
+  "integrity_pass": true,
+  "frozen_source_client_protocol_schedule_grading_hashes_pass": true,
+  "single_final_phrase_change_pass": true,
+  "original_and_current_native_low_sol61_three_turn_settings_pass": true,
+  "same_handle_three_turn_public_finals_pass": true,
+  "frozen_calls_runtime_fixtures_observable_outputs_pass": true,
+  "private_reasoning_excluded_from_public_exports_pass": true,
+  "review_input_hashes_pass": true,
+  "controls_reviewed_before_gate_and_named_starts_after_gate_pass": true,
+  "independent_human_readable_primary_and_amount_grade_disagreements": [],
+  "analysis_counts_intervals_comparison_pass": true,
+  "operational_notes": [
+    "Named concurrency increased after user requested speed; exact prompts/settings/source and twenty-trial limit retained.",
+    "No capacity failures; unlimited capacity-only retry preservation reviewed, not empirically exercised.",
+    "First ten immutable reviews recorded before exposure; exposed reviewer stopped. Fresh context-independent reviewer handled only second ten."
+  ],
+  "limitations": [
+    "Native incoming transport plaintext is encrypted; exact saved intended dispatch verified, actual incoming plaintext not independently decoded.",
+    "Reviewer exposure chronology relies on saved reviewer status and review timestamps; exact exposure transport timestamp unavailable.",
+    "Controls then named without randomized phase order; results exploratory. Unsupported London Business tier is not a proven false tier."
+  ],
+  "reporting_note": "For k014 use brand-only AtlasCloud with explicit London-quote confirmation; label Mentioned Business but warned London plan can mislead. Primary=false remains supported; no grade changed.",
+  "updated_utc": "2026-10-12T13:07:37.168955+00:00"
+}

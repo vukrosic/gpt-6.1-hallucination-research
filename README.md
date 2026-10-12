@@ -81,7 +81,7 @@ The mistake is giving an answer the records do not establish. The actual plan or
 
 ## Root-cause research
 
-These are **possible general causes**, supported by the two tests below. We have evidence about which wording changes helped; we do not know exactly what happened inside the model.
+These are **possible general causes**, examined in the tests below. We have evidence about which wording changes helped; we do not know exactly what happened inside the model.
 
 **1. Pressure to give a short answer**
 
@@ -93,20 +93,21 @@ Using “ours” or “theirs” instead of naming the account may make the agen
 
 ### What we tested and found
 
-Each version was tested in **50 fresh gpt-6.1-sol conversations**. Within each comparison, the records and model settings stayed the same.
+The two tests in the table used **50 fresh gpt-6.1-sol conversations per version**. The company follow-up below used **10 per version**. Within each comparison, the records and model settings stayed the same.
 
 | Possible cause | Information given and the one change | What the replies showed |
 |---|---|---|
 | **Pressure to give a short answer** | The user asks when the pharmacy on **Castro** closes. The search result gives **9 PM for Mission Street**, and gives no Castro hours. We removed only **“just the time, nothing else”** from the question. | With the phrase, **14/50** gave Mission Street’s 9 PM time as the answer for Castro without a warning. Without it, **0/50** did so; all 50 included uncertainty or explained the location difference. [Full test and traces](experiments/pharmacy-answer-pressure-20261012/README.md). |
 | **Referring to accounts indirectly** | The agent reads a quote giving **Premium Family for Eastbrook School**, then writes Maya a reminder about it. The user’s own account is **Westbrook School**, whose plan and price are not given. In the same payment-note request, we replaced only **“our own”** with **“our Westbrook School account’s.”** | The original request filled in Eastbrook’s plan for Westbrook without a plan warning in **24/50** replies. Naming Westbrook did so in **1/50**. Both versions left Westbrook’s price unknown. [Full test and traces](experiments/school-account-naming-20261012/README.md) · [The remaining failure](experiments/school-account-naming-20261012/comparison/REMAINING-FAILURE.md). |
 
+**Company follow-up: naming the account did not clearly help here.** The quote gives **Business for CoreLens Research LLC in Chicago**; the user’s company is **CoreLens Ltd in London**, whose plan is not given. We replaced only **“our own”** with **“CoreLens Ltd (London)’s”** in the payment-note request. The agent filled in Business for London without a plan warning in **8/10 original replies** and **7/10 explicitly named replies**. Both versions withheld London’s price. This small test does not show the school result generalizing to companies. [All 20 replies and full traces](experiments/company-account-naming-20261012/RESULTS.md) · [Short report](experiments/company-account-naming-20261012/README.md).
+
 ### Next experiments — proposed, not yet tested
 
-1. **Recommended: does naming the account also help in the company example?** Keep the original failing company-payment request as the control. In the changed version, replace only “our own” with the user’s company name. This checks whether the school finding applies to another account situation.
-2. **Does short-answer pressure also affect the original school payment note?** Keep the original request unchanged and compare it with the same request plus **“Just the note, nothing else.”** This checks the pharmacy explanation in another task.
-3. **Possible new cause: recently repeated information becomes a default answer.** Compare the original school conversation with one that skips only the quote-reminder exchange. Keep the records and final payment-note request unchanged. Both versions of our completed naming test included the reminder, so they provide no test of repetition itself.
+1. **Does short-answer pressure also affect the original school payment note?** Keep the original request unchanged and compare it with the same request plus **“Just the note, nothing else.”** This checks the pharmacy explanation in another task.
+2. **Possible new cause: recently repeated information becomes a default answer.** Compare the original school conversation with one that skips only the quote-reminder exchange. Keep the records and final payment-note request unchanged. Both versions of our completed naming test included the reminder, so they provide no test of repetition itself.
 
-4. **Possible new cause: a later warning does not correct an earlier claim.** In the original school request, swap only the requested order from **“account name, product and pound amount”** to **“account name, pound amount and product.”** This tests whether dealing with the missing price before writing the plan reduces the plan mistake.
+3. **Possible new cause: a later warning does not correct an earlier claim.** In the original school request, swap only the requested order from **“account name, product and pound amount”** to **“account name, pound amount and product.”** This tests whether dealing with the missing price before writing the plan reduces the plan mistake.
 
 Before each comparison, check that the unchanged control still produces the original mistake. Then change one factor at a time.
 

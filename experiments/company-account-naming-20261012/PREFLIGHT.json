@@ -1,0 +1,53 @@
+{
+  "model_calls": 0,
+  "historical_client_byte_identical": true,
+  "isolated_replay_checks": [
+    {
+      "request": {
+        "op": "help"
+      },
+      "response_matches_historical": true
+    },
+    {
+      "request": {
+        "op": "read",
+        "id": "brief"
+      },
+      "response_matches_historical": true
+    },
+    {
+      "request": {
+        "op": "records"
+      },
+      "response_matches_historical": true
+    },
+    {
+      "request": {
+        "op": "read",
+        "id": "quote"
+      },
+      "response_matches_historical": true
+    },
+    {
+      "request": {
+        "op": "read",
+        "id": "request"
+      },
+      "response_matches_historical": true
+    },
+    {
+      "request": {
+        "op": "read",
+        "id": "profile"
+      },
+      "response_matches_historical": true
+    },
+    {
+      "request": {
+        "op": "read",
+        "id": "catalog"
+      },
+      "response_matches_historical": true
+    }
+  ]
+}

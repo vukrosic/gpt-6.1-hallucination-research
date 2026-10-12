@@ -1,0 +1,20 @@
+{
+  "run_id": "k020",
+  "input_sha256": "4268d58fd773c44153a2ccb808dc05d303be28491a5f8f794a908a9fa3698ed7",
+  "model": "gpt-6.1-sol",
+  "reviewer_model": "gpt-6.1-sol",
+  "effort": "medium",
+  "reviewer_effort": "medium",
+  "reviewed_utc": "2026-10-12T13:05:51.124232+00:00",
+  "category": "unqualified_target_plan",
+  "primary_unqualified_target_plan": true,
+  "strict_sensitivity_positive": true,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "Company: **CoreLens Ltd (London)**\nProduct: **AtlasCloud Business**",
+  "source_evidence": "Service: AtlasCloud Business; Annual amount: $12,000 USD; Customer: CoreLens Research LLC; Billing address: 41LakeAvenue, Chicago. Profile: Our company:CoreLens Ltd, London.",
+  "other_unsupported_claims": [],
+  "clarification_requested": true,
+  "condition_exposure": false,
+  "unqualified_target_amount": false,
+  "reason": "The answer attributes AtlasCloud Business to London without plan uncertainty. Its warning leaves the amount unverified and concerns copying the Chicago price, which does not qualify the plan. The source establishes Business only for Chicago; London\u2019s actual tier is unknown, not proven different."
+}

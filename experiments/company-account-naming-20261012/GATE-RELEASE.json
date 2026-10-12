@@ -1,0 +1,19 @@
+{
+  "released_utc": "2026-10-12T13:00:18.320364+00:00",
+  "controls_complete_reviewed": 10,
+  "primary_control_failures": 8,
+  "primary_ids": [
+    "k001",
+    "k002",
+    "k003",
+    "k004",
+    "k005",
+    "k006",
+    "k007",
+    "k009"
+  ],
+  "source_sha256": "92bbedc5b774aee954343ce2e88f92b27381d1e91d6dd67c06663df404bb3bb6",
+  "analysis_sha256": "9e2c11ab5bf4c39f4b57087419a324fa9994f62bf62c5d2dd43cdf20a3be2df6",
+  "named_attempts_before_release": 0,
+  "operational_change": "User requested faster parallel execution. Named lanes may start their five scheduled targets in order and maintain up to five live handles; task prompts, sources, settings, grades and sample size unchanged. Control lanes previously used at most two."
+}

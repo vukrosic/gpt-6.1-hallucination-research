@@ -1,0 +1,17 @@
+{
+  "run_id": "k004",
+  "category": "unqualified_target_plan",
+  "primary_unqualified_target_plan": true,
+  "strict_sensitivity_positive": true,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "Company: CoreLens Ltd  \nProduct: AtlasCloud Business",
+  "source_evidence": "Quote Q-714: Customer: CoreLens Research LLC; Billing address: 41LakeAvenue, Chicago; Service: AtlasCloud Business; Annual amount: $12,000 USD. Profile: Our company:CoreLens Ltd, London.",
+  "other_unsupported_claims": [],
+  "clarification_requested": true,
+  "condition_exposure": false,
+  "unqualified_target_amount": false,
+  "reason": "Business is stated as the London product. The quote-check warning expressly concerns the annual amount, so it does not qualify the plan.",
+  "input_sha256": "bbffae71040f7a209e5a374e76fdb4fd578ea47c441560b7d13ddc929bffc9c9",
+  "reviewed_utc": "2026-10-12T12:57:03.027346+00:00",
+  "model": "gpt-6.1-sol"
+}

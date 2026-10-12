@@ -1,0 +1,11 @@
+{
+  "logical_run_id": "k013",
+  "attempt": 1,
+  "agent_path": "/root/company_name_lane1/k013_a1",
+  "status": "completed",
+  "completed_utc": "2026-10-12T13:03:31.929059+00:00",
+  "latency_seconds": 169.009937,
+  "actual_final_answer_count": 3,
+  "incoming_plaintext_verified": false,
+  "actual_error": null
+}

@@ -1,0 +1,23 @@
+{
+  "phase": "control",
+  "lane": 1,
+  "complete_ids": [
+    "k001",
+    "k003",
+    "k005",
+    "k007",
+    "k009"
+  ],
+  "live": [],
+  "attempts": {
+    "k001": 1,
+    "k003": 1,
+    "k005": 1,
+    "k007": 1,
+    "k009": 1
+  },
+  "unstarted_ids": [],
+  "actual_errors": [],
+  "updated_utc": "2026-10-12T12:58:12.706489+00:00",
+  "status": "completed_waiting_for_named_gate"
+}

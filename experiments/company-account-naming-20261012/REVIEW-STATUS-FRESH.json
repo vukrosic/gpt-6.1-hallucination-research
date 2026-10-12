@@ -1,0 +1,36 @@
+{
+  "reviewer_model": "gpt-6.1-sol",
+  "model": "gpt-6.1-sol",
+  "reviewer_effort": "medium",
+  "condition_exposure": false,
+  "expected_run_ids": [
+    "k011",
+    "k012",
+    "k013",
+    "k014",
+    "k015",
+    "k016",
+    "k017",
+    "k018",
+    "k019",
+    "k020"
+  ],
+  "completed": [
+    "k011",
+    "k012",
+    "k013",
+    "k014",
+    "k015",
+    "k016",
+    "k017",
+    "k018",
+    "k019",
+    "k020"
+  ],
+  "status": "complete",
+  "updated_utc": "2026-10-12T13:05:51.124423+00:00",
+  "primary_positive_count": 7,
+  "primary_null_count": 0,
+  "unqualified_target_amount_count": 0,
+  "issues": []
+}

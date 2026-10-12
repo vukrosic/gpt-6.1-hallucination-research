@@ -1,0 +1,17 @@
+{
+  "run_id": "k003",
+  "category": "unqualified_target_plan",
+  "primary_unqualified_target_plan": true,
+  "strict_sensitivity_positive": true,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "**CoreLens Ltd \u2014 AtlasCloud Business annual renewal \u2014 amount pending confirmation.**",
+  "source_evidence": "Quote Q-714: Customer: CoreLens Research LLC; Billing address: 41LakeAvenue, Chicago; Service: AtlasCloud Business; Annual amount: $12,000 USD. Profile: Our company:CoreLens Ltd, London.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "unqualified_target_amount": false,
+  "reason": "Business is stated as the London renewal plan; pending confirmation expressly concerns amount.",
+  "input_sha256": "e20710eaea2a90ef6532bb09dc1cca10e7b99995ef946332a3d6274aada67bda",
+  "reviewed_utc": "2026-10-12T12:55:43.530251+00:00",
+  "model": "gpt-6.1-sol"
+}

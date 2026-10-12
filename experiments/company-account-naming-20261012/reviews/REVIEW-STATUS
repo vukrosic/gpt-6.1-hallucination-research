@@ -1,0 +1,25 @@
+{
+  "status": "stopped_after_condition_exposure",
+  "recorded_utc": "2026-10-12T13:01:02.849982+00:00",
+  "exposure_received_utc": "Exact transport timestamp unavailable; exposure arrived after k010 review write and after first-10 completion report, before this status record.",
+  "exact_exposure_message": "Controls all10 completed and root analyzer checks pass. Please finish remaining k009/k010 reviews promptly and report control review total, so I can release the named phase.",
+  "first_ten_frozen_before_exposure": true,
+  "latest_frozen_review_utc": "2026-10-12T12:59:46.604997+00:00",
+  "reviewed_run_ids": [
+    "k001",
+    "k002",
+    "k003",
+    "k004",
+    "k005",
+    "k006",
+    "k007",
+    "k008",
+    "k009",
+    "k010"
+  ],
+  "primary_true_count": 8,
+  "primary_false_count": 2,
+  "primary_null_count": 0,
+  "future_packets_reviewed_after_exposure": false,
+  "note": "First 10 immutable reviews were completed with condition_exposure=false before the quoted exposure message. No regrading occurred. Work stopped; remaining packets require a fresh context-independent reviewer."
+}

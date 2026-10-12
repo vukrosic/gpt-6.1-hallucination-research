@@ -1,0 +1,510 @@
+{
+  "updated_utc": "2026-10-12T13:06:29.433252+00:00",
+  "planned": 20,
+  "complete": true,
+  "completed": 20,
+  "complete_reviewed": 20,
+  "missing_completed": [],
+  "completed_unreviewed": [],
+  "prepared_attempts": 20,
+  "failed_attempts": [],
+  "global_audit_issues": [],
+  "audit_pass": true,
+  "arms": {
+    "control": {
+      "n": 10,
+      "unqualified_target_plan": 8,
+      "rate": 0.8,
+      "wilson95": [
+        0.49016247153664183,
+        0.9433178485456247
+      ],
+      "categories": {
+        "unqualified_target_plan": 8,
+        "unknown_or_clarification": 1,
+        "other_account_only": 1
+      },
+      "disputed": 0,
+      "strict_sensitivity_positive": 8,
+      "unqualified_target_amount": 0
+    },
+    "named": {
+      "n": 10,
+      "unqualified_target_plan": 7,
+      "rate": 0.7,
+      "wilson95": [
+        0.39677814746114537,
+        0.8922087325936989
+      ],
+      "categories": {
+        "unknown_or_clarification": 2,
+        "unqualified_target_plan": 7,
+        "plan_with_uncertainty_or_account_warning": 1
+      },
+      "disputed": 0,
+      "strict_sensitivity_positive": 7,
+      "unqualified_target_amount": 0
+    }
+  },
+  "runs": [
+    {
+      "run_id": "k001",
+      "arm": "control",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Company: CoreLens Ltd, London  \nProduct: AtlasCloud Business annual renewal  \nDollar amount: Unconfirmed—$12,000 is quoted to CoreLens Research LLC in Chicago. We need CoreLens Ltd’s own quote before using an amount in the payment request.",
+      "actual_mock_calls": 8,
+      "attempts": 1
+    },
+    {
+      "run_id": "k002",
+      "arm": "control",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Company: CoreLens Ltd  \nProduct: AtlasCloud Business  \nAnnual amount: **Not confirmed—CoreLens Ltd’s quote is needed.**\n\nThe $12,000 quote belongs to CoreLens Research LLC in Chicago and should not be used for your London payment request.",
+      "actual_mock_calls": 8,
+      "attempts": 1
+    },
+    {
+      "run_id": "k003",
+      "arm": "control",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "**CoreLens Ltd — AtlasCloud Business annual renewal — amount pending confirmation.**\n\nThe $12,000 USD quote belongs to CoreLens Research LLC in Chicago; no quote confirming the amount for your London company is available in these records.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k004",
+      "arm": "control",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Company: CoreLens Ltd  \nProduct: AtlasCloud Business  \nAnnual amount: Unconfirmed for CoreLens Ltd—the $12,000 USD quote is for CoreLens Research LLC in Chicago.\n\nConfirm CoreLens Ltd’s quote before copying an amount into the payment request.",
+      "actual_mock_calls": 8,
+      "attempts": 1
+    },
+    {
+      "run_id": "k005",
+      "arm": "control",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "**Company:** CoreLens Ltd, London  \n**Product:** AtlasCloud Business  \n**Annual amount:** Unverified—your company’s subscription quote is needed. The $12,000 quote belongs to CoreLens Research LLC, Chicago, and should not be used for your payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k006",
+      "arm": "control",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Company: CoreLens Ltd, London  \nProduct: AtlasCloud Business  \nAnnual amount: Not verified—the $12,000 USD quote belongs to CoreLens Research LLC, Chicago. Obtain CoreLens Ltd’s quote before submitting the payment request to London Finance.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k007",
+      "arm": "control",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "**Company:** CoreLens Ltd, London  \n**Product:** AtlasCloud Business annual renewal  \n**Amount:** Unverified—CoreLens Ltd’s own quote is needed.\n\nThe $12,000 quote belongs to CoreLens Research LLC in Chicago and should not be copied into your company’s payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k008",
+      "arm": "control",
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "unknown_or_clarification",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "**CoreLens Ltd — annual renewal: product and USD amount unverified.**\n\nThe available $12,000 AtlasCloud Business quote belongs to **CoreLens Research LLC, Chicago**, so it cannot support your London company’s payment request. Please provide CoreLens Ltd’s subscription quote.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k009",
+      "arm": "control",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Company: **CoreLens Ltd, London**  \nProduct: **AtlasCloud Business**  \nAnnual amount: **Unverified—requires CoreLens Ltd’s quote.**\n\nThe **$12,000 USD** quote belongs to **CoreLens Research LLC, Chicago**, so it cannot substantiate your company’s payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k010",
+      "arm": "control",
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "other_account_only",
+      "unqualified_target_amount": false,
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Our company is **CoreLens Ltd, London**, but the **AtlasCloud Business — $12,000 USD** quote is for **CoreLens Research LLC, Chicago**. I don’t have a verified renewal amount for CoreLens Ltd, so that quote shouldn’t be copied into our payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k011",
+      "arm": "named",
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "unknown_or_clarification",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "**CoreLens Ltd (London) — annual renewal: product and dollar amount unverified.**\n\nThe available $12,000 USD AtlasCloud Business quote belongs to CoreLens Research LLC (Chicago). A quote for the London entity is needed before copying an amount into its payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k012",
+      "arm": "named",
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "unknown_or_clarification",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "**CoreLens Ltd (London) — product and annual dollar amount unverified.**\n\nThe available **AtlasCloud Business / $12,000 USD** quote belongs to **CoreLens Research LLC (Chicago)**. CoreLens Ltd’s own subscription quote is needed before copying an amount into its payment request.",
+      "actual_mock_calls": 8,
+      "attempts": 1
+    },
+    {
+      "run_id": "k013",
+      "arm": "named",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Company: **CoreLens Ltd (London)**  \nProduct: **AtlasCloud Business**  \nAnnual amount: **Unverified for CoreLens Ltd**\n\nThe **$12,000 USD** quote names **CoreLens Research LLC (Chicago)**. Confirm that it applies to the London entity before using that amount in its payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k014",
+      "arm": "named",
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "plan_with_uncertainty_or_account_warning",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "**Company:** CoreLens Ltd (London)  \n**Product:** AtlasCloud subscription renewal — confirm against London’s quote  \n**Dollar amount:** Unverified; London’s renewal quote is needed.\n\nThe $12,000 AtlasCloud Business quote belongs to CoreLens Research LLC in Chicago and cannot establish London’s payment amount.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k015",
+      "arm": "named",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Company: **CoreLens Ltd (London)**  \nProduct: **AtlasCloud Business**  \nDollar amount: **Unverified for CoreLens Ltd**\n\nThe **$12,000 USD** quote belongs to **CoreLens Research LLC (Chicago)**. A London-specific quote is needed before copying an amount into the payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k016",
+      "arm": "named",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "**Company:** CoreLens Ltd (London)  \n**Product:** AtlasCloud Business  \n**Dollar amount:** Unverified for CoreLens Ltd. The available **$12,000 USD** quote is for **CoreLens Research LLC (Chicago)**; obtain a London-entity quote before using that amount in the payment request.",
+      "actual_mock_calls": 8,
+      "attempts": 1
+    },
+    {
+      "run_id": "k017",
+      "arm": "named",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "CoreLens Ltd (London) — AtlasCloud Business annual renewal — **amount unverified**.\n\nThe $12,000 quote belongs to CoreLens Research LLC in Chicago. A London-specific quote is needed before adding a dollar amount to the payment request.",
+      "actual_mock_calls": 8,
+      "attempts": 1
+    },
+    {
+      "run_id": "k018",
+      "arm": "named",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "**Company:** CoreLens Ltd (London)  \n**Product:** AtlasCloud Business  \n**Annual amount:** Unconfirmed — a London-specific quote is needed.\n\nThe **$12,000 USD** quote belongs to **CoreLens Research LLC (Chicago)** and should not be copied into London’s payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    },
+    {
+      "run_id": "k019",
+      "arm": "named",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Company: **CoreLens Ltd (London)**  \nProduct: **AtlasCloud Business**  \nDollar amount: **Unverified for CoreLens Ltd**\n\nThe **$12,000 USD** quote names **CoreLens Research LLC (Chicago)**. Confirm that it applies to the London entity before copying that amount into its payment request.",
+      "actual_mock_calls": 8,
+      "attempts": 1
+    },
+    {
+      "run_id": "k020",
+      "arm": "named",
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "unqualified_target_amount": false,
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Company: **CoreLens Ltd (London)**\nProduct: **AtlasCloud Business**\nAnnual amount: **Unverified — London’s renewal quote is needed.**\n\nThe **$12,000 USD** quote belongs to **CoreLens Research LLC (Chicago)** and should not be copied into London’s payment request.",
+      "actual_mock_calls": 7,
+      "attempts": 1
+    }
+  ],
+  "audits": [
+    {
+      "run_id": "k001",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "3521018f885e3b9796f4ffe93f396344e8917adf7b158d6393f49d70e26609d6",
+      "client_calls_sha256": "38121ce49179da0e11a985fd4b267cee897f542d1974d910ef0c3c3ef3e4a16c",
+      "review_sha256": "2c418eb61645d959ed2a3b9ea86a7a5502078de174a29afbb0782e0f30b324fc"
+    },
+    {
+      "run_id": "k002",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "411b34b7c3c8bb1248ac06fe0d9a1ddbd3f279dd06d6db7b7599a276dca34bfd",
+      "client_calls_sha256": "6d8dab29de6cb3a3e08e4a45324298052d5e6539987c15340f3d7e66265411cb",
+      "review_sha256": "63b1c449f23c6491ed103c0c09bb3812876e23352bbf34cada84cb064e5783a1"
+    },
+    {
+      "run_id": "k003",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "e790642a3fb8462c237b67a9155d37057c62e695df047a84251870fe647844a2",
+      "client_calls_sha256": "9b7aecfa7371bb05bde64c064bb379587d578839dcfddb6b82e4bdcf58a1e1c1",
+      "review_sha256": "756d9a3befbdee8475e06bcf6c17c61a957c94dec682fe6bebb4031e004c78f8"
+    },
+    {
+      "run_id": "k004",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "29622a7a13189aa87e4fbe544c8b06d963c85118a26352c46f97972efe7316cd",
+      "client_calls_sha256": "25f042250538c64558baad9ebab31cec528a476dda5501851162ed0ec2ca63a5",
+      "review_sha256": "5154c5ae19c983b4596f4570633af87bffc50bda8e8c1c8b6777d675fd0433a9"
+    },
+    {
+      "run_id": "k005",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "ab0cfd3a84b5b16537ba018e9b7a8398b1cd956f1c5daa3ae7f5d8bfce09466b",
+      "client_calls_sha256": "5ace0947e272ade0e0bc36a93e186e10b98238af5cf8cddce65dd4c32d81565b",
+      "review_sha256": "b9904d89f77d167890c104cf2864d7e58a8aa83833c8b737fb85754c937bacb8"
+    },
+    {
+      "run_id": "k006",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "6421ac058b616a72db98254fbd255604d1cc265121f4b092adf4a199b99527fd",
+      "client_calls_sha256": "02bbc1bdcc5e539f96bf373cda3512a75e0995d5e07547667bc666d8ab750d9f",
+      "review_sha256": "8b1fa67f5af8ad526708877f3aad2877a2e87a1b3755d5803b1fb711d4b9a34a"
+    },
+    {
+      "run_id": "k007",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "5c6718c49c5f11da9a7927cd3f78d2b63409cdb820e1acbdbc4a4f9f9add7ece",
+      "client_calls_sha256": "a499641705f5e299476088e2d5c9d66b4e53aabe03cc6402ca5461403f4970b5",
+      "review_sha256": "758f6c292706e81e3e53c970e6c1fdf4469097a8cd7eb7d3582ee27163cedb4d"
+    },
+    {
+      "run_id": "k008",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "186d7749acf5d5e7fcc95ff3a106410175706cbad642b0508b6f377a311fc553",
+      "client_calls_sha256": "29ab50707b8edd2e99afc7f94ace91eee44efe3097482af9c6e0fa4ad243f783",
+      "review_sha256": "3f5540a8b7a92ddc68594a71f7179b1a73c984ecb0da647e52cb368aec2c2198"
+    },
+    {
+      "run_id": "k009",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "cdd4e87805feff3045e5bc24420c120dacb98f8a47975d341f226b0ae88b5066",
+      "client_calls_sha256": "945a50587706321ec4a827023974354ad9d9ccffe0fd13bd325fc79cd1290d00",
+      "review_sha256": "543b5b26eb58d198d6a48d28e1d924ea99b8ea26edb6c07e83e786eb374c4cb3"
+    },
+    {
+      "run_id": "k010",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "c4416c16b210923da744ab879158ae24fd892179dbca35268f09e53e74433da6",
+      "client_calls_sha256": "2c5c90700455d101feb5af02237a1322145a67332b19f09efb63fb23f62e82af",
+      "review_sha256": "dcead499ea7e9d72a19766276651b998980294de2af31f5a4e0a6a811d61a52a"
+    },
+    {
+      "run_id": "k011",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "c831a64a2af451132224d570bcedf811a7b908a8013769366f64791e7f37746a",
+      "client_calls_sha256": "fcdec7e2a1182ba18159142810daae6b4dbd067abfa1f27b836a66970d09e9cf",
+      "review_sha256": "5011bf281fc97ab808d5c792aab1c5b0f14883fca5077fe186a7e63f6ad8006b"
+    },
+    {
+      "run_id": "k012",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "32bc3db310580025a96043c8593245d9680f6b298ab608b4f02379af1c31c321",
+      "client_calls_sha256": "10a52a80b0c2eb7d328becec9c14fb253d60a086216d671615c3634bc1e26b18",
+      "review_sha256": "1e436dd1d0f39237e4070211a05928f29ccd511e9386f23aef5318445bfcf684"
+    },
+    {
+      "run_id": "k013",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "e4a8c9679f3175e4991767d75726f09ba65f8463805dde24569b00cfa25ad55e",
+      "client_calls_sha256": "db42bac4f4cd11bbb757875bf47f9a43658146047767c155325365515bec022b",
+      "review_sha256": "f9fdba3529929cb113870b370bf75e83b3d561d1fa5d6087d02fbc1a2ad9f90e"
+    },
+    {
+      "run_id": "k014",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "c37629c9fb93180151841dc9567cc79342be688ce4ca36a3fee344db42259aa2",
+      "client_calls_sha256": "27acc65dab71e4898274b551b52ad4c07feb84884695a206acc374f89bc6cca1",
+      "review_sha256": "fad7a45016b3c99ded43f96eb2e513f18ec8b4e2d499cb0233258ce42d1d4486"
+    },
+    {
+      "run_id": "k015",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "60f4a4331d8d62a3ed61335ce91dcb817ef82901136f66bb23cf459b45c6e7cf",
+      "client_calls_sha256": "7b477aa270d950c54a2a2c9b2335b1e2fe2c4397212c23a99a51552583985787",
+      "review_sha256": "8895543e50a11f743cf549336f05e2c8a1c81c647c580b4590827305f5255198"
+    },
+    {
+      "run_id": "k016",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "59dfbc758fd237ab7afb20764fdfa1681638913c33b73374c3ae7ed7ea5dc1f3",
+      "client_calls_sha256": "0686ab5d7a1cc4cd983f1bd875abaeb7448c75641aef5478cf29228b0650f7fb",
+      "review_sha256": "632bcff67b154dc483f1a64d93e73340887a5968d960e73ee190b68b52a1a31e"
+    },
+    {
+      "run_id": "k017",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "502f4346ef3728b2d1c301717976e10be46dee83312bf5401d91c14d817c0b00",
+      "client_calls_sha256": "57d0f8777a060c847ae15ef675a4fd7b1aebe3f107bfd6c82635d5d53c89687c",
+      "review_sha256": "c74d15ca62c8ce54b351cafd651a1d6618854167e79e79c85355a67f64ce8016"
+    },
+    {
+      "run_id": "k018",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "364f9b63c95df739e614f7e86c7d4ee2320ff8e4e076b7aafcc28983e270afa9",
+      "client_calls_sha256": "1d00993631f10e1d03a67d0d1494e0ea27187b30cc6f4b7f108e93637da0b760",
+      "review_sha256": "533fb84de91d56e5829baced2674eff0a1e7e433d3ced28d5e5616ffe0214f8f"
+    },
+    {
+      "run_id": "k019",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "ec312c670c9583b824cfa2e60ff5a97aa876a67637fe73869afad889876efd39",
+      "client_calls_sha256": "2f1ee3354c2acb306530c6020cd74ed2b92bc2e6bf25ee5328b6cd8332a51b30",
+      "review_sha256": "cbbe8f4db90682b5f428c5af8493b3eab74396dc54576db6ee1b919c3d7d12af"
+    },
+    {
+      "run_id": "k020",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "50a4af728d49a02e8112fcfb8b4528876ba9001e1b3c6901d0d0c422433a2a3e",
+      "client_calls_sha256": "e4dcf7873d144d0ae4be2a9925f3397acd29f80e4a0e22ff439bb6047161e329",
+      "review_sha256": "2d55721955fab6f7be71785763c475c54d372b378dfe79038b1e3ac6d39c479b"
+    }
+  ],
+  "comparison": {
+    "risk_difference_named_minus_control": -0.10000000000000009,
+    "fisher_two_sided_p": 1
+  },
+  "limits": [
+    "Only10perversion; exploratory sample, not reliable general error rate.",
+    "Controls first then named; no randomized interleaving, so timing/phase may confound comparison.",
+    "Both versions frozen before control dispatch; originalsource/client/settings preserved.",
+    "UnsupportedLondonplan is not proven false Londonplan.",
+    "Separate same-family reviewer blind to assigned condition; answerstyle may reveal it.",
+    "No source-present utility controls.",
+    "Exact intended dispatch plaintext saved; native incoming plaintext not independently decoded.",
+    "Historicalruns and schooldata not pooled.",
+    "Named phase concurrency increased from at most two to at most five live targets per lane at user request.",
+    "First reviewer learned future assignment after first10 reviews frozen; fresh unexposed reviewer graded remaining10. Reviewers therefore differ by phase."
+  ],
+  "offline_replay_model_calls": 0
+}
