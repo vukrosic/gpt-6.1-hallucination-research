@@ -93,7 +93,7 @@ A change in the error rate would support or weaken an explanation. It would not 
 
 ### Does pressuring GPT-6.1 to give a time make it use another pharmacy’s hours instead of saying “unknown”?
 
-The user asks about the pharmacy on Castro, but the agent only receives Mission Street’s hours. We removed **“just the time, nothing else”** from the question and kept everything else the same. The agent gave a time without warning that Castro’s hours were uncertain in **14/50 runs with the phrase** and **0/50 without it**. All 50 answers without the phrase explained the uncertainty or location difference.
+The user asks about the pharmacy on Castro, but the agent only receives Mission Street’s hours. We removed **“just the time, nothing else”** from the question and kept everything else the same. The agent gave **9 PM** as Castro’s closing time, using Mission Street’s hours without a warning, in **14/50 runs with the phrase** and **0/50 without it**. All 50 answers without the phrase explained the uncertainty or location difference.
 
 This suggests that asking for only a time can make the agent leave out a necessary warning. We have only tested this change on this one example.
 
@@ -111,7 +111,7 @@ The pharmacy’s pressure effect did not appear with this school question. This 
 
 We first repeated the original payment-note request and reproduced the mistake in **3/10**. Then we ran a separate comparison, changing only **“our own”** to **“our Westbrook School account’s.”** The original request filled in Eastbrook’s plan for Westbrook without a warning in **24/50 runs**; explicitly naming Westbrook did so in **1/50**.
 
-Naming the account helped substantially in this example, but did not prevent every mistake. The ten control-check runs are separate from the comparison.
+Naming the account helped substantially in this example, but did not prevent every mistake. The ten control-check runs are separate from the comparison. [See the remaining failure: full prompts, reply and explanation](experiments/school-account-naming-20261012/comparison/REMAINING-FAILURE.md).
 
 [Short report and all 110 traces](experiments/school-account-naming-20261012/README.md).
 

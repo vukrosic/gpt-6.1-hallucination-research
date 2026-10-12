@@ -9,3 +9,5 @@ Before starting, we repeated the original request ten times and reproduced the m
 [Short comparison report and all 100 traces](comparison/README.md) · [Original ten-run control check](control-check/README.md).
 
 Naming Westbrook helped substantially in this example, but one reply still copied Eastbrook’s plan without a plan warning. The results do not show that naming prevents every mistake.
+
+[See the one reply that still failed when Westbrook was explicitly named](comparison/REMAINING-FAILURE.md).
