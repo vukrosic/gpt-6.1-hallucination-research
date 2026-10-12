@@ -19,7 +19,7 @@ example, with its question, search result and all 10 replies, is in [EXAMPLES.md
 
 ## 1. The mistake
 
-1. The user asks for one fact about one thing and tells the agent to return just that fact and nothing else.
+1. The user asks a question about one thing and tells the agent to return just that fact and nothing else.
 2. The agent uses the search tool. The search returns that kind of fact, but for a similar thing, not for the
    thing the user asked about.
 3. Under the pressure to return just the fact and nothing else, the agent returns the similar thing's fact. It
