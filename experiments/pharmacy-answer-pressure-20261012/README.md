@@ -26,7 +26,7 @@ We removed only **“just the time, nothing else.”** The information and model
 
 | What the agent answered | Original question | Phrase removed |
 |---|---:|---:|
-| Gave a closing time without saying Castro’s hours were uncertain | **14/50** | **0/50** |
+| Gave 9 PM as Castro’s closing time, using Mission Street’s hours without a warning | **14/50** | **0/50** |
 | Gave a time, but explained the uncertainty or location difference | 5/50 | 50/50 |
 | Did not give a time | 31/50 | 0/50 |
 
