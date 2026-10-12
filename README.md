@@ -15,7 +15,7 @@ Research by Vuk Rosić on personal-assistant workflows using **gpt-6.1-sol**. Th
 
 We tested two versions of the saved account details. One includes the warning **“those are separate customer accounts.”** The other removes only that warning; both company names and cities remain.
 
-Without the separate-account warning: **4/10** filled in Business without an explicit plan warning, **2/10** named it with a plan warning, and **4/10** left the plan unknown. All ten correctly withheld London's price.
+Without the separate-account warning: **4/10** filled in Business without an explicit plan warning, **2/10** named it with a plan warning, and **4/10** left the plan unknown.
 
 With the separate-account warning: **1/10** filled the plan without an explicit plan warning, **1/10** named it with a warning, and **8/10** left it unknown.
 
@@ -40,7 +40,11 @@ Exact final reply from the batch without the separate-account warning, run 08:
 <details>
 <summary>Full results, example reply, and school traces</summary>
 
-**6/10** filled in Premium Family without an explicit plan warning, **2/10** named it with a plan warning, and **2/10** left the plan unknown. All ten correctly withheld Westbrook's price.
+- **6/10:** Filled in **Premium Family** without explicitly telling the user that Westbrook's plan still needed checking.
+- **2/10:** Filled in **Premium Family**, but told the user to check the plan first.
+- **2/10:** Said Westbrook's plan was **unknown**—the correct response given the records.
+
+All ten correctly withheld Westbrook's price.
 
 Exact final reply from run 02:
 
@@ -75,6 +79,18 @@ Exact final reply from run 01:
 
 The mistake is giving an answer the records do not establish. The actual plan or closing time could coincidentally be the same.
 
+## Root-cause research
+
+We will use the traces to propose possible causes, then test those explanations by changing one factor at a time. These are hypotheses to investigate:
+
+| Possible cause | Experiment |
+|---|---|
+| Earlier answers carry over into a different question | Compare the original conversation with a fresh conversation asking only the final question, using the same source records. |
+| Similar account names make it easier to mix up who a fact belongs to | Compare similar names with clearly different names, changing the names consistently across the records. |
+| Pressure to fill every field encourages guessing | Compare a strict answer-format request with a neutral request, keeping the available facts unchanged. |
+
+A change in the error rate would support or weaken an explanation. It would not prove the model's internal reasoning or establish a single cause.
+
 ## Mitigation research
 
 We are researching ways to reduce unsupported claims. Each strategy below has the same main hypothesis: **adding it reduces unsupported claims compared with the baseline**.
@@ -93,6 +109,24 @@ A single added sentence has negligible input-token cost. The meaningful costs ar
 | 8 | **Separate retrieval from answering** | Another stage, potentially more calls and latency. The retrieval stage could omit necessary evidence. |
 | 9 | **Ask for clarification when necessary** | Minimal prompt increase, but potentially another user interaction. Could ask unnecessary questions or shift work onto the user. |
 
-For **#9**, clarification is conditional: ask when information is confusing, contradictory, or insufficient for a reliable answer.
+These traces include prompts, chronological tool calls/results, and replies. Raw internal reasoning is not available to us as readable text. [OpenAI documents reasoning visibility and encrypted reasoning content](https://developers.openai.com/api/docs/guides/reasoning).
 
-Full traces include chronological public tool calls/results and final replies. Private internal reasoning is excluded.
+
+## Planned experiments
+
+1. **Screen the nine strategies:** 10 fresh conversations per strategy, per example, plus 10 baseline conversations per example. Across three examples, that is **300 main conversations**, plus controls where the correct information is supplied. Each strategy is tested separately.
+2. **Confirm the strongest candidate:** Compare it with a fresh baseline. Choose the final number of repeats before starting, using the screening error rate and the improvement we want to detect.
+3. **Report the results:** Unsupported answers, correctly answered controls, unnecessary withholding or questions, reported token usage when available, model/tool calls, and elapsed time.
+
+Ten repeats are for screening. For substantial improvements, our approximate planning calculations suggest:
+
+| Improvement we want to detect | Repeats per condition, per example |
+|---|---:|
+| Errors fall from 40% to 10% | About 35; plan **50** |
+| Errors fall from 10% to 2% | About 140; plan **150** |
+
+These estimates assume independent runs, 80% statistical power, and a 5% significance threshold for one baseline-versus-mitigation comparison. They are approximate planning values, not guarantees. Smaller improvements may require considerably more repeats. [Background on sample-size planning](https://www.itl.nist.gov/div898/handbook/prc/section2/prc242.htm).
+
+For one candidate across all three examples, 50 baseline and 50 candidate runs per example means **300 main conversations**; 150 per condition means **900**. Screening is exploratory; confirmation uses fresh data.
+
+Sources and prompts will be fixed within each comparison, with conditions interleaved in randomized order. We will also test new scenario variations to check whether an improvement extends beyond these exact examples.
