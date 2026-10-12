@@ -1,0 +1,392 @@
+[
+  {
+    "run_id": "s001",
+    "block": 1,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s001 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s002",
+    "block": 1,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s002 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s009",
+    "block": 5,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s009 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s010",
+    "block": 5,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s010 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s017",
+    "block": 9,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s017 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s018",
+    "block": 9,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s018 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s025",
+    "block": 13,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s025 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s026",
+    "block": 13,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s026 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s033",
+    "block": 17,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s033 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s034",
+    "block": 17,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s034 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s041",
+    "block": 21,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s041 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s042",
+    "block": 21,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s042 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s049",
+    "block": 25,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s049 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s050",
+    "block": 25,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s050 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s057",
+    "block": 29,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s057 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s058",
+    "block": 29,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s058 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s065",
+    "block": 33,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s065 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s066",
+    "block": 33,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s066 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s073",
+    "block": 37,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s073 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s074",
+    "block": 37,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s074 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s081",
+    "block": 41,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s081 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s082",
+    "block": 41,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s082 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s089",
+    "block": 45,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s089 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s090",
+    "block": 45,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s090 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  },
+  {
+    "run_id": "s097",
+    "block": 49,
+    "lane": 1,
+    "arm": "neutral",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s097 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on?"
+    ]
+  },
+  {
+    "run_id": "s098",
+    "block": 49,
+    "lane": 1,
+    "arm": "pressure",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s098 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Which plan is our Westbrook School account on? Just the plan, nothing else."
+    ]
+  }
+]

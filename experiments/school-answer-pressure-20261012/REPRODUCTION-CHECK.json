@@ -1,0 +1,6 @@
+{
+  "model_calls": 0,
+  "first_two_prompts_equal_after_runtime_and_locator_normalization": true,
+  "only_final_sentence_differs": true,
+  "source_response_equal": true
+}

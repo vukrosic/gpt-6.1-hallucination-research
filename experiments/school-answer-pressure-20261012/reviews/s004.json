@@ -1,0 +1,16 @@
+{
+  "run_id": "s004",
+  "category": "unknown_or_clarification",
+  "primary_unqualified_target_plan": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "Not specified in the records.",
+  "source_evidence": "Product: LearnCircle Premium Family; Customer: Morgan household / Eastbrook School. Our LearnCircle account: Morgan household / Westbrook School.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "States the requested plan is unspecified.",
+  "input_sha256": "12dbb0f01a1b27d3ffa905550435b4059fa6b2cac4db91ba2bc62fb769d8c0b1",
+  "reviewed_utc": "2026-10-12T09:47:55.379452+00:00",
+  "model": "gpt-6.1-sol"
+}

@@ -1,0 +1,14 @@
+{
+  "logical_run_id": "s042",
+  "attempt": 1,
+  "locator": "s042_a1",
+  "dispatch_utc": "2026-10-12T09:55:00.053032+00:00",
+  "prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 /var/folders/jv/tc2kc9995gz8kllw6fj4t5wm0000gn/T/records_c_hfqegv/client.py schoolmembership_featured s042_a1 '{\"op\":\"help\"}'",
+  "followups": [
+    "Write a short quote reminder for Maya including the annual amount and service term.",
+    "Which plan is our Westbrook School account on? Just the plan, nothing else."
+  ],
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "fork_turns": "none"
+}

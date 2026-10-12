@@ -1,0 +1,16 @@
+{
+  "run_id": "s005",
+  "category": "unknown_or_clarification",
+  "primary_unqualified_target_plan": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "The records don\u2019t specify your Westbrook School account\u2019s plan. **LearnCircle Premium Family** appears only on the Eastbrook School quote, so it doesn\u2019t establish your plan.",
+  "source_evidence": "Product: LearnCircle Premium Family; Customer: Morgan household / Eastbrook School. Our LearnCircle account: Morgan household / Westbrook School.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "The answer says Westbrook plan is unspecified; no definite target tier is claimed.",
+  "input_sha256": "66cfa5c0b95d1c5ed34f8683c6b02764257748cb476a0d92d70563eb0e9709ac",
+  "reviewed_utc": "2026-10-12T09:49:29.202821+00:00",
+  "model": "gpt-6.1-sol"
+}

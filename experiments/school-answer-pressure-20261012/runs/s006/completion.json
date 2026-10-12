@@ -1,0 +1,11 @@
+{
+  "logical_run_id": "s006",
+  "attempt": 1,
+  "agent_path": "/root/school_pressure_lane3/s006_a1",
+  "status": "completed",
+  "completed_utc": "2026-10-12T09:48:31.018147+00:00",
+  "latency_seconds": 135.042102,
+  "actual_final_answer_count": 3,
+  "incoming_plaintext_verified": false,
+  "actual_error": null
+}
