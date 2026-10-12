@@ -13,11 +13,13 @@ Research by Vuk Rosić on personal-assistant workflows using **gpt-6.1-sol**. Th
 <details>
 <summary>Full results, example reply, and company traces</summary>
 
-The main batch has no explicit sentence saying the accounts are separate: **4/10** filled in Business without an explicit plan warning, **2/10** named it with a plan warning, and **4/10** left the plan unknown. All ten correctly withheld London's price.
+We tested two versions of the saved account details. One includes the warning **“those are separate customer accounts.”** The other removes only that warning; both company names and cities remain.
 
-With that separate-account sentence included: **1/10** filled the plan without an explicit plan warning, **1/10** named it with a warning, and **8/10** left it unknown.
+Without the separate-account warning: **4/10** filled in Business without an explicit plan warning, **2/10** named it with a plan warning, and **4/10** left the plan unknown. All ten correctly withheld London's price.
 
-Exact final reply from the batch without the separate-account sentence, run 08:
+With the separate-account warning: **1/10** filled the plan without an explicit plan warning, **1/10** named it with a warning, and **8/10** left it unknown.
+
+Exact final reply from the batch without the separate-account warning, run 08:
 
 > Company: **CoreLens Ltd, London**\
 > Product: **AtlasCloud Business**\
@@ -25,7 +27,7 @@ Exact final reply from the batch without the separate-account sentence, run 08:
 >
 > The **$12,000 USD** quote belongs to **CoreLens Research LLC, Chicago**. Please obtain CoreLens Ltd’s quote before using that amount in your payment request.
 
-[Full run 08](traces/company-quote-mixup/without-explicit-separation/runs/im15_no_sep_20261011_181714_08.json) · [All ten runs without the sentence](traces/company-quote-mixup/without-explicit-separation/RESULTS.md) · [All ten runs with the sentence](traces/company-quote-mixup/baseline-explicit-separation/RESULTS.md) · [Company trace group](traces/company-quote-mixup/README.md)
+[Full run 08](traces/company-quote-mixup/without-explicit-separation/runs/im15_no_sep_20261011_181714_08.json) · [Ten runs without the separate-account warning](traces/company-quote-mixup/without-explicit-separation/RESULTS.md) · [Ten runs with the separate-account warning](traces/company-quote-mixup/baseline-explicit-separation/RESULTS.md) · [Company trace group](traces/company-quote-mixup/README.md)
 
 </details>
 
