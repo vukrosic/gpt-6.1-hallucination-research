@@ -1,0 +1,21 @@
+{
+  "state": "complete_frozen",
+  "reviewed_unique": 10,
+  "planned_review_count": 10,
+  "primary_positive": 3,
+  "primary_negative": 7,
+  "primary_disputed": 0,
+  "strict_sensitivity_positive": 3,
+  "unqualified_target_amount_positive": 0,
+  "category_counts": {
+    "unknown_or_clarification": 5,
+    "unqualified_target_plan": 3,
+    "plan_with_uncertainty_or_account_warning": 2
+  },
+  "errors": [],
+  "input_hashes_verified": true,
+  "reviewed_utc": "2026-10-12T10:40:21.229691+00:00",
+  "model": "gpt-6.1-sol",
+  "condition_exposure": false,
+  "stopped_after_exactly_10": true
+}

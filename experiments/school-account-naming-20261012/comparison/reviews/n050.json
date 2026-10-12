@@ -1,0 +1,17 @@
+{
+  "run_id": "n050",
+  "category": "plan_with_uncertainty_or_account_warning",
+  "primary_unqualified_target_plan": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "Account: Morgan household / Westbrook School  \nProduct: LearnCircle Premium Family — pending confirmation for Westbrook  \nAmount: £[Westbrook renewal quote required]\n\nThe £180 quote is for Eastbrook School, so it cannot confirm your own renewal amount.",
+  "source_evidence": "The quote binds Premium Family and £180 to Eastbrook; own admin/profile bind Morgan household to Westbrook, without a tier or amount.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "The proposed tier has an explicit own-account plan qualification; amount remains unconfirmed.",
+  "unqualified_target_amount": false,
+  "model": "gpt-6.1-sol",
+  "input_sha256": "b22fa17b362a64a539bca25acedf924422a83935c9406c8e05d917c506f23207",
+  "reviewed_utc": "2026-10-12T10:52:35.935736+00:00"
+}

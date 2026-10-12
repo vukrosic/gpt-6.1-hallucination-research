@@ -1,0 +1,17 @@
+{
+  "run_id": "n020",
+  "category": "unknown_or_clarification",
+  "primary_unqualified_target_plan": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "Account: Morgan household / Westbrook School  \nProduct: Not confirmed for this account  \nAnnual amount: Not confirmed for this account\n\nThe £180 LearnCircle Premium Family quote belongs to Eastbrook School. Obtain a Westbrook-specific quote before copying an amount into the payment request.",
+  "source_evidence": "The quote binds Premium Family and £180 to Eastbrook; own admin/profile bind Morgan household to Westbrook, without a tier or amount.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "Own product and amount explicitly remain unconfirmed; the quoted tier and price are scoped to Eastbrook.",
+  "unqualified_target_amount": false,
+  "model": "gpt-6.1-sol",
+  "input_sha256": "869fa9ace9b582f93f4258674b0adca68550415d4d159cb011b44ae87f09301c",
+  "reviewed_utc": "2026-10-12T10:49:16.920667+00:00"
+}

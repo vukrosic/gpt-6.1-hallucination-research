@@ -1,0 +1,18 @@
+{
+  "released_utc": "2026-10-12T10:40:53.952552+00:00",
+  "condition": "All10 original controls finished and independently graded; at least one independently confirmed unqualified Westbrook product field; original prompt/source/settings and actual public trace integrity verified.",
+  "original_control_primary_flags": 3,
+  "control_n": 10,
+  "verified_flag_ids": [
+    "c002",
+    "c003",
+    "c010"
+  ],
+  "pilot_analysis_sha256": "701508b2a4ef2edf2bb95b873c9136f33a9a8a7e5d489ae139f8768a56222b38",
+  "pilot_pooling_with_comparison": false,
+  "comparison_planned": 100,
+  "comparison_control": 50,
+  "comparison_explicit_name": 50,
+  "only_prompt_change": "our own -> our Westbrook School account’s",
+  "no_comparison_targets_started_before_release": true
+}

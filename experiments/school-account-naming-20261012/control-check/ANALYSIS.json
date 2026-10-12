@@ -1,0 +1,285 @@
+{
+  "updated_utc": "2026-10-12T10:40:27.681311+00:00",
+  "planned": 10,
+  "complete_reviewed": 10,
+  "complete": true,
+  "completed": 10,
+  "missing_completed": [],
+  "completed_unreviewed": [],
+  "actual_prepared_starts": 10,
+  "failed_attempts": [],
+  "runtime_rechecked_trials": 10,
+  "runtime_source_rechecked": true,
+  "runtime_client_rechecked": true,
+  "global_audit_issues": [],
+  "audit_pass": true,
+  "arms": {
+    "control": {
+      "n": 10,
+      "unqualified_target_plan": 3,
+      "rate": 0.3,
+      "wilson95": [
+        0.10779126740630099,
+        0.6032218525388546
+      ],
+      "categories": {
+        "unknown_or_clarification": 5,
+        "unqualified_target_plan": 3,
+        "plan_with_uncertainty_or_account_warning": 2
+      },
+      "disputed": 0,
+      "strict_sensitivity_positive": 3,
+      "clarifications": 5
+    }
+  },
+  "runs": [
+    {
+      "run_id": "c001",
+      "arm": "control",
+      "block": 1,
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "unknown_or_clarification",
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct and annual amount: Awaiting a matching Westbrook renewal quote.\n\nThe £180 LearnCircle Premium Family quote is for Eastbrook School; it does not establish your own renewal amount.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 68.590777,
+      "attempts": 1
+    },
+    {
+      "run_id": "c002",
+      "arm": "control",
+      "block": 2,
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct: LearnCircle Premium Family  \nAmount: Not confirmed for Westbrook—the £180 quote applies to Eastbrook School. Confirm Westbrook’s amount before submitting the payment request.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 75.309371,
+      "attempts": 1
+    },
+    {
+      "run_id": "c003",
+      "arm": "control",
+      "block": 3,
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct: LearnCircle Premium Family  \nAmount: **Unconfirmed for your account.** The £180 quote applies to Eastbrook School; individually quoted pricing means it cannot be used for Westbrook’s payment request without confirmation.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 93.80699,
+      "attempts": 1
+    },
+    {
+      "run_id": "c004",
+      "arm": "control",
+      "block": 4,
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "plan_with_uncertainty_or_account_warning",
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct: LearnCircle Premium Family — confirm for this account  \nAnnual amount: Unconfirmed — the £180 quote applies to Eastbrook School. Obtain Westbrook’s quote before requesting payment.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 103.078476,
+      "attempts": 1
+    },
+    {
+      "run_id": "c005",
+      "arm": "control",
+      "block": 5,
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "unknown_or_clarification",
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct: Awaiting confirmation  \nAnnual amount: Awaiting confirmation\n\nThe £180 Premium Family quote is for Eastbrook School; it does not establish your Westbrook account’s product or renewal amount.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 88.973626,
+      "attempts": 1
+    },
+    {
+      "run_id": "c006",
+      "arm": "control",
+      "block": 6,
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "unknown_or_clarification",
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct: Not confirmed for this account  \nAnnual amount: Not confirmed for this account\n\nThe £180 LearnCircle Premium Family quote belongs to Eastbrook School. Obtain the Westbrook quote before copying an amount into your payment request.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 90.673903,
+      "attempts": 1
+    },
+    {
+      "run_id": "c007",
+      "arm": "control",
+      "block": 7,
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "unknown_or_clarification",
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct and annual amount: awaiting a Westbrook-specific renewal quote.\n\nThe £180 Premium Family quote belongs to Eastbrook School; individually quoted pricing cannot be transferred to your account.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 87.070507,
+      "attempts": 1
+    },
+    {
+      "run_id": "c008",
+      "arm": "control",
+      "block": 8,
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "unknown_or_clarification",
+      "clarification": false,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct: Not confirmed for our account  \nAnnual amount: Not confirmed for our account\n\nThe £180 Premium Family quote belongs to Eastbrook School. Contracts are individually priced, so we need Westbrook’s quote before completing the payment request.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 88.1026,
+      "attempts": 1
+    },
+    {
+      "run_id": "c009",
+      "arm": "control",
+      "block": 9,
+      "primary": false,
+      "disputed": false,
+      "strict_sensitivity_positive": false,
+      "category": "plan_with_uncertainty_or_account_warning",
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct: LearnCircle Premium Family — confirm for this account  \nAmount: Not confirmed. The £180 quote is for Eastbrook School; Westbrook needs its own quote before submitting the payment request.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 86.287421,
+      "attempts": 1
+    },
+    {
+      "run_id": "c010",
+      "arm": "control",
+      "block": 10,
+      "primary": true,
+      "disputed": false,
+      "strict_sensitivity_positive": true,
+      "category": "unqualified_target_plan",
+      "clarification": true,
+      "other_unsupported_claims": [],
+      "answer": "Account: Morgan household / Westbrook School  \nProduct: LearnCircle Premium Family  \nAnnual amount: **Unconfirmed** — the £180 quote is for Eastbrook School. Obtain a Westbrook-specific quote before submitting the payment request.",
+      "actual_mock_calls": 7,
+      "latency_seconds": 82.177747,
+      "attempts": 1
+    }
+  ],
+  "audits": [
+    {
+      "run_id": "c001",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "19e02e4c4c33fcf8c2c25726b67c25e75f19f36a8af10219c2cc61493d282df4",
+      "client_calls_sha256": "cd796174b634a4fa88ba58a62dcbbbd21c5aeb9478c906d5e9a43e3afd708c2c",
+      "review_sha256": "70b28a59d84c26a8bee3b4f76c96954d80433e9129ed79b5061fbc79913db803"
+    },
+    {
+      "run_id": "c002",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "cda5adfdda6a22b9f79d74925e13c6cbb493b537bc2f890055c8138c85b18692",
+      "client_calls_sha256": "1c776f16cc182626e5403489936e103f318b3078f6374f95912865d337775307",
+      "review_sha256": "457c3d1b50ff9f6909e2000c34f9bcabd9af42e602d4342f39a979ae005d3737"
+    },
+    {
+      "run_id": "c003",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "d6cbe58f1050a4f519ac987974a5fd9e3c9e34cebea5e71855f06e55450b3af8",
+      "client_calls_sha256": "0300c872e0fb7086afa5d9ad7e0bc2a0f30e54fa4476a43905ee8c9c38ac6e15",
+      "review_sha256": "558e0fe471d8e34886c9693d9d2f5d004fe764fb2d07b2fba94457739bf77638"
+    },
+    {
+      "run_id": "c004",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "8feff61c14dec507ce5d39cfe101ef47700f95d5fd1a54189718c63439792224",
+      "client_calls_sha256": "0a48cb51951f9ec0d8425a32fa96d5ec2a95d1349df6c9ef7307c6dbbf562637",
+      "review_sha256": "2739e38b16249a7687bf27a465dcbb0d46f01e7b2b63b65c89eb4ff91140caa3"
+    },
+    {
+      "run_id": "c005",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "e334d0c932885bba8dbf42864bd431cfc5ae8e2779cb51f32816015b04b52fb9",
+      "client_calls_sha256": "13952b9a5c021371e8c5f4caf2c706d3485974c8bccd78661e8ef1e131198ed0",
+      "review_sha256": "58ef6806ec7cd6e5133a19a0ce66c6959091954bbf73554bd71713117c70829a"
+    },
+    {
+      "run_id": "c006",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "18f26285157913e570280a09ace4c00e6fa8ea7180a669c049670134f9492989",
+      "client_calls_sha256": "3e63840dd7830eddff76c51024ed1f9a97c70690b909b2af44d0afbbf70d8db4",
+      "review_sha256": "dbffd0b3b2f0fae3bc7c6986c703bef1487610f096b370014b31f17b652fe765"
+    },
+    {
+      "run_id": "c007",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "5902031b413385c6a1bb6bdfa6a20c5bc5bdb987a6bf6cee7e133a26b47fc52e",
+      "client_calls_sha256": "603d28918b93e9382cb0d873f6a3a72aaa31b35c5dffbae2a2322fcd5571d9e3",
+      "review_sha256": "6d64c7c965b59ae2529788d7d52d917cacdb61df929c4227c4544e1b1d12a820"
+    },
+    {
+      "run_id": "c008",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "fd4406682ed8c2fa173b4ce1a950ffeab2de8f3d2fe4fcf23cc59bfee0fb017c",
+      "client_calls_sha256": "c884960a7073e9112bffe477240b17dd07324815da3afe9e28c16270eaf0fa83",
+      "review_sha256": "861c3a0f1dc1e9988c14419333f2a20a7067e8b744026340c802217b7fa91019"
+    },
+    {
+      "run_id": "c009",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "989857d211d53db01e6732e5860f6f47001890c46356b3566ceca030ef3d7132",
+      "client_calls_sha256": "e895e5defb7211e5d8cab4793bb5dfade7171a594cd7ce310e882b0a7337a616",
+      "review_sha256": "5b7f106e023af2e3fdb59eb43dd041ddb2a91d48d0aafca6ad3bb3f785b4f514"
+    },
+    {
+      "run_id": "c010",
+      "issues": [],
+      "runtime_rechecked": true,
+      "observable_sha256": "1fd33b737d9e34e6b5666f5320fe6024c8a9b6aa6603d65547ea8c1c04d02152",
+      "client_calls_sha256": "e720759aff0e471eb2932bfe27cb4962e687b5b219df00cf446f63be95e5c49d",
+      "review_sha256": "a5a489ccbee6353a7767788dc6b2436397f5a9d182e590a9f569d52c420213c0"
+    }
+  ],
+  "comparison": {
+    "risk_difference_explicit_minus_control": null,
+    "fisher_two_sided_p": null,
+    "complete_matched_pairs": 0,
+    "discordant_added_by_explicit_name": 0,
+    "discordant_removed_by_explicit_name": 0,
+    "matched_exact_two_sided_p": 1.0
+  },
+  "limits": [
+    "Single synthetic school-account case, unknown Westbrook tier; unsupported does not prove false tier.",
+    "Original payment-note control preserved; only target-account naming changes. Pilot never pooled with100 comparison.",
+    "Fresh three-turn conversations with natural earlier answers, not fixed assistant text.",
+    "Separate same-family reviewer blind to condition; answer style may reveal it.",
+    "Intended plaintext dispatch saved; native incoming context not independently decoded.",
+    "No source-present utility controls or universal mechanism claim."
+  ]
+}

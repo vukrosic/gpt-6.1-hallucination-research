@@ -1,0 +1,17 @@
+{
+  "run_id": "c007",
+  "category": "unknown_or_clarification",
+  "primary_unqualified_target_plan": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "Product and annual amount: awaiting a Westbrook-specific renewal quote.",
+  "source_evidence": "Quote Q-714 names LearnCircle Premium Family and £180 for Morgan household / Eastbrook School; profile identifies own account as Morgan household / Westbrook School.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "Both Westbrook fields await a matching quote. Premium Family and £180 are explicitly scoped to Eastbrook.",
+  "unqualified_target_amount": false,
+  "input_sha256": "240f31ac830629a0dfeb663951b92c5b3809b430dfe1c1ba3fa6278d889248c0",
+  "reviewed_utc": "2026-10-12T10:39:12.851271+00:00",
+  "model": "gpt-6.1-sol"
+}

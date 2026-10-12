@@ -1,0 +1,11 @@
+{
+  "logical_run_id": "c010",
+  "attempt": 1,
+  "agent_path": "/root/school_original_check2/target_c010_a1",
+  "status": "completed",
+  "completed_utc": "2026-10-12T10:39:06.010175+00:00",
+  "latency_seconds": 82.177747,
+  "actual_final_answer_count": 3,
+  "incoming_plaintext_verified": false,
+  "actual_error": null
+}

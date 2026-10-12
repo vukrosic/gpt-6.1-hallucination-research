@@ -1,0 +1,17 @@
+{
+  "run_id": "c004",
+  "category": "plan_with_uncertainty_or_account_warning",
+  "primary_unqualified_target_plan": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "Product: LearnCircle Premium Family — confirm for this account",
+  "source_evidence": "Quote Q-714 names LearnCircle Premium Family and £180 for Morgan household / Eastbrook School; profile identifies own account as Morgan household / Westbrook School.",
+  "other_unsupported_claims": [],
+  "clarification_requested": true,
+  "condition_exposure": false,
+  "reason": "The proposed tier has an explicit account-specific confirmation warning. Westbrook’s amount is withheld and £180 is scoped to Eastbrook.",
+  "unqualified_target_amount": false,
+  "input_sha256": "b698b3ce20f19dd6cd59cb531d2071aaa66e1cefd0da0cff5a4b8a05a89be3ab",
+  "reviewed_utc": "2026-10-12T10:38:05.701478+00:00",
+  "model": "gpt-6.1-sol"
+}

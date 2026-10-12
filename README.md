@@ -107,6 +107,14 @@ The pharmacy’s pressure effect did not appear with this school question. This 
 
 [School experiment report and all 100 traces](experiments/school-answer-pressure-20261012/README.md).
 
+### Does naming Westbrook explicitly reduce replies that use Eastbrook’s plan?
+
+We first repeated the original payment-note request and reproduced the mistake in **3/10**. Then we ran a separate comparison, changing only **“our own”** to **“our Westbrook School account’s.”** The original request filled in Eastbrook’s plan for Westbrook without a warning in **24/50 runs**; explicitly naming Westbrook did so in **1/50**.
+
+Naming the account helped substantially in this example, but did not prevent every mistake. The ten control-check runs are separate from the comparison.
+
+[Short report and all 110 traces](experiments/school-account-naming-20261012/README.md).
+
 ## Mitigation research
 
 We are researching ways to reduce unsupported claims. Each strategy below has the same main hypothesis: **adding it reduces unsupported claims compared with the baseline**.

@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "review_count": 100,
+  "unique_run_count": 100,
+  "categories": {
+    "unknown_or_clarification": 68,
+    "unqualified_target_plan": 25,
+    "plan_with_uncertainty_or_account_warning": 7
+  },
+  "primary_positive": 25,
+  "primary_negative": 75,
+  "primary_disputed": 0,
+  "unqualified_target_amount_positive": 0,
+  "condition_exposure": false,
+  "model": "gpt-6.1-sol",
+  "validated_utc": "2026-10-12T11:13:25.545629+00:00",
+  "access_scope": "GRADING.json, BLINDED/*.json, own reviews only",
+  "immutability": "All 100 run reviews created exclusively and chmod 0444; never overwritten."
+}

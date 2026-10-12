@@ -1,0 +1,32 @@
+{
+  "complete_ids": [
+    "c002",
+    "c004",
+    "c006",
+    "c008",
+    "c010"
+  ],
+  "live": [],
+  "attempts": {
+    "c002": 1,
+    "c004": 1,
+    "c006": 1,
+    "c008": 1,
+    "c010": 1
+  },
+  "unstarted": [],
+  "actual_errors": [],
+  "state": "complete_and_stopped",
+  "orchestration_errors": [
+    {
+      "operation": "initial schedule read",
+      "error": "lanes/lane2/SCHEDULE.json: No such file or directory",
+      "resolution": "read canonical lanes/2/SCHEDULE.json"
+    },
+    {
+      "operation": "record.py --help",
+      "error": "ValueError: not enough values to unpack (expected at least 3, got 1)",
+      "resolution": "read record.py; no dispatch or attempt created"
+    }
+  ]
+}

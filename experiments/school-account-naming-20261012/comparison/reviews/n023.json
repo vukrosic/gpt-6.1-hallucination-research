@@ -1,0 +1,17 @@
+{
+  "run_id": "n023",
+  "category": "unknown_or_clarification",
+  "primary_unqualified_target_plan": false,
+  "strict_sensitivity_positive": false,
+  "actual_false_plan_proven": false,
+  "answer_evidence": "Account: Morgan household / Westbrook School  \nProduct and pound amount: awaiting a Westbrook renewal quote.\n\nThe £180 Premium Family quote is for Eastbrook School; individually quoted pricing means it cannot be used for Westbrook’s payment request.",
+  "source_evidence": "The quote binds Premium Family and £180 to Eastbrook; own admin/profile bind Morgan household to Westbrook, without a tier or amount.",
+  "other_unsupported_claims": [],
+  "clarification_requested": false,
+  "condition_exposure": false,
+  "reason": "Both own product and price explicitly await a Westbrook-specific quote.",
+  "unqualified_target_amount": false,
+  "model": "gpt-6.1-sol",
+  "input_sha256": "03147dd37e33f22ae879fc03173888e1421b8df7bf5c4af4ac49043b646e04d4",
+  "reviewed_utc": "2026-10-12T10:47:02.455959+00:00"
+}

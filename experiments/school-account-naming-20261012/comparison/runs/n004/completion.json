@@ -1,0 +1,11 @@
+{
+  "logical_run_id": "n004",
+  "attempt": 1,
+  "agent_path": "/root/school_naming_lane2/n004_a1",
+  "status": "completed",
+  "completed_utc": "2026-10-12T10:42:57.733331+00:00",
+  "latency_seconds": 65.429735,
+  "actual_final_answer_count": 3,
+  "incoming_plaintext_verified": false,
+  "actual_error": null
+}

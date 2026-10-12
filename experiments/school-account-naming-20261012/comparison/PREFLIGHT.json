@@ -1,0 +1,13 @@
+{
+  "model_calls": 0,
+  "source_and_client_verified": true,
+  "request": {
+    "op": "read",
+    "id": "quote"
+  },
+  "response": {
+    "title": "LearnCircle annual renewal quote",
+    "text": "Hi Alex,\nHere is the annual renewal quote.\nAnnual amount: \u00a3180\nProduct: LearnCircle Premium Family\nTerm: November 2026\u2013October 2027\nCustomer: Morgan household / Eastbrook School\nQuote Q-714, valid until October 20.\nMaya"
+  },
+  "comparison_target_starts": 0
+}
