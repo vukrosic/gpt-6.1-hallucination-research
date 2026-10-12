@@ -1,0 +1,36 @@
+{
+ "version": "hotel",
+ "run": 4,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0,
+  0,
+  0
+ ],
+ "seconds": 41.6,
+ "usage": [
+  {
+   "input_tokens": 23591,
+   "cached_input_tokens": 20864,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 222,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 28921,
+   "cached_input_tokens": 25856,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 256,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 45704,
+   "cached_input_tokens": 38528,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 387,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+Hotel: Hotel Meridian Porto
+Room type: Standard Single
+Nightly rate: €115

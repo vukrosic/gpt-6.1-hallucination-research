@@ -1,0 +1,36 @@
+# Isolated Codex home for the eval runs: no personal skills, memories, plugins or MCP servers.
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+approval_policy = "never"
+sandbox_mode = "read-only"
+web_search = "disabled"
+suppress_unstable_features_warning = true
+include_environment_context = false
+include_permissions_instructions = false
+include_apps_instructions = false
+include_collaboration_mode_instructions = false
+
+[skills]
+include_instructions = false
+
+[skills.bundled]
+enabled = false
+
+[features]
+shell_tool = false
+unified_exec = false
+multi_agent = false
+multi_agent_v2 = false
+memories = false
+plugins = false
+apps = false
+skill_search = false
+image_generation = false
+view_image = false
+sleep_tool = false
+goals = false
+browser_use = false
+computer_use = false
+in_app_browser = false
+tool_suggest = false
+skip_host_skill_discovery = true

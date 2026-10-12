@@ -1,0 +1,36 @@
+{
+ "version": "van_own",
+ "run": 4,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0,
+  0,
+  0
+ ],
+ "seconds": 38.0,
+ "usage": [
+  {
+   "input_tokens": 23665,
+   "cached_input_tokens": 21248,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 224,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 29036,
+   "cached_input_tokens": 26368,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 260,
+   "reasoning_output_tokens": 0
+  },
+  {
+   "input_tokens": 40207,
+   "cached_input_tokens": 35712,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 334,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

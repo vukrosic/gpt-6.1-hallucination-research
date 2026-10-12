@@ -1,0 +1,7 @@
+# Layered on top of config.toml for agent runs (codex exec -p agent). Judge and verifier calls get no tools.
+[mcp_servers.world]
+command = "python3"
+args = []
+startup_timeout_sec = 20
+tool_timeout_sec = 60
+default_tools_approval_mode = "approve"
