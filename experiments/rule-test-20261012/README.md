@@ -148,7 +148,8 @@ user's own detail in the result they are the same records as check tasks already
 
 - "Close", "far" and "one of a set" are my own ratings, written down before each run. Nobody else rated the
   examples, and the agent disagreed with my rating twice in round 3 (Japan, Italian).
-- 10 conversations per version, one model at one setting, made-up records, one user message per conversation.
+- 10 conversations per version, one model at one setting (reasoning effort "low"), test records that I wrote, one user
+  message per conversation.
 - I wrote three rules in three rounds. The third fits everything here because it was written after the first two
   rounds. Only round 3 tests it on new versions: 4 of 6 predictions right.
 - A pattern match gave the first label. I read all 210 replies of the 21 versions and corrected none.
@@ -166,7 +167,7 @@ user's own detail in the result they are the same records as check tasks already
 |---|---|
 | `PROTOCOL.md` | The rule and the predictions for each round, saved before that round was run |
 | `conditions.py` | The 21 versions: user message, tools and records, word for word |
-| `records_server.py` | The simulated tools the agent calls |
+| `records_server.py` | The tools the agent calls. They answer only from the test records I wrote |
 | `run.py`, `SCHEDULE.json`, `SCHEDULE_TRANSFER.json`, `SCHEDULE_ROUND3.json` | Runs the conversations in Codex CLI; the shuffled order of rounds 1, 2 and 3 |
 | `grade.py`, `labels.csv` | The label of every reply, with the reply text |
 | `runs/<version>/rNN/` | One folder per conversation: instructions, records, the user's message, every tool call and result, the reply. `_own` = check task |

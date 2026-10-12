@@ -33,7 +33,7 @@ All results together are in the [full write-up](../../DETAILS.md).
 |---|---|
 | `PROTOCOL.md` | The plan and the labels, saved before the first run |
 | `conditions.py` | The records, tool results and user messages of the six examples and their check tasks |
-| `records_server.py` | The simulated tools the agent calls |
+| `records_server.py` | The tools the agent calls. They answer only from the test records I wrote |
 | `run.py`, `SCHEDULE.json` | Runs the conversations in Codex CLI in one shuffled order |
 | `grade.py`, `labels.csv` | The label of every last reply, with the reply text |
 | `runs/<example>/rNN/` | One folder per conversation: instructions, records, the user's messages, every tool call and result, every reply |

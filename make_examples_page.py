@@ -12,8 +12,8 @@ ROOT = Path(__file__).resolve().parent
 EXP = ROOT / "experiments"
 NEW, NONB, RULE, FIRST = ("new-examples-20261012", "non-business-examples-20261012", "rule-test-20261012",
                           "codex-cli-causes-and-fixes-20261012")
-WORDS = {"stated": "WRONG ANSWER: gives the other thing's fact and does not say whose it is",
-         "warned": "gives the other thing's fact and says whose it is",
+WORDS = {"stated": "WRONG ANSWER: gives the similar thing's fact and does not say whose it is",
+         "warned": "gives the similar thing's fact and says whose it is",
          "unknown": "does not give the fact"}
 SECTIONS = [
     ("1. Close detail: the agent gives a wrong answer",
@@ -48,8 +48,12 @@ def main():
            "This page is made by `make_examples_page.py` from the saved conversations. Each example shows the user's "
            "one message, the one result the search tool returned, and the agent's reply in each of the 10 "
            "conversations. Agent: Codex CLI with gpt-6.1-sol, no sentence added to the instructions.", "",
-           "- **WRONG ANSWER** = the reply gives the other thing's fact and does not say whose it is.",
-           "- **fact with a warning** = the reply gives the other thing's fact and says whose it is.",
+           "Every search result on this page is a test record that I wrote. No business, person or product here is "
+           "real, and the agent has no other source: web search is switched off. The **similar thing** is the one "
+           "entry the search returns: it has the same name as the thing the user asked about and one different "
+           "detail (another street, another department, another year).", "",
+           "- **WRONG ANSWER** = the reply gives the similar thing's fact and does not say whose it is.",
+           "- **fact with a warning** = the reply gives the similar thing's fact and says whose it is.",
            "- **fact not given** = the reply does not give the fact.", ""]
     summary = ["| Section | Example | Wrong answers | Fact with a warning | Fact not given |", "|---|---|---:|---:|---:|"]
     body = []

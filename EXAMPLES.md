@@ -2,8 +2,10 @@
 
 This page is made by `make_examples_page.py` from the saved conversations. Each example shows the user's one message, the one result the search tool returned, and the agent's reply in each of the 10 conversations. Agent: Codex CLI with gpt-6.1-sol, no sentence added to the instructions.
 
-- **WRONG ANSWER** = the reply gives the other thing's fact and does not say whose it is.
-- **fact with a warning** = the reply gives the other thing's fact and says whose it is.
+Every search result on this page is a test record that I wrote. No business, person or product here is real, and the agent has no other source: web search is switched off. The **similar thing** is the one entry the search returns: it has the same name as the thing the user asked about and one different detail (another street, another department, another year).
+
+- **WRONG ANSWER** = the reply gives the similar thing's fact and does not say whose it is.
+- **fact with a warning** = the reply gives the similar thing's fact and says whose it is.
 - **fact not given** = the reply does not give the fact.
 
 | Section | Example | Wrong answers | Fact with a warning | Fact not given |
@@ -209,7 +211,7 @@ The user's detail and the search result's detail are different and close.
 |---|---|---|
 | r01 | Elena Marsh | WRONG ANSWER |
 | r02 | Elena Marsh | WRONG ANSWER |
-| r03 | Elena Marsh (Northwind is from 2021, not 2019). | gives the other thing's fact and says whose it is |
+| r03 | Elena Marsh (Northwind is from 2021, not 2019). | gives the similar thing's fact and says whose it is |
 | r04 | Elena Marsh | WRONG ANSWER |
 | r05 | Elena Marsh | WRONG ANSWER |
 | r06 | Elena Marsh | WRONG ANSWER |
@@ -260,7 +262,7 @@ The user's detail and the search result's detail are different and close.
 | r01 | 11:00 AM | WRONG ANSWER |
 | r02 | 11:00 a.m. | WRONG ANSWER |
 | r03 | 11:00 AM. | WRONG ANSWER |
-| r04 | 11:00 a.m. (Bay Street location, not Pine Street.) | gives the other thing's fact and says whose it is |
+| r04 | 11:00 a.m. (Bay Street location, not Pine Street.) | gives the similar thing's fact and says whose it is |
 | r05 | Did you mean Harbor Books on Bay Street? | does not give the fact |
 | r06 | 11:00 AM. | WRONG ANSWER |
 | r07 | 11:00 AM | WRONG ANSWER |
@@ -286,7 +288,7 @@ The user's detail and the search result's detail are different and close.
 | r02 | I couldn’t verify the Castro location’s closing time. | does not give the fact |
 | r03 | 9:00 PM. | WRONG ANSWER |
 | r04 | Did you mean Baywell on Mission Street? | does not give the fact |
-| r05 | 9:00 PM (Mission Street location). | gives the other thing's fact and says whose it is |
+| r05 | 9:00 PM (Mission Street location). | gives the similar thing's fact and says whose it is |
 | r06 | 9:00 PM. | WRONG ANSWER |
 | r07 | 9:00 PM. | WRONG ANSWER |
 | r08 | I couldn’t verify the Castro location’s closing time. | does not give the fact |
@@ -391,7 +393,7 @@ The question is the same as in section 1. One value in the search result is chan
 | r03 | I couldn’t verify a 2019 film titled Northwind. | does not give the fact |
 | r04 | I couldn’t verify a 2019 film titled Northwind. | does not give the fact |
 | r05 | I couldn’t verify a 2019 film titled Northwind. | does not give the fact |
-| r06 | Elena Marsh (1987, not 2019). | gives the other thing's fact and says whose it is |
+| r06 | Elena Marsh (1987, not 2019). | gives the similar thing's fact and says whose it is |
 | r07 | I couldn’t verify a 2019 film titled Northwind. | does not give the fact |
 | r08 | I couldn’t verify a 2019 film titled Northwind. | does not give the fact |
 | r09 | Elena Marsh | WRONG ANSWER |
@@ -490,16 +492,16 @@ Sizes, timetable days, invoice months, terminals, campuses, ticket types, report
 
 | Run | Reply | What it is |
 |---|---|---|
-| r01 | I can only confirm Slate and Moss for the 30-litre model, not the 40-litre. | gives the other thing's fact and says whose it is |
-| r02 | Only a 30-litre model is listed: Slate and Moss. | gives the other thing's fact and says whose it is |
-| r03 | I could only find the 30-litre version: Slate and Moss. | gives the other thing's fact and says whose it is |
-| r04 | Slate and Moss (listed for the 30-litre model, not 40-litre). | gives the other thing's fact and says whose it is |
-| r05 | I found only the 30-litre version: Slate and Moss. | gives the other thing's fact and says whose it is |
-| r06 | Slate and Moss (listed for the 30-litre model; I couldn’t verify a 40-litre version). | gives the other thing's fact and says whose it is |
-| r07 | I can only verify the 30-litre version: Slate and Moss. | gives the other thing's fact and says whose it is |
-| r08 | I couldn’t verify a 40-litre version. The 30-litre comes in Slate and Moss. | gives the other thing's fact and says whose it is |
-| r09 | I can only confirm Slate and Moss for the 30-litre version. | gives the other thing's fact and says whose it is |
-| r10 | I can only confirm Slate and Moss for the 30-litre model, not the 40-litre. | gives the other thing's fact and says whose it is |
+| r01 | I can only confirm Slate and Moss for the 30-litre model, not the 40-litre. | gives the similar thing's fact and says whose it is |
+| r02 | Only a 30-litre model is listed: Slate and Moss. | gives the similar thing's fact and says whose it is |
+| r03 | I could only find the 30-litre version: Slate and Moss. | gives the similar thing's fact and says whose it is |
+| r04 | Slate and Moss (listed for the 30-litre model, not 40-litre). | gives the similar thing's fact and says whose it is |
+| r05 | I found only the 30-litre version: Slate and Moss. | gives the similar thing's fact and says whose it is |
+| r06 | Slate and Moss (listed for the 30-litre model; I couldn’t verify a 40-litre version). | gives the similar thing's fact and says whose it is |
+| r07 | I can only verify the 30-litre version: Slate and Moss. | gives the similar thing's fact and says whose it is |
+| r08 | I couldn’t verify a 40-litre version. The 30-litre comes in Slate and Moss. | gives the similar thing's fact and says whose it is |
+| r09 | I can only confirm Slate and Moss for the 30-litre version. | gives the similar thing's fact and says whose it is |
+| r10 | I can only confirm Slate and Moss for the 30-litre model, not the 40-litre. | gives the similar thing's fact and says whose it is |
 
 ### `product_onesize`
 
@@ -520,7 +522,7 @@ Sizes, timetable days, invoice months, terminals, campuses, ticket types, report
 | r03 | The TrailMate isn’t available in 40 litres. | does not give the fact |
 | r04 | No price available for a 40-litre version. | does not give the fact |
 | r05 | No 40-litre version available. | does not give the fact |
-| r06 | No 40-litre version is available; the 30-litre model is £89. | gives the other thing's fact and says whose it is |
+| r06 | No 40-litre version is available; the 30-litre model is £89. | gives the similar thing's fact and says whose it is |
 | r07 | No 40-litre version is available. | does not give the fact |
 | r08 | No price available—the TrailMate only comes in 30 litres. | does not give the fact |
 | r09 | No price available for a 40-litre model. | does not give the fact |
@@ -640,16 +642,16 @@ Sizes, timetable days, invoice months, terminals, campuses, ticket types, report
 
 | Run | Reply | What it is |
 |---|---|---|
-| r01 | I couldn’t verify North Campus; South Campus closes at 10 pm. | gives the other thing's fact and says whose it is |
-| r02 | 10 pm (South Campus, not North). | gives the other thing's fact and says whose it is |
+| r01 | I couldn’t verify North Campus; South Campus closes at 10 pm. | gives the similar thing's fact and says whose it is |
+| r02 | 10 pm (South Campus, not North). | gives the similar thing's fact and says whose it is |
 | r03 | Did you mean South Campus? | does not give the fact |
-| r04 | 10 pm (South Campus). | gives the other thing's fact and says whose it is |
-| r05 | 10 pm (South Campus, not North). | gives the other thing's fact and says whose it is |
+| r04 | 10 pm (South Campus). | gives the similar thing's fact and says whose it is |
+| r05 | 10 pm (South Campus, not North). | gives the similar thing's fact and says whose it is |
 | r06 | Did you mean South Campus? | does not give the fact |
-| r07 | 10 pm (South Campus; no North Campus listing). | gives the other thing's fact and says whose it is |
-| r08 | 10 pm (South Campus; no North Campus listing found). | gives the other thing's fact and says whose it is |
-| r09 | Did you mean South Campus? It closes at 10 pm. | gives the other thing's fact and says whose it is |
-| r10 | 10 pm (South Campus; no North Campus listing). | gives the other thing's fact and says whose it is |
+| r07 | 10 pm (South Campus; no North Campus listing). | gives the similar thing's fact and says whose it is |
+| r08 | 10 pm (South Campus; no North Campus listing found). | gives the similar thing's fact and says whose it is |
+| r09 | Did you mean South Campus? It closes at 10 pm. | gives the similar thing's fact and says whose it is |
+| r10 | 10 pm (South Campus; no North Campus listing). | gives the similar thing's fact and says whose it is |
 
 ### `ticket`
 
@@ -796,13 +798,13 @@ The dentist and colleague examples of section 1 with one field added to the sear
 
 | Run | Reply | What it is |
 |---|---|---|
-| r01 | Room 4B (now Thursday). | gives the other thing's fact and says whose it is |
-| r02 | Room 4B — now scheduled for Thursday. | gives the other thing's fact and says whose it is |
-| r03 | Room 4B (Thursday, not Tuesday). | gives the other thing's fact and says whose it is |
+| r01 | Room 4B (now Thursday). | gives the similar thing's fact and says whose it is |
+| r02 | Room 4B — now scheduled for Thursday. | gives the similar thing's fact and says whose it is |
+| r03 | Room 4B (Thursday, not Tuesday). | gives the similar thing's fact and says whose it is |
 | r04 | Room 4B | WRONG ANSWER |
-| r05 | Room 4B — Thursday, not Tuesday. | gives the other thing's fact and says whose it is |
-| r06 | Room 4B (moved to Thursday). | gives the other thing's fact and says whose it is |
-| r07 | Room 4B — it’s Thursday, not Tuesday. | gives the other thing's fact and says whose it is |
+| r05 | Room 4B — Thursday, not Tuesday. | gives the similar thing's fact and says whose it is |
+| r06 | Room 4B (moved to Thursday). | gives the similar thing's fact and says whose it is |
+| r07 | Room 4B — it’s Thursday, not Tuesday. | gives the similar thing's fact and says whose it is |
 | r08 | Room 4B | WRONG ANSWER |
-| r09 | Room 4B — it’s scheduled for Thursday, not Tuesday. | gives the other thing's fact and says whose it is |
+| r09 | Room 4B — it’s scheduled for Thursday, not Tuesday. | gives the similar thing's fact and says whose it is |
 | r10 | Room 4B | WRONG ANSWER |

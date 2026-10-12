@@ -53,7 +53,7 @@ The longer Sentences A, B and C on the same six examples are in the
 | `PROTOCOL.md` | The plan, saved before the first run |
 | `conditions.py` | The four sentences and the list of versions |
 | `first_study.py`, `new_examples.py` | The six examples, copied unchanged from the two earlier studies |
-| `records_server.py` | The simulated tools the agent calls |
+| `records_server.py` | The tools the agent calls. They answer only from the test records I wrote |
 | `run.py`, `SCHEDULE.json` | Runs the conversations in Codex CLI; the shuffled order |
 | `grade.py`, `labels.csv`, `labels_override.json` | The label of every last reply, with the reply text |
 | `runs/<example>_<sentence>/rNN/` | One folder per conversation: instructions, records, messages, every tool call and result, every reply. `base` = no sentence, `_own` = check task |

@@ -11,13 +11,13 @@ conversation.
 |---|---|
 | `PROTOCOL.md` | The plan and the labels, written before the runs, with a dated note on what was added later |
 | `conditions.py` | The records, the messages, the three sentences and every one-change version |
-| `records_server.py` | The simulated tools the agent calls |
+| `records_server.py` | The tools the agent calls. They answer only from the test records I wrote |
 | `run.py` | Runs the conversations in Codex CLI in a shuffled order (`SCHEDULE*.json`) |
 | `grade.py`, `labels.csv`, `labels_override.json` | The label of every last reply, with the reply text |
 | `runs/<version>/rNN/` | One folder per conversation: `instructions.md`, `records.json`, `turns.json` (the user's messages), `events.jsonl` and `tool_log.jsonl` (every tool call and result), `reply_tN.txt` (the reply after message N), `meta.json` (timing and token counts) |
 | `runs_failed/` | The 22 attempts that stalled or were stopped; each was run again |
 | `smoke/` | One trial conversation from before the schedule was fixed; not counted |
-| `codex_home_example/` | The Codex settings used: no shell, no web search, no saved notes, only the simulated tools |
+| `codex_home_example/` | The Codex settings used: no shell, no web search, no saved notes, only the tools in `records_server.py` |
 
 Version names: `base` is the unchanged company example. `school_…` and `pharm_…` are the other two examples.
 `inst_general`, `inst_source` and `inst_field` add Sentence A, B and C. A name ending in `_own` is a check task.

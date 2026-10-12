@@ -9,7 +9,8 @@ works and what does not.
 ## Abstract
 
 An agent is an AI model that can call tools, for example a search, before it replies. I tested the agent Codex CLI
-with the model gpt-6.1-sol on made-up records, in 1,338 saved conversations.
+with the model gpt-6.1-sol on test records that I wrote (invented businesses and people, none of them real), in
+1,338 saved conversations.
 
 **The mistake.** The user asks about one thing. The search returns a fact only for a similar thing, for example a
 dentist with the same name on another street. The agent gives that fact as the answer and does not say that it
@@ -180,7 +181,20 @@ instructions, user messages, tool calls, tool results and replies.
   gpt-6.1-sol at the setting "reasoning effort: low".
 - **Tool:** a function the agent can call to get information, for example "search for a business". The agent sees
   the tool's result. The user does not.
-- **Record:** a short piece of text that a tool returns, for example a price quote or a business listing.
+- **Record** (also "test record"): a short piece of text that a tool returns, for example a price quote or a
+  business listing. I wrote every record for the test.
+- **User:** the person the agent works for. In these tests I wrote the user's messages. No real user took part.
+- **Thing:** the business, person or product the user asks about. **Similar thing:** another record with the same
+  name and one different detail, for example a dentist with the same name on another street.
+- **Detail:** the words in the question that say which thing the user means: a street, a department, a year.
+- **Example:** the user's messages together with the records I prepared for them. **Version:** an example in one
+  exact form. When I change a message, a record or the instructions, that is a new version.
+- **Failing example:** an example where the agent gives a wrong answer in half of the conversations or more. It
+  does not mean that a program crashed.
+- **Batch:** 10 conversations of the same version, run at one time. Two batches of one version were run at
+  different times.
+- **Setup:** the way the conversations are started and how the agent reads the records. Almost everything on this
+  page uses one setup (Step 2). Step 10 compares it with an earlier one.
 - **Instructions:** a text the agent gets before the user writes anything. It says who the agent is and what it
   should do. A developer writes it. The user does not see it.
 - **Conversation:** the agent gets its instructions, the user sends one to three messages, the agent calls tools and
@@ -199,10 +213,11 @@ instructions, user messages, tool calls, tool results and replies.
 
 ## Step 2 — What I built
 
-- **All records are made up by me.** No company, dentist, pharmacy or person on this page is real. Because I wrote
+- **I wrote all the records for the test.** No company, dentist, pharmacy or person on this page is real. They are
+  test data written by me, not facts invented by the model. Because I wrote
   the records, I know exactly which facts the agent can find and which it cannot.
-- **The tools are simulated.** A small program ([records_server.py](experiments/general-fixes-20261012/records_server.py))
-  answers the agent's tool calls from the made-up records. It always returns the same result for the same call.
+- **I wrote the tools.** The agent has no web search and no shell. A small program ([records_server.py](experiments/general-fixes-20261012/records_server.py))
+  answers the agent's tool calls from the test records and from nothing else. It always returns the same result for the same call.
 - **A script starts each conversation** ([run.py](experiments/general-fixes-20261012/run.py)), in a shuffled order,
   one fresh Codex CLI process per conversation, and saves everything.
 - **Each last reply gets a label**: wrong answer, fact given with a warning, or fact not given. A pattern match
@@ -679,7 +694,8 @@ Earlier-setup studies:
 - **10 conversations per version.** That is enough to see a large effect (10 of 10 against 0 of 10) and too few to
   compare versions that are close (5 of 10 against 7 of 10). The same unchanged company example gave 4, 8, 7 and 8
   of 10 in four batches across the two setups.
-- **One model at one setting**, and made-up records. None of these counts is a general error rate for the model.
+- **One model (gpt-6.1-sol) at one setting (reasoning effort "low")**, and test records that I wrote. None of
+  these counts says how often the model gives wrong answers in real use.
 - **The examples were chosen to fail.** The first three (company, pharmacy, school) were kept because they failed.
   The eleven later ones were written before they were run: four fail in most conversations, one fails in 3 of 10,
   and six never fail. The 21 rule-test versions each had a prediction saved before the run: 14 of 21 predictions
@@ -727,7 +743,7 @@ Inside each of the six main-setup folders:
 |---|---|
 | `PROTOCOL.md` | The plan, saved before the runs |
 | `conditions.py` | The records, the user messages and the sentences, word for word |
-| `records_server.py` | The simulated tools |
+| `records_server.py` | The tools the agent calls. They answer only from the test records |
 | `run.py` | Starts the conversations in Codex CLI |
 | `grade.py`, `labels.csv`, `labels_override.json` | The label of every last reply, with the reply text and every hand correction |
 | `runs/<version>/rNN/` | One folder per conversation: `instructions.md`, `records.json`, `turns.json` (the user's messages), `events.jsonl` and `tool_log.jsonl` (every tool call and result), `reply_t1.txt` … (every reply) |
