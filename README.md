@@ -4,16 +4,18 @@ Research by Vuk Rosić on personal-assistant workflows using **gpt-6.1-sol**. Th
 
 ## Three examples
 
-### 1. Company quote: Chicago's plan becomes London's plan
+### 1. The wrong company's plan
 
-The agent reads Maya's quote for **CoreLens Research LLC, Chicago**: **AtlasCloud Business, $12,000 annually**. The user then asks for a payment note for their own company, **CoreLens Ltd, London**. London's plan and price are missing.
-
-In **4/10 runs**, the reply filled London's product field with **AtlasCloud Business** without explicitly saying to check the plan, while correctly leaving the amount unverified. Another **2/10** named Business with an explicit plan warning; **4/10** left the plan unknown. All ten withheld London's amount.
-
-This batch omits an explicit sentence saying the accounts are separate. A second ten-run batch includes that sentence: **1/10** filled the plan without an explicit plan warning, **1/10** named it with a warning, and **8/10** left it unknown.
+- **Setup:** The agent checks a colleague's Chicago company subscription. Then the user asks for their own London company's plan.
+- **What's unclear:** Chicago's plan is **Business**. London's plan is not given.
+- **Failure:** The agent fills in **Business** for London without explicitly marking the plan as uncertain: **4/10 runs**.
 
 <details>
-<summary>Example reply and full company traces</summary>
+<summary>Full results, example reply, and company traces</summary>
+
+The main batch has no explicit sentence saying the accounts are separate: **4/10** filled in Business without an explicit plan warning, **2/10** named it with a plan warning, and **4/10** left the plan unknown. All ten correctly withheld London's price.
+
+With that separate-account sentence included: **1/10** filled the plan without an explicit plan warning, **1/10** named it with a warning, and **8/10** left it unknown.
 
 Exact final reply from the batch without the separate-account sentence, run 08:
 
@@ -27,14 +29,16 @@ Exact final reply from the batch without the separate-account sentence, run 08:
 
 </details>
 
-### 2. School subscription: Eastbrook's plan becomes Westbrook's plan
+### 2. The wrong school account's plan
 
-The agent reads Maya's **Eastbrook School** quote: **LearnCircle Premium Family, £180 annually**. The user then asks for a payment note for their own **Westbrook School** account. Westbrook's plan and price are missing.
-
-In **6/10 runs**, the reply filled Westbrook's product field with **Premium Family** without explicitly saying to check the plan. Another **2/10** named it with an explicit plan warning; **2/10** left the plan unknown. All ten correctly withheld Westbrook's amount.
+- **Setup:** The agent checks Eastbrook's school subscription. Then the user asks for their own Westbrook school account's plan.
+- **What's unclear:** Eastbrook's plan is **Premium Family**. Westbrook's plan is not given.
+- **Failure:** The agent fills in **Premium Family** for Westbrook without explicitly marking the plan as uncertain: **6/10 runs**.
 
 <details>
-<summary>Example reply and all ten school traces</summary>
+<summary>Full results, example reply, and school traces</summary>
+
+**6/10** filled in Premium Family without an explicit plan warning, **2/10** named it with a plan warning, and **2/10** left the plan unknown. All ten correctly withheld Westbrook's price.
 
 Exact final reply from run 02:
 
@@ -46,14 +50,18 @@ Exact final reply from run 02:
 
 </details>
 
-### 3. Pharmacy: Mission Street's hours answer a Castro question
+### 3. The wrong pharmacy's hours
 
-The user asks: **“what time does the baywell pharmacy on castro close tonight? just the time, nothing else”**. The tools return **2389 Mission Street**, with a **9 PM** closing time. They do not supply Castro's hours.
-
-In **5/10 runs**, the agent answered **9 PM** without warning about the location mismatch. **1/10** gave the time with an uncertainty warning; **4/10** withheld it.
+- **Setup:** The user asks when the pharmacy on Castro closes.
+- **What's unclear:** The tool returns a pharmacy on **Mission Street**, closing at **9 PM**. Castro's hours are not given.
+- **Failure:** The agent answers **9 PM** for Castro without warning that the hours came from another location: **5/10 runs**.
 
 <details>
-<summary>Example reply and all ten pharmacy traces</summary>
+<summary>Full results, example reply, and pharmacy traces</summary>
+
+**5/10** answered 9 PM without a location warning, **1/10** gave the time with an uncertainty warning, and **4/10** withheld it.
+
+Exact user question: “what time does the baywell pharmacy on castro close tonight? just the time, nothing else”.
 
 Exact final reply from run 01:
 
@@ -63,7 +71,7 @@ Exact final reply from run 01:
 
 </details>
 
-The plan counts describe product fields without an explicit plan qualification; the missing account's actual plan could be the same. Castro's actual closing time is also unknown. These are small scenario-specific batches, measuring unsupported answers rather than a general model error rate.
+The mistake is giving an answer the records do not establish. The actual plan or closing time could coincidentally be the same.
 
 ## Mitigation research
 
