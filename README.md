@@ -29,7 +29,7 @@ This page can be read without knowing anything else. It has three parts, as the 
   With an unrelated name, 1 of 10.
 - **Cause 2 — a request for a very short answer.** With "just the time, nothing else" in the question, 14 of 50.
   Without it, 0 of 50.
-- **Cause 3 — the agent checks one detail and not the next.** It refuses to copy the other company's price in every
+- **What the failing replies look like — the agent checks one detail and not the next.** It refuses to copy the other company's price in every
   conversation, and in the same reply it copies the other company's plan.
 - **The fix that worked:** one general sentence in the agent's instructions, telling it to check each detail
   separately. Mistakes fell from 12 of 20 to **0 of 20**, and the agent still answered all 12 check tasks where the
@@ -237,7 +237,7 @@ What worked and what did not:
   with a warning, which is not counted as the mistake.
 - **The difference between A/B and C:** A and B ask the agent to check "the claim" or "a fact". C asks it to check
   **each detail separately** and names the swap to avoid (a detail from a different person, account or place). That
-  matches cause 3: the agent already checked the price and skipped the plan.
+  matches finding 3 in Part 2: the agent already checked the price and skipped the plan.
 - **Changing the records did not work in Setup 2. Changing the instructions did.**
 
 ### Which fix ideas were tested and which were not
