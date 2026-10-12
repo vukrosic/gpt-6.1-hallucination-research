@@ -1,0 +1,20 @@
+{
+ "version": "pharm_ask",
+ "run": 9,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 17.1,
+ "usage": [
+  {
+   "input_tokens": 18758,
+   "cached_input_tokens": 14976,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 173,
+   "reasoning_output_tokens": 13
+  }
+ ]
+}

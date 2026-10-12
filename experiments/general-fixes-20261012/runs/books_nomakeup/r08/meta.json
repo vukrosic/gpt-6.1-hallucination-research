@@ -1,0 +1,20 @@
+{
+ "version": "books_nomakeup",
+ "run": 8,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 20.1,
+ "usage": [
+  {
+   "input_tokens": 29605,
+   "cached_input_tokens": 24064,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 191,
+   "reasoning_output_tokens": 16
+  }
+ ]
+}

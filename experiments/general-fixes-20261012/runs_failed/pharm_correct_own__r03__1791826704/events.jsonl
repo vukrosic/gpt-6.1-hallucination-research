@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"find_businesses","arguments":{"query":"Baywell Pharmacy on Castro San Francisco"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"find_businesses","arguments":{"query":"Baywell Pharmacy on Castro San Francisco"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"business_id\": \"baywell-pharmacy\", \"name\": \"Baywell Pharmacy\", \"category\": \"Pharmacy\", \"address\": \"498 Castro Street, San Francisco, CA 94114\", \"phone\": \"+1 415 555 0161\", \"online_booking\": false}]}"}],"structured_content":null},"error":null,"status":"completed"}}

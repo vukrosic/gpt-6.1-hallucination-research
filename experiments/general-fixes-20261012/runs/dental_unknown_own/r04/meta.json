@@ -1,0 +1,20 @@
+{
+ "version": "dental_unknown_own",
+ "run": 4,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 16.7,
+ "usage": [
+  {
+   "input_tokens": 13923,
+   "cached_input_tokens": 11008,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 98,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

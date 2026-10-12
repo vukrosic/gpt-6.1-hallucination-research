@@ -1,0 +1,1 @@
+{"t": 1791826602.36, "turn": 1, "tool": "find_businesses", "args": {"query": "Baywell Pharmacy on Castro San Francisco"}, "result": {"results": [{"business_id": "baywell-pharmacy", "name": "Baywell Pharmacy", "category": "Pharmacy", "address": "498 Castro Street, San Francisco, CA 94114", "phone": "+1 415 555 0161", "online_booking": false}]}}

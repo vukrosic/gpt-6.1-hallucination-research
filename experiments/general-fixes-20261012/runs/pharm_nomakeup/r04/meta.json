@@ -1,0 +1,20 @@
+{
+ "version": "pharm_nomakeup",
+ "run": 4,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 17.8,
+ "usage": [
+  {
+   "input_tokens": 24694,
+   "cached_input_tokens": 19072,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 190,
+   "reasoning_output_tokens": 15
+  }
+ ]
+}
