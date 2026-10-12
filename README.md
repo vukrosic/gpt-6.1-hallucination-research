@@ -124,6 +124,9 @@ members named Daniel Kim." to the colleague's: 9 of 10 → **0 of 10**.
 Ten examples built this way gave **91 wrong answers in 100 conversations**: dentist 10, climbing gym 10, restaurant
 10, band 10, doctor 10, museum 10, film 9, colleague 9, bookshop 8, pharmacy 5.
 
+[EXAMPLES.md](EXAMPLES.md) shows all 30 one-question examples with the question, the search result and every
+reply.
+
 ### What this does not explain
 
 - **"Close", "far" and "one of a set" are my own ratings**, written down before each run. The agent disagreed with
@@ -697,6 +700,7 @@ Earlier-setup studies:
 | [experiments/fix-on-new-examples-20261012/](experiments/fix-on-new-examples-20261012/README.md) | With and without "nothing else"; Sentences A, B, C on four examples. 248 conversations |
 | [experiments/general-fixes-20261012/](experiments/general-fixes-20261012/README.md) | The four short sentences on six examples. 396 conversations |
 | [experiments/rule-test-20261012/](experiments/rule-test-20261012/README.md) | Which examples fail: three rounds with predictions saved first, 21 versions. 258 conversations |
+| [EXAMPLES.md](EXAMPLES.md), `make_examples_page.py` | All 30 one-question examples on one page: the question, the one search result and the reply of each of the 10 conversations |
 | [traces/](traces/), [REPORT.md](REPORT.md), [evidence/](evidence/), the four other `experiments/` folders | The earlier setup (Step 10) |
 
 Inside each of the six main-setup folders:
