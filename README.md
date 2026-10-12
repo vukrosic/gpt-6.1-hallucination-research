@@ -81,50 +81,26 @@ The mistake is giving an answer the records do not establish. The actual plan or
 
 ## Root-cause research
 
-### Completed tests
+**1. Does asking for “just the time” make the agent use another pharmacy’s hours?**
 
-We changed one thing at a time in these two comparisons. The results show what helped in these examples; they do not prove exactly what happened inside the model.
+The user asks about **Castro**, but the search result gives **Mission Street’s 9 PM closing time**. Castro’s hours are unknown. Removing only **“just the time, nothing else”** reduced replies giving 9 PM without a warning from **14/50 to 0/50**. [Report and traces](experiments/pharmacy-answer-pressure-20261012/README.md).
 
-| Test we completed | The one change | Result |
-|---|---|---|
-| [Asking for only a closing time](experiments/pharmacy-answer-pressure-20261012/README.md) | Removed “just the time, nothing else” | Replies using Mission Street’s hours for Castro without a warning fell from **14/50 to 0/50**. |
-| [Explicitly naming the school account](experiments/school-account-naming-20261012/README.md) | Replaced “our own” with “our Westbrook School account’s” | Replies using Eastbrook’s plan for Westbrook without a plan warning fell from **24/50 to 1/50**. |
+**2. Does naming the account help the agent avoid using another school’s plan?**
 
-### Does pressuring GPT-6.1 to give a time make it use another pharmacy’s hours instead of saying “unknown”?
+The quote gives **Premium Family for Eastbrook**. The user’s account is **Westbrook**, whose plan is unknown. In the same payment-note request, changing only **“our own”** to **“our Westbrook School account’s”** reduced replies filling in Eastbrook’s plan without a warning from **24/50 to 1/50**. [Report and traces](experiments/school-account-naming-20261012/README.md) · [The remaining failure](experiments/school-account-naming-20261012/comparison/REMAINING-FAILURE.md).
 
-The user asks about the pharmacy on Castro, but the agent only receives Mission Street’s hours. We removed **“just the time, nothing else”** from the question and kept everything else the same. The agent gave **9 PM** as Castro’s closing time, using Mission Street’s hours without a warning, in **14/50 runs with the phrase** and **0/50 without it**. All 50 answers without the phrase explained the uncertainty or location difference.
+These wording changes helped in these examples; they do not establish exactly why the model made the mistakes.
 
-This suggests that asking for only a time can make the agent leave out a necessary warning. We have only tested this change on this one example.
+**Recommended next — not yet tested:** Does repeating Eastbrook’s quote make the plan mistake more likely? Compare the original school conversation with one that skips only the request to write Maya’s quote reminder. Keep the records and the original **“our own” payment-note request** unchanged.
 
-[Full experiment report and all 100 traces](experiments/pharmacy-answer-pressure-20261012/README.md).
-
-### Does naming Westbrook explicitly reduce replies that use Eastbrook’s plan?
-
-We first repeated the original payment-note request and reproduced the mistake in **3/10**. Then we ran a separate comparison, changing only **“our own”** to **“our Westbrook School account’s.”** The original request filled in Eastbrook’s plan for Westbrook without a warning in **24/50 runs**; explicitly naming Westbrook did so in **1/50**.
-
-Naming the account helped substantially in this example, but did not prevent every mistake. The ten control-check runs are separate from the comparison. [See the remaining failure: full prompts, reply and explanation](experiments/school-account-naming-20261012/comparison/REMAINING-FAILURE.md).
-
-[Short report and all 110 traces](experiments/school-account-naming-20261012/README.md).
+**Other proposal — not yet tested:** Make the two account names more different and check whether mistakes decrease.
 
 <details>
-<summary>Additional school-pressure test: a different question, with no mistakes observed</summary>
+<summary>Additional school-pressure test using a different question</summary>
 
-### Does asking for only the plan make GPT-6.1 take another school’s plan?
-
-The records give Eastbrook’s plan, but Westbrook’s plan is unknown. We asked which plan Westbrook is on, with and without **“just the plan, nothing else.”** In both versions, **0/50 replies gave Eastbrook’s plan as Westbrook’s**. All 100 final replies said the plan was unknown.
-
-The pharmacy’s pressure effect did not appear with this school question. This question explicitly names Westbrook and asks for its existing plan; the older example asked for a payment note. These results do not replace the earlier school result.
-
-[School experiment report and all 100 traces](experiments/school-answer-pressure-20261012/README.md).
+A direct question naming Westbrook’s plan produced **0/50 mistakes with “just the plan” and 0/50 without it**. This was a different task from drafting a payment note, so it does not explain the original failure. [Report and traces](experiments/school-answer-pressure-20261012/README.md).
 
 </details>
-
-### Proposed tests — not yet tested
-
-| Proposed explanation | What we would compare | Status |
-|---|---|---|
-| An earlier answer gets reused for a different account | The original conversation versus a fresh conversation asking only the final question, with the same records. | **Not yet tested** |
-| Similar account names make it easier to mix them up | Similar names versus clearly different names, changed consistently throughout the records. | **Not yet tested** |
 
 ## Mitigation research
 
