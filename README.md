@@ -1,6 +1,6 @@
 # Research on GPT-6.1 inventing facts or overclaiming
 
-Research by Vuk Rosić. This page is written to be read from top to bottom by someone who has seen none of the work.
+Research by Vuk Rosić.
 
 **The task.** AI agents sometimes state things that are not true or not supported. The task was: take an agent,
 build scenarios where it does this, find likely causes, try ways to reduce it, run the tests again, and report what
@@ -12,11 +12,13 @@ An agent is an AI model that can call tools, for example a search, before it rep
 with the model gpt-6.1-sol on made-up records, in 1,080 saved conversations. I found one mistake that I can make
 happen on purpose. The user asks about one thing. The search returns a fact only for a similar thing, for example a
 dentist with the same name on another street. The agent gives that fact as the answer and does not say that it
-belongs to the other thing. This happened in 49 of 60 conversations across six examples. The agent does notice the
-difference: when the user does not ask for a short answer, it names the other street in 40 of 40 replies. Short
-general instructions such as "State facts correctly." and "Do not make things up." did not stop the mistake (41 and
-47 of 60). One instruction that tells the agent to check each detail against the exact thing the user asked about
-stopped it (0 of 60). I did not find a rule that says in advance which examples fail: eight other examples built
+belongs to the other thing. This reply is a wrong answer, and it
+happened in 49 of 60 conversations across six examples. The agent does see the difference. When the user does not
+ask for a short answer, it still gives the number, and it adds that the number is for the other street. It did
+that in 40 of 40 conversations. Such a reply states nothing false. Short
+general instructions such as "State facts correctly." and "Do not make things up." did not stop the mistake: 41 and
+47 wrong answers in 60 conversations, against 49 in 60 without them. One instruction that tells the agent to check each detail against the exact thing the user asked about
+stopped it: 0 wrong answers in 60 conversations. I did not find a rule that says in advance which examples fail: eight other examples built
 the same way gave few or no wrong answers.
 
 ## The main rule
