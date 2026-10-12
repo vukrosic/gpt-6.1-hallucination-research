@@ -18,7 +18,8 @@ There are three first examples here. All three are this same failure:
 I then wrote eleven new examples of the same failure to see whether I can make it happen on purpose. Four fail
 most of the time, one fails sometimes and six do not fail. All eleven are reported in
 [Six new examples](#six-new-examples--three-fail-three-do-not) and
-[Does the recipe work on other things?](#does-the-recipe-work-on-other-things)
+[Does the recipe work on other things?](#does-the-recipe-work-on-other-things) The fixes were then run on the four
+that fail: [The three sentences on four new examples](#the-three-sentences-on-four-new-examples).
 
 This page can be read without knowing anything else. It has three parts, as the task asked:
 
@@ -41,14 +42,21 @@ This page can be read without knowing anything else. It has three parts, as the 
 - **Cause 1 — similar names.** When the two companies share the name "CoreLens", the mistake happens 7 of 10 times.
   With an unrelated name, 1 of 10.
 - **Cause 2 — a request for a very short answer.** With "just the time, nothing else" in the question, 14 of 50.
-  Without it, 0 of 50.
+  Without it, 0 of 50. On the four new failing examples: 37 of 40 with those words, 0 of 40 without.
+- **The agent does see the difference.** Without "nothing else", 40 of 40 replies name the other street or
+  department ("The listing shows 810 Lake Street, though—not Grant Avenue."). With "nothing else", the same tool
+  results give a bare "+1 415 555 0142".
 - **What the failing replies look like — the agent checks one detail and not the next.** It refuses to copy the other company's price in every
   conversation, and in the same reply it copies the other company's plan.
 - **The fix that worked:** one general sentence in the agent's instructions, telling it to check each detail
-  separately. Mistakes fell from 12 of 20 to **0 of 20**, and the agent still answered all 12 check tasks where the
-  fact was in the records.
-- **What did not work:** two broader instruction sentences (no change on the company example), and extra warning
-  words inside the records (no change in Codex CLI).
+  separately (Sentence C). On the six failing examples, mistakes fell from 49 of 60 to **0 of 60**, and the agent
+  still answered all 28 check tasks where the fact was in the records. Four of the six examples were written after
+  the sentence.
+- **Its cost:** on the four new examples every reply with Sentence C is the two words "not confirmed". It does not
+  say that the same name was found on another street. Sentence A also gave 0 of 40 there and kept that information
+  ("$28 at the Berkeley location; Oakland price unconfirmed."), but A does not fix the company example (7 of 10).
+- **What did not work:** Sentence B (13 of 40 on the new examples, 6 of 10 on the company example), and extra
+  warning words inside the records (no change in Codex CLI).
 - **Not tried:** fixes that add a step, such as a second agent that reviews the reply. See
   [Which fix ideas were tested](#which-fix-ideas-were-tested-and-which-were-not).
 - **What is not settled:** two results changed when the agent program changed. See
@@ -75,7 +83,7 @@ I used two setups. Both use the same model at the same setting (reasoning effort
 |---|---|---|
 | Agent program | gpt-6.1-sol conversations started inside Codex by a coordinating agent | Codex CLI, started by a script, one fresh process per conversation |
 | How the agent reads records | It runs a small command-line program | It calls tools directly (`read_record`, `search_records`, …) |
-| Size | 10 or 50 conversations per version | 10 per version, 268 conversations, plus 168 for the eleven new examples |
+| Size | 10 or 50 conversations per version | 10 per version, 268 conversations, plus 168 for the eleven new examples and 248 for the fix test on four of them |
 | Used for | Finding the examples; two 50-run cause tests | The one-change table and all fixes |
 
 ## Part 1 — Examples where the agent fails
@@ -219,8 +227,9 @@ All four one-question examples that fail (pharmacy, dental, climbing, books) are
 The agent then has one fact in front of it that fits the question, and it was told to add no other words. It gives
 that fact.
 
-Which steps are tested: step 4 was tested by taking it out (pharmacy example, Setup 1: 14 of 50 with the words,
-0 of 50 without). Steps 1 to 3 were not taken out one at a time in this shape. With a business at an address, the
+Which steps are tested: step 4 was tested by taking it out. Pharmacy example, Setup 1: 14 of 50 with the words,
+0 of 50 without. Dental, climbing, books and person, Setup 2: 37 of 40 with the words, 0 of 40 without
+([results](experiments/fix-on-new-examples-20261012/README.md)). Steps 1 to 3 were not taken out one at a time in this shape. With a business at an address, the
 recipe gave a failing example 4 times out of 4.
 
 ### Does the recipe work on other things?
@@ -256,10 +265,30 @@ What this shows:
   examples, 33 of 40) and a person in another department (9 of 10).
 - **It does not happen where the differing detail picks out a different item**: another size, other days, another
   month (0 of 30).
-- My reading, not tested: the agent gives the fact when it can treat the search result as the same thing the user
-  meant, with the user wrong about one detail (one Daniel Kim, who sits in Legal). It holds back when the result is
-  plainly another item (a 30 litre bag is not the 40 litre bag). The meeting replies fit this: 7 of 10 say the review
-  is "now Thursday", as if the same meeting had moved.
+- **I do not know why.** One idea is that the agent does not see the difference when the two things are this
+  similar. The test below speaks against that for the examples that fail.
+
+### Does the agent see that the result is for a different thing?
+
+Test: the four failing examples (dental, climbing, books, person), same tool results, 10 conversations each, with and
+without the last words of the question ([plan](experiments/fix-on-new-examples-20261012/PROTOCOL.md), saved before the runs).
+
+| Question | Replies that give only the fact | Replies that name the other street or department |
+|---|---:|---:|
+| ends with "just the …, nothing else" | **37 of 40** | 3 of 40 |
+| the same question without those words | **0 of 40** | 40 of 40 |
+
+A real reply without those words ([full conversation](experiments/fix-on-new-examples-20261012/runs/dental_plain/r01/)):
+
+> Northside Dental's listed number is **(415) 555-0142**. I found them at **810 Lake Street**, though—not Grant
+> Avenue.
+
+- So the agent is shown the different street, and it says so in every reply when it is free to write a sentence.
+- The request "nothing else" is what removes the warning. The agent keeps the fact and drops the warning, instead of
+  keeping the warning and dropping the fact.
+- The model's hidden reasoning is not readable, so I cannot say what it did with the difference in the 37 replies
+  that left it out.
+- This does not explain the size, days and month examples, where the agent kept the warning and dropped the fact.
 
 ## Part 2 — Likely causes
 
@@ -369,6 +398,41 @@ What worked and what did not:
   matches finding 3 in Part 2: the agent already checked the price and skipped the plan.
 - **Changing the records did not work in Setup 2. Changing the instructions did.**
 
+### The three sentences on four new examples
+
+Sentences A, B and C were worded before the dental, climbing, books and person examples existed. I ran all three on
+those four examples without changing a word ([plan](experiments/fix-on-new-examples-20261012/PROTOCOL.md), saved before the runs; 248 conversations).
+Mistakes (other thing's fact given with no warning), 10 conversations each:
+
+| Instructions | Dental | Climbing | Books | Person | Total |
+|---|---:|---:|---:|---:|---:|
+| No added sentence | 10 | 10 | 8 | 9 | **37 of 40** |
+| Sentence A | 0 | 0 | 0 | 0 | **0 of 40** |
+| Sentence B | 3 | 3 | 0 | 7 | **13 of 40** |
+| Sentence C | 0 | 0 | 0 | 0 | **0 of 40** |
+
+What the replies look like:
+
+| Instructions | Typical reply (climbing) | Fact given with a warning | Fact not given |
+|---|---|---:|---:|
+| Sentence A | "$28 at the Berkeley location; Oakland price unconfirmed." | 20 of 40 | 20 of 40 |
+| Sentence B | "$28." or "$28 at the Berkeley location; I couldn't verify Oakland." | 19 of 40 | 8 of 40 |
+| Sentence C | "Not confirmed." | 0 of 40 | 40 of 40 |
+
+Check tasks (the search result is for the thing asked about): correct in **48 of 48** conversations, 16 per sentence.
+
+- **Sentence C stops the mistake on examples it was not written next to.** With the first study that is 0 of 60 on
+  six failing examples, against 49 of 60 with no sentence.
+- **Sentence C's replies are less useful than they could be.** All 40 are "not confirmed" and nothing more. The user
+  is not told that the same name exists on another street. C tells the agent to write 'not confirmed', and the
+  question says "nothing else", so the agent does exactly that.
+- **Sentence A works here and is more useful.** Half its replies give the fact with the place it belongs to. But A
+  left the company example at 7 of 10, so it is not enough alone.
+- **Sentence B does not work.** Person: 7 of 10. A possible reason, not tested: B allows any fact that "a tool
+  result shows", and a tool result does show this fact, for the other thing.
+- No label was corrected by hand; I read all 248 replies. 4 attempts gave no answer within 110 seconds; they are kept
+  in `runs_failed/` and were run again.
+
 ### Which fix ideas were tested and which were not
 
 Before testing I listed nine common ways to reduce this mistake. **Only one-sentence instruction fixes were tested
@@ -376,7 +440,7 @@ Before testing I listed nine common ways to reduce this mistake. **Only one-sent
 
 | # | Idea | Tested? |
 |---|---|---|
-| 1 | Make the agent name a source for each fact before answering | **Partly.** Sentence C asks the agent to check that a source ties each detail to the asked-for account. It does not ask for a written source. Result: 0 of 20 mistakes. |
+| 1 | Make the agent name a source for each fact before answering | **Partly.** Sentence C asks the agent to check that a source ties each detail to the asked-for account. It does not ask for a written source. Result: 0 of 60 mistakes on six failing examples. |
 | 2 | Tell the agent it may say "unknown" | **Partly.** Sentences B and C both say what to write when a fact could not be checked. B did not fix the company example (6 of 10); C did. A sentence that only allows "unknown" was not tested on its own. |
 | 3 | Make the agent think of other possible answers | No |
 | 4 | Make the agent check its draft reply before sending | No |
@@ -423,10 +487,15 @@ How I read this:
 - One model at one setting.
 - Sentence C was worded after the first results of the Setup 2 study, when A and B had not helped on the company
   example. A similar per-detail sentence was proposed in [REPORT.md](REPORT.md) on October 11, before any fix was
-  tested. C has been tested on the first three examples only, in Setup 2 only, 10 conversations each.
+  tested. C has been tested on seven examples (company, pharmacy, school, dental, climbing, books, person), in Setup 2 only,
+  10 conversations each.
 - The first three examples were picked because they fail. The six new examples were written before they were run,
   and three of them do not fail. None of these counts is a general error rate for the model.
-- The eleven new examples were run without any fix sentence. Sentence C has not been run on them.
+- The sentences were run on four of the eleven new examples (the four that fail most). They were not run on the
+  meeting example (3 of 10) or on the six examples that do not fail.
+- Check tasks show that the sentences do not stop a plain answer when the record matches. They do not measure how
+  useful a reply is when the record does not match; Sentence C's bare "not confirmed" is counted the same as a
+  reply that also says what was found.
 - "Differ only in where they are" was read off the results after the runs. It has not been tested by writing new
   examples from it.
 - Labels: a pattern match gave the first label and I then read the replies. In the Setup 2 study, eight replies with
@@ -434,11 +503,15 @@ How I read this:
   [labels_override.json](experiments/codex-cli-causes-and-fixes-20261012/labels_override.json).
 - In the Setup 2 study, 22 attempts stalled (no answer within the time limit) or were stopped by me when the first
   batch hung. They are kept in `runs_failed/` and were run again. All 268 planned conversations finished.
+- In 2 of the 416 later conversations (`new-examples` dental r07, `non-business-examples` person r08) the tool log
+  has one extra line, written by an earlier stalled attempt of the same run that was still alive. In all 684
+  Setup 2 conversations the saved reply matches the recorded events.
 
 ## Not tested yet
 
-1. Sentence C on the four new examples that fail (dental, climbing, books, person), which it was not written next
-   to. This is the next test.
+1. A sentence that stops the mistake on all six failing examples and also tells the user what was found. Sentence C
+   does the first, Sentence A does the second on five of the six. A and C together, or C with "say what you did
+   find", was not run.
 2. What makes the company example fail when the school, flat, hotel and van examples do not. First candidate: the
    word "product" in the note.
 3. Sentence C in Setup 1, and with a different agent program.
@@ -461,6 +534,7 @@ How I read this:
 | ↳ `runs_failed/` | The 22 attempts that stalled or were stopped |
 | [experiments/new-examples-20261012/](experiments/new-examples-20261012/README.md) | **Six new examples** written before they were run, no fix sentence. 84 conversations (60 + 24 check tasks); same file layout as above |
 | [experiments/non-business-examples-20261012/](experiments/non-business-examples-20261012/README.md) | **Five one-question examples that are not businesses**, no fix sentence. 84 conversations, including one flawed example that is not counted |
+| [experiments/fix-on-new-examples-20261012/](experiments/fix-on-new-examples-20261012/README.md) | **Fix test on four new examples**: with and without "nothing else", and Sentences A, B, C. 248 conversations (200 + 48 check tasks) |
 | [traces/](traces/) | Setup 1: the three examples, 10 conversations each (company in two versions) |
 | [experiments/pharmacy-answer-pressure-20261012/](experiments/pharmacy-answer-pressure-20261012/README.md) | Setup 1: "just the time, nothing else", 50 + 50 conversations |
 | [experiments/school-account-naming-20261012/](experiments/school-account-naming-20261012/README.md) | Setup 1: naming Westbrook in the question, 50 + 50, plus a 10-run check |

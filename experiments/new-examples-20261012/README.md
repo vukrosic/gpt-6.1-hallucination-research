@@ -22,6 +22,8 @@ added instruction sentence, 10 fresh conversations per example, October 12, 2026
 - No label was corrected by hand; I read all 84 last replies and the pattern labels were right.
 - 7 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again. All 84 planned
   conversations finished.
+- `runs/dental/r07/tool_log.jsonl` has one tool call more than `events.jsonl`. The extra line was written by the
+  earlier stalled attempt of the same run, which was still alive. The saved reply matches `events.jsonl`.
 
 The full write-up is in the [main README](../../README.md#six-new-examples--three-fail-three-do-not).
 

@@ -26,6 +26,8 @@ Every question ended with "just the …, nothing else".
   are kept in `runs/`.
 - No label was corrected by hand; I read all 84 replies.
 - 2 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again.
+- `runs/person/r08/tool_log.jsonl` has one tool call more than `events.jsonl`. The extra line was written by the earlier
+  stalled attempt of the same run, which was still alive. The saved reply matches `events.jsonl`.
 
 The full write-up is in the [main README](../../README.md#does-the-recipe-work-on-other-things).
 

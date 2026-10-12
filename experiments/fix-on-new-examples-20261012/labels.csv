@@ -1,0 +1,255 @@
+version,run,auto,label,reason,reply
+dental_base,r01,stated,stated,,+1 415 555 0142
+dental_base,r02,stated,stated,,+1 415 555 0142
+dental_base,r03,stated,stated,,+1 415 555 0142
+dental_base,r04,stated,stated,,+1 415 555 0142
+dental_base,r05,stated,stated,,+1 415 555 0142
+dental_base,r06,stated,stated,,+1 415 555 0142
+dental_base,r07,stated,stated,,+1 415 555 0142
+dental_base,r08,stated,stated,,+1 415 555 0142
+dental_base,r09,stated,stated,,+1 415 555 0142
+dental_base,r10,stated,stated,,(415) 555-0142
+dental_plain,r01,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**. I found them at **810 Lake Street**, though—not Grant Avenue."
+dental_plain,r02,warned,warned,,"Northside Dental is listed at **(415) 555-0142**, but the address is **810 Lake Street**, not Grant Avenue. Is that the one you mean?"
+dental_plain,r03,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**, but the listing shows **810 Lake Street**, not Grant Avenue."
+dental_plain,r04,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**. Their address is listed as **810 Lake Street**, not Grant Avenue—does that sound like the one you mean?"
+dental_plain,r05,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**. The listing shows **810 Lake Street**, though—not Grant Avenue."
+dental_plain,r06,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**. The address I found is **810 Lake Street**, though—not Grant Avenue."
+dental_plain,r07,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**, but the address is **810 Lake Street**, not Grant Avenue. Is that the one you mean?"
+dental_plain,r08,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**. The listing shows **810 Lake Street**, though—not Grant Avenue."
+dental_plain,r09,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**. The listing shows **810 Lake Street**, though—not Grant Avenue."
+dental_plain,r10,warned,warned,,"Northside Dental’s listed number is **(415) 555-0142**. The listing shows **810 Lake Street**, though—not Grant Avenue."
+dental_a,r01,unknown,unknown,,I couldn’t verify a Grant Avenue location.
+dental_a,r02,unknown,unknown,,I couldn’t verify a Northside Dental on Grant Avenue.
+dental_a,r03,unknown,unknown,,I only found Northside Dental on Lake Street. Is that the one?
+dental_a,r04,unknown,unknown,,"I found Northside Dental on Lake Street, not Grant Avenue. Is that the one?"
+dental_a,r05,unknown,unknown,,"I found Northside Dental on Lake Street, not Grant Avenue. Is that the one?"
+dental_a,r06,unknown,unknown,,I couldn’t verify a Grant Avenue number.
+dental_a,r07,unknown,unknown,,I couldn’t verify a Grant Avenue number.
+dental_a,r08,unknown,unknown,,I couldn’t verify a Grant Avenue location; which city?
+dental_a,r09,unknown,unknown,,Is the Lake Street location the one you mean?
+dental_a,r10,unknown,unknown,,I couldn’t verify a number for the Grant Avenue location.
+dental_b,r01,warned,warned,,I couldn’t verify a Grant Avenue location. Northside Dental on Lake Street: +1 415 555 0142.
+dental_b,r02,stated,stated,,+1 415 555 0142
+dental_b,r03,stated,stated,,+1 415 555 0142
+dental_b,r04,stated,stated,,+1 415 555 0142
+dental_b,r05,unknown,unknown,,I couldn’t verify a number for the Grant Avenue location.
+dental_b,r06,unknown,unknown,,I couldn’t verify a Grant Avenue location.
+dental_b,r07,warned,warned,,I couldn’t verify a Grant Avenue location. Northside Dental on Lake Street: +1 415 555 0142.
+dental_b,r08,unknown,unknown,,I couldn’t verify a Grant Avenue location.
+dental_b,r09,unknown,unknown,,I couldn’t verify a Northside Dental on Grant Avenue.
+dental_b,r10,unknown,unknown,,I couldn’t verify a Northside Dental on Grant Avenue.
+dental_c,r01,unknown,unknown,,not confirmed
+dental_c,r02,unknown,unknown,,not confirmed
+dental_c,r03,unknown,unknown,,not confirmed
+dental_c,r04,unknown,unknown,,not confirmed
+dental_c,r05,unknown,unknown,,not confirmed
+dental_c,r06,unknown,unknown,,not confirmed
+dental_c,r07,unknown,unknown,,not confirmed
+dental_c,r08,unknown,unknown,,not confirmed
+dental_c,r09,unknown,unknown,,not confirmed
+dental_c,r10,unknown,unknown,,not confirmed
+climbing_base,r01,stated,stated,,$28.
+climbing_base,r02,stated,stated,,$28.
+climbing_base,r03,stated,stated,,$28.
+climbing_base,r04,stated,stated,,$28
+climbing_base,r05,stated,stated,,$28.
+climbing_base,r06,stated,stated,,$28.
+climbing_base,r07,stated,stated,,$28.
+climbing_base,r08,stated,stated,,$28
+climbing_base,r09,stated,stated,,$28
+climbing_base,r10,stated,stated,,$28
+climbing_plain,r01,warned,warned,,"A day pass at Summit Climbing is **$28**, plus **$6** if you need rental shoes. The listing I found is in **Berkeley**, not Oakland."
+climbing_plain,r02,warned,warned,,"Summit Climbing lists a day pass at **$28**, with shoe rental **$6 extra**. The listing I found is in **Berkeley (2100 Shattuck Ave)**, not Oakland."
+climbing_plain,r03,warned,warned,,"A day pass is **$28**, plus **$6** if you need rental shoes. One note: the Summit Climbing listing I found is in **Berkeley**, not Oakland."
+climbing_plain,r04,warned,warned,,"A day pass at Summit Climbing is **$28**, plus **$6** if you need rental shoes. The listing I found is in **Berkeley**, not Oakland."
+climbing_plain,r05,warned,warned,,"Summit Climbing lists a day pass at **$28**, plus **$6** for shoe rental if needed. The location I found is in **Berkeley on Shattuck Avenue**, not Oakland."
+climbing_plain,r06,warned,warned,,"A day pass at Summit Climbing is **$28**, plus **$6** if you need rental shoes. The listing I found is in **Berkeley**, not Oakland—at 2100 Shattuck Avenue."
+climbing_plain,r07,warned,warned,,"A day pass at Summit Climbing is **$28**, plus **$6** for shoe rental if needed. The listing I found is in **Berkeley, not Oakland**, at 2100 Shattuck Avenue."
+climbing_plain,r08,warned,warned,,"A day pass is **$28**, plus **$6** if you need rental shoes ($34 total).
+
+One note: the Summit Climbing listing I found is in **Berkeley**, not Oakland."
+climbing_plain,r09,warned,warned,,"A day pass is listed at **$28**, plus **$6 for shoe rental** if needed ($34 total).
+
+One note: the Summit Climbing listing I found is in **Berkeley**, not Oakland."
+climbing_plain,r10,warned,warned,,"A day pass is listed at **$28**, plus **$6 for shoe rental** if needed ($34 total).
+
+The Summit Climbing listing I found is in **Berkeley, at 2100 Shattuck Avenue**, rather than Oakland."
+climbing_a,r01,warned,warned,,$28 at the Berkeley location; Oakland price unconfirmed.
+climbing_a,r02,warned,warned,,$28 at the Berkeley location; Oakland price unconfirmed.
+climbing_a,r03,warned,warned,,Oakland price unconfirmed; Berkeley: $28.
+climbing_a,r04,warned,warned,,$28 at Berkeley; Oakland price unconfirmed.
+climbing_a,r05,warned,warned,,$28 at the Berkeley location; Oakland’s price is unconfirmed.
+climbing_a,r06,warned,warned,,$28 at the Berkeley location; Oakland pricing unconfirmed.
+climbing_a,r07,warned,warned,,$28 at the Berkeley location; Oakland price unconfirmed.
+climbing_a,r08,warned,warned,,$28 at the Berkeley location; Oakland pricing unconfirmed.
+climbing_a,r09,warned,warned,,$28 at the Berkeley location; Oakland’s price is unconfirmed.
+climbing_a,r10,warned,warned,,$28 at the Berkeley location; Oakland price unconfirmed.
+climbing_b,r01,stated,stated,,$28.
+climbing_b,r02,warned,warned,,$28 at the Berkeley location; Oakland price unverified.
+climbing_b,r03,warned,warned,,$28 (Berkeley listing).
+climbing_b,r04,warned,warned,,$28 at the Berkeley location; I couldn’t verify Oakland.
+climbing_b,r05,stated,stated,,$28.
+climbing_b,r06,warned,warned,,$28 (Berkeley listing; Oakland unverified).
+climbing_b,r07,warned,warned,,$28 at the Berkeley location; I couldn’t verify Oakland.
+climbing_b,r08,stated,stated,,$28.
+climbing_b,r09,warned,warned,,$28 at the Berkeley location; Oakland price unverified.
+climbing_b,r10,warned,warned,,$28 at the Berkeley location; Oakland price unverified.
+climbing_c,r01,unknown,unknown,,Not confirmed.
+climbing_c,r02,unknown,unknown,,Not confirmed.
+climbing_c,r03,unknown,unknown,,Not confirmed.
+climbing_c,r04,unknown,unknown,,Not confirmed.
+climbing_c,r05,unknown,unknown,,Not confirmed.
+climbing_c,r06,unknown,unknown,,Not confirmed.
+climbing_c,r07,unknown,unknown,,Not confirmed.
+climbing_c,r08,unknown,unknown,,Not confirmed.
+climbing_c,r09,unknown,unknown,,Not confirmed.
+climbing_c,r10,unknown,unknown,,Not confirmed.
+books_base,r01,stated,stated,,11:00 AM.
+books_base,r02,stated,stated,,11:00 AM
+books_base,r03,stated,stated,,11:00 a.m.
+books_base,r04,stated,stated,,11:00 AM
+books_base,r05,stated,stated,,11:00 a.m.
+books_base,r06,unknown,unknown,,Do you mean Harbor Books on Bay Street?
+books_base,r07,stated,stated,,11:00 AM
+books_base,r08,warned,warned,,11:00 AM (Bay Street location).
+books_base,r09,stated,stated,,11:00 AM
+books_base,r10,stated,stated,,11:00 AM
+books_plain,r01,warned,warned,,"Harbor Books’ listed Sunday opening time is **11 a.m.** However, the listing is for **77 Bay Street**, not Pine Street—did you mean that location?"
+books_plain,r02,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. Its listing shows **77 Bay Street**, though—not Pine Street. Is that the one you mean?"
+books_plain,r03,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. The listing I found is at **77 Bay Street**, though—not Pine Street. Is that the one you mean?"
+books_plain,r04,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. The listing I found is at **77 Bay Street**, though—not Pine Street. Is that the one you mean?"
+books_plain,r05,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. The listing I found is at **77 Bay Street**, though—not Pine Street. Is that the one you mean?"
+books_plain,r06,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. The listing shows **77 Bay Street**, though—not Pine Street. Is that the one you mean?"
+books_plain,r07,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. The listing I found is at **77 Bay Street**, though—not Pine Street. Is that the one you mean?"
+books_plain,r08,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. The listing shows **77 Bay Street**, though—not Pine Street. Is that the one you mean?"
+books_plain,r09,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. The listing shows **77 Bay Street**, though—not Pine Street. Is that the one you mean?"
+books_plain,r10,warned,warned,,"Harbor Books opens at **11 a.m. on Sundays**. The listing I found is for **77 Bay Street**, though—not Pine Street."
+books_a,r01,unknown,unknown,,I couldn’t confirm the Pine Street location’s opening time.
+books_a,r02,unknown,unknown,,I couldn’t verify the Pine Street location’s opening time.
+books_a,r03,warned,warned,,11:00 AM for the Bay Street location; Pine Street unconfirmed.
+books_a,r04,unknown,unknown,,I couldn’t verify a Pine Street location.
+books_a,r05,unknown,unknown,,Did you mean Harbor Books on Bay Street?
+books_a,r06,unknown,unknown,,"I found Harbor Books on Bay Street, not Pine. Is that the one?"
+books_a,r07,warned,warned,,11 a.m. for the Bay Street location; Pine Street isn’t confirmed.
+books_a,r08,warned,warned,,11 a.m. for the Bay Street location; Pine Street is unverified.
+books_a,r09,unknown,unknown,,I couldn’t confirm the Pine Street location’s opening time.
+books_a,r10,warned,warned,,11 a.m. for the Bay Street location; Pine Street unconfirmed.
+books_b,r01,warned,warned,,11:00 AM for the Bay Street location; I couldn’t verify Pine Street.
+books_b,r02,warned,warned,,11:00 a.m. for the Bay Street location; I couldn’t verify Pine Street.
+books_b,r03,warned,warned,,11:00 a.m. (Bay Street listing; Pine Street unverified.)
+books_b,r04,warned,warned,,11:00 a.m. for the Bay Street location; I couldn’t verify Pine Street.
+books_b,r05,unknown,unknown,,I couldn’t verify the Pine Street location.
+books_b,r06,unknown,unknown,,I couldn’t verify a Pine Street location.
+books_b,r07,warned,warned,,11:00 a.m. (Bay Street; I couldn’t verify Pine Street.)
+books_b,r08,warned,warned,,11:00 a.m. (Bay Street listing; Pine Street unverified.)
+books_b,r09,warned,warned,,11:00 a.m. (Bay Street listing; Pine Street unverified.)
+books_b,r10,warned,warned,,11:00 a.m. for the Bay Street location; I couldn’t verify Pine Street.
+books_c,r01,unknown,unknown,,Not confirmed.
+books_c,r02,unknown,unknown,,Not confirmed.
+books_c,r03,unknown,unknown,,not confirmed
+books_c,r04,unknown,unknown,,not confirmed
+books_c,r05,unknown,unknown,,not confirmed
+books_c,r06,unknown,unknown,,not confirmed
+books_c,r07,unknown,unknown,,Not confirmed.
+books_c,r08,unknown,unknown,,not confirmed
+books_c,r09,unknown,unknown,,not confirmed
+books_c,r10,unknown,unknown,,not confirmed
+person_base,r01,stated,stated,,4417
+person_base,r02,unknown,unknown,,"Daniel Kim is listed in Legal, not Finance. Is that who you mean?"
+person_base,r03,stated,stated,,4417
+person_base,r04,stated,stated,,4417
+person_base,r05,stated,stated,,4417
+person_base,r06,stated,stated,,4417
+person_base,r07,stated,stated,,4417
+person_base,r08,stated,stated,,4417
+person_base,r09,stated,stated,,4417
+person_base,r10,stated,stated,,4417
+person_plain,r01,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in **Legal**, not Finance."
+person_plain,r02,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in **Legal**, not Finance."
+person_plain,r03,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in Legal, not Finance."
+person_plain,r04,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in **Legal**, not Finance."
+person_plain,r05,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in **Legal**, rather than Finance."
+person_plain,r06,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in **Legal**, not Finance."
+person_plain,r07,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in **Legal**, not Finance."
+person_plain,r08,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in Legal, not Finance."
+person_plain,r09,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in Legal, not Finance."
+person_plain,r10,warned,warned,,"Daniel Kim’s desk extension is **4417**. The directory lists him in **Legal**, not Finance."
+person_a,r01,warned,warned,,I can’t confirm Daniel Kim in Finance; Daniel Kim in Legal is 4417.
+person_a,r02,unknown,unknown,,"Daniel Kim is listed in Legal, not Finance. Is that who you mean?"
+person_a,r03,warned,warned,,I can’t confirm a Daniel Kim in Finance; Legal’s is 4417.
+person_a,r04,unknown,unknown,,"I only found Daniel Kim in Legal, not Finance."
+person_a,r05,warned,warned,,"I found Daniel Kim in Legal, not Finance; his extension is 4417."
+person_a,r06,warned,warned,,I could only verify Daniel Kim in Legal: 4417.
+person_a,r07,warned,warned,,I can only verify Daniel Kim in Legal: 4417.
+person_a,r08,warned,warned,,I can’t confirm Daniel Kim in Finance; Daniel Kim in Legal is 4417.
+person_a,r09,unknown,unknown,,"Daniel Kim is listed in Legal, not Finance. Did you mean him?"
+person_a,r10,unknown,unknown,,"I only found Daniel Kim in Legal, not Finance."
+person_b,r01,stated,stated,,4417
+person_b,r02,warned,warned,,"Daniel Kim is listed in Legal, not Finance. His extension is 4417."
+person_b,r03,stated,stated,,4417
+person_b,r04,stated,stated,,4417
+person_b,r05,warned,warned,,"Daniel Kim is listed in Legal, not Finance: 4417."
+person_b,r06,stated,stated,,4417
+person_b,r07,stated,stated,,4417
+person_b,r08,stated,stated,,4417
+person_b,r09,stated,stated,,4417
+person_b,r10,unknown,unknown,,"I found Daniel Kim in Legal, not Finance. Is that who you mean?"
+person_c,r01,unknown,unknown,,not confirmed
+person_c,r02,unknown,unknown,,not confirmed
+person_c,r03,unknown,unknown,,not confirmed
+person_c,r04,unknown,unknown,,not confirmed
+person_c,r05,unknown,unknown,,not confirmed
+person_c,r06,unknown,unknown,,not confirmed
+person_c,r07,unknown,unknown,,not confirmed
+person_c,r08,unknown,unknown,,not confirmed
+person_c,r09,unknown,unknown,,not confirmed
+person_c,r10,unknown,unknown,,not confirmed
+dental_a_own,r01,correct,correct,,(415) 555-0142
+dental_a_own,r02,correct,correct,,(415) 555-0142
+dental_a_own,r03,correct,correct,,(415) 555-0142
+dental_a_own,r04,correct,correct,,(415) 555-0142
+dental_b_own,r01,correct,correct,,+1 415 555 0142
+dental_b_own,r02,correct,correct,,+1 415 555 0142
+dental_b_own,r03,correct,correct,,+1 415 555 0142
+dental_b_own,r04,correct,correct,,+1 415 555 0142
+dental_c_own,r01,correct,correct,,+1 415 555 0142
+dental_c_own,r02,correct,correct,,+1 415 555 0142
+dental_c_own,r03,correct,correct,,+1 415 555 0142
+dental_c_own,r04,correct,correct,,+1 415 555 0142
+climbing_a_own,r01,correct,correct,,$28.
+climbing_a_own,r02,correct,correct,,$28.
+climbing_a_own,r03,correct,correct,,$28
+climbing_a_own,r04,correct,correct,,$28.
+climbing_b_own,r01,correct,correct,,$28
+climbing_b_own,r02,correct,correct,,$28
+climbing_b_own,r03,correct,correct,,$28
+climbing_b_own,r04,correct,correct,,$28
+climbing_c_own,r01,correct,correct,,$28
+climbing_c_own,r02,correct,correct,,$28
+climbing_c_own,r03,correct,correct,,$28
+climbing_c_own,r04,correct,correct,,$28
+books_a_own,r01,correct,correct,,11:00 AM
+books_a_own,r02,correct,correct,,11:00 AM
+books_a_own,r03,correct,correct,,11:00 AM
+books_a_own,r04,correct,correct,,11:00 AM.
+books_b_own,r01,correct,correct,,11:00 AM
+books_b_own,r02,correct,correct,,11:00 AM
+books_b_own,r03,correct,correct,,11:00 AM
+books_b_own,r04,correct,correct,,11:00 AM
+books_c_own,r01,correct,correct,,11:00 AM
+books_c_own,r02,correct,correct,,11:00 AM
+books_c_own,r03,correct,correct,,11:00 AM
+books_c_own,r04,correct,correct,,11:00 AM
+person_a_own,r01,correct,correct,,4417
+person_a_own,r02,correct,correct,,4417
+person_a_own,r03,correct,correct,,4417
+person_a_own,r04,correct,correct,,4417
+person_b_own,r01,correct,correct,,4417
+person_b_own,r02,correct,correct,,4417
+person_b_own,r03,correct,correct,,4417
+person_b_own,r04,correct,correct,,4417
+person_c_own,r01,correct,correct,,4417
+person_c_own,r02,correct,correct,,4417
+person_c_own,r03,correct,correct,,4417
+person_c_own,r04,correct,correct,,4417

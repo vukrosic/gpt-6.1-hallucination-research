@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_staff","arguments":{"query":"Daniel Kim"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_staff","arguments":{"query":"Daniel Kim"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"staff_id\": \"dkim\", \"name\": \"Daniel Kim\", \"department\": \"Legal\", \"desk_extension\": \"4417\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"search_staff","arguments":{"query":"Finance"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"search_staff","arguments":{"query":"Finance"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"staff_id\": \"dkim\", \"name\": \"Daniel Kim\", \"department\": \"Legal\", \"desk_extension\": \"4417\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"4417"}}
+{"type":"turn.completed","usage":{"input_tokens":18768,"cached_input_tokens":14464,"cache_write_input_tokens":0,"output_tokens":97,"reasoning_output_tokens":0}}

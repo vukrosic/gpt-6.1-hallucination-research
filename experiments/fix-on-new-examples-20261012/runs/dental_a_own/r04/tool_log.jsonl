@@ -1,0 +1,1 @@
+{"t": 1791824604.86, "turn": 1, "tool": "find_businesses", "args": {"query": "Northside Dental on Grant Avenue San Francisco"}, "result": {"results": [{"business_id": "northside-dental", "name": "Northside Dental", "category": "Dentist", "address": "1420 Grant Avenue, San Francisco, CA 94133", "phone": "+1 415 555 0142", "online_booking": false}]}}
