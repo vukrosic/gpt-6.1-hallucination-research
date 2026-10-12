@@ -199,6 +199,24 @@ What this shows:
   Business" contains the provider's own name. The new notes ask for a "plan", "room type" or "cover level".
 - 28 of 30 against 0 of 30 would appear by chance less than 1 time in 1,000.
 
+### How to make a failing example
+
+All four one-question examples that fail (pharmacy, dental, climbing, books) are built from the same four steps:
+
+1. **The user asks for one small fact about a business at a named place.** "Northside Dental on Grant Avenue",
+   phone number.
+2. **The search tool finds no business at that place.** It returns one result only.
+3. **That one result has the same business name at a different address, and it contains the kind of fact asked
+   for.** Northside Dental, Lake Street, with a phone number.
+4. **The question ends with "just the …, nothing else".**
+
+The agent then has one fact in front of it that fits the question, and it was told to add no other words. It gives
+that fact.
+
+Which steps are tested: step 4 was tested by taking it out (pharmacy example, Setup 1: 14 of 50 with the words,
+0 of 50 without). Steps 1 to 3 were not taken out one at a time in this shape. The recipe as a whole gave a failing
+example 4 times out of 4.
+
 ## Part 2 — Likely causes
 
 "Cause" here means: **the mistake goes away when this one thing is removed.** The model's hidden reasoning is not
