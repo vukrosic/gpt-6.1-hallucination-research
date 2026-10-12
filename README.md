@@ -4,6 +4,17 @@ Research by Vuk Rosić on one mistake AI agents make: **the agent tells the user
 shows.** The model is **gpt-6.1-sol**. All records are fictional and all tools are simulated. Every prompt, tool call,
 tool result and reply is saved in this repository.
 
+## The failure
+
+**The user asks about one thing. The records have that fact only for a similar thing. The agent gives it as the
+answer, with no warning.**
+
+There are three examples here. All three are this same failure:
+
+- **Company:** the agent gives the Chicago company's plan as the London company's plan.
+- **School:** the agent gives Eastbrook School's plan as Westbrook School's plan.
+- **Pharmacy:** the agent gives the Mission Street closing time as the Castro Street closing time.
+
 This page can be read without knowing anything else. It has three parts, as the task asked:
 
 1. Examples where the agent makes the mistake.
@@ -12,9 +23,8 @@ This page can be read without knowing anything else. It has three parts, as the 
 
 ## Short version
 
-- **The mistake:** the user asks about their own account or place. The records give the asked-for fact only for a
-  *different* account or place. The agent gives that fact anyway, with no warning. This happened in **7 of 10**
-  conversations in the company example and **5 of 10** in the pharmacy example.
+- **How often:** **7 of 10** conversations in the company example and **5 of 10** in the pharmacy example. The
+  school example failed 24 of 50 in my first setup and 0 of 10 in the second.
 - **Cause 1 — similar names.** When the two companies share the name "CoreLens", the mistake happens 7 of 10 times.
   With an unrelated name, 1 of 10.
 - **Cause 2 — a request for a very short answer.** With "just the time, nothing else" in the question, 14 of 50.
