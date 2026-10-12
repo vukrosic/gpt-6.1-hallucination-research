@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_invoices","arguments":{"query":"Brightline September"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_invoices","arguments":{"query":"Brightline September"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"invoice_id\": \"brightline-inv\", \"supplier\": \"Brightline Ltd\", \"billing_month\": \"September 2026\", \"due_date\": \"28 October 2026\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"28 October 2026"}}
+{"type":"turn.completed","usage":{"input_tokens":13854,"cached_input_tokens":10368,"cache_write_input_tokens":0,"output_tokens":89,"reasoning_output_tokens":0}}

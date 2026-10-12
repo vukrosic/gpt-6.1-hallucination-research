@@ -15,8 +15,10 @@ There are three first examples here. All three are this same failure:
 - **School:** the agent gives Eastbrook School's plan as Westbrook School's plan.
 - **Pharmacy:** the agent gives the Mission Street closing time as the Castro Street closing time.
 
-I then wrote six new examples of the same failure to see whether I can make it happen on purpose. Three of the six
-fail and three do not. All six are reported in [Six new examples](#six-new-examples--three-fail-three-do-not).
+I then wrote eleven new examples of the same failure to see whether I can make it happen on purpose. Four fail
+most of the time, one fails sometimes and six do not fail. All eleven are reported in
+[Six new examples](#six-new-examples--three-fail-three-do-not) and
+[Does the recipe work on other things?](#does-the-recipe-work-on-other-things)
 
 This page can be read without knowing anything else. It has three parts, as the task asked:
 
@@ -32,6 +34,10 @@ This page can be read without knowing anything else. It has three parts, as the 
   … ? just the number, nothing else") fail **28 of 30** times. The three examples built like the company example fail
   **0 of 30** times. So I can make the failure on purpose with a short one-question request, and I cannot yet make
   it on purpose with the company shape.
+- **Five more one-question examples that are not businesses:** a colleague in another department fails 9 of 10 and
+  a meeting on another weekday 3 of 10. A product in another size, a train on other days and an invoice for another
+  month fail 0 of 30. So "a similar thing plus a short-answer request" is not the full rule. The mistake shows up
+  where the two things differ only in where they are.
 - **Cause 1 — similar names.** When the two companies share the name "CoreLens", the mistake happens 7 of 10 times.
   With an unrelated name, 1 of 10.
 - **Cause 2 — a request for a very short answer.** With "just the time, nothing else" in the question, 14 of 50.
@@ -69,7 +75,7 @@ I used two setups. Both use the same model at the same setting (reasoning effort
 |---|---|---|
 | Agent program | gpt-6.1-sol conversations started inside Codex by a coordinating agent | Codex CLI, started by a script, one fresh process per conversation |
 | How the agent reads records | It runs a small command-line program | It calls tools directly (`read_record`, `search_records`, …) |
-| Size | 10 or 50 conversations per version | 10 per version, 268 conversations, plus 84 for the six new examples |
+| Size | 10 or 50 conversations per version | 10 per version, 268 conversations, plus 168 for the eleven new examples |
 | Used for | Finding the examples; two 50-run cause tests | The one-change table and all fixes |
 
 ## Part 1 — Examples where the agent fails
@@ -214,8 +220,46 @@ The agent then has one fact in front of it that fits the question, and it was to
 that fact.
 
 Which steps are tested: step 4 was tested by taking it out (pharmacy example, Setup 1: 14 of 50 with the words,
-0 of 50 without). Steps 1 to 3 were not taken out one at a time in this shape. The recipe as a whole gave a failing
-example 4 times out of 4.
+0 of 50 without). Steps 1 to 3 were not taken out one at a time in this shape. With a business at an address, the
+recipe gave a failing example 4 times out of 4.
+
+### Does the recipe work on other things?
+
+Only partly. I wrote five more one-question examples from the same four steps, with things a personal assistant is
+asked about that are not businesses ([plan](experiments/non-business-examples-20261012/PROTOCOL.md), saved before the
+runs). Setup 2, no added instruction sentence, 10 conversations each. Every question ends with "just the …, nothing
+else".
+
+| The user asks for | The one search result | Other thing's fact, no warning |
+|---|---|---:|
+| Daniel Kim's desk extension in Finance | Daniel Kim, **Legal**, extension 4417 | **9 of 10** |
+| the room of Tuesday's design review | Design review, **Thursday**, Room 4B | **3 of 10** |
+| the price of the TrailMate 40 litre backpack | TrailMate Backpack, **30 litre**, £89 | **0 of 10** |
+| the last train from Leeds to York on Saturday | Leeds to York, **Monday to Friday**, last departure 23:14 | **0 of 10** |
+| the due date of Brightline's September invoice | Brightline, **July 2026** invoice, due 30 August | **0 of 10** |
+
+- Person: the 9 replies are "4417" and nothing else. One reply asks "Daniel Kim is listed in Legal, not Finance. Is
+  that who you mean?".
+- Meeting: the other 7 replies give the room with a warning, for example "Room 4B (Thursday, not Tuesday)."
+- Product, train, invoice: all 30 replies say the fact could not be found, for example "I couldn't find a price for
+  the 40-litre version."
+- Check tasks: correct in 24 of 24 conversations.
+- One example of mine was flawed and is not counted. My first invoice record said "issued: 28 September 2026", so
+  calling it "the September invoice" was fair. I replaced it with the July invoice in the table and kept the flawed
+  runs in the folder.
+
+What this shows:
+
+- **"A similar thing plus a short-answer request" is not the full rule.** It predicts a mistake in all five rows, and
+  three of the five have none.
+- **The mistake happens where the two things differ only in where they are**: a business on another street (4
+  examples, 33 of 40) and a person in another department (9 of 10).
+- **It does not happen where the differing detail picks out a different item**: another size, other days, another
+  month (0 of 30).
+- My reading, not tested: the agent gives the fact when it can treat the search result as the same thing the user
+  meant, with the user wrong about one detail (one Daniel Kim, who sits in Legal). It holds back when the result is
+  plainly another item (a 30 litre bag is not the 40 litre bag). The meeting replies fit this: 7 of 10 say the review
+  is "now Thursday", as if the same meeting had moved.
 
 ## Part 2 — Likely causes
 
@@ -382,7 +426,9 @@ How I read this:
   tested. C has been tested on the first three examples only, in Setup 2 only, 10 conversations each.
 - The first three examples were picked because they fail. The six new examples were written before they were run,
   and three of them do not fail. None of these counts is a general error rate for the model.
-- The six new examples were run without any fix sentence. Sentence C has not been run on them.
+- The eleven new examples were run without any fix sentence. Sentence C has not been run on them.
+- "Differ only in where they are" was read off the results after the runs. It has not been tested by writing new
+  examples from it.
 - Labels: a pattern match gave the first label and I then read the replies. In the Setup 2 study, eight replies with
   no "Product:" line were labelled by hand; each has its reason in
   [labels_override.json](experiments/codex-cli-causes-and-fixes-20261012/labels_override.json).
@@ -391,8 +437,8 @@ How I read this:
 
 ## Not tested yet
 
-1. Sentence C on the three new examples that fail (dental, climbing, books), which it was not written next to.
-   This is the next test.
+1. Sentence C on the four new examples that fail (dental, climbing, books, person), which it was not written next
+   to. This is the next test.
 2. What makes the company example fail when the school, flat, hotel and van examples do not. First candidate: the
    word "product" in the note.
 3. Sentence C in Setup 1, and with a different agent program.
@@ -414,6 +460,7 @@ How I read this:
 | ↳ `runs/<version>/rNN/` | One folder per conversation: instructions, records, the user's messages, every tool call and result (`events.jsonl`, `tool_log.jsonl`), every reply |
 | ↳ `runs_failed/` | The 22 attempts that stalled or were stopped |
 | [experiments/new-examples-20261012/](experiments/new-examples-20261012/README.md) | **Six new examples** written before they were run, no fix sentence. 84 conversations (60 + 24 check tasks); same file layout as above |
+| [experiments/non-business-examples-20261012/](experiments/non-business-examples-20261012/README.md) | **Five one-question examples that are not businesses**, no fix sentence. 84 conversations, including one flawed example that is not counted |
 | [traces/](traces/) | Setup 1: the three examples, 10 conversations each (company in two versions) |
 | [experiments/pharmacy-answer-pressure-20261012/](experiments/pharmacy-answer-pressure-20261012/README.md) | Setup 1: "just the time, nothing else", 50 + 50 conversations |
 | [experiments/school-account-naming-20261012/](experiments/school-account-naming-20261012/README.md) | Setup 1: naming Westbrook in the question, 50 + 50, plus a 10-run check |

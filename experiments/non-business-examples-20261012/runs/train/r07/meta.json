@@ -1,0 +1,20 @@
+{
+ "version": "train",
+ "run": 7,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 25.4,
+ "usage": [
+  {
+   "input_tokens": 33363,
+   "cached_input_tokens": 26752,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 258,
+   "reasoning_output_tokens": 16
+  }
+ ]
+}

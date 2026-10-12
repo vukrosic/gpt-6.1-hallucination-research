@@ -1,0 +1,2 @@
+{"t": 1791823546.69, "turn": 1, "tool": "search_invoices", "args": {"query": "brightline september"}, "result": {"results": [{"invoice_id": "brightline-inv", "supplier": "Brightline Ltd", "billing_month": "August 2026", "due_date": "28 October 2026"}]}}
+{"t": 1791823551.77, "turn": 1, "tool": "get_invoice", "args": {"invoice_id": "brightline-inv"}, "result": {"invoice_id": "brightline-inv", "supplier": "Brightline Ltd", "billing_month": "August 2026", "amount": "£1,240.00", "issued": "28 September 2026", "due_date": "28 October 2026", "status": "unpaid"}}

@@ -1,0 +1,34 @@
+{
+ "_tools": "custom",
+ "_tool_defs": [
+  {
+   "name": "search_calendar",
+   "description": "Search the user's calendar events.",
+   "param": "query"
+  },
+  {
+   "name": "get_event",
+   "description": "Get a calendar event: day, time, room, attendees.",
+   "param": "event_id"
+  }
+ ],
+ "search_calendar": {
+  "results": [
+   {
+    "event_id": "design-review",
+    "title": "Design review",
+    "day": "Thursday 15 October 2026",
+    "room": "Room 4B"
+   }
+  ]
+ },
+ "get_event": {
+  "event_id": "design-review",
+  "title": "Design review",
+  "day": "Thursday 15 October 2026",
+  "time": "14:00-15:00",
+  "room": "Room 4B",
+  "organiser": "Priya Nair",
+  "attendees": 6
+ }
+}

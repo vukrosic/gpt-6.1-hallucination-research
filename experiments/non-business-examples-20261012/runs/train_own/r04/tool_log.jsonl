@@ -1,0 +1,1 @@
+{"t": 1791823564.97, "turn": 1, "tool": "search_timetables", "args": {"query": "Last train from Leeds to York on Saturday 17 October 2026"}, "result": {"results": [{"timetable_id": "leeds-york", "route": "Leeds to York", "days": "Saturday", "last_departure": "23:14"}]}}

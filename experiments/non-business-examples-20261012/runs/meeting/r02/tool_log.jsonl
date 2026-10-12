@@ -1,0 +1,2 @@
+{"t": 1791823617.27, "turn": 1, "tool": "search_calendar", "args": {"query": "design review Tuesday 13 October 2026"}, "result": {"results": [{"event_id": "design-review", "title": "Design review", "day": "Thursday 15 October 2026", "room": "Room 4B"}]}}
+{"t": 1791823623.29, "turn": 1, "tool": "get_event", "args": {"event_id": "design-review"}, "result": {"event_id": "design-review", "title": "Design review", "day": "Thursday 15 October 2026", "time": "14:00-15:00", "room": "Room 4B", "organiser": "Priya Nair", "attendees": 6}}

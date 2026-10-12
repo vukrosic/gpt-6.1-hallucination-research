@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_calendar","arguments":{"query":"design review Tuesday 13 October 2026"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_calendar","arguments":{"query":"design review Tuesday 13 October 2026"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"event_id\": \"design-review\", \"title\": \"Design review\", \"day\": \"Thursday 15 October 2026\", \"room\": \"Room 4B\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"get_event","arguments":{"event_id":"design-review"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"get_event","arguments":{"event_id":"design-review"},"result":{"content":[{"type":"text","text":"{\"event_id\": \"design-review\", \"title\": \"Design review\", \"day\": \"Thursday 15 October 2026\", \"time\": \"14:00-15:00\", \"room\": \"Room 4B\", \"organiser\": \"Priya Nair\", \"attendees\": 6}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"Room 4B (now Thursday)."}}
+{"type":"turn.completed","usage":{"input_tokens":24430,"cached_input_tokens":21632,"cache_write_input_tokens":0,"output_tokens":141,"reasoning_output_tokens":0}}

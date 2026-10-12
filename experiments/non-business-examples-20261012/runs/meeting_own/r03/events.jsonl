@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_calendar","arguments":{"query":"design review Tuesday 13 October 2026"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_calendar","arguments":{"query":"design review Tuesday 13 October 2026"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"event_id\": \"design-review\", \"title\": \"Design review\", \"day\": \"Tuesday 13 October 2026\", \"room\": \"Room 4B\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"Room 4B"}}
+{"type":"turn.completed","usage":{"input_tokens":13844,"cached_input_tokens":11008,"cache_write_input_tokens":0,"output_tokens":75,"reasoning_output_tokens":0}}

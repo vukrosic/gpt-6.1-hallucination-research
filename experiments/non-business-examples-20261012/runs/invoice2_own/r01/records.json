@@ -1,0 +1,34 @@
+{
+ "_tools": "custom",
+ "_tool_defs": [
+  {
+   "name": "search_invoices",
+   "description": "Search the user's supplier invoices.",
+   "param": "query"
+  },
+  {
+   "name": "get_invoice",
+   "description": "Get an invoice: supplier, billing month, amount, due date.",
+   "param": "invoice_id"
+  }
+ ],
+ "search_invoices": {
+  "results": [
+   {
+    "invoice_id": "brightline-inv",
+    "supplier": "Brightline Ltd",
+    "billing_month": "September 2026",
+    "due_date": "30 August 2026"
+   }
+  ]
+ },
+ "get_invoice": {
+  "invoice_id": "brightline-inv",
+  "supplier": "Brightline Ltd",
+  "billing_month": "September 2026",
+  "amount": "£1,240.00",
+  "issued": "31 July 2026",
+  "due_date": "30 August 2026",
+  "status": "paid"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "version": "invoice2",
+ "run": 3,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 22.8,
+ "usage": [
+  {
+   "input_tokens": 29286,
+   "cached_input_tokens": 23552,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 163,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

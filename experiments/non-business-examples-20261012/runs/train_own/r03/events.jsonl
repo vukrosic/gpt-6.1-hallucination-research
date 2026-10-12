@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_timetables","arguments":{"query":"Last train Leeds to York Saturday 17 October 2026"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_timetables","arguments":{"query":"Last train Leeds to York Saturday 17 October 2026"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"timetable_id\": \"leeds-york\", \"route\": \"Leeds to York\", \"days\": \"Saturday\", \"last_departure\": \"23:14\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"23:14"}}
+{"type":"turn.completed","usage":{"input_tokens":13880,"cached_input_tokens":12160,"cache_write_input_tokens":0,"output_tokens":101,"reasoning_output_tokens":0}}

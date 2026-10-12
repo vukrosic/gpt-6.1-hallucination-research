@@ -1,0 +1,1 @@
+{"t": 1791823910.42, "turn": 1, "tool": "search_invoices", "args": {"query": "Brightline September"}, "result": {"results": [{"invoice_id": "brightline-inv", "supplier": "Brightline Ltd", "billing_month": "September 2026", "due_date": "30 August 2026"}]}}
