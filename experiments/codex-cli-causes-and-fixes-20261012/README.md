@@ -4,7 +4,7 @@
 instruction sentences on the company, school and pharmacy examples, and check tasks where the asked-for fact is in the
 records.
 
-**The results and their explanation are in the [main README](../../README.md).** This folder holds the code and every
+**The results and their explanation are in the [full write-up](../../DETAILS.md).** This folder holds the code and every
 conversation.
 
 | File | What it is |

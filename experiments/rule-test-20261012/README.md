@@ -181,4 +181,4 @@ python3 run.py --round3 --budget 7200    # round 3
 python3 grade.py --show doctor doctor_near
 ```
 
-The full write-up is in the [main README](../../README.md).
+All results together are in the [full write-up](../../DETAILS.md).

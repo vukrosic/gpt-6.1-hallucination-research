@@ -43,8 +43,8 @@ What the other replies did:
 - 25 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again. All 396
   planned conversations finished, and in all 396 the saved reply and the tool log match the recorded events.
 
-The longer Sentences A, B and C on the same six examples, and the full write-up, are in the
-[main README](../../README.md).
+The longer Sentences A, B and C on the same six examples are in the
+[full write-up](../../DETAILS.md).
 
 ## Files
 

@@ -29,7 +29,7 @@ Every question ended with "just the …, nothing else".
 - `runs/person/r08/tool_log.jsonl` has one tool call more than `events.jsonl`. The extra line was written by the earlier
   stalled attempt of the same run, which was still alive. The saved reply matches `events.jsonl`.
 
-The full write-up is in the [main README](../../README.md#does-the-recipe-work-on-other-things).
+All results together are in the [full write-up](../../DETAILS.md).
 
 ## Files
 

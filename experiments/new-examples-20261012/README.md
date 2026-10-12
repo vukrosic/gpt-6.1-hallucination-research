@@ -25,7 +25,7 @@ added instruction sentence, 10 fresh conversations per example, October 12, 2026
 - `runs/dental/r07/tool_log.jsonl` has one tool call more than `events.jsonl`. The extra line was written by the
   earlier stalled attempt of the same run, which was still alive. The saved reply matches `events.jsonl`.
 
-The full write-up is in the [main README](../../README.md#six-new-examples--three-fail-three-do-not).
+All results together are in the [full write-up](../../DETAILS.md).
 
 ## Files
 

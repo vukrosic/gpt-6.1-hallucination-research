@@ -37,8 +37,8 @@ What the other replies did:
 - 4 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again.
 
 The sentences are in `conditions.py`, word for word as in
-[codex-cli-causes-and-fixes-20261012](../codex-cli-causes-and-fixes-20261012/). The full write-up is in the
-[main README](../../README.md#the-three-sentences-on-four-new-examples).
+[codex-cli-causes-and-fixes-20261012](../codex-cli-causes-and-fixes-20261012/). All results together are in the
+[full write-up](../../DETAILS.md).
 
 ## Files
 
