@@ -1,0 +1,20 @@
+{
+ "version": "doctor_near",
+ "run": 9,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 22.8,
+ "usage": [
+  {
+   "input_tokens": 29340,
+   "cached_input_tokens": 26624,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 234,
+   "reasoning_output_tokens": 10
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+{"t": 1791830435.7, "turn": 1, "tool": "search_timetables", "args": {"query": "Leeds to York Saturday 17 October 2026 journey duration"}, "result": {"results": [{"timetable_id": "leeds-york", "route": "Leeds to York", "days": "Saturday", "last_departure": "23:14"}]}}
+{"t": 1791830441.21, "turn": 1, "tool": "get_timetable", "args": {"timetable_id": "leeds-york"}, "result": {"timetable_id": "leeds-york", "route": "Leeds to York", "days": "Saturday", "first_departure": "05:32", "last_departure": "23:14", "journey_minutes": 24, "valid_from": "2026-05-17"}}

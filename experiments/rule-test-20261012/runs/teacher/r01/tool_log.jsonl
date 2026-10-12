@@ -1,0 +1,3 @@
+{"t": 1791830797.83, "turn": 1, "tool": "search_classes", "args": {"query": "Elmwood year 9 maths"}, "result": {"results": [{"class_id": "elmwood-maths", "school": "Elmwood School", "subject": "Maths", "year_group": "Year 8", "teacher": "Mr Tomas Varga"}]}}
+{"t": 1791830803.3, "turn": 1, "tool": "get_class", "args": {"class_id": "elmwood-maths"}, "result": {"class_id": "elmwood-maths", "school": "Elmwood School", "subject": "Maths", "year_group": "Year 8", "teacher": "Mr Tomas Varga", "room": "M12", "lessons_per_week": 4}}
+{"t": 1791830805.97, "turn": 1, "tool": "search_classes", "args": {"query": "Year 9 Maths"}, "result": {"results": [{"class_id": "elmwood-maths", "school": "Elmwood School", "subject": "Maths", "year_group": "Year 8", "teacher": "Mr Tomas Varga"}]}}

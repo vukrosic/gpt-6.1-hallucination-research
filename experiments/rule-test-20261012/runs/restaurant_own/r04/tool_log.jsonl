@@ -1,0 +1,1 @@
+{"t": 1791830335.42, "turn": 1, "tool": "search_restaurants", "args": {"query": "Lotus Garden Thai Leeds"}, "result": {"results": [{"restaurant_id": "lotus-garden", "name": "Lotus Garden", "cuisine": "Thai", "closes_today": "22:30"}]}}

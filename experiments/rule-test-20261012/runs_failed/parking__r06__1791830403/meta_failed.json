@@ -1,0 +1,12 @@
+{
+ "version": "parking",
+ "run": 6,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": false,
+ "exit_codes": [
+  124
+ ],
+ "seconds": 110.0,
+ "usage": []
+}

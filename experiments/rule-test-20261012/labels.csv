@@ -1,0 +1,259 @@
+example,run,auto,label,reason,reply
+product_colours,r01,warned,warned,,"I can only confirm Slate and Moss for the 30-litre model, not the 40-litre."
+product_colours,r02,warned,warned,,Only a 30-litre model is listed: Slate and Moss.
+product_colours,r03,warned,warned,,I could only find the 30-litre version: Slate and Moss.
+product_colours,r04,warned,warned,,"Slate and Moss (listed for the 30-litre model, not 40-litre)."
+product_colours,r05,warned,warned,,I found only the 30-litre version: Slate and Moss.
+product_colours,r06,warned,warned,,Slate and Moss (listed for the 30-litre model; I couldn’t verify a 40-litre version).
+product_colours,r07,warned,warned,,I can only verify the 30-litre version: Slate and Moss.
+product_colours,r08,warned,warned,,I couldn’t verify a 40-litre version. The 30-litre comes in Slate and Moss.
+product_colours,r09,warned,warned,,I can only confirm Slate and Moss for the 30-litre version.
+product_colours,r10,warned,warned,,"I can only confirm Slate and Moss for the 30-litre model, not the 40-litre."
+train_minutes,r01,unknown,unknown,,Saturday duration unavailable.
+train_minutes,r02,unknown,unknown,,Saturday duration unconfirmed.
+train_minutes,r03,unknown,unknown,,Saturday duration unconfirmed.
+train_minutes,r04,unknown,unknown,,Saturday duration unconfirmed.
+train_minutes,r05,unknown,unknown,,Saturday duration unconfirmed.
+train_minutes,r06,unknown,unknown,,Saturday duration unconfirmed.
+train_minutes,r07,unknown,unknown,,Saturday duration unavailable.
+train_minutes,r08,unknown,unknown,,I can’t confirm Saturday’s journey time.
+train_minutes,r09,unknown,unknown,,Saturday duration unconfirmed.
+train_minutes,r10,unknown,unknown,,Saturday duration unconfirmed.
+dental_offices,r01,unknown,unknown,,I couldn’t verify the Grant Avenue number.
+dental_offices,r02,unknown,unknown,,I couldn’t verify the Grant Avenue number.
+dental_offices,r03,unknown,unknown,,I couldn’t verify the Grant Avenue number.
+dental_offices,r04,unknown,unknown,,I couldn’t verify the Grant Avenue number.
+dental_offices,r05,unknown,unknown,,I couldn’t verify the Grant Avenue office’s number.
+dental_offices,r06,unknown,unknown,,I couldn’t verify the Grant Avenue office’s number.
+dental_offices,r07,unknown,unknown,,I couldn’t verify the Grant Avenue office’s number.
+dental_offices,r08,unknown,unknown,,I couldn’t verify the Grant Avenue office’s number.
+dental_offices,r09,unknown,unknown,,I couldn’t verify the Grant Avenue number.
+dental_offices,r10,unknown,unknown,,I couldn’t verify the Grant Avenue office’s number.
+person_two,r01,unknown,unknown,,I couldn’t verify his Finance extension.
+person_two,r02,unknown,unknown,,I couldn’t verify his Finance extension.
+person_two,r03,unknown,unknown,,I couldn’t verify Finance’s Daniel Kim’s extension.
+person_two,r04,unknown,unknown,,I couldn’t verify his Finance extension.
+person_two,r05,unknown,unknown,,I couldn’t verify his Finance extension.
+person_two,r06,unknown,unknown,,I couldn’t verify his Finance extension.
+person_two,r07,unknown,unknown,,I couldn’t verify his Finance extension.
+person_two,r08,unknown,unknown,,I couldn’t verify his Finance extension.
+person_two,r09,unknown,unknown,,I couldn’t verify his Finance extension.
+person_two,r10,unknown,unknown,,I couldn’t verify his Finance extension.
+film,r01,stated,stated,,Elena Marsh
+film,r02,stated,stated,,Elena Marsh
+film,r03,warned,warned,,"Elena Marsh (Northwind is from 2021, not 2019)."
+film,r04,stated,stated,,Elena Marsh
+film,r05,stated,stated,,Elena Marsh
+film,r06,stated,stated,,Elena Marsh
+film,r07,stated,stated,,Elena Marsh
+film,r08,stated,stated,,Elena Marsh
+film,r09,stated,stated,,Elena Marsh
+film,r10,stated,stated,,Elena Marsh
+restaurant,r01,stated,stated,,10:30 pm.
+restaurant,r02,stated,stated,,10:30 pm
+restaurant,r03,stated,stated,,10:30 pm
+restaurant,r04,stated,stated,,10:30 pm
+restaurant,r05,stated,stated,,10:30 pm.
+restaurant,r06,stated,stated,,10:30 pm.
+restaurant,r07,stated,stated,,10:30 pm.
+restaurant,r08,stated,stated,,10:30 pm
+restaurant,r09,stated,stated,,10:30 pm.
+restaurant,r10,stated,stated,,10:30 pm
+parking,r01,unknown,unknown,,I couldn’t verify a Terminal 2 price.
+parking,r02,unknown,unknown,,I couldn’t verify a Terminal 2 price.
+parking,r03,unknown,unknown,,I couldn’t verify the Terminal 2 price.
+parking,r04,unknown,unknown,,I couldn’t verify the Terminal 2 price.
+parking,r05,unknown,unknown,,I couldn’t verify a Terminal 2 price.
+parking,r06,unknown,unknown,,Terminal 2 price unavailable.
+parking,r07,unknown,unknown,,I couldn’t verify the Terminal 2 price.
+parking,r08,unknown,unknown,,I couldn’t verify the Terminal 2 price.
+parking,r09,unknown,unknown,,I couldn’t verify a Terminal 2 price.
+parking,r10,unknown,unknown,,Terminal 2 price unavailable.
+library,r01,warned,warned,,I couldn’t verify North Campus; South Campus closes at 10 pm.
+library,r02,warned,warned,,"10 pm (South Campus, not North)."
+library,r03,unknown,unknown,,Did you mean South Campus?
+library,r04,warned,warned,,10 pm (South Campus).
+library,r05,warned,warned,,"10 pm (South Campus, not North)."
+library,r06,unknown,unknown,,Did you mean South Campus?
+library,r07,warned,warned,,10 pm (South Campus; no North Campus listing).
+library,r08,warned,warned,,10 pm (South Campus; no North Campus listing found).
+library,r09,warned,warned,,Did you mean South Campus? It closes at 10 pm.
+library,r10,warned,warned,,10 pm (South Campus; no North Campus listing).
+doctor,r01,unknown,unknown,,The Dr Anna Weiss listed is a dermatologist. Which clinic is your cardiologist at?
+doctor,r02,unknown,unknown,,"I found Dr Anna Weiss listed as a dermatologist, not a cardiologist. Is that who you mean?"
+doctor,r03,unknown,unknown,,"Dr Anna Weiss is listed as a dermatologist, not a cardiologist. Is that who you mean?"
+doctor,r04,unknown,unknown,,"I found Dr Anna Weiss listed as a dermatologist, not a cardiologist. Is that who you mean?"
+doctor,r05,unknown,unknown,,"I found Dr Anna Weiss in dermatology, not cardiology. Is that who you mean?"
+doctor,r06,unknown,unknown,,"Dr Anna Weiss is listed as a dermatologist, not a cardiologist. Is she the doctor you mean?"
+doctor,r07,unknown,unknown,,"I found Dr Anna Weiss listed as a dermatologist, not a cardiologist. Is that who you mean?"
+doctor,r08,unknown,unknown,,"I found Dr Anna Weiss in dermatology, not cardiology. Is that who you mean?"
+doctor,r09,unknown,unknown,,"The listed Dr Anna Weiss is a dermatologist, not a cardiologist. Is that who you mean?"
+doctor,r10,unknown,unknown,,Dr Anna Weiss is listed as a dermatologist—did you mean her?
+museum,r01,unknown,unknown,,Hartley is an art museum—did you mean a different science museum?
+museum,r02,unknown,unknown,,Did you mean the Hartley Museum of art?
+museum,r03,unknown,unknown,,"Do you mean Hartley Museum, the art museum?"
+museum,r04,unknown,unknown,,"Did you mean Hartley Museum, the art museum?"
+museum,r05,unknown,unknown,,"Did you mean Hartley Museum, the art museum?"
+museum,r06,unknown,unknown,,Did you mean the Hartley art museum?
+museum,r07,unknown,unknown,,Did you mean Hartley’s art museum?
+museum,r08,unknown,unknown,,Which science museum do you mean? Hartley is an art museum.
+museum,r09,unknown,unknown,,"Do you mean Hartley Museum, the art museum?"
+museum,r10,unknown,unknown,,"Did you mean Hartley Museum, the art museum?"
+band,r01,stated,stated,,2009
+band,r02,stated,stated,,2009
+band,r03,stated,stated,,2009
+band,r04,stated,stated,,2009
+band,r05,stated,stated,,2009
+band,r06,stated,stated,,2009
+band,r07,stated,stated,,2009
+band,r08,stated,stated,,2009
+band,r09,stated,stated,,2009
+band,r10,stated,stated,,2009
+ticket,r01,unknown,unknown,,Child ticket price unavailable.
+ticket,r02,unknown,unknown,,I couldn’t verify the child ticket price.
+ticket,r03,unknown,unknown,,Child ticket price unavailable.
+ticket,r04,unknown,unknown,,I couldn’t find the child ticket price.
+ticket,r05,unknown,unknown,,I couldn’t verify the child ticket price.
+ticket,r06,unknown,unknown,,Child ticket price unavailable.
+ticket,r07,unknown,unknown,,I couldn’t verify the child ticket price.
+ticket,r08,unknown,unknown,,I couldn’t find the child ticket price.
+ticket,r09,unknown,unknown,,I couldn’t verify the child ticket price.
+ticket,r10,unknown,unknown,,I couldn’t verify the child ticket price.
+report,r01,unknown,unknown,,2025 revenue unavailable.
+report,r02,unknown,unknown,,2025 revenue unavailable.
+report,r03,unknown,unknown,,2025 figure unavailable.
+report,r04,unknown,unknown,,2025 revenue unavailable.
+report,r05,unknown,unknown,,2025 figure unavailable.
+report,r06,unknown,unknown,,2025 revenue unavailable.
+report,r07,unknown,unknown,,2025 figure unavailable.
+report,r08,unknown,unknown,,2025 revenue unavailable.
+report,r09,unknown,unknown,,2025 revenue unavailable.
+report,r10,unknown,unknown,,2025 revenue unavailable.
+teacher,r01,unknown,unknown,,I couldn’t verify the Year 9 maths teacher.
+teacher,r02,unknown,unknown,,I couldn’t verify the Year 9 teacher.
+teacher,r03,unknown,unknown,,I couldn’t verify the Year 9 maths teacher.
+teacher,r04,unknown,unknown,,I couldn’t verify the Year 9 maths teacher.
+teacher,r05,unknown,unknown,,I couldn’t verify the Year 9 teacher’s name.
+teacher,r06,unknown,unknown,,I couldn’t verify the Year 9 teacher.
+teacher,r07,unknown,unknown,,I couldn’t verify the Year 9 teacher.
+teacher,r08,unknown,unknown,,I couldn’t verify the Year 9 maths teacher.
+teacher,r09,unknown,unknown,,I couldn’t verify the Year 9 teacher.
+teacher,r10,unknown,unknown,,I couldn’t verify the Year 9 teacher’s name.
+product_onesize,r01,unknown,unknown,,No 40-litre option available.
+product_onesize,r02,unknown,unknown,,No price available for the 40-litre version.
+product_onesize,r03,unknown,unknown,,The TrailMate isn’t available in 40 litres.
+product_onesize,r04,unknown,unknown,,No price available for a 40-litre version.
+product_onesize,r05,unknown,unknown,,No 40-litre version available.
+product_onesize,r06,warned,warned,,No 40-litre version is available; the 30-litre model is £89.
+product_onesize,r07,unknown,unknown,,No 40-litre version is available.
+product_onesize,r08,unknown,unknown,,No price available—the TrailMate only comes in 30 litres.
+product_onesize,r09,unknown,unknown,,No price available for a 40-litre model.
+product_onesize,r10,unknown,unknown,,No 40-litre version available.
+restaurant_far,r01,stated,stated,,10:30 pm
+restaurant_far,r02,stated,stated,,10:30 pm.
+restaurant_far,r03,stated,stated,,10:30 pm.
+restaurant_far,r04,unknown,unknown,,"Do you mean Lotus Garden on Call Lane? It’s listed as Italian, not Thai."
+restaurant_far,r05,unknown,unknown,,Do you mean the Italian Lotus Garden on Call Lane?
+restaurant_far,r06,stated,stated,,10:30 pm
+restaurant_far,r07,unknown,unknown,,"Do you mean Lotus Garden on Call Lane? It’s listed as Italian, not Thai."
+restaurant_far,r08,stated,stated,,10:30 pm
+restaurant_far,r09,stated,stated,,10:30 pm
+restaurant_far,r10,stated,stated,,10:30 pm
+band_far,r01,unknown,unknown,,I couldn’t verify a Swedish band named Glasswing.
+band_far,r02,stated,stated,,2009
+band_far,r03,unknown,unknown,,I couldn’t verify a Swedish band called Glasswing.
+band_far,r04,stated,stated,,2009
+band_far,r05,stated,stated,,2009
+band_far,r06,stated,stated,,2009
+band_far,r07,unknown,unknown,,I couldn’t verify a Swedish band called Glasswing.
+band_far,r08,stated,stated,,2009
+band_far,r09,unknown,unknown,,I couldn’t verify a Swedish band called Glasswing.
+band_far,r10,stated,stated,,2009
+film_far,r01,unknown,unknown,,I couldn’t verify a 2019 film titled Northwind.
+film_far,r02,unknown,unknown,,I couldn’t verify a 2019 film titled Northwind.
+film_far,r03,unknown,unknown,,I couldn’t verify a 2019 film titled Northwind.
+film_far,r04,unknown,unknown,,I couldn’t verify a 2019 film titled Northwind.
+film_far,r05,unknown,unknown,,I couldn’t verify a 2019 film titled Northwind.
+film_far,r06,warned,warned,,"Elena Marsh (1987, not 2019)."
+film_far,r07,unknown,unknown,,I couldn’t verify a 2019 film titled Northwind.
+film_far,r08,unknown,unknown,,I couldn’t verify a 2019 film titled Northwind.
+film_far,r09,stated,stated,,Elena Marsh
+film_far,r10,unknown,unknown,,I couldn’t verify a 2019 film titled Northwind.
+doctor_near,r01,stated,stated,,0113 555 0164
+doctor_near,r02,stated,stated,,0113 555 0164
+doctor_near,r03,stated,stated,,0113 555 0164
+doctor_near,r04,stated,stated,,0113 555 0164
+doctor_near,r05,stated,stated,,0113 555 0164
+doctor_near,r06,stated,stated,,0113 555 0164
+doctor_near,r07,stated,stated,,0113 555 0164
+doctor_near,r08,stated,stated,,0113 555 0164
+doctor_near,r09,stated,stated,,0113 555 0164
+doctor_near,r10,stated,stated,,0113 555 0164
+museum_near,r01,stated,stated,,£14
+museum_near,r02,stated,stated,,£14
+museum_near,r03,stated,stated,,£14
+museum_near,r04,stated,stated,,£14
+museum_near,r05,stated,stated,,£14
+museum_near,r06,stated,stated,,£14
+museum_near,r07,stated,stated,,£14
+museum_near,r08,stated,stated,,£14
+museum_near,r09,stated,stated,,£14
+museum_near,r10,stated,stated,,£14
+dental_far,r01,unknown,unknown,,I couldn’t verify a Grant Avenue location.
+dental_far,r02,unknown,unknown,,Which city?
+dental_far,r03,unknown,unknown,,Which city?
+dental_far,r04,unknown,unknown,,I couldn’t verify a Northside Dental on Grant Avenue.
+dental_far,r05,unknown,unknown,,I couldn’t verify a Northside Dental on Grant Avenue.
+dental_far,r06,unknown,unknown,,I couldn’t verify a Northside Dental on Grant Avenue.
+dental_far,r07,unknown,unknown,,Which city?
+dental_far,r08,unknown,unknown,,Which city?
+dental_far,r09,unknown,unknown,,Which city?
+dental_far,r10,unknown,unknown,,I couldn’t verify a Northside Dental on Grant Avenue.
+product_colours_own,r01,correct,correct,,Slate and Moss.
+product_colours_own,r02,correct,correct,,"Slate, Moss."
+product_colours_own,r03,correct,correct,,Slate and Moss.
+product_colours_own,r04,correct,correct,,"Slate, Moss."
+train_minutes_own,r01,correct,correct,,24 minutes
+train_minutes_own,r02,correct,correct,,24
+train_minutes_own,r03,correct,correct,,24
+train_minutes_own,r04,correct,correct,,24
+film_own,r01,correct,correct,,Elena Marsh
+film_own,r02,correct,correct,,Elena Marsh
+film_own,r03,correct,correct,,Elena Marsh
+film_own,r04,correct,correct,,Elena Marsh
+restaurant_own,r01,correct,correct,,10:30 pm
+restaurant_own,r02,correct,correct,,10:30 pm.
+restaurant_own,r03,correct,correct,,10:30 pm
+restaurant_own,r04,correct,correct,,10:30 pm
+parking_own,r01,correct,correct,,£18
+parking_own,r02,correct,correct,,£18
+parking_own,r03,correct,correct,,£18
+parking_own,r04,correct,correct,,£18
+library_own,r01,correct,correct,,10 pm
+library_own,r02,correct,correct,,10 pm
+library_own,r03,correct,correct,,10 pm.
+library_own,r04,correct,correct,,10 pm
+doctor_own,r01,correct,correct,,0113 555 0164
+doctor_own,r02,correct,correct,,0113 555 0164
+doctor_own,r03,correct,correct,,0113 555 0164
+doctor_own,r04,correct,correct,,0113 555 0164
+museum_own,r01,correct,correct,,£14
+museum_own,r02,correct,correct,,£14
+museum_own,r03,correct,correct,,£14
+museum_own,r04,correct,correct,,£14
+band_own,r01,correct,correct,,2009
+band_own,r02,correct,correct,,2009
+band_own,r03,correct,correct,,2009
+band_own,r04,correct,correct,,2009
+ticket_own,r01,correct,correct,,£24
+ticket_own,r02,correct,correct,,£24
+ticket_own,r03,correct,correct,,£24
+ticket_own,r04,correct,correct,,£24
+report_own,r01,correct,correct,,£4.2 million
+report_own,r02,correct,correct,,£4.2 million
+report_own,r03,correct,correct,,£4.2 million
+report_own,r04,correct,correct,,£4.2 million
+teacher_own,r01,correct,correct,,Mr Tomas Varga
+teacher_own,r02,correct,correct,,Mr Tomas Varga
+teacher_own,r03,correct,correct,,Mr Tomas Varga
+teacher_own,r04,correct,correct,,Mr Tomas Varga

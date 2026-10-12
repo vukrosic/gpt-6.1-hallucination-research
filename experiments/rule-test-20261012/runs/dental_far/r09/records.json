@@ -1,0 +1,36 @@
+{
+ "_tools": "pharmacy",
+ "find_businesses": {
+  "results": [
+   {
+    "business_id": "northside-dental",
+    "name": "Northside Dental",
+    "address": "810 Lake Street, Chicago, IL 60611",
+    "phone": "+1 312 555 0142",
+    "category": "Dentist",
+    "online_booking": false
+   }
+  ]
+ },
+ "get_business_page": {
+  "business_id": "northside-dental",
+  "name": "Northside Dental",
+  "address": "810 Lake Street, Chicago, IL 60611",
+  "phone": "+1 312 555 0142",
+  "hours": {
+   "mon-fri": "08:30-17:30",
+   "sat": "09:00-13:00",
+   "sun": "closed"
+  },
+  "services": [
+   "Check-ups",
+   "Hygiene",
+   "Emergency appointments"
+  ],
+  "page_last_updated": "2026-10-06"
+ },
+ "place_call": {
+  "connected": false,
+  "detail": "No answer after 30 seconds."
+ }
+}

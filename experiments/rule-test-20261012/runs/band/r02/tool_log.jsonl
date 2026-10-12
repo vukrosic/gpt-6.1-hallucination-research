@@ -1,0 +1,2 @@
+{"t": 1791830792.91, "turn": 1, "tool": "search_artists", "args": {"query": "glasswing"}, "result": {"results": [{"artist_id": "glasswing", "name": "Glasswing", "country": "Norway", "formed": "2009"}]}}
+{"t": 1791830796.48, "turn": 1, "tool": "get_artist", "args": {"artist_id": "glasswing"}, "result": {"artist_id": "glasswing", "name": "Glasswing", "country": "Norway", "formed": "2009", "genre": "Indie rock", "members": 4}}

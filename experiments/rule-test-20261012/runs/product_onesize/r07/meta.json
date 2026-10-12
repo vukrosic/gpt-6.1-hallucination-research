@@ -1,0 +1,20 @@
+{
+ "version": "product_onesize",
+ "run": 7,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 14.7,
+ "usage": [
+  {
+   "input_tokens": 13851,
+   "cached_input_tokens": 11392,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 97,
+   "reasoning_output_tokens": 0
+  }
+ ]
+}

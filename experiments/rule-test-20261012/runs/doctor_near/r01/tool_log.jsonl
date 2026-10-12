@@ -1,0 +1,2 @@
+{"t": 1791831114.01, "turn": 1, "tool": "search_doctors", "args": {"query": "Anna Weiss"}, "result": {"results": [{"doctor_id": "aweiss", "name": "Dr Anna Weiss", "specialty": "Cardiac Surgery", "clinic_phone": "0113 555 0164"}]}}
+{"t": 1791831119.53, "turn": 1, "tool": "get_doctor", "args": {"doctor_id": "aweiss"}, "result": {"doctor_id": "aweiss", "name": "Dr Anna Weiss", "specialty": "Cardiac Surgery", "clinic": "Park Row Clinic, Leeds", "clinic_phone": "0113 555 0164", "accepting_new_patients": true, "page_last_updated": "2026-10-06"}}

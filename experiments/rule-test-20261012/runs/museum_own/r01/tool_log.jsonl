@@ -1,0 +1,1 @@
+{"t": 1791830616.6, "turn": 1, "tool": "search_museums", "args": {"query": "Hartley"}, "result": {"results": [{"museum_id": "hartley", "name": "Hartley Museum", "type": "Science museum", "adult_ticket": "£14"}]}}

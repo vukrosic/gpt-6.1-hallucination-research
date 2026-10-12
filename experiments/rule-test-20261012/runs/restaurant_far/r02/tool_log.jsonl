@@ -1,0 +1,2 @@
+{"t": 1791831091.83, "turn": 1, "tool": "search_restaurants", "args": {"query": "Lotus Garden Thai Leeds"}, "result": {"results": [{"restaurant_id": "lotus-garden", "name": "Lotus Garden", "cuisine": "Italian", "closes_today": "22:30"}]}}
+{"t": 1791831099.95, "turn": 1, "tool": "get_restaurant", "args": {"restaurant_id": "lotus-garden"}, "result": {"restaurant_id": "lotus-garden", "name": "Lotus Garden", "cuisine": "Italian", "address": "18 Call Lane, Leeds LS1 7BT", "opens_today": "12:00", "closes_today": "22:30", "price_range": "££", "page_last_updated": "2026-10-06"}}

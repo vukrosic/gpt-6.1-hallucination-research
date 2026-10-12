@@ -1,0 +1,20 @@
+{
+ "version": "band_far",
+ "run": 3,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 21.0,
+ "usage": [
+  {
+   "input_tokens": 29238,
+   "cached_input_tokens": 26496,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 178,
+   "reasoning_output_tokens": 8
+  }
+ ]
+}

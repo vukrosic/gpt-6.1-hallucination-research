@@ -1,0 +1,35 @@
+{
+ "_tools": "custom",
+ "_tool_defs": [
+  {
+   "name": "search_car_parks",
+   "description": "Search airport car parks.",
+   "param": "query"
+  },
+  {
+   "name": "get_car_park",
+   "description": "Get a car park's page: terminal, rates, spaces.",
+   "param": "car_park_id"
+  }
+ ],
+ "search_car_parks": {
+  "results": [
+   {
+    "car_park_id": "northfield-cp",
+    "name": "Northfield Airport car park",
+    "terminal": "Terminal 2",
+    "day_rate": "£18"
+   }
+  ]
+ },
+ "get_car_park": {
+  "car_park_id": "northfield-cp",
+  "name": "Northfield Airport car park",
+  "terminal": "Terminal 2",
+  "day_rate": "£18",
+  "spaces": 640,
+  "height_limit_m": 2.1,
+  "open": "24 hours",
+  "page_last_updated": "2026-10-06"
+ }
+}

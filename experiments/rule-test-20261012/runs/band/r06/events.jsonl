@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_artists","arguments":{"query":"Glasswing"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_artists","arguments":{"query":"Glasswing"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"artist_id\": \"glasswing\", \"name\": \"Glasswing\", \"country\": \"Norway\", \"formed\": \"2009\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"get_artist","arguments":{"artist_id":"glasswing"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"get_artist","arguments":{"artist_id":"glasswing"},"result":{"content":[{"type":"text","text":"{\"artist_id\": \"glasswing\", \"name\": \"Glasswing\", \"country\": \"Norway\", \"formed\": \"2009\", \"genre\": \"Indie rock\", \"members\": 4}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"2009"}}
+{"type":"turn.completed","usage":{"input_tokens":23165,"cached_input_tokens":19968,"cache_write_input_tokens":0,"output_tokens":155,"reasoning_output_tokens":0}}

@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_libraries","arguments":{"query":"Ashford University north campus"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_libraries","arguments":{"query":"Ashford University north campus"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"library_id\": \"ashford-lib\", \"name\": \"Ashford University Library\", \"campus\": \"North Campus\", \"closes_today\": \"22:00\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"10 pm."}}
+{"type":"turn.completed","usage":{"input_tokens":13955,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":96,"reasoning_output_tokens":0}}

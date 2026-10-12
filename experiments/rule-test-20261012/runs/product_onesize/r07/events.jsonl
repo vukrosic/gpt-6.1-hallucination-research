@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_catalog","arguments":{"query":"trailmate 40 litre backpack"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_catalog","arguments":{"query":"trailmate 40 litre backpack"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"product_id\": \"trailmate-pack\", \"name\": \"TrailMate Backpack\", \"size\": \"30 litre\", \"sizes_available\": \"30 litre only\", \"price\": \"£89\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"No 40-litre version is available."}}
+{"type":"turn.completed","usage":{"input_tokens":13851,"cached_input_tokens":11392,"cache_write_input_tokens":0,"output_tokens":97,"reasoning_output_tokens":0}}

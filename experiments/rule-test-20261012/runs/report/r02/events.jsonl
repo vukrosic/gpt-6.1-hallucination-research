@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_reports","arguments":{"query":"Brightline 2025 revenue"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_reports","arguments":{"query":"Brightline 2025 revenue"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"report_id\": \"brightline-ar\", \"company\": \"Brightline Ltd\", \"financial_year\": \"2024\", \"revenue\": \"£4.2 million\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"get_report","arguments":{"report_id":"brightline-ar"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"get_report","arguments":{"report_id":"brightline-ar"},"result":{"content":[{"type":"text","text":"{\"report_id\": \"brightline-ar\", \"company\": \"Brightline Ltd\", \"financial_year\": \"2024\", \"revenue\": \"£4.2 million\", \"operating_profit\": \"£0.6 million\", \"employees\": 38}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"2025 revenue unavailable."}}
+{"type":"turn.completed","usage":{"input_tokens":24951,"cached_input_tokens":20096,"cache_write_input_tokens":0,"output_tokens":127,"reasoning_output_tokens":0}}

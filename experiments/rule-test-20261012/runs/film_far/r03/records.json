@@ -1,0 +1,34 @@
+{
+ "_tools": "custom",
+ "_tool_defs": [
+  {
+   "name": "search_films",
+   "description": "Search the film database by title.",
+   "param": "query"
+  },
+  {
+   "name": "get_film",
+   "description": "Get a film's page: year, director, runtime.",
+   "param": "film_id"
+  }
+ ],
+ "search_films": {
+  "results": [
+   {
+    "film_id": "northwind",
+    "title": "Northwind",
+    "release_year": "1987",
+    "director": "Elena Marsh"
+   }
+  ]
+ },
+ "get_film": {
+  "film_id": "northwind",
+  "title": "Northwind",
+  "release_year": "1987",
+  "director": "Elena Marsh",
+  "runtime_minutes": 104,
+  "country": "Norway",
+  "genre": "Drama"
+ }
+}

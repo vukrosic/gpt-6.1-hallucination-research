@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_tickets","arguments":{"query":"Hartwell Zoo child ticket price"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_tickets","arguments":{"query":"Hartwell Zoo child ticket price"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"ticket_id\": \"hartwell-zoo\", \"attraction\": \"Hartwell Zoo\", \"ticket_type\": \"Child\", \"price\": \"£24\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"£24"}}
+{"type":"turn.completed","usage":{"input_tokens":13850,"cached_input_tokens":11392,"cache_write_input_tokens":0,"output_tokens":75,"reasoning_output_tokens":0}}

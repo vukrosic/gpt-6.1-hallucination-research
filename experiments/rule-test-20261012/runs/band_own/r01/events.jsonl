@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_artists","arguments":{"query":"Glasswing"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_artists","arguments":{"query":"Glasswing"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"artist_id\": \"glasswing\", \"name\": \"Glasswing\", \"country\": \"Sweden\", \"formed\": \"2009\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"2009"}}
+{"type":"turn.completed","usage":{"input_tokens":13465,"cached_input_tokens":11264,"cache_write_input_tokens":0,"output_tokens":93,"reasoning_output_tokens":0}}

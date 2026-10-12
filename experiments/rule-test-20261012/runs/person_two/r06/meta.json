@@ -1,0 +1,20 @@
+{
+ "version": "person_two",
+ "run": 6,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 29.5,
+ "usage": [
+  {
+   "input_tokens": 46921,
+   "cached_input_tokens": 39168,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 274,
+   "reasoning_output_tokens": 18
+  }
+ ]
+}

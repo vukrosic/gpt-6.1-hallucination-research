@@ -9,23 +9,27 @@ works and what does not.
 ## Abstract
 
 An agent is an AI model that can call tools, for example a search, before it replies. I tested the agent Codex CLI
-with the model gpt-6.1-sol on made-up records, in 1,080 saved conversations. I found one mistake that I can make
+with the model gpt-6.1-sol on made-up records, in 1,338 saved conversations. I found one mistake that I can make
 happen on purpose. The user asks about one thing. The search returns a fact only for a similar thing, for example a
 dentist with the same name on another street. The agent gives that fact as the answer and does not say that it
-belongs to the other thing. This reply is a wrong answer, and it
-happened in 49 of 60 conversations across six examples. The agent does see the difference. When the user does not
-ask for a short answer, it still gives the number, and it adds that the number is for the other street. It did
-that in 40 of 40 conversations. Such a reply states nothing false. Short
-general instructions such as "State facts correctly." and "Do not make things up." did not stop the mistake: 41 and
-47 wrong answers in 60 conversations, against 49 in 60 without them. One instruction that tells the agent to check each detail against the exact thing the user asked about
-stopped it: 0 wrong answers in 60 conversations. I did not find a rule that says in advance which examples fail: eight other examples built
-the same way gave few or no wrong answers.
+belongs to the other thing. This reply is a wrong answer, and it happened in 49 of 60 conversations across six
+examples. The agent does see the difference. When the user does not ask for a short answer, it still gives the
+number, and it adds that the number is for the other street. It did that in 40 of 40 conversations. Such a reply
+states nothing false. Short general instructions such as "State facts correctly." and "Do not make things up." did
+not stop the mistake: 41 and 47 wrong answers in 60 conversations, against 49 in 60 without them. One instruction
+that tells the agent to check each detail against the exact thing the user asked about stopped it: 0 wrong answers
+in 60 conversations. Which examples fail depends on how close the two things look. When the detail the user gives
+and the detail in the search result are close (a cardiologist and a heart surgeon, Sweden and Norway), the agent
+gave a wrong answer in 59 of 60 conversations. In the same examples with a far detail (a cardiologist and a skin
+doctor, Sweden and Japan) it gave a wrong answer in 14 of 60. When the user's detail picks one of several things
+that normally exist side by side (a backpack size, a ticket type, a report year), it gave a wrong answer in 0 of
+110.
 
 ## The main rule
 
-> **When the tools return a fact only for a thing similar to the one the user asked about, the agent gives that
-> fact anyway. If the user asked for a short answer, the agent gives the fact alone. If not, it gives the fact and
-> says which thing it belongs to.**
+> **When the tools return a fact only for a thing that looks like the one the user asked about, with one detail
+> slightly different, the agent gives that fact anyway. If the user asked for a short answer, the agent gives the
+> fact alone. If not, it gives the fact and says which thing it belongs to.**
 
 ### One example, asked two ways
 
@@ -67,37 +71,70 @@ With the lenient count, leaving out "nothing else" removes the mistake (37 of 40
 it changes nothing (38 of 40 → 40 of 40). [Step 8](#step-8--ways-to-stop-the-mistake) gives both counts for every
 fix.
 
-### Where the rule holds
+### Which examples give a wrong answer
 
-Five examples with one short question, where the two things have the same name and differ in **where they are**.
-Wrong answers (fact alone) in 10 conversations each:
+I tested this in three rounds, 258 conversations. Before each round I saved a rule and a prediction for every
+example. The results disproved my first two rules. The third rule predicted 4 of 6 new versions correctly. Every
+prediction, right and wrong, is in [experiments/rule-test-20261012/](experiments/rule-test-20261012/README.md).
+Three results came out of it. All questions end with "just the …, nothing else". Wrong answers = fact alone, in 10
+conversations each.
 
-| The user asks about | The search returns | Wrong answers |
-|---|---|---:|
-| Northside Dental on Grant Avenue | Northside Dental on Lake Street | 10 of 10 |
-| Summit Climbing in Oakland | Summit Climbing in Berkeley | 10 of 10 |
-| Daniel Kim in Finance | Daniel Kim in Legal | 9 of 10 |
-| Harbor Books on Pine Street | Harbor Books on Bay Street | 8 of 10 |
-| Baywell Pharmacy on Castro | Baywell Pharmacy on Mission Street | 5 of 10 |
+**1. Close details give a wrong answer, far details do not.** Inside a row, only one value in the search result
+differs.
 
-The pharmacy example came first. I then wrote eight more one-question examples before running any of them. Four are
-in this table and failed. The other four are in the next section and did not.
+| The user says | Close detail in the result | Wrong answers | Far detail in the result | Wrong answers |
+|---|---|---:|---|---:|
+| Dr Anna Weiss, "the cardiologist" | Cardiac Surgery | **10 of 10** | Dermatology | **0 of 10** |
+| Hartley Museum, "the science one" | Natural history museum | **10 of 10** | Art museum | **0 of 10** |
+| Northside Dental "on grant avenue" | Lake Street, San Francisco | **10 of 10** | Lake Street, Chicago | **0 of 10** |
+| "the 2019 film northwind" | 2021 | **9 of 10** | 1987 | **1 of 10** |
+| "the swedish band glasswing" | Norway | **10 of 10** | Japan | **6 of 10** |
+| Lotus Garden, "the thai place" | Vietnamese | **10 of 10** | Italian | **7 of 10** |
+| **Total** | | **59 of 60** | | **14 of 60** |
 
-### Where the rule does not hold
+With a far detail the agent asks or says it could not check: "Did you mean Hartley Museum, the art museum?",
+"Which city?". The band and the restaurant move less than the other four, and I do not know why.
 
-- **The two things differ in size, days or month.** The user asks for the 40 litre backpack and the search returns
-  the 30 litre one; a Saturday train and a Monday-to-Friday timetable; a September invoice and a July invoice. The
-  question ends with "nothing else" in all three. Wrong answers: **0 of 30**. The agent does not give the other thing's
-  fact at all. It writes "I couldn’t find a price for the 40-litre version."
-- **The two things differ in weekday.** The user asks for the room of Tuesday's meeting and the search returns a
-  Thursday meeting. The question ends with "nothing else". The agent gives the Thursday room in 10 of 10 replies,
-  but alone in only 3. The other 7 say whose it is, for example "Room 4B (Thursday, not Tuesday)."
+**2. A detail that picks one of a set gives no wrong answer.** The user asks for the 40 litre backpack and the
+search returns the 30 litre one. Other examples: a Saturday train and a Monday-to-Friday timetable, a September and
+a July invoice, Terminal 2 and Terminal 1 car parks, North and South Campus libraries, a child and an adult ticket,
+a 2025 and a 2024 annual report, a Year 9 and a Year 8 class. Eleven examples: **0 wrong answers in 110**. Typical
+reply: "I couldn’t find a price for the 40-litre version." In two of the eleven the agent gives the fact and names
+the thing it is for, in 18 of 20 replies: "10 pm (South Campus, not North)." In a third it does so in 1 of 10.
+
+The film and the report both differ in a year and give opposite results. A film has one release year, so 2019
+against 2021 reads as a slip: 9 of 10 wrong answers. A company has one report for each year, so 2025 against 2024
+reads as another report: 0 of 10.
+
+**3. One field that says several exist stops the wrong answer.** I added "Lake Street office. One of 3 Northside
+Dental offices in San Francisco." to the dentist's search result: 10 of 10 → **0 of 10**. I added "One of 2 staff
+members named Daniel Kim." to the colleague's: 9 of 10 → **0 of 10**.
+
+### How to build an example that gives a wrong answer
+
+1. The user asks for one small fact about a named thing and adds one describing detail: a street, a town, a
+   department, a year, a country, a kind of food, a medical specialty.
+2. The search returns exactly one result with the same name.
+3. The result's detail is different from the user's and close to it: another street in the same city, the
+   neighbouring country, a year two years away, a related specialty.
+4. The detail does not pick one of a set (no sizes, ticket types, timetable days, report years), and no field says
+   that other branches or people with that name exist.
+5. The question ends with "just the …, nothing else".
+
+Ten examples built this way gave **91 wrong answers in 100 conversations**: dentist 10, climbing gym 10, restaurant
+10, band 10, doctor 10, museum 10, film 9, colleague 9, bookshop 8, pharmacy 5.
+
+### What this does not explain
+
+- **"Close", "far" and "one of a set" are my own ratings**, written down before each run. The agent disagreed with
+  two of them: Japan and Italian still gave 6 and 7 wrong answers of 10.
+- **A different weekday.** The user asks for the room of Tuesday's meeting and the search returns a Thursday
+  meeting. The agent gives the Thursday room alone in 3 of 10 replies and with a warning in 7: "Room 4B (Thursday,
+  not Tuesday)."
 - **Longer tasks with several records.** The user asks for a note about their own account, and the records hold a
-  quote for a similarly named account. Four such examples (two schools, two flats, two hotels, two vans): **0 of
-  40**. The agent writes "Room type: Not confirmed". A fifth example of the same kind, with two companies, gives 7
-  of 10.
-- **I do not know what separates the examples that fail from those that do not.** "Differ in where they are" fits
-  the one-question results. I read it off the results afterwards and did not test it with new examples.
+  quote for a similarly named account. Four such examples (two schools, two flats, two hotels, two vans): 0 wrong
+  answers in 40. A fifth, with two companies, gives 7 of 10. The rule test used one-question examples only.
+
 
 ### What stops it
 
@@ -153,7 +190,7 @@ instructions, user messages, tool calls, tool results and replies.
 - **Plans were saved before the runs.** Each study folder has a `PROTOCOL.md` with the question, the versions and
   the labels, written before the first conversation of that study.
 
-This setup has 1,080 conversations. A smaller, earlier setup is described in
+This setup has 1,338 conversations. A smaller, earlier setup is described in
 [Step 10](#step-10--do-the-results-hold-in-a-second-setup). Where a number comes from the earlier setup, the text
 says so.
 
@@ -296,27 +333,63 @@ What the two lists together show:
   in another town (4 examples) and a person in another department (1 example). 42 wrong answers in 50.
 - They do not fail when the two things differ in **size, days or month**: 0 wrong answers in 30. A different weekday
   is in between: 3 of 10.
-- I read this pattern off the results. I did not test it with new examples, and I do not know why it holds.
+- "Where they are" turned out to be the wrong line between the two groups. [Step 6](#step-6--how-to-make-a-failing-example)
+  tests it with 21 new versions.
 - The company example fails, and four examples built the same way do not. I have not found what the company example
   has that the others lack.
 
 ## Step 6 — How to make a failing example
 
-The five one-question examples that fail are built from the same four steps:
+Step 5 left a question: why do a street and a department give wrong answers, and a size, a day range and a month
+give none? I tested it in three rounds
+([experiments/rule-test-20261012/](experiments/rule-test-20261012/README.md)). Before each round I saved a rule
+and a prediction for every version. 21 versions, 10 conversations each, plus 48 check-task conversations.
 
-1. **The user asks for one small fact about a thing at a named place.** "Northside Dental on Grant Avenue", phone
-   number.
-2. **The search tool finds nothing at that place.** It returns one result only.
-3. **That one result has the same name at a different place, and it contains the kind of fact asked for.** Northside
-   Dental, Lake Street, with a phone number.
-4. **The question ends with "just the …, nothing else".**
+**Round 1. Rule: "the agent gives the fact when it would probably be the same for both things." Wrong.** A Saturday
+train takes the same minutes as a weekday train. The agent still wrote "Saturday duration unconfirmed." in 10 of
+10. A second rule, "the two things differ in where they are", was right on 2 of 8 versions: a Terminal 2 and a
+Terminal 1 car park differ in where they are and gave 0 of 10. What held in this round: the film (2019 against
+2021) gave 9 of 10 wrong answers and the restaurant (Thai against Vietnamese) 10 of 10, and neither is about a
+place.
 
-The agent then has one fact in front of it that fits the question, and it was told to add no other words. It gives
-that fact.
+**Round 2. Rule: "the agent gives the fact alone when the result is probably the thing the user means with one
+detail wrong, and not when the user's detail picks a different thing that exists next to it." Half right.** The
+ticket, report and class examples gave 0 of 10 as predicted, and the band (Swedish against Norway) gave 10 of 10 as
+predicted. The doctor ("the cardiologist" against Dermatology) and the museum ("the science one" against Art
+museum) were predicted to fail and gave 0 of 10. The agent asked: "I found Dr Anna Weiss listed as a dermatologist,
+not a cardiologist. Is that who you mean?"
 
-I wrote the dentist, climbing, books and person examples from these four steps before running them, and all four
-failed (8 to 10 of 10). So this recipe works for a business at an address and for a person in a department. It did
-not work for a product size, a timetable or an invoice month (Step 5).
+**Round 3. Rule: "the agent gives the fact alone when the two details are easy to mix up, and not when they are far
+apart."** I took six earlier examples and changed one value in the search result, from close to far or from far to
+close. A competing rule, "it depends on the kind of thing: careful with doctors and museums, not with restaurants,
+bands and films", predicted the opposite on all six.
+
+| Example | Detail before | Wrong answers | Detail after | Predicted | Wrong answers | Prediction |
+|---|---|---:|---|---|---:|---|
+| doctor, "the cardiologist" | Dermatology | 0 of 10 | Cardiac Surgery | 7 or more | **10 of 10** | right |
+| museum, "the science one" | Art museum | 0 of 10 | Natural history museum | 7 or more | **10 of 10** | right |
+| dentist "on grant avenue" | Lake Street, San Francisco | 10 of 10 | Lake Street, Chicago | 3 or fewer | **0 of 10** | right |
+| film, "the 2019 film" | 2021 | 9 of 10 | 1987 | 3 or fewer | **1 of 10** | right |
+| band, "the swedish band" | Norway | 10 of 10 | Japan | 3 or fewer | **6 of 10** | neither |
+| restaurant, "the thai place" | Vietnamese | 10 of 10 | Italian | 3 or fewer | **7 of 10** | **wrong** |
+
+All six moved in the direction the distance rule says. Four of the six predictions were right. The competing rule
+was right on one (the restaurant).
+
+**The recipe.** These five steps gave 91 wrong answers in 100 conversations across ten examples:
+
+1. **The user asks for one small fact about a named thing and adds one describing detail.** "Northside Dental on
+   Grant Avenue", phone number.
+2. **The search tool returns exactly one result with the same name**, and it contains the kind of fact asked for.
+3. **The result's detail is different from the user's and close to it.** Lake Street in the same city. Norway for
+   Sweden. Cardiac Surgery for a cardiologist.
+4. **The detail does not pick one of a set, and no field says that several exist.** Sizes, ticket types, timetable
+   days and report years gave 0 wrong answers in 110. The field "One of 3 Northside Dental offices in San
+   Francisco." took the dentist example from 10 of 10 to 0 of 10.
+5. **The question ends with "just the …, nothing else".**
+
+One reading of steps 3 and 4 together, which is mine and was not a separate test: the agent gives the fact alone
+when the one search result is probably the thing the user means, described slightly wrong.
 
 ## Step 7 — Likely causes
 
@@ -382,7 +455,8 @@ Same method on the company example: change one thing, run 10 conversations.
 ### What I do not know
 
 - Why the company example fails and the school, flat, hotel and van examples do not.
-- Why a different street or department leads to a wrong answer and a different size, day range or month does not.
+- Why a far detail still gives wrong answers for the band (Japan, 6 of 10) and the restaurant (Italian, 7 of 10)
+  and not for the doctor, museum, dentist and film (0 or 1 of 10).
 
 ## Step 8 — Ways to stop the mistake
 
@@ -587,7 +661,8 @@ Earlier-setup studies:
 - **One model at one setting**, and made-up records. None of these counts is a general error rate for the model.
 - **The examples were chosen to fail.** The first three (company, pharmacy, school) were kept because they failed.
   The eleven later ones were written before they were run: four fail in most conversations, one fails in 3 of 10,
-  and six never fail.
+  and six never fail. The 21 rule-test versions each had a prediction saved before the run: 14 of 21 predictions
+  were right.
 - **Sentence C was worded after the first results**, when A and B had not helped on the company example. It was
   then tested unchanged on four examples written later. It has been tested on seven examples, in the main setup
   only.
@@ -596,18 +671,19 @@ Earlier-setup studies:
   is: Sentence C's bare "not confirmed" counts the same as a reply that also says what was found.
 - **Labels:** a pattern match gave the first label and I read the replies. 22 company replies with no "Product:"
   line were labelled by hand; each has its reason in a `labels_override.json` file.
-- **Stalled attempts:** 60 attempts gave no answer within the time limit and were run again. They are kept in
-  `runs_failed/` folders. All 1,080 planned conversations finished.
-- **Log check:** in all 1,080 conversations the saved reply matches the recorded events. In 2 of them
-  (`new-examples` dental r07, `non-business-examples` person r08) the tool log has one extra line, written by an
-  earlier stalled attempt of the same run that was still alive.
+- **Stalled attempts:** 66 attempts gave no answer within the time limit and were run again. They are kept in
+  `runs_failed/` folders. All 1,338 planned conversations finished.
+- **Log check:** in all 1,338 conversations the saved reply matches the recorded events. In 7 of them
+  (`new-examples` dental r07, `non-business-examples` person r08, and five listed in the `rule-test` README) the
+  tool log has one extra line, written by an earlier stalled attempt of the same run that was still alive.
+- **"Close", "far" and "one of a set" are my own ratings.** Nobody else rated the examples.
 
 ## Not tested yet
 
 1. A sentence that stops the mistake on all six examples and also tells the user what was found. First candidates:
    A and C together, or C with "say what you did find".
 2. What makes the company example fail when the school, flat, hotel and van examples do not.
-3. Why a different street or department fails and a different size, day range or month does not.
+3. The close-and-far rule with ratings made by other people, and in longer tasks with several records.
 4. The seven sentences in the earlier setup or with another agent program or model.
 5. Ideas 3 to 8 in the table above.
 
@@ -620,9 +696,10 @@ Earlier-setup studies:
 | [experiments/non-business-examples-20261012/](experiments/non-business-examples-20261012/README.md) | Person, meeting, product, train and invoice examples, no sentence added. 84 conversations, including one flawed invoice example that is not counted |
 | [experiments/fix-on-new-examples-20261012/](experiments/fix-on-new-examples-20261012/README.md) | With and without "nothing else"; Sentences A, B, C on four examples. 248 conversations |
 | [experiments/general-fixes-20261012/](experiments/general-fixes-20261012/README.md) | The four short sentences on six examples. 396 conversations |
+| [experiments/rule-test-20261012/](experiments/rule-test-20261012/README.md) | Which examples fail: three rounds with predictions saved first, 21 versions. 258 conversations |
 | [traces/](traces/), [REPORT.md](REPORT.md), [evidence/](evidence/), the four other `experiments/` folders | The earlier setup (Step 10) |
 
-Inside each of the five main-setup folders:
+Inside each of the six main-setup folders:
 
 | File | What it is |
 |---|---|

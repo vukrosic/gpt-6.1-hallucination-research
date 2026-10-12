@@ -1,0 +1,35 @@
+{
+ "_tools": "custom",
+ "_tool_defs": [
+  {
+   "name": "search_classes",
+   "description": "Search the school's class list.",
+   "param": "query"
+  },
+  {
+   "name": "get_class",
+   "description": "Get a class: subject, year group, teacher, room.",
+   "param": "class_id"
+  }
+ ],
+ "search_classes": {
+  "results": [
+   {
+    "class_id": "elmwood-maths",
+    "school": "Elmwood School",
+    "subject": "Maths",
+    "year_group": "Year 8",
+    "teacher": "Mr Tomas Varga"
+   }
+  ]
+ },
+ "get_class": {
+  "class_id": "elmwood-maths",
+  "school": "Elmwood School",
+  "subject": "Maths",
+  "year_group": "Year 8",
+  "teacher": "Mr Tomas Varga",
+  "room": "M12",
+  "lessons_per_week": 4
+ }
+}

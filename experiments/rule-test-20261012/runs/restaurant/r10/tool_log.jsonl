@@ -1,0 +1,2 @@
+{"t": 1791830162.93, "turn": 1, "tool": "search_restaurants", "args": {"query": "Lotus Garden"}, "result": {"results": [{"restaurant_id": "lotus-garden", "name": "Lotus Garden", "cuisine": "Vietnamese", "closes_today": "22:30"}]}}
+{"t": 1791830165.54, "turn": 1, "tool": "search_restaurants", "args": {"query": "Lotus Garden Thai"}, "result": {"results": [{"restaurant_id": "lotus-garden", "name": "Lotus Garden", "cuisine": "Vietnamese", "closes_today": "22:30"}]}}

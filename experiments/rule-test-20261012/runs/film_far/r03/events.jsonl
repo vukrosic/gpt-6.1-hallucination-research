@@ -1,0 +1,10 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_films","arguments":{"query":"northwind"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_films","arguments":{"query":"northwind"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"film_id\": \"northwind\", \"title\": \"Northwind\", \"release_year\": \"1987\", \"director\": \"Elena Marsh\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"get_film","arguments":{"film_id":"northwind"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"mcp_tool_call","server":"world","tool":"get_film","arguments":{"film_id":"northwind"},"result":{"content":[{"type":"text","text":"{\"film_id\": \"northwind\", \"title\": \"Northwind\", \"release_year\": \"1987\", \"director\": \"Elena Marsh\", \"runtime_minutes\": 104, \"country\": \"Norway\", \"genre\": \"Drama\"}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_2","type":"mcp_tool_call","server":"world","tool":"search_films","arguments":{"query":"Northwind 2019"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_2","type":"mcp_tool_call","server":"world","tool":"search_films","arguments":{"query":"Northwind 2019"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"film_id\": \"northwind\", \"title\": \"Northwind\", \"release_year\": \"1987\", \"director\": \"Elena Marsh\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_3","type":"agent_message","text":"I couldn’t verify a 2019 film titled Northwind."}}
+{"type":"turn.completed","usage":{"input_tokens":24074,"cached_input_tokens":20864,"cache_write_input_tokens":0,"output_tokens":166,"reasoning_output_tokens":0}}

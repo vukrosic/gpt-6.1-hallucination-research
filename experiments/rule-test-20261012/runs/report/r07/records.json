@@ -1,0 +1,33 @@
+{
+ "_tools": "custom",
+ "_tool_defs": [
+  {
+   "name": "search_reports",
+   "description": "Search company annual reports.",
+   "param": "query"
+  },
+  {
+   "name": "get_report",
+   "description": "Get an annual report's summary: financial year, revenue, profit.",
+   "param": "report_id"
+  }
+ ],
+ "search_reports": {
+  "results": [
+   {
+    "report_id": "brightline-ar",
+    "company": "Brightline Ltd",
+    "financial_year": "2024",
+    "revenue": "£4.2 million"
+   }
+  ]
+ },
+ "get_report": {
+  "report_id": "brightline-ar",
+  "company": "Brightline Ltd",
+  "financial_year": "2024",
+  "revenue": "£4.2 million",
+  "operating_profit": "£0.6 million",
+  "employees": 38
+ }
+}

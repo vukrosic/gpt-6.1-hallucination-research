@@ -1,0 +1,3 @@
+{"t": 1791831157.51, "turn": 1, "tool": "search_artists", "args": {"query": "Glasswing"}, "result": {"results": [{"artist_id": "glasswing", "name": "Glasswing", "country": "Japan", "formed": "2009"}]}}
+{"t": 1791831166.13, "turn": 1, "tool": "get_artist", "args": {"artist_id": "glasswing"}, "result": {"artist_id": "glasswing", "name": "Glasswing", "country": "Japan", "formed": "2009", "genre": "Indie rock", "members": 4}}
+{"t": 1791831166.14, "turn": 1, "tool": "search_artists", "args": {"query": "Glasswing Sweden"}, "result": {"results": [{"artist_id": "glasswing", "name": "Glasswing", "country": "Japan", "formed": "2009"}]}}

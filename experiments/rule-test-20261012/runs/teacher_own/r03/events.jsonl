@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"<thread>"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_classes","arguments":{"query":"year 9 maths Elmwood"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"mcp_tool_call","server":"world","tool":"search_classes","arguments":{"query":"year 9 maths Elmwood"},"result":{"content":[{"type":"text","text":"{\"results\": [{\"class_id\": \"elmwood-maths\", \"school\": \"Elmwood School\", \"subject\": \"Maths\", \"year_group\": \"Year 9\", \"teacher\": \"Mr Tomas Varga\"}]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"Mr Tomas Varga"}}
+{"type":"turn.completed","usage":{"input_tokens":13851,"cached_input_tokens":11648,"cache_write_input_tokens":0,"output_tokens":72,"reasoning_output_tokens":0}}

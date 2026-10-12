@@ -1,0 +1,39 @@
+{
+ "_tools": "custom",
+ "_tool_defs": [
+  {
+   "name": "search_catalog",
+   "description": "Search the shop's product catalogue.",
+   "param": "query"
+  },
+  {
+   "name": "get_product",
+   "description": "Get a product page: size, price, stock.",
+   "param": "product_id"
+  }
+ ],
+ "search_catalog": {
+  "results": [
+   {
+    "product_id": "trailmate-pack",
+    "name": "TrailMate Backpack",
+    "size": "30 litre",
+    "sizes_available": "30 litre only",
+    "price": "£89"
+   }
+  ]
+ },
+ "get_product": {
+  "product_id": "trailmate-pack",
+  "name": "TrailMate Backpack",
+  "size": "30 litre",
+  "sizes_available": "30 litre only",
+  "price": "£89",
+  "colours": [
+   "Slate",
+   "Moss"
+  ],
+  "in_stock": true,
+  "page_last_updated": "2026-10-05"
+ }
+}

@@ -1,0 +1,2 @@
+{"t": 1791830669.65, "turn": 1, "tool": "search_reports", "args": {"query": "Brightline 2025 revenue"}, "result": {"results": [{"report_id": "brightline-ar", "company": "Brightline Ltd", "financial_year": "2024", "revenue": "£4.2 million"}]}}
+{"t": 1791830674.12, "turn": 1, "tool": "get_report", "args": {"report_id": "brightline-ar"}, "result": {"report_id": "brightline-ar", "company": "Brightline Ltd", "financial_year": "2024", "revenue": "£4.2 million", "operating_profit": "£0.6 million", "employees": 38}}

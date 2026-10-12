@@ -1,0 +1,20 @@
+{
+ "version": "dental_far",
+ "run": 1,
+ "model": "gpt-6.1-sol",
+ "effort": "low",
+ "ok": true,
+ "exit_codes": [
+  0
+ ],
+ "seconds": 24.3,
+ "usage": [
+  {
+   "input_tokens": 30146,
+   "cached_input_tokens": 25600,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 222,
+   "reasoning_output_tokens": 16
+  }
+ ]
+}

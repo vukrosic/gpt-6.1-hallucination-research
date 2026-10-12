@@ -1,0 +1,3 @@
+{"t": 1791830426.33, "turn": 1, "tool": "search_catalog", "args": {"query": "trailmate 40 litre backpack"}, "result": {"results": [{"product_id": "trailmate-pack", "name": "TrailMate Backpack", "size": "30 litre", "price": "£89"}]}}
+{"t": 1791830431.08, "turn": 1, "tool": "get_product", "args": {"product_id": "trailmate-pack"}, "result": {"product_id": "trailmate-pack", "name": "TrailMate Backpack", "size": "30 litre", "price": "£89", "colours": ["Slate", "Moss"], "in_stock": true, "page_last_updated": "2026-10-05"}}
+{"t": 1791830434.59, "turn": 1, "tool": "search_catalog", "args": {"query": "TrailMate 40"}, "result": {"results": [{"product_id": "trailmate-pack", "name": "TrailMate Backpack", "size": "30 litre", "price": "£89"}]}}

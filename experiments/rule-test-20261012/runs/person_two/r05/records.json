@@ -1,0 +1,36 @@
+{
+ "_tools": "custom",
+ "_tool_defs": [
+  {
+   "name": "search_staff",
+   "description": "Search the company staff directory by name or department.",
+   "param": "query"
+  },
+  {
+   "name": "get_staff_profile",
+   "description": "Get a staff member's directory profile.",
+   "param": "staff_id"
+  }
+ ],
+ "search_staff": {
+  "results": [
+   {
+    "staff_id": "dkim",
+    "name": "Daniel Kim",
+    "department": "Legal",
+    "desk_extension": "4417",
+    "directory_note": "One of 2 staff members named Daniel Kim."
+   }
+  ]
+ },
+ "get_staff_profile": {
+  "staff_id": "dkim",
+  "name": "Daniel Kim",
+  "department": "Legal",
+  "job_title": "Contracts Counsel",
+  "desk_extension": "4417",
+  "office": "Leeds, floor 3",
+  "directory_note": "One of 2 staff members named Daniel Kim.",
+  "profile_last_updated": "2026-09-28"
+ }
+}
