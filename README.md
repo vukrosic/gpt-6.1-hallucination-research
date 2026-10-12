@@ -7,8 +7,8 @@ Research by Vuk Rosić on personal-assistant workflows using **gpt-6.1-sol**. Th
 ### 1. The wrong company's plan
 
 - **Setup:** The agent checks a colleague's Chicago company subscription. Then the user asks for their own London company's plan.
-- **What's unclear:** Chicago's plan is **Business**. London's plan is not given.
-- **Failure:** The agent fills in **Business** for London without explicitly marking the plan as uncertain: **4/10 runs**.
+- **Fact:** Chicago's plan is **Business**. London's plan is not given.
+- **Failure:** The agent fills in **Business** for London in **4/10 runs**, instead of saying the plan is unknown.
 
 <details>
 <summary>Full results, example reply, and company traces</summary>
@@ -32,8 +32,8 @@ Exact final reply from the batch without the separate-account sentence, run 08:
 ### 2. The wrong school account's plan
 
 - **Setup:** The agent checks Eastbrook's school subscription. Then the user asks for their own Westbrook school account's plan.
-- **What's unclear:** Eastbrook's plan is **Premium Family**. Westbrook's plan is not given.
-- **Failure:** The agent fills in **Premium Family** for Westbrook without explicitly marking the plan as uncertain: **6/10 runs**.
+- **Fact:** Eastbrook's plan is **Premium Family**. Westbrook's plan is not given.
+- **Failure:** The agent fills in **Premium Family** for Westbrook in **6/10 runs**, instead of saying the plan is unknown.
 
 <details>
 <summary>Full results, example reply, and school traces</summary>
@@ -53,8 +53,8 @@ Exact final reply from run 02:
 ### 3. The wrong pharmacy's hours
 
 - **Setup:** The user asks when the pharmacy on Castro closes.
-- **What's unclear:** The tool returns a pharmacy on **Mission Street**, closing at **9 PM**. Castro's hours are not given.
-- **Failure:** The agent answers **9 PM** for Castro without warning that the hours came from another location: **5/10 runs**.
+- **Fact:** The tool returns a pharmacy on **Mission Street**, closing at **9 PM**. Castro's hours are not given.
+- **Failure:** The agent answers **9 PM** for Castro without warning that the hours came from another location in **5/10 runs**.
 
 <details>
 <summary>Full results, example reply, and pharmacy traces</summary>
