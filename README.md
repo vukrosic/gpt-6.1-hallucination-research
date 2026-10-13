@@ -218,7 +218,8 @@ the same request with nothing missing, where acting at once is correct. There ar
 | nothing, with reasoning effort "high" | **21** | 20 |
 
 - **Nothing I tried stops the mistake.** The two best rows still give 21 wrong answers in 50 conversations.
-- **High reasoning effort removes half of the wrong answers and costs nothing:** all 20 check tasks are done.
+- **High reasoning effort removes half of the wrong answers, and all 20 check tasks are done.** Its cost is time:
+  a typical conversation takes 24 seconds, against 16 at low effort.
 - **Sentence C also removes half.** With it, the two Evas, the headcount and the made-up address give 2 wrong
   answers in 30 conversations. It fails on the promise to book later and on the cut-off booking.
 - **"Ask the user when something is unclear." and Sentence B fail.** Sentence A helps in part.
