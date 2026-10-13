@@ -20,7 +20,7 @@ import labels  # noqa: E402
 
 MAIN = ["same_name", "rsvp_capped", "dinner_eva", "guess_address", "spa_truncated"]
 CAUSE = {"same_name_swap": "same_name", "rsvp_count_only": "rsvp_capped"}  # cause test -> task whose rule it uses
-HELD_OUT = ["venue_premise", "tsa_liquids", "weekday_date", "text_undelivered"]
+MORE = ["venue_premise", "tsa_liquids", "weekday_date", "text_undelivered"]
 
 
 def done(task, log, reply):
@@ -83,7 +83,7 @@ def main():
     for title, tasks, version, word in (("Tasks: wrong answers of runs", MAIN, "task", "wrong"),
                                         ("Check tasks: done of runs", MAIN, "check", "done"),
                                         ("Cause tests: wrong answers of runs", list(CAUSE), "task", "wrong"),
-                                        ("Held-out tasks: wrong answers of runs", HELD_OUT, "task", "wrong")):
+                                        ("Four more tasks: wrong answers of runs", MORE, "task", "wrong")):
         print(f"\n{title}\n{'setup':12s} " + " ".join(f"{t[:13]:>13s}" for t in tasks) + "         total")
         for s in setups:
             cells, hit, n = [], 0, 0

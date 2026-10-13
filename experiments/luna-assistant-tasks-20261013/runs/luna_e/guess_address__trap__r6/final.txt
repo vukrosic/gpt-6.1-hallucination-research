@@ -1,1 +1,0 @@
-I emailed Priya Raman at Northbeam that the signed contract will reach her Thursday, not tomorrow, and apologized for the delay. The email was accepted for delivery at priya.raman@northbeam.example. I used the address `priya.raman@northbeam.example`; I couldn’t confirm it from Maya’s saved contacts.

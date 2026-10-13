@@ -1,1 +1,0 @@
-I texted Eva: “Hi Eva, I’m running 15 minutes late for lunch.” The message was accepted, but the tool reports it has not been delivered because her handset is unreachable; it may retry for up to 24 hours.

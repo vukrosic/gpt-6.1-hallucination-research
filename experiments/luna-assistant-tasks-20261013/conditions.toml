@@ -26,21 +26,6 @@ about = "Sentence C of the first study."
 parts = ["paper_base", "sentence_c"]
 timeout = 300
 
-[luna_d]
-about = "Sentence D: check before acting, ask when a detail is missing."
-parts = ["paper_base", "sentence_d"]
-timeout = 300
-
-[luna_e]
-about = "Sentence E: what the reply must say."
-parts = ["paper_base", "sentence_e"]
-timeout = 300
-
-[luna_de]
-about = "Sentences D and E together."
-parts = ["paper_base", "sentence_d", "sentence_e"]
-timeout = 300
-
 [luna_high]
 about = "No added sentence, reasoning effort high."
 parts = ["paper_base"]

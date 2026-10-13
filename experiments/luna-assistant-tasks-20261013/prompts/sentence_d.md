@@ -1,1 +1,0 @@
-Before you send a message, make a booking or change anything, check that the tool results give you every detail the action needs; if a detail is missing, cut off or could mean more than one thing, ask Maya first and do nothing until she answers.
