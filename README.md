@@ -248,7 +248,7 @@ the same request with nothing missing, where acting at once is correct. There ar
   five, not how often gpt-6-luna is wrong in general.
 - **My own labels.** A pattern labels each conversation, and I read every reply. I changed 4 labels by hand; each
   is listed with its reason.
-- **Likely causes, not proven ones**, as in the first study.
+- **Likely causes, not proven ones.** The first study's causes are also likely causes, not proven ones.
 
 ## 2.5 Code and raw logs
 
