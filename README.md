@@ -223,9 +223,6 @@ the same request with nothing missing, where acting at once is correct. There ar
   answers in 30 conversations. It fails on the promise to book later and on the cut-off booking.
 - **"Ask the user when something is unclear." and Sentence B fail.** Sentence A helps in part.
 - **No row stops the cut-off booking:** 8 to 10 wrong answers in 10 conversations in every row.
-- **More than half of my predictions were wrong** (7 of 12, saved before the runs). I expected Sentence C and high
-  reasoning effort to do much less than they did.
-- Sentence C with high reasoning effort is the next thing to test; I have not run it.
 
 ## 2.3 Limits
 
