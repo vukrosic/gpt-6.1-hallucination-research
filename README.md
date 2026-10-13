@@ -226,6 +226,10 @@ these **check tasks**. Each of the five ran 4 times, which makes 20 conversation
   answers in 30 conversations. It fails on the promise to book later and on the cut-off booking.
 - **"Ask the user when something is unclear." and Sentence B fail.** Sentence A helps in part.
 - **No row stops the cut-off booking:** 8 to 10 wrong answers in 10 conversations in every row.
+- **Why the last column is below 20.** The text to the one Eva is sent in every row. The misses are in other
+  messages. In the dinner message Eva answers "Yes, Thursday at 7 works"; at low reasoning effort the agent never
+  reads her answer, so it books no table (0 of 4 in each of the first five rows). With an added sentence the agent
+  also emails a headcount of 11 or 12 when the right count is 10.
 
 ## 2.3 Limits
 
