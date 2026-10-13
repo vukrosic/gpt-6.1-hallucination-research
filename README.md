@@ -55,6 +55,10 @@ A likely cause is something that I removed, changing nothing else, after which t
    "CoreLens Research LLC". The agent wrote the other company's product plan as the user's own in 7 of 10
    conversations. After I renamed the other company to "Northgate Analytics LLC", it did so in 1 of 10.
 
+In the one-question scenarios, most of the mistakes happened when both of these were true. Taking away the request
+stopped the mistake in all four scenarios where I tried it. Changing the close detail to a far one stopped it in
+four of six scenarios.
+
 Three more tests, and what each showed:
 
 - **The agent notices the difference.** Without "nothing else", all 40 replies give the fact and say whose it is:
