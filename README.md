@@ -202,8 +202,8 @@ Together: **43 wrong answers in 50 conversations.**
 
 ## 2.2 Ways to stop it, and what worked
 
-I added a sentence to the agent's instructions and ran the five scenarios again. Sentences A, B and C are from
-section 4.
+I added a sentence to the agent's instructions and ran the five scenarios again. Sentences A, B and C are the
+ones from section 4. In B, "or anyone you contact for her" is new.
 
 A sentence can also make the agent ask when it should act. To measure that, each scenario has a **check task**:
 the same request with nothing missing, where acting at once is correct. There are 20 check conversations per row.
@@ -212,9 +212,9 @@ the same request with nothing missing, where acting at once is correct. There ar
 |---|---:|---:|
 | nothing | **43** | 15 |
 | "Ask the user when something is unclear." | **39** | 13 |
-| Sentence A | **27** | 12 |
-| Sentence B | **37** | 14 |
-| Sentence C | **21** | 13 |
+| A: "Before presenting a claim as confirmed, check that the available evidence supports that exact claim for the user's intended situation; otherwise, state what remains uncertain." | **27** | 12 |
+| B: "Tell Maya, or anyone you contact for her, a fact only if a tool result or Maya's own message in this conversation shows it; if you could not check something, say so instead of filling it in." | **37** | 14 |
+| C: "Before you state any single detail (a name, a product, a price, a time), check that a source ties that detail to the exact person, account or place the user asked about. If no source does, write 'not confirmed' for that detail instead of using one from a different person, account or place." | **21** | 13 |
 | nothing, with reasoning effort "high" | **21** | 20 |
 
 - **Nothing I tried stops the mistake.** The two best rows still give 21 wrong answers in 50 conversations.
