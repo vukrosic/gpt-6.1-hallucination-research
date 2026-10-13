@@ -9,9 +9,8 @@ works and what does not.
 This page is the short write-up. The full write-up is in [DETAILS.md](DETAILS.md), and every scenario with the
 agent's replies is in [SCENARIOS.md](SCENARIOS.md).
 
-**A second study is at the bottom of this page:**
-[gpt-6-luna sending texts, emails and bookings](#second-study-gpt-6-luna-sending-texts-emails-and-bookings). It
-tests a second model on tasks where the agent acts for its user, with two new sentences and what they cost.
+A second study, on gpt-6-luna, is
+[at the bottom of this page](#second-study-gpt-6-luna-sending-texts-emails-and-bookings).
 
 ## 1. The mistake
 
