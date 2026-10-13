@@ -200,18 +200,7 @@ Every message of Maya's is shown in full.
 
 Together: **43 wrong answers in 50 conversations.**
 
-## 2.2 Likely causes
-
-1. **The model, gpt-6-luna.** I gave the same 50 conversations to gpt-6.1-sol, the model of the first study, with
-   the same instructions and tools. gpt-6.1-sol gave 0 wrong answers, where gpt-6-luna gave 43. It asked "Which
-   Eva—Eva Brandt or Eva Lindholm?" and asked for Priya's address. So the scenarios alone do not cause the
-   mistake.
-2. **gpt-6-luna's low reasoning effort.** This setting controls how long the model thinks before it acts. I ran
-   gpt-6-luna again with "high" in place of "low" and changed nothing else: 21 wrong answers in 50 conversations,
-   down from 43. The two Evas and the promise to book later went to 0. The made-up address and the cut-off
-   booking stayed.
-
-## 2.3 Ways to stop it, and what worked
+## 2.2 Ways to stop it, and what worked
 
 I added a sentence to the agent's instructions and ran the five scenarios again. Sentences A, B and C are from
 section 4.
@@ -238,16 +227,15 @@ the same request with nothing missing, where acting at once is correct. There ar
   reasoning effort to do much less than they did.
 - Sentence C with high reasoning effort is the next thing to test; I have not run it.
 
-## 2.4 Limits
+## 2.3 Limits
 
 - **Small and simulated.** 10 conversations per scenario and row, one model, simulated tools.
 - **I picked scenarios that fail.** I tried six and kept the five that failed most. 43 in 50 is the rate on those
   five, not how often gpt-6-luna is wrong in general.
 - **My own labels.** A pattern labels each conversation, and I read every reply. I changed 4 labels by hand; each
   is listed with its reason.
-- **Likely causes, not proven ones.** The first study's causes are also likely causes, not proven ones.
 
-## 2.5 Code and raw logs
+## 2.4 Code and raw logs
 
 Everything is in [experiments/luna-assistant-tasks-20261013/](experiments/luna-assistant-tasks-20261013/README.md):
 the plan and predictions saved before the runs, the scenarios, the code, the labels, the raw log of every
