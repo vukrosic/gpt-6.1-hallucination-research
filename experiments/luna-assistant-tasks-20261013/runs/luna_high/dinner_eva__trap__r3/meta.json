@@ -1,0 +1,26 @@
+{
+  "condition": "luna_high",
+  "scenario": "dinner_eva",
+  "variant": "trap",
+  "repeat": 3,
+  "model": "gpt-6-luna",
+  "effort": "high",
+  "tool_style": "raw",
+  "request_suffix": "",
+  "parts": [
+    "paper_base"
+  ],
+  "output_schema": "",
+  "seconds": 25.6,
+  "exit_code": 0,
+  "world_tool_calls": 4,
+  "other_item_types": [],
+  "usage": {
+    "input_tokens": 36957,
+    "cached_input_tokens": 24064,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 519,
+    "reasoning_output_tokens": 250
+  },
+  "started": "2026-10-13T13:57:35"
+}

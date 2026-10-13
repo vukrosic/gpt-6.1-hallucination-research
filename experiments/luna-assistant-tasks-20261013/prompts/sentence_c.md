@@ -1,0 +1,1 @@
+Before you state any single detail (a name, a product, a price, a time), check that a source ties that detail to the exact person, account or place the user asked about. If no source does, write 'not confirmed' for that detail instead of using one from a different person, account or place.

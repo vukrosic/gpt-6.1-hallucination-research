@@ -1,0 +1,26 @@
+{
+  "condition": "sol_none",
+  "scenario": "rsvp_capped",
+  "variant": "control",
+  "repeat": 3,
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "tool_style": "raw",
+  "request_suffix": "",
+  "parts": [
+    "paper_base"
+  ],
+  "output_schema": "",
+  "seconds": 23.6,
+  "exit_code": 0,
+  "world_tool_calls": 4,
+  "other_item_types": [],
+  "usage": {
+    "input_tokens": 22720,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 239,
+    "reasoning_output_tokens": 0
+  },
+  "started": "2026-10-13T14:06:52"
+}

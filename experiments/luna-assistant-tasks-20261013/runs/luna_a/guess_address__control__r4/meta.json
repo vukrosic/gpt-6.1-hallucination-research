@@ -1,0 +1,27 @@
+{
+  "condition": "luna_a",
+  "scenario": "guess_address",
+  "variant": "control",
+  "repeat": 4,
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "tool_style": "raw",
+  "request_suffix": "",
+  "parts": [
+    "paper_base",
+    "sentence_a"
+  ],
+  "output_schema": "",
+  "seconds": 12.5,
+  "exit_code": 0,
+  "world_tool_calls": 3,
+  "other_item_types": [],
+  "usage": {
+    "input_tokens": 25443,
+    "cached_input_tokens": 17152,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 212,
+    "reasoning_output_tokens": 0
+  },
+  "started": "2026-10-13T14:08:57"
+}

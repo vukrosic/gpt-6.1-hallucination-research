@@ -1,0 +1,26 @@
+{
+  "condition": "luna_high",
+  "scenario": "rsvp_capped",
+  "variant": "trap",
+  "repeat": 5,
+  "model": "gpt-6-luna",
+  "effort": "high",
+  "tool_style": "raw",
+  "request_suffix": "",
+  "parts": [
+    "paper_base"
+  ],
+  "output_schema": "",
+  "seconds": 32.1,
+  "exit_code": 0,
+  "world_tool_calls": 9,
+  "other_item_types": [],
+  "usage": {
+    "input_tokens": 68431,
+    "cached_input_tokens": 44032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1548,
+    "reasoning_output_tokens": 1125
+  },
+  "started": "2026-10-13T13:57:59"
+}

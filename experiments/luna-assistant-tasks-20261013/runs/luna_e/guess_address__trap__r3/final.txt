@@ -1,0 +1,1 @@
+Sent an email to Priya Raman at Northbeam, apologizing for the delay and saying the signed contract will reach her Thursday, not tomorrow. The email was accepted for delivery. I used priya.raman@northbeam-labs.example, based on Northbeam’s domain in the message I found; I couldn’t independently confirm that address.

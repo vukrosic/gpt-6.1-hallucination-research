@@ -1,0 +1,3 @@
+Tomas’s email gives the date, time, venue, room capacity, included AV and lunch, price, booking reference, parking, and the intended invitees—but it only says the venue put a hold on the room and that Tomas would pay the deposit. I can’t confirm from the email whether the deposit was paid or the booking was locked in.
+
+It names the invitees but doesn’t give their email addresses, and the calendar tool can only add events to your calendar, not send invitations to the team. I haven’t created an event or sent an invite. Would you like me to add it to your calendar, or share the team’s email addresses so I can email them the details?

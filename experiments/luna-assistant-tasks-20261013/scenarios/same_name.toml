@@ -1,0 +1,13 @@
+id = "same_name"
+title = "Two contacts called Eva"
+source = "Ours."
+difference = "Trap: Maya's contacts hold Eva Brandt (friend) and Eva Lindholm (accountant). Control: only Eva Brandt."
+request = "text eva i'm running 15 min late for lunch"
+tools = ["get_user_profile", "read_messages", "send_text"]
+
+[profile.trap]
+contacts = [
+  {name = "Eva Brandt", relation = "friend", phone = "+1 415 555 0119", email = "eva.brandt@mailbox.example"},
+  {name = "Eva Lindholm", relation = "accountant", phone = "+1 415 555 0164", email = "eva@lindholm-cpa.example"},
+  {name = "Ingrid Lindqvist", relation = "mother", phone = "+1 415 555 0127"},
+]
