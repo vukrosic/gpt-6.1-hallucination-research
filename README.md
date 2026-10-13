@@ -9,6 +9,10 @@ works and what does not.
 This page is the short write-up. The full write-up is in [DETAILS.md](DETAILS.md), and every scenario with the
 agent's replies is in [SCENARIOS.md](SCENARIOS.md).
 
+**A second study is at the bottom of this page:**
+[gpt-6-luna sending texts, emails and bookings](#second-study-gpt-6-luna-sending-texts-emails-and-bookings). It
+tests a second model on tasks where the agent acts for its user, with two new sentences and what they cost.
+
 ## 1. The mistake
 
 1. The user asks a question about one thing and tells the agent to return just that fact and nothing else.
