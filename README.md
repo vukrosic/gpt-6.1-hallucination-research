@@ -49,6 +49,9 @@ A likely cause is something that I removed, changing nothing else, after which t
 
 1. **The user's request for just the fact and nothing else.** I ran four scenarios with and without the words
    "just the …, nothing else". With the words: 37 wrong answers in 40 conversations. Without them: 0 in 40.
+   Without the words the agent still gives the fact and adds whose it is: "Northside Dental's listed number is
+   (415) 555-0142. I found them at 810 Lake Street, though—not Grant Avenue." So the agent notices the difference,
+   and the request makes it leave that part out.
 2. **The similar thing looks like the one the user meant.** With a close detail the agent gave 91 wrong answers in
    100 conversations, with a far detail 14 in 60 (section 2). The same happened in a longer scenario with three
    user messages. The user's company is "CoreLens Ltd", and one record is a price quote for another company,
@@ -56,17 +59,6 @@ A likely cause is something that I removed, changing nothing else, after which t
    conversations. After I renamed the other company to "Northgate Analytics LLC", it did so in 1 of 10.
 
 Most of the mistakes happened when both of these conditions were present in the same scenario.
-
-Three more tests, and what each showed:
-
-- **The agent notices the difference.** Without "nothing else", all 40 replies give the fact and say whose it is:
-  "Northside Dental's listed number is (415) 555-0142. I found them at 810 Lake Street, though—not Grant Avenue."
-  Asked for just the number, the agent leaves that second part out.
-- **With a warning inside the record, the mistake stays.** In the company scenario I added the sentence "This quote
-  applies only to CoreLens Research LLC." to the record. The agent still made the mistake in 7 to 9 of 10
-  conversations (7 of 10 before).
-- **The agent answers correctly when the search finds the right thing.** In 288 of 288 such conversations ("check
-  tasks") it gave the fact, and the fact was correct.
 
 ## 4. Ways to stop it, and what worked
 
@@ -95,8 +87,11 @@ conversations in total.
   one-question scenarios and fails in the company scenario (7 in 10). Sentence B fails with the colleague (7 in 10).
 - **One sentence works in all six: Sentence C.** It has a cost. In the five one-question scenarios the whole reply
   is "not confirmed". The agent found a dentist with the same name on Lake Street, and the reply leaves that out.
-- **Every sentence leaves correct answers intact.** When the search found the right thing, the agent still answered
-  correctly, in 180 of 180 check tasks.
+- **Every sentence leaves correct answers intact.** When the search result was for the thing the user asked about
+  (a "check task"), the agent still answered correctly, in 180 of 180 conversations.
+- **A warning inside the record fails too.** This fix is in the record, not in the instructions. In the company
+  scenario I added the sentence "This quote applies only to CoreLens Research LLC." to the record. The agent still
+  made the mistake in 7 to 9 of 10 conversations (7 of 10 before).
 - **What the working sentences share.** A and C name a check to make and what to write when the check fails. The
   three failing sentences only name a goal. I saw this pattern across the seven sentences; a separate test of it
   is still open.
@@ -155,5 +150,7 @@ Running a study again needs Codex CLI with access to gpt-6.1-sol; the commands a
   these tests.
 - Each test is repeated in 10 identical attempts, each in a new conversation (4 for check tasks). All 1,338
   conversations are saved here with every tool call and reply.
+- Each scenario also has a check task, where the search result is for the thing the user asked about. With and
+  without an added sentence, the agent answered correctly in 288 of 288 check tasks.
 - In 66 attempts the agent gave no reply within 110 seconds. I ran those again. The 66 are kept in `runs_failed/`
   folders and are outside the 1,338.
