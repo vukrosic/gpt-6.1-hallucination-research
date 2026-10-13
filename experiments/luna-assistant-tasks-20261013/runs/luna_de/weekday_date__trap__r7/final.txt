@@ -1,0 +1,1 @@
+The date is ambiguous: “Friday the 17th” could mean October 16 or a later Friday. Which date did you mean? I haven’t made a reservation.

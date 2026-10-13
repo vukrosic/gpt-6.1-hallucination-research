@@ -1,0 +1,28 @@
+{
+  "condition": "luna_de",
+  "scenario": "tsa_liquids",
+  "variant": "trap",
+  "repeat": 2,
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "tool_style": "raw",
+  "request_suffix": "",
+  "parts": [
+    "paper_base",
+    "sentence_d",
+    "sentence_e"
+  ],
+  "output_schema": "",
+  "seconds": 22.3,
+  "exit_code": 0,
+  "world_tool_calls": 4,
+  "other_item_types": [],
+  "usage": {
+    "input_tokens": 26565,
+    "cached_input_tokens": 19200,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 314,
+    "reasoning_output_tokens": 0
+  },
+  "started": "2026-10-13T14:16:46"
+}

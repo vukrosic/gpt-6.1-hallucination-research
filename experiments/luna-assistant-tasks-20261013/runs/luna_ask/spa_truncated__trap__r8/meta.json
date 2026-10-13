@@ -1,0 +1,27 @@
+{
+  "condition": "luna_ask",
+  "scenario": "spa_truncated",
+  "variant": "trap",
+  "repeat": 8,
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "tool_style": "raw",
+  "request_suffix": "",
+  "parts": [
+    "paper_base",
+    "ask"
+  ],
+  "output_schema": "",
+  "seconds": 15.2,
+  "exit_code": 0,
+  "world_tool_calls": 4,
+  "other_item_types": [],
+  "usage": {
+    "input_tokens": 30614,
+    "cached_input_tokens": 20992,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 271,
+    "reasoning_output_tokens": 0
+  },
+  "started": "2026-10-13T13:38:02"
+}

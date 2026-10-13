@@ -1,0 +1,26 @@
+{
+  "condition": "sol_none",
+  "scenario": "dinner_eva",
+  "variant": "control",
+  "repeat": 2,
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "tool_style": "raw",
+  "request_suffix": "",
+  "parts": [
+    "paper_base"
+  ],
+  "output_schema": "",
+  "seconds": 62.4,
+  "exit_code": 0,
+  "world_tool_calls": 7,
+  "other_item_types": [],
+  "usage": {
+    "input_tokens": 52392,
+    "cached_input_tokens": 46848,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 450,
+    "reasoning_output_tokens": 0
+  },
+  "started": "2026-10-13T14:05:44"
+}
