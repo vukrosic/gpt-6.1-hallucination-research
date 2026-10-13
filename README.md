@@ -90,12 +90,16 @@ conversations in total.
   is "not confirmed". The agent found a dentist with the same name on Lake Street, and the reply leaves that out.
 - **Every sentence leaves correct answers intact.** When the search result was for the thing the user asked about
   (a "check task"), the agent still answered correctly, in 180 of 180 conversations.
-- **A warning inside the record fails too.** This fix is in the record, not in the instructions. In the company
-  scenario I added the sentence "This quote applies only to CoreLens Research LLC." to the record. The agent still
-  made the mistake in 7 to 9 of 10 conversations (7 of 10 before).
-- **What the working sentences share.** A and C name a check to make and what to write when the check fails. The
-  three failing sentences only name a goal. I saw this pattern across the seven sentences; a separate test of it
-  is still open.
+- **A warning written into the search result fails too.** This is a different kind of fix: I changed a record
+  that the agent reads, not its instructions. In the company scenario the user's company is "CoreLens Ltd", and
+  the agent reads a price quote that belongs to another company, "CoreLens Research LLC". I added one line to that
+  quote: "This quote applies only to CoreLens Research LLC." The agent still wrote that quote's product plan as
+  the plan of the user's company in 7 of 10 conversations, the same as before I added the line.
+- **Why Sentences A and C work better (my reading, untested).** The three failing sentences say what result is
+  wanted, for example "State facts correctly." They leave out how to get it. Sentences A and C give the agent two
+  steps. First, check that the source is about the exact thing the user asked about. Second, if it is about
+  something else, say so: C tells the agent to write "not confirmed", and A tells it to state what remains
+  uncertain. This reading comes from comparing these seven sentences only; it still needs its own test.
 
 ## 5. Limits
 
