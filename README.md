@@ -210,9 +210,6 @@ Together: **43 wrong answers in 50 conversations.**
    gpt-6-luna again with "high" in place of "low" and changed nothing else: 21 wrong answers in 50 conversations,
    down from 43. The two Evas and the promise to book later went to 0. The made-up address and the cut-off
    booking stayed.
-3. **An action that someone is waiting for.** I asked gpt-6-luna only "how many people said yes to the studio open
-   house on the 24th?", with no email to send. It left out the 7 unread messages in 3 of 10 conversations, down
-   from 8.
 
 ## 2.3 Ways to stop it, and what worked
 
