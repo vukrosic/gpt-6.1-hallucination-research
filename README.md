@@ -62,8 +62,9 @@ Most of the mistakes happened when both of these conditions were present in the 
 
 ## 4. Ways to stop it, and what worked
 
-Each fix is one sentence added to the agent's instructions, with everything else unchanged. Each sentence is
-general: it names no dentist, street or company, so it could be added to any agent.
+To try to stop the mistake from section 1, I added one sentence to the agent's instructions (its system prompt)
+and ran the same scenarios again. I tried seven different sentences, one at a time, with everything else
+unchanged. Each sentence is general: it names no dentist, street or company, so it could be added to any agent.
 
 I tested the sentences on the six scenarios with the most wrong answers: the dentist, the climbing gym, the
 bookshop, the colleague, the pharmacy and the company scenario. Each sentence got 10 attempts per scenario, 60
