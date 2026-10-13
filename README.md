@@ -1,4 +1,4 @@
-# Research on GPT-6.1 inventing facts or overclaiming
+# Research on GPT-6.1 Sol inventing facts or overclaiming
 
 Research by Vuk Rosić.
 
@@ -202,16 +202,17 @@ Together: **43 wrong answers in 50 conversations.**
 
 ## 2.2 Likely causes
 
-1. **The model.** gpt-6.1-sol, the model of the first study, got the same 50 conversations and gave 0 wrong
-   answers. It asked "Which Eva—Eva Brandt or Eva Lindholm?" and asked for Priya's address. So the scenarios do
-   not force the mistake.
-2. **Low reasoning effort.** This setting controls how long the model thinks before it acts. I changed it from
-   "low" to "high" and nothing else: 21 wrong answers in 50 conversations, down from 43. The two Evas and the
-   promise to book later went to 0. The made-up address and the cut-off booking stayed.
-3. **An action that someone is waiting for.** When Maya asked only "how many people said yes" and no email had to
-   go out, the agent left out the 7 unread replies in 3 of 10 conversations, down from 8.
-4. **Not a cause: the order of the contacts.** I predicted that the agent texts the Eva who is listed first. I
-   swapped the two, and it texted the same Eva, the friend, in 10 of 10 conversations.
+1. **The model, gpt-6-luna.** I gave the same 50 conversations to gpt-6.1-sol, the model of the first study, with
+   the same instructions and tools. gpt-6.1-sol gave 0 wrong answers, where gpt-6-luna gave 43. It asked "Which
+   Eva—Eva Brandt or Eva Lindholm?" and asked for Priya's address. So the scenarios alone do not cause the
+   mistake.
+2. **gpt-6-luna's low reasoning effort.** This setting controls how long the model thinks before it acts. I ran
+   gpt-6-luna again with "high" in place of "low" and changed nothing else: 21 wrong answers in 50 conversations,
+   down from 43. The two Evas and the promise to book later went to 0. The made-up address and the cut-off
+   booking stayed.
+3. **An action that someone is waiting for.** I asked gpt-6-luna only "how many people said yes to the studio open
+   house on the 24th?", with no email to send. It left out the 7 unread messages in 3 of 10 conversations, down
+   from 8.
 
 ## 2.3 Ways to stop it, and what worked
 
