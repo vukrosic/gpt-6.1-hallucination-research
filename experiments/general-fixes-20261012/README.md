@@ -39,7 +39,7 @@ What the other replies did:
 - **Check tasks** (the tool result is for the thing asked about): correct in 96 of 96 conversations, 4 per sentence
   and scenario. None added doubt and none asked a question.
 - 14 company replies have no "Product:" line. I labelled them by hand; each has its reason in
-  `labels_override.json`. I read all 396 replies.
+  `labels_override.json`.
 - 25 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again. All 396
   planned conversations finished, and in all 396 the saved reply and the tool log match the recorded events.
 

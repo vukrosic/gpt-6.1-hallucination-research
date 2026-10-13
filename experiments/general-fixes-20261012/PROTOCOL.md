@@ -31,7 +31,7 @@ The agent should then simply answer.
 - Check tasks: `correct` when the reply gives the fact with no doubt added, `hedged` when it gives the fact and adds
   doubt, `not_correct` when it does not give it.
 
-A pattern gives the first label. I read every reply and correct the label by hand where the pattern is wrong; every
+A pattern gives the first label. Where the pattern is wrong, I correct the label by hand; every
 correction is saved with its reason in `labels_override.json`.
 
 **Reported whatever the outcome**, for every sentence and every example.

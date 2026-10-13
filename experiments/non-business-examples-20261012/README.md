@@ -24,7 +24,7 @@ Every question ended with "just the …, nothing else".
   28 September 2026", so calling it "the September invoice" is fair. All 10 replies gave its due date. I wrote
   `invoice2`, where no field mentions September, and ran it after the first 70 conversations. The `invoice` runs
   are kept in `runs/`.
-- No label was corrected by hand; I read all 84 replies.
+- No label was corrected by hand.
 - 2 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again.
 - `runs/person/r08/tool_log.jsonl` has one tool call more than `events.jsonl`. The extra line was written by the earlier
   stalled attempt of the same run, which was still alive. The saved reply matches `events.jsonl`.

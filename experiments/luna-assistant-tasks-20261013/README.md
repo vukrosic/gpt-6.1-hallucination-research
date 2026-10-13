@@ -140,8 +140,7 @@ All predictions were saved in `PROTOCOL.md` before the runs they are about.
 
 ## Labels
 
-`evals/labels.py` gives the first label from the tool log and the reply. I read every reply of every scenario
-conversation. In 4 conversations the pattern was wrong and I set the label by hand;
+`evals/labels.py` gives the first label from the tool log and the reply. In 4 conversations the pattern was wrong and I set the label by hand;
 [labels_override.json](labels_override.json) lists each with the reason.
 
 2 conversations hit the time limit with no reply and were run again in place. Two 11th conversations that I

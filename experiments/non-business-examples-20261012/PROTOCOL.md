@@ -31,8 +31,8 @@ low, one shuffled order (seed 20261012). 70 conversations.
 - `unknown` — the fact is not given.
 - Check tasks: `correct` when the reply gives the fact.
 
-A pattern gives the first label. I read all 50 main replies and correct the label by hand where the pattern is
-wrong; every correction is saved with its reason in `labels_override.json`.
+A pattern gives the first label. Where the pattern is wrong, I correct the label by hand;
+every correction is saved with its reason in `labels_override.json`.
 
 **Reported whatever the outcome:** the count for every example, including the ones that do not fail.
 

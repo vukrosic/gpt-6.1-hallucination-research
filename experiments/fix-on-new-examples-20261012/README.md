@@ -33,7 +33,7 @@ What the other replies did:
 - Check tasks (the search result is for the thing asked about): correct in 48 of 48 conversations, 16 per sentence.
   None added doubt.
 - With Sentence C all 40 replies are "not confirmed" and nothing more. They do not say what was found.
-- No label was corrected by hand; I read all 248 replies.
+- No label was corrected by hand.
 - 4 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again.
 
 The sentences are in `conditions.py`, word for word as in

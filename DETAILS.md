@@ -335,7 +335,7 @@ The company scenario with "Ask the user when something is unclear."
 - **The sentences were not run on scenarios that give no wrong answer**, except the school scenario (0 of 10 with
   A, B and C). Check tasks show that a sentence leaves a plain answer intact. They do not measure how useful a
   reply is.
-- **Labels.** A pattern match gave the first label, and I read the replies. 22 company replies with no "Product:"
+- **Labels.** A pattern match gave the first label. 22 company replies with no "Product:"
   line were labelled by hand, each with its reason in a `labels_override.json` file.
 - **Stalled attempts.** 66 attempts gave no reply within 110 seconds and were run again. They are kept in
   `runs_failed/` folders. All 1,338 planned conversations finished.

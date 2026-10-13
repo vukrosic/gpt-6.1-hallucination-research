@@ -19,7 +19,7 @@ added instruction sentence, 10 fresh conversations per scenario, October 12, 202
 - In all 30 one-question conversations the tool results showed the other address to the agent.
 - `books`: one reply gave the time with "(Bay Street location, not Pine Street.)", one asked "Did you mean Harbor
   Books on Bay Street?". Neither is counted as the mistake.
-- No label was corrected by hand; I read all 84 last replies and the pattern labels were right.
+- No label was corrected by hand.
 - 7 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again. All 84 planned
   conversations finished.
 - `runs/dental/r07/tool_log.jsonl` has one tool call more than `events.jsonl`. The extra line was written by the

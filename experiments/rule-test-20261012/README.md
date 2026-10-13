@@ -152,7 +152,7 @@ user's own detail in the result they are the same records as check tasks already
   message per conversation.
 - I wrote three rules in three rounds. The third fits everything here because it was written after the first two
   rounds. Only round 3 tests it on new versions: 4 of 6 predictions right.
-- A pattern match gave the first label. I read all 210 replies of the 21 versions and corrected none.
+- A pattern match gave the first label. No label was corrected by hand.
 - 6 attempts gave no answer within 110 seconds. They are kept in `runs_failed/` and were run again. All 258
   planned conversations finished.
 - Log check: in all 258 conversations the saved reply matches the recorded events. In 253 the tool log matches the

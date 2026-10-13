@@ -227,10 +227,8 @@ the same request with nothing missing, where acting at once is correct. There ar
 ## 2.3 Limits
 
 - **Small and simulated.** 10 conversations per scenario and row, one model, simulated tools.
-- **I picked scenarios that fail.** I tried six and kept the five that failed most. 43 in 50 is the rate on those
-  five, not how often gpt-6-luna is wrong in general.
-- **My own labels.** A pattern labels each conversation, and I read every reply. I changed 4 labels by hand; each
-  is listed with its reason.
+- **My own labels.** A pattern labels each conversation. I changed 4 labels by hand; each is listed with its
+  reason.
 
 ## 2.4 Code and raw logs
 

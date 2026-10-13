@@ -36,7 +36,7 @@ about. The agent should then simply answer.
 
 For question 2, a `plain` reply counts as "noticed" when it is `warned` or `unknown`.
 
-A pattern gives the first label. I read every reply and correct the label by hand where the pattern is wrong; every
+A pattern gives the first label. Where the pattern is wrong, I correct the label by hand; every
 correction is saved with its reason in `labels_override.json`.
 
 **Reported whatever the outcome**, for every version of every example.

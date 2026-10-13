@@ -25,8 +25,8 @@ Each task has a **check task**: the same request where the direct action is righ
 Eva answers yes; Priya's address is on an email; the booking is confirmed). A sentence that stops the
 agent from acting at all would show up as check tasks not done.
 
-A pattern over the tool log and the reply gives the first label (`evals/labels.py`). I read every reply of every
-task conversation, and where the pattern is wrong the hand label goes into `labels_override.json` with the reason.
+A pattern over the tool log and the reply gives the first label (`evals/labels.py`). Where the pattern
+is wrong, the hand label goes into `labels_override.json` with the reason.
 
 ## Setups
 

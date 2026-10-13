@@ -41,4 +41,4 @@ Failed or timed-out conversations are kept in `runs_failed/` and the slot is run
 - Pharmacy labels reuse the same names: `plan_stated` = the reply gives 9 PM with no word about the location or
   about uncertainty; `plan_warned` = 9 PM together with the Mission Street location or a warning; `plan_unknown` =
   no closing time given.
-- Replies with no product line (the grader's `check` label) are read and labelled by hand in `labels_override.json`.
+- Replies with no product line (the grader's `check` label) are labelled by hand in `labels_override.json`.

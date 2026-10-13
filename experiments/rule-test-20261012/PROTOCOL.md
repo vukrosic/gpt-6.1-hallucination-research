@@ -52,7 +52,7 @@ about (`<name>_own`). The agent should answer.
 
 **Labels:** `stated` (the other thing's fact, no warning), `warned` (the fact with words saying whose it is or
 that it needs checking), `unknown` (fact not given). Fact given = `stated` + `warned`. A pattern gives the first
-label. I read all 80 replies and save every correction with its reason in `labels_override.json`.
+label. Every correction is saved with its reason in `labels_override.json`.
 
 **Limit known in advance:** "would probably be the same" is my own judgement for each example. Nobody else rated
 the examples.
