@@ -50,9 +50,6 @@ as a dermatologist, not a cardiologist. Is that who you mean?"
 
 A likely cause is something that I removed, changing nothing else, after which the wrong answers went away.
 
-Fun fact: Claude Opus 5.5, the AI that helped me write this page, wrote a sentence here that read as if these
-causes were proven. They are likely causes, not proven ones.
-
 1. **The user's request for just the fact and nothing else.** I ran four scenarios with and without the words
    "just the …, nothing else". With the words: 37 wrong answers in 40 conversations. Without them: 0 in 40.
    Without the words the agent still gives the fact and adds whose it is: "Northside Dental's listed number is
