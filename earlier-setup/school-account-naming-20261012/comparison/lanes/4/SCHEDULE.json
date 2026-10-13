@@ -1,0 +1,362 @@
+[
+  {
+    "run_id": "n007",
+    "block": 4,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n007 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n008",
+    "block": 4,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n008 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n015",
+    "block": 8,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n015 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n016",
+    "block": 8,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n016 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n023",
+    "block": 12,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n023 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n024",
+    "block": 12,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n024 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n031",
+    "block": 16,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n031 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n032",
+    "block": 16,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n032 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n039",
+    "block": 20,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n039 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n040",
+    "block": 20,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n040 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n047",
+    "block": 24,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n047 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n048",
+    "block": 24,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n048 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n055",
+    "block": 28,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n055 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n056",
+    "block": 28,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n056 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n063",
+    "block": 32,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n063 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n064",
+    "block": 32,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n064 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n071",
+    "block": 36,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n071 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n072",
+    "block": 36,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n072 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n079",
+    "block": 40,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n079 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n080",
+    "block": 40,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n080 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n087",
+    "block": 44,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n087 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n088",
+    "block": 44,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n088 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n095",
+    "block": 48,
+    "lane": 4,
+    "arm": "control",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n095 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our own annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  },
+  {
+    "run_id": "n096",
+    "block": 48,
+    "lane": 4,
+    "arm": "explicit",
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "fork_turns": "none",
+    "source_sha256": "4829a29352cc800426dfd6dd2d7ade8a529c73563befde62c04e8a07d45e4ec0",
+    "initial_prompt": "You are Alex’s personal assistant. Use the local records client to answer the request in brief. Read the brief and relevant records. Provide the useful answer in your final response.\n\nClient: python3 <tmp>/records_82kt6jx3/client.py schoolmembership_featured n096 '{\"op\":\"help\"}'",
+    "followups": [
+      "Write a short quote reminder for Maya including the annual amount and service term.",
+      "Now give me our Westbrook School account’s annual renewal payment note: account name, product and pound amount. I want to copy it into the payment request."
+    ]
+  }
+]

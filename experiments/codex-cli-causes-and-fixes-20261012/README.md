@@ -1,7 +1,7 @@
 # Causes and fixes in Codex CLI (October 12, 2026)
 
-268 fresh gpt-6.1-sol conversations in Codex CLI: the company example with one thing changed at a time, three
-instruction sentences on the company, school and pharmacy examples, and check tasks where the asked-for fact is in the
+268 fresh gpt-6.1-sol conversations in Codex CLI: the company scenario with one thing changed at a time, three
+instruction sentences on the company, school and pharmacy scenarios, and check tasks where the asked-for fact is in the
 records.
 
 **The results and their explanation are in the [full write-up](../../DETAILS.md).** This folder holds the code and every
@@ -19,7 +19,7 @@ conversation.
 | `smoke/` | One trial conversation from before the schedule was fixed; not counted |
 | `codex_home_example/` | The Codex settings used: no shell, no web search, no saved notes, only the tools in `records_server.py` |
 
-Version names: `base` is the unchanged company example. `school_…` and `pharm_…` are the other two examples.
+Version names: `base` is the unchanged company scenario. `school_…` and `pharm_…` are the other two scenarios.
 `inst_general`, `inst_source` and `inst_field` add Sentence A, B and C. A name ending in `_own` is a check task.
 
 `python3 grade.py` prints the counts from the saved conversations; it needs no model access.

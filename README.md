@@ -7,7 +7,7 @@ build scenarios where it does this, find likely causes, try ways to reduce it, r
 works and what does not.
 
 This page is the short write-up. The full write-up is in [DETAILS.md](DETAILS.md), and every scenario with the
-agent's replies is in [EXAMPLES.md](EXAMPLES.md).
+agent's replies is in [SCENARIOS.md](SCENARIOS.md).
 
 ## 1. The mistake
 
@@ -124,12 +124,13 @@ conversations in total.
 | Path | What it is |
 |---|---|
 | [DETAILS.md](DETAILS.md) | The full write-up |
-| [EXAMPLES.md](EXAMPLES.md) | All 30 one-question scenarios with all 10 replies each |
+| [SCENARIOS.md](SCENARIOS.md) | All 30 one-question scenarios with all 10 replies each |
 | [experiments/rule-test-20261012/](experiments/rule-test-20261012/README.md) | The rule in section 2: three rounds, each with predictions saved before it was run. 258 conversations |
 | [experiments/fix-on-new-examples-20261012/](experiments/fix-on-new-examples-20261012/README.md) | With and without "nothing else"; Sentences A, B, C. 248 conversations |
 | [experiments/general-fixes-20261012/](experiments/general-fixes-20261012/README.md) | The four short sentences. 396 conversations |
 | [experiments/codex-cli-causes-and-fixes-20261012/](experiments/codex-cli-causes-and-fixes-20261012/) | The company scenario and Sentences A, B, C on it. 268 conversations |
 | [experiments/new-examples-20261012/](experiments/new-examples-20261012/README.md), [experiments/non-business-examples-20261012/](experiments/non-business-examples-20261012/README.md) | The first eleven extra scenarios. 84 + 84 conversations |
+| [earlier-setup/](earlier-setup/README.md) | A smaller first study with a different way of starting conversations (section 5 of DETAILS.md). 399 conversations |
 
 Each study folder holds:
 

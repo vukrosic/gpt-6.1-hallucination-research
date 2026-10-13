@@ -1,6 +1,6 @@
 """The company example and its one-change versions.
 
-BASE is the saved example from the research repository (traces/company-quote-mixup/without-explicit-separation):
+BASE is the saved example from the research repository (earlier-setup/traces/company-quote-mixup/without-explicit-separation):
 same five records, same three requests. Each version below changes one thing and names it in `change`.
 """
 import copy

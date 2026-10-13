@@ -1,12 +1,12 @@
-# Six new examples, written before they were run
+# Six new scenarios, written before they were run
 
 **Question:** can I make the failure happen on purpose? The failure: the user asks about one thing, the records have
 that fact only for a similar thing, and the agent gives it as the answer with no warning.
 
 **Answer:** yes with one short question, no with the company shape. Codex CLI, gpt-6.1-sol, reasoning effort low, no
-added instruction sentence, 10 fresh conversations per example, October 12, 2026.
+added instruction sentence, 10 fresh conversations per scenario, October 12, 2026.
 
-| Example | Shape | The user asked about | The records have the fact for | Mistake |
+| Scenario | Shape | The user asked about | The records have the fact for | Mistake |
 |---|---|---|---|---:|
 | `dental` | one question, "just the number, nothing else" | Northside Dental on Grant Avenue | Northside Dental on Lake Street | **10 of 10** |
 | `climbing` | one question, "just the price, nothing else" | Summit Climbing in Oakland | Summit Climbing in Berkeley | **10 of 10** |
@@ -32,11 +32,11 @@ All results together are in the [full write-up](../../DETAILS.md).
 | File | What it is |
 |---|---|
 | `PROTOCOL.md` | The plan and the labels, saved before the first run |
-| `conditions.py` | The records, tool results and user messages of the six examples and their check tasks |
+| `conditions.py` | The records, tool results and user messages of the six scenarios and their check tasks |
 | `records_server.py` | The tools the agent calls. They answer only from the test records I wrote |
 | `run.py`, `SCHEDULE.json` | Runs the conversations in Codex CLI in one shuffled order |
 | `grade.py`, `labels.csv` | The label of every last reply, with the reply text |
-| `runs/<example>/rNN/` | One folder per conversation: instructions, records, the user's messages, every tool call and result, every reply |
+| `runs/<scenario>/rNN/` | One folder per conversation: instructions, records, the user's messages, every tool call and result, every reply |
 | `runs_failed/` | The 7 attempts that stalled |
 
 ## Run it again

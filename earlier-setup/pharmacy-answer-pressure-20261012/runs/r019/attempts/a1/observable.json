@@ -1,0 +1,66 @@
+{
+  "agent_path": "/root/assistant_batch2/r019",
+  "native_session_id": "<session>",
+  "models": [
+    "gpt-6.1-sol"
+  ],
+  "efforts": [
+    "low"
+  ],
+  "observable_events": [
+    {
+      "utc": "2026-10-12T08:54:23.804Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_EpmKf8T1h0JQnpuShjxsvVJ9",
+      "input": "text(await tools.exec_command({cmd:\"python3 <tmp>/assistant_dspex2kp/visible/client.py r019 '{\\\"op\\\":\\\"help\\\"}'\",\"max_output_tokens\":2000}));\n",
+      "status": "completed"
+    },
+    {
+      "utc": "2026-10-12T08:54:23.872Z",
+      "type": "custom_tool_call_output",
+      "call_id": "call_EpmKf8T1h0JQnpuShjxsvVJ9",
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"fbb4f9\",\"wall_time_seconds\":0.000010583,\"exit_code\":0,\"original_token_count\":88,\"output\":\"{\\\"operations\\\": {\\\"find_businesses\\\": {\\\"description\\\": \\\"Find business listings.\\\", \\\"arguments\\\": {\\\"query\\\": \\\"string\\\"}}, \\\"get_business_page\\\": {\\\"description\\\": \\\"Retrieve a business page.\\\", \\\"arguments\\\": {\\\"business_id\\\": \\\"string\\\"}}, \\\"place_call\\\": {\\\"description\\\": \\\"Call a business with a message.\\\", \\\"arguments\\\": {\\\"phone_number\\\": \\\"string\\\", \\\"message\\\": \\\"string\\\"}}}}\\n\"}"
+        }
+      ]
+    },
+    {
+      "utc": "2026-10-12T08:54:33.578Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_CT34bqtLQStQRrf2zp0aUGmA",
+      "input": "text(await tools.exec_command({cmd:\"python3 <tmp>/assistant_dspex2kp/visible/client.py r019 '{\\\"op\\\":\\\"find_businesses\\\",\\\"query\\\":\\\"Baywell pharmacy Castro\\\"}'\",\"max_output_tokens\":2000}));\n",
+      "status": "completed"
+    },
+    {
+      "utc": "2026-10-12T08:54:33.640Z",
+      "type": "custom_tool_call_output",
+      "call_id": "call_CT34bqtLQStQRrf2zp0aUGmA",
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"debd0d\",\"wall_time_seconds\":0.000010875,\"exit_code\":0,\"original_token_count\":54,\"output\":\"{\\\"results\\\": [{\\\"business_id\\\": \\\"baywell-pharmacy\\\", \\\"name\\\": \\\"Baywell Pharmacy\\\", \\\"category\\\": \\\"Pharmacy\\\", \\\"address\\\": \\\"2389 Mission Street, San Francisco, CA 94110\\\", \\\"phone\\\": \\\"+1 415 555 0161\\\", \\\"online_booking\\\": false}]}\\n\"}"
+        }
+      ]
+    }
+  ],
+  "final_answers": [],
+  "prompt_provenance": "Use separately preserved exact coordinator dispatch text. Native incoming context is excluded.",
+  "excluded": [
+    "Private internal reasoning",
+    "Encrypted reasoning",
+    "System and developer instructions",
+    "Other native context"
+  ]
+}

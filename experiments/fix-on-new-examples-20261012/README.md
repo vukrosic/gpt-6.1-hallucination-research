@@ -1,9 +1,9 @@
-# The three fix sentences on four new failing examples
+# The three fix sentences on four new failing scenarios
 
 **Questions:**
 
-1. Do the three instruction sentences stop the mistake on the four new examples that fail? The sentences were worded
-   before these examples existed.
+1. Do the three instruction sentences stop the mistake on the four new scenarios that fail? The sentences were worded
+   before these scenarios existed.
 2. Does the agent see that the search result is for a different street or department?
 
 **Answers:** Sentences A and C stop it (0 of 40 each); Sentence B does not (13 of 40). The agent names the different

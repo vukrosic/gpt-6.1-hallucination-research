@@ -1,7 +1,7 @@
-# Which examples make the agent give a wrong answer?
+# Which scenarios make the agent give a wrong answer?
 
 **Question:** the user asks for one fact about a thing, and the search returns that kind of fact only for a similar
-thing. In some examples the agent gives the other thing's fact with no warning in 10 of 10 conversations. In others
+thing. In some scenarios the agent gives the other thing's fact with no warning in 10 of 10 conversations. In others
 it never does. What separates them?
 
 **Answer:** three things, each tested by changing one detail and running again. A fourth guess of mine was wrong.
@@ -50,7 +50,7 @@ side.** A 40 litre and a 30 litre backpack, a Saturday and a weekday timetable, 
 | who teaches Year 9 maths at Elmwood School | Year 8 maths class | 0 | 0 | 10 |
 | price of the 40 litre backpack, result says "sizes_available: 30 litre only" | the 30 litre backpack | 0 | 1 | 9 |
 
-0 wrong answers in 80 conversations. Three earlier examples of this kind (backpack price, last Saturday train,
+0 wrong answers in 80 conversations. Three earlier scenarios of this kind (backpack price, last Saturday train,
 September invoice) also gave 0 of 30. In two of the eight the agent still gives the fact and names the thing it is
 for: "Slate and Moss (listed for the 30-litre model, not 40-litre)." and "10 pm (South Campus, not North)."
 
@@ -58,10 +58,10 @@ The film and the report both differ in a year, and they give opposite results. A
 "2019" against "2021" reads as a slip (9 of 10 wrong answers). A company has one report for each year, so "2025"
 against "2024" reads as another report (0 of 10: "2025 revenue unavailable.").
 
-**3. One field that says several exist stops the wrong answer.** Two examples that failed, with one field added to
+**3. One field that says several exist stops the wrong answer.** Two scenarios that failed, with one field added to
 the search result and nothing else changed.
 
-| Example | Field added | Wrong answers before | Wrong answers after |
+| Scenario | Field added | Wrong answers before | Wrong answers after |
 |---|---|---:|---:|
 | Northside Dental on Grant Avenue | "Lake Street office. One of 3 Northside Dental offices in San Francisco." | 10 of 10 | **0 of 10** |
 | Daniel Kim in Finance | "One of 2 staff members named Daniel Kim." | 9 of 10 | **0 of 10** |
@@ -72,7 +72,7 @@ Replies after: "I couldn’t verify the Grant Avenue number." and "I couldn’t 
 is probably the thing the user means, described with one detail slightly off. It holds back when the result looks
 like a different thing.
 
-## How to build an example that gives a wrong answer
+## How to build a scenario that gives a wrong answer
 
 1. The user asks for one small fact about a named thing and adds one describing detail: a street, a town, a
    department, a year, a country, a kind of food, a medical specialty.
@@ -83,8 +83,8 @@ like a different thing.
    that other branches or people with that name exist.
 5. The question ends with "just the …, nothing else".
 
-Ten examples built this way gave 91 wrong answers in 100 conversations (dentist 10, climbing gym 10, restaurant 10,
-band 10, doctor 10, museum 10, film 9, colleague 9, bookshop 8, pharmacy 5). The doctor and museum examples were
+Ten scenarios built this way gave 91 wrong answers in 100 conversations (dentist 10, climbing gym 10, restaurant 10,
+band 10, doctor 10, museum 10, film 9, colleague 9, bookshop 8, pharmacy 5). The doctor and museum scenarios were
 made from versions that gave 0 of 10, by changing one value in the result as step 3 says.
 
 ## Every prediction, by round
@@ -140,14 +140,14 @@ restaurants, bands and films)". The two rules predicted opposite results on all 
 
 ## Check tasks
 
-For 12 examples I also ran the version where the search result is for the thing the user asked about, 4
+For 12 scenarios I also ran the version where the search result is for the thing the user asked about, 4
 conversations each. The agent answered correctly in 48 of 48. The round 3 versions have no new check task: with the
 user's own detail in the result they are the same records as check tasks already run.
 
 ## Limits
 
 - "Close", "far" and "one of a set" are my own ratings, written down before each run. Nobody else rated the
-  examples, and the agent disagreed with my rating twice in round 3 (Japan, Italian).
+  scenarios, and the agent disagreed with my rating twice in round 3 (Japan, Italian).
 - 10 conversations per version, one model at one setting (reasoning effort "low"), test records that I wrote, one user
   message per conversation.
 - I wrote three rules in three rounds. The third fits everything here because it was written after the first two

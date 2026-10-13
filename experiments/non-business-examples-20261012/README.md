@@ -1,13 +1,13 @@
 # Does the recipe work on things that are not businesses?
 
-**Question:** the four one-question examples that fail are all businesses at addresses. Does the same recipe make
+**Question:** the four one-question scenarios that fail are all businesses at addresses. Does the same recipe make
 the failure with other personal-assistant requests?
 
 **Answer:** only partly. It fails for a colleague in a different department and does not fail for a product in a
 different size, a train on different days or an invoice for a different month. Codex CLI, gpt-6.1-sol, reasoning
-effort low, no added instruction sentence, 10 fresh conversations per example, October 12, 2026.
+effort low, no added instruction sentence, 10 fresh conversations per scenario, October 12, 2026.
 
-| Example | The user asked for | The one search result | Other thing's fact, no warning | With a warning | Not given |
+| Scenario | The user asked for | The one search result | Other thing's fact, no warning | With a warning | Not given |
 |---|---|---|---:|---:|---:|
 | `person` | Daniel Kim's desk extension in Finance | Daniel Kim, **Legal**, extension 4417 | **9** | 0 | 1 |
 | `meeting` | room of Tuesday's design review | Design review, **Thursday**, Room 4B | **3** | 7 | 0 |
@@ -20,7 +20,7 @@ Every question ended with "just the …, nothing else".
 - Check tasks (the search result is for the thing asked about): correct in 24 of 24 conversations.
 - In all 50 conversations the tool results showed the differing detail to the agent.
 - `meeting`: the 7 replies with a warning look like "Room 4B (Thursday, not Tuesday)."
-- **`invoice` is not counted.** It was my first invoice example and it is flawed: its record says "issued:
+- **`invoice` is not counted.** It was my first invoice scenario and it is flawed: its record says "issued:
   28 September 2026", so calling it "the September invoice" is fair. All 10 replies gave its due date. I wrote
   `invoice2`, where no field mentions September, and ran it after the first 70 conversations. The `invoice` runs
   are kept in `runs/`.
