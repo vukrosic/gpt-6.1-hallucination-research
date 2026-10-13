@@ -205,10 +205,12 @@ Together: **43 wrong answers in 50 conversations.**
 I added a sentence to the agent's instructions and ran the five scenarios again. Sentences A, B and C are the
 ones from section 4. In B, "or anyone you contact for her" is new.
 
-A sentence can also make the agent ask when it should act. To measure that, each scenario has a **check task**:
-the same request with nothing missing, where acting at once is correct. There are 20 check conversations per row.
+An added sentence can make the agent too careful: it asks a question or does nothing, even when nothing is
+missing. To see that, I ran every request again as a **check task**: the same message from Maya, with nothing
+missing. Example: Maya has only one contact named Eva, so the right thing is to text her. Five check tasks, 4
+conversations each, make 20 per row. The last column counts in how many of the 20 the agent did the job.
 
-| Added to the instructions | Wrong answers in 50 conversations | Check tasks done, of 20 |
+| Added to the instructions | Wrong answers in 50 conversations | Check tasks (nothing missing): job done, of 20 |
 |---|---:|---:|
 | nothing | **43** | 15 |
 | "Ask the user when something is unclear." | **39** | 13 |
