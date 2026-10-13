@@ -55,7 +55,7 @@ A likely cause is something that I removed, changing nothing else, after which t
    "CoreLens Research LLC". The agent wrote the other company's product plan as the user's own in 7 of 10
    conversations. After I renamed the other company to "Northgate Analytics LLC", it did so in 1 of 10.
 
-Most of the mistakes happened when both of these were true.
+Most of the mistakes happened when both of these conditions were present in the same scenario.
 
 Three more tests, and what each showed:
 
